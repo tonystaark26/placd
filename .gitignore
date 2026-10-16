@@ -1,0 +1,17 @@
+# Course notes and e-books are copyrighted: never upload them to GitHub
+materials/
+
+# Secret keys (database passwords etc.)
+.env
+.env.*
+!.env.example
+
+# Installed packages and build output (re-created automatically)
+node_modules/
+.next/
+out/
+dist/
+
+# System files
+.DS_Store
+Thumbs.db

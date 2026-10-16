@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* PLACED "Café" design system: see design/DESIGN_SYSTEM.md */
+@theme inline {
+  --color-bg: #e9e6e1;        /* warm grey background */
+  --color-foam: #f5f3ef;      /* cards, panels */
+  --color-latte: #efe7dd;     /* selected rows */
+  --color-line: #d6d0c8;      /* dividers, borders */
+  --color-espresso: #2b1e16;  /* main text */
+  --color-mocha: #6b625a;     /* secondary text */
+  --color-mocha-2: #75695f;   /* hints, inactive icons */
+  --color-coffee: #6f4e37;    /* accent: main buttons, highlights */
+  --color-cream: #fbf7f1;     /* text on coffee buttons */
+  --color-crema: #eadbc8;     /* background behind examples */
+  --color-crema-line: #d9c3a5;
+  --color-good: #1e6b45;
+  --color-good-bg: #dcebdd;
+  --color-bad: #a3322b;
+  --color-bad-bg: #f6dedb;
+
+  /* Bookman where installed; Libre Baskerville everywhere else */
+  --font-serif: "Bookman Old Style", "Bookman", "URW Bookman", var(--font-baskerville), Georgia, serif;
+  --font-sans: var(--font-plex), system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-espresso);
+  font-family: var(--font-serif);
+}
