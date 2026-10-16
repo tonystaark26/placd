@@ -146,8 +146,10 @@ running alongside the building.
 
 **Phase 2: build the real app (weeks 3–6)**
 1. ✅ **Set up tools & accounts** (17 Oct): Node.js 24, Git 2.56, GitHub/Supabase/Vercel accounts.
-2. 🟡 **Project skeleton**: ✅ Next.js app created in `web/` with the café design and welcome
-   page, saved as the first version. ⏳ Next: put it on GitHub and connect Vercel → a real link.
+2. ✅ **Project skeleton** (17 Oct): Next.js app in `web/` with the café design and welcome page.
+   Code on GitHub (private): github.com/tonystaark26/placd. **Live at https://placd-delta.vercel.app**,
+   which updates automatically every time we upload to GitHub.
+   Note: `placd.vercel.app` belongs to an unrelated app ("PlaceMe", a placement-drive management tool).
 3. **Database design** (together): tables for cards, stories, questions, students and
    their progress. Move the 11 cards into it.
 4. **Build the screens** one by one in the café design: onboarding → home →
