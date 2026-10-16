@@ -136,6 +136,9 @@ running alongside the building.
 - [x] Visual style: clean minimal (too plain) → bright & playful (too loud) → black & gold → now **café colours** (warm grey and coffee brown) with a Bookman-style serif and smaller, professional type ([design/DESIGN_SYSTEM.md](design/DESIGN_SYSTEM.md))
 - [x] Batch 2: 6 more Economics cards (11 total), news examples fact-checked
 - [x] Folders ready for new subjects: `materials/FINANCE`, `materials/MARKETING`
+- [x] Marketing Batch 1: 6 cards (needs/wants/demands, customer value, satisfaction & CLV,
+      orientations & myopia, marketing environment/PESTLE, Five Forces). **17 cards in total.**
+- [ ] Marketing Batch 2 from the remaining 4 Marketing files
 - [ ] Read the 2 large Economics reference PDFs (they need converting first, see chat) → Batch 3
 
 **Content rules (from review)**
