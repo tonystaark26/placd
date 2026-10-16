@@ -145,10 +145,9 @@ running alongside the building.
 **Phase 1 (design & plan): done, 17 Oct.** Design tweaks can happen any time later.
 
 **Phase 2: build the real app (weeks 3–6)**
-1. **Set up tools & accounts** (you, about 45 min): install Node.js and Git; create free
-   GitHub, Supabase and Vercel accounts. *Checked 17 Oct: none of these is installed yet.*
-2. **Project skeleton** (together): create the app, put it on GitHub, connect Vercel →
-   a real link that works on any phone.
+1. ✅ **Set up tools & accounts** (17 Oct): Node.js 24, Git 2.56, GitHub/Supabase/Vercel accounts.
+2. 🟡 **Project skeleton**: ✅ Next.js app created in `web/` with the café design and welcome
+   page, saved as the first version. ⏳ Next: put it on GitHub and connect Vercel → a real link.
 3. **Database design** (together): tables for cards, stories, questions, students and
    their progress. Move the 11 cards into it.
 4. **Build the screens** one by one in the café design: onboarding → home →
