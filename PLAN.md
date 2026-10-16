@@ -138,7 +138,9 @@ running alongside the building.
 - [x] Folders ready for new subjects: `materials/FINANCE`, `materials/MARKETING`
 - [x] Marketing Batch 1: 6 cards (needs/wants/demands, customer value, satisfaction & CLV,
       orientations & myopia, marketing environment/PESTLE, Five Forces). **17 cards in total.**
-- [ ] Marketing Batch 2 from the remaining 4 Marketing files
+- [x] Marketing Batch 2: 6 cards (buying behaviour types, decision process, B2B buying centre,
+      market measurement, research & insight, ethics & dark patterns). All 7 Marketing files used.
+      **23 cards in total** (11 Economics + 12 Marketing).
 - [ ] Read the 2 large Economics reference PDFs (they need converting first, see chat) → Batch 3
 
 **Content rules (from review)**
