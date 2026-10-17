@@ -1,5 +1,17 @@
 import { ABCAnalysis, EOQ, IncentivePlans, InventoryTurnover, LabourTurnover, StockLevels, StockValuation } from "./acct";
 import { BuyingBehaviour } from "./BuyingBehaviour";
+import {
+  BillsOfExchange,
+  CapitalRevenue,
+  ContingentLiabilities,
+  DebitCredit,
+  DepreciationMethods,
+  GSTCredit,
+  MeasurementBases,
+  StandardsPolicies,
+  SubsidiaryBooks,
+  TrialBalanceErrors,
+} from "./process";
 import { AccountingEquation, AccountingUsers, AccrualTimeline, ConceptsOne, Conventions, FinancialStatements } from "./fin";
 import {
   CrossElasticity,
@@ -66,4 +78,14 @@ export const DIAGRAMS: Record<string, () => React.ReactElement> = {
   "acct-11": ConceptsOne,
   "acct-12": AccrualTimeline,
   "acct-13": Conventions,
+  "acct-14": DebitCredit,
+  "acct-15": TrialBalanceErrors,
+  "acct-16": SubsidiaryBooks,
+  "acct-17": GSTCredit,
+  "acct-18": CapitalRevenue,
+  "acct-19": ContingentLiabilities,
+  "acct-20": StandardsPolicies,
+  "acct-21": MeasurementBases,
+  "acct-22": DepreciationMethods,
+  "acct-23": BillsOfExchange,
 };
