@@ -164,6 +164,8 @@ running alongside the building.
    editing cards, run `node scripts/cards-to-sql.mjs` and paste the new file into the SQL Editor again.
 4. **Build the screens** one by one in the café design: onboarding → home →
    news → concept card → quiz → result → tabs.
+   ✅ **Library + concept card screens live** (17 Oct): https://placd-delta.vercel.app/library.
+   They read all 23 cards from the database, with hidden answers to tap open and Previous/Next.
 5. **Login** (Google sign-in) and saving each student's streak and XP.
 
 **Decide soon: how does daily news get made?** Proposed: each morning a script
