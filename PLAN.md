@@ -187,7 +187,15 @@ running alongside the building.
 7. ✅ **Cost & Financial Accounting** (18 Oct): 13 cards (7 cost: stock levels, EOQ, FIFO/LIFO,
    ABC, inventory turnover, Halsey/Rowan, labour turnover; 6 financial: users, accounting
    equation, statements, concepts I & II, conventions), each with a picture and 3 quiz questions.
-   Overtime follows the notes (1.5×). **Totals: 36 cards, 108 quiz questions.**
+   Overtime follows the notes (1.5×).
+8. ✅ **Daily news brief** (18 Oct): "Today's brief" screen in 4 lanes, each story linked to a card;
+   admin-only approval page (/admin/news) where drafts are approved before students see them.
+   First brief: 8 stories (content/news/2026-10-18.json → `node scripts/news-to-sql.mjs 2026-10-18`).
+   **Decide later:** automate daily drafting (needs a paid AI key) vs Claude drafting in-session.
+9. ✅ **ICAI CA Foundation accounting batch** (from materials/CHART ACCOUNTS, 18 Oct): 10 cards
+   (debit/credit, trial balance & errors, subsidiary books & petty cash, GST & ITC, capital vs revenue,
+   contingent liabilities, standards/policies/estimates, measurement bases, depreciation, bills of exchange),
+   each with a picture and 3 quiz questions. **Totals: 46 cards, 138 quiz questions.**
 
 **Decide soon: how does daily news get made?** Proposed: each morning a script
 collects headlines from reliable sources, AI drafts plain-language summaries, concept
