@@ -155,8 +155,11 @@ running alongside the building.
    Code on GitHub (private): github.com/tonystaark26/placd. **Live at https://placd-delta.vercel.app**,
    which updates automatically every time we upload to GitHub.
    Note: `placd.vercel.app` belongs to an unrelated app ("PlaceMe", a placement-drive management tool).
-3. **Database design** (together): tables for cards, stories, questions, students and
-   their progress. Move the 11 cards into it.
+3. ✅ **Database** (17 Oct): Supabase project "placed" (Mumbai) with 8 tables and security
+   rules ([supabase/001_schema.sql](supabase/001_schema.sql)). Connected on your computer
+   (`web/.env.local`, never uploaded) and on Vercel. Connection tested: the 3 subjects can be read,
+   and student profiles stay hidden from outsiders.
+   **Next:** move the 23 concept cards into the database.
 4. **Build the screens** one by one in the café design: onboarding → home →
    news → concept card → quiz → result → tabs.
 5. **Login** (Google sign-in) and saving each student's streak and XP.

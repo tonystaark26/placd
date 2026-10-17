@@ -29,7 +29,8 @@ secret keys. Tick each box as you go.
 
 - [ ] In Supabase, click **Connect** (top of the project page), or go to
       **Project Settings → API Keys**. Find:
-  - the **Project URL** (looks like `https://abcdefgh.supabase.co`)
+  - the **Project URL** (looks like `https://abcdefgh.supabase.co`). If the copied
+    address ends in `/rest/v1/`, delete that part.
   - the **Publishable key** (starts with `sb_publishable_`). If you only see older
     "anon public" keys, use the **anon** one.
 - [ ] In your project folder, open the `web` folder, copy `.env.example` and rename the
