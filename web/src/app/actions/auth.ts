@@ -64,7 +64,10 @@ export async function saveDisplayName(_prev: NameState, formData: FormData): Pro
   if (!account) redirect("/");
 
   const supabase = await createClient();
-  const { error } = await supabase.from("profiles").upsert({ id: account.id, alias });
+  // Students may only set their name, so create the profile, or update just the name if it exists
+  const { error } = account.alias
+    ? await supabase.from("profiles").update({ alias }).eq("id", account.id)
+    : await supabase.from("profiles").insert({ id: account.id, alias });
   if (error) {
     const taken = error.code === "23505";
     return { status: "error", message: taken ? "Someone already has that name. Try another." : "Couldn't save. Please try again.", alias };

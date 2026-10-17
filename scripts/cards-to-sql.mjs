@@ -83,7 +83,8 @@ function parseCard(block, subjectId) {
       return {
         kind: m[1].toLowerCase().startsWith("mini") ? "case" : m[1].toLowerCase(),
         question: body.slice(0, at).trim(),
-        answer: body.slice(at).replace(/^\*\*Answer:?\s*/, "**").trim(),
+        // "**Answer:** text" → "text", and "**Answer: X.**" → "**X.**"
+        answer: body.slice(at).replace(/^\*\*Answer:\*\*\s*/, "").replace(/^\*\*Answer:?\s*/, "**").trim(),
       };
     })
     .filter(Boolean);

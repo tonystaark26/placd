@@ -175,7 +175,15 @@ running alongside the building.
    Signed-out visitors always land on the welcome page.
    **Before the pilot:** connect a free email service (Supabase's built-in one sends only a few
    emails an hour); only real accounts can take display names / appear on the leaderboard.
-   Later: keep a guest's progress when they sign up; streak/XP saving.
+   Later: keep a guest's progress when they sign up.
+6. ✅ **Daily quiz, streaks and XP** (18 Oct): 69 multiple-choice questions (3 per card,
+   [content/quiz/questions.json](content/quiz/questions.json)); 4/7/10 questions by daily time;
+   due-for-revision cards first, always ending with a mini case; 10 XP per right answer + 20 for
+   finishing; 1 streak freeze a week; Leitner revision (3/7/14/30 days). Scoring runs inside the
+   database ([supabase/003_quiz_rules.sql](supabase/003_quiz_rules.sql)), answers stay hidden until
+   answered, and only real accounts can claim names. After editing questions:
+   `node scripts/quiz-to-sql.mjs`, then paste `supabase/004_quiz_questions.sql` into the SQL Editor.
+   **Next ideas:** leaderboard, choosing subjects and daily time, news screen.
 
 **Decide soon: how does daily news get made?** Proposed: each morning a script
 collects headlines from reliable sources, AI drafts plain-language summaries, concept

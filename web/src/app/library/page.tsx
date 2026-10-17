@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { AccountBar } from "@/components/AccountBar";
+import { TodayCard } from "@/components/TodayCard";
 import { getCardList, SUBJECT_NAMES } from "@/lib/cards";
 
 export const metadata: Metadata = { title: "Library · PLACED" };
@@ -22,7 +23,11 @@ export default async function Library() {
         </Suspense>
       </div>
 
-      <h1 className="mt-7 text-[22px] font-bold leading-snug">Library</h1>
+      <Suspense fallback={<div className="mt-6 h-[124px] animate-pulse rounded-[10px] bg-crema" />}>
+        <TodayCard />
+      </Suspense>
+
+      <h1 className="mt-8 text-[22px] font-bold leading-snug">Library</h1>
       <p className="mt-1.5 text-[15px] text-mocha">
         {cards.length} concept cards, each with a ₹100 example and a real story from the news.
       </p>
