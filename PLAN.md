@@ -159,7 +159,9 @@ running alongside the building.
    rules ([supabase/001_schema.sql](supabase/001_schema.sql)). Connected on your computer
    (`web/.env.local`, never uploaded) and on Vercel. Connection tested: the 3 subjects can be read,
    and student profiles stay hidden from outsiders.
-   **Next:** move the 23 concept cards into the database.
+   ✅ **All 23 concept cards loaded** (17 Oct) from [supabase/002_cards.sql](supabase/002_cards.sql),
+   which [scripts/cards-to-sql.mjs](scripts/cards-to-sql.mjs) makes from the card files. After
+   editing cards, run `node scripts/cards-to-sql.mjs` and paste the new file into the SQL Editor again.
 4. **Build the screens** one by one in the café design: onboarding → home →
    news → concept card → quiz → result → tabs.
 5. **Login** (Google sign-in) and saving each student's streak and XP.
