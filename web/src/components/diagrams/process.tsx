@@ -208,10 +208,10 @@ export function CapitalRevenue() {
 // acct-19 ──────────────────────────────────────────────────────────────
 export function ContingentLiabilities() {
   const rows = [
-    { q: "Outflow probable and measurable?", a: "Provision", how: "record it: ₹20,000 likely settlement", style: "bad" as const },
-    { q: "Only possible (or can't measure)?", a: "Contingent liability", how: "note only: ₹50,000 claim she'll probably win", style: "warm" as const },
-    { q: "Chance of paying remote?", a: "Nothing", how: "not even disclosed", style: "faded" as const },
-    { q: "A possible gain?", a: "Contingent asset", how: "not recorded: her ₹10,000 claim on a supplier", style: "good" as const },
+    { q: "Probable and measurable?", a: "Provision", how: "record it: ₹20,000 likely settlement", style: "bad" as const },
+    { q: "Only possible (or can't measure)?", a: "Contingent liability", how: "note only: ₹50,000 claim, likely to win", style: "warm" as const },
+    { q: "Chance of paying remote?", a: "Nothing shown", how: "not even disclosed", style: "faded" as const },
+    { q: "A possible gain?", a: "Contingent asset", how: "not recorded: her ₹10,000 supplier claim", style: "good" as const },
   ];
   return (
     <Figure
@@ -261,7 +261,7 @@ export function StandardsPolicies() {
 
 // acct-21 ──────────────────────────────────────────────────────────────
 export function MeasurementBases() {
-  const s = 0.0036; // ₹ → px
+  const s = 0.0028; // ₹ → px
   const bars = [
     { name: "Historical cost", note: "₹40,000 + ₹5,000 install", v: 45000, cls: "fill-coffee" },
     { name: "Current cost", note: "same oven new today", v: 70000, cls: "fill-crema-line" },
