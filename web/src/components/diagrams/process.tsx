@@ -310,7 +310,7 @@ export function DepreciationMethods() {
       <Txt x={46} y={y(60000) + 3.5} size={9} anchor="end">60k</Txt>
       <Txt x={46} y={y(30000) + 3.5} size={9} anchor="end">30k</Txt>
       <Line x1={50} y1={y(6000)} x2={330} y2={y(6000)} tone="line" width={1} dash />
-      <Txt x={330} y={y(6000) - 4} size={9} anchor="end">residual ₹6,000</Txt>
+      <Txt x={56} y={y(6000) - 4} size={9}>residual ₹6,000</Txt>
       <Curve d={path(slm)} />
       <Curve d={path(wdv)} tone="good" width={2.5} dash />
       {slm.map((v, i) => <Dot key={`s${i}`} x={x(i)} y={y(v)} r={3} />)}
@@ -323,7 +323,7 @@ export function DepreciationMethods() {
 
 // acct-23 ──────────────────────────────────────────────────────────────
 export function BillsOfExchange() {
-  const x = (d: number) => 20 + d * 3.2; // day of year (1 Jan = 0) → px
+  const x = (d: number) => 20 + d * 2.5; // day of year (1 Jan = 0) → px
   return (
     <Figure
       h={276}
