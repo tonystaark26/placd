@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useState, useTransition } from "react";
-import { finishQuiz, submitAnswer, type FinishResult } from "@/app/actions/quiz";
 import type { QuizQuestion } from "@/lib/quiz";
+import { finishQuiz, submitAnswer, type FinishResult } from "@/lib/quiz-client";
 
 const KIND_LABEL = { concept: "Concept", application: "Application", case: "Mini case", news: "In the news" };
 
@@ -23,6 +23,7 @@ export function QuizRunner({
   const [step, setStep] = useState(firstOpen === -1 ? questions.length : firstOpen);
   const [correctSoFar, setCorrectSoFar] = useState(Object.values(answered).filter(Boolean).length);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
+  const [checking, setChecking] = useState<number | null>(null); // option tapped, waiting for the check
   const [result, setResult] = useState<FinishResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
@@ -30,15 +31,15 @@ export function QuizRunner({
   const finished = step >= questions.length;
   const q = questions[step];
 
-  function choose(index: number) {
-    if (feedback || pending) return;
+  async function choose(index: number) {
+    if (feedback || checking !== null) return;
     setError(null);
-    startTransition(async () => {
-      const r = await submitAnswer(q.id, index);
-      if (!r.ok) return setError(r.message);
-      setFeedback({ chosen: index, correct: r.correct, answerIndex: r.answerIndex, explanation: r.explanation });
-      if (r.correct) setCorrectSoFar((n) => n + 1);
-    });
+    setChecking(index); // highlight the tap immediately
+    const r = await submitAnswer(q.id, index);
+    setChecking(null);
+    if (!r.ok) return setError(r.message);
+    setFeedback({ chosen: index, correct: r.correct, answerIndex: r.answerIndex, explanation: r.explanation });
+    if (r.correct) setCorrectSoFar((n) => n + 1);
   }
 
   function next() {
@@ -101,23 +102,27 @@ export function QuizRunner({
         {q.options.map((o) => {
           const isAnswer = feedback && o.index === feedback.answerIndex;
           const isWrongPick = feedback && o.index === feedback.chosen && !feedback.correct;
+          const isChecking = checking === o.index;
           const style = isAnswer
             ? "border-good bg-good-bg text-good"
             : isWrongPick
               ? "border-bad bg-bad-bg text-bad"
-              : feedback
-                ? "border-line bg-foam text-mocha-2"
-                : "border-line bg-foam active:bg-latte";
+              : isChecking
+                ? "border-coffee bg-latte text-espresso"
+                : feedback || checking !== null
+                  ? "border-line bg-foam text-mocha-2"
+                  : "border-line bg-foam active:bg-latte";
           return (
             <li key={o.index}>
               <button
                 type="button"
-                disabled={!!feedback || pending}
+                disabled={!!feedback || checking !== null}
                 onClick={() => choose(o.index)}
-                className={`w-full rounded-[10px] border px-4 py-3.5 text-left font-sans text-[15px] leading-snug transition-colors ${style}`}
+                className={`w-full touch-manipulation rounded-[10px] border px-4 py-3.5 text-left font-sans text-[15px] leading-snug transition-colors ${style}`}
               >
                 {isAnswer ? "✓ " : isWrongPick ? "✗ " : ""}
                 {o.text}
+                {isChecking && <span className="mt-1 block text-[12px] font-semibold text-coffee">Checking…</span>}
               </button>
             </li>
           );

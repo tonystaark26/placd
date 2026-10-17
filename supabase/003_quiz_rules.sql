@@ -1,6 +1,6 @@
 -- =====================================================================
 -- PLACED database, version 3: daily quiz, streaks and XP
--- Run ONCE in Supabase: SQL Editor → New query → paste → Run.
+-- Run in Supabase: SQL Editor → New snippet → paste → Run. Safe to run again after edits.
 --
 -- The big idea: scoring happens INSIDE the database, never in the browser.
 -- Students can read their own progress, but XP, streaks and revision dates
@@ -33,6 +33,7 @@ grant update (alias, daily_minutes, subjects) on profiles to authenticated;
 
 -- Only real accounts (not guests) can claim a display name and join the leaderboard
 drop policy if exists "Users create their own profile" on profiles;
+drop policy if exists "Real accounts create their own profile" on profiles;
 create policy "Real accounts create their own profile" on profiles
   for insert to authenticated
   with check (auth.uid() = id and coalesce((auth.jwt() ->> 'is_anonymous')::boolean, false) = false);
@@ -41,6 +42,9 @@ create policy "Real accounts create their own profile" on profiles
 drop policy if exists "Own card progress" on card_progress;
 drop policy if exists "Own quiz attempts" on quiz_attempts;
 drop policy if exists "Own daily sessions" on daily_sessions;
+drop policy if exists "Read own card progress" on card_progress;
+drop policy if exists "Read own quiz attempts" on quiz_attempts;
+drop policy if exists "Read own daily sessions" on daily_sessions;
 create policy "Read own card progress" on card_progress
   for select to authenticated using (auth.uid() = user_id);
 create policy "Read own quiz attempts" on quiz_attempts
@@ -158,8 +162,8 @@ begin
     );
   end if;
 
-  -- Quiz length depends on the daily time the student chose: 5 → 4, 10 → 7, 15 → 10 questions
-  v_n := case coalesce(v_p.daily_minutes, 10) when 5 then 4 when 15 then 10 else 7 end;
+  -- Quiz length depends on the daily time the student chose: 5 → 5, 10 → 7, 15 → 10 questions
+  v_n := case coalesce(v_p.daily_minutes, 10) when 5 then 5 when 15 then 10 else 7 end;
 
   -- Score = first attempts today, capped at the quiz length (so nobody can farm extra XP)
   with firsts as (

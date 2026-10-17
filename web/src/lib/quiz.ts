@@ -14,7 +14,18 @@ export type QuizQuestion = {
   options: QuizOption[]; // shuffled; `index` is the original position the database knows
 };
 export type DayResult = { score: number; total: number; xpEarned: number };
-export type Stats = { streak: number; xp: number; freezesLeft: number; isGuest: boolean };
+export type Stats = { streak: number; xp: number; freezesLeft: number; dailyMinutes: number; isGuest: boolean };
+
+/** Daily time the student picked → number of quiz questions (must match finish_daily_quiz in the database) */
+export const QUIZ_LENGTHS = [
+  { minutes: 5, questions: 5 },
+  { minutes: 10, questions: 7 },
+  { minutes: 15, questions: 10 },
+] as const;
+
+function quizLength(dailyMinutes: number | null | undefined) {
+  return QUIZ_LENGTHS.find((l) => l.minutes === dailyMinutes)?.questions ?? 7;
+}
 
 export type DailyQuiz =
   | { done: true; result: DayResult; stats: Stats }
@@ -58,11 +69,11 @@ export async function getStats(userId: string, isGuest: boolean): Promise<Stats>
   const supabase = await createClient();
   const { data: p } = await supabase
     .from("profiles")
-    .select("streak, xp, last_active_date, freezes_left")
+    .select("streak, xp, last_active_date, freezes_left, daily_minutes")
     .eq("id", userId)
     .maybeSingle();
-  if (!p) return { streak: 0, xp: 0, freezesLeft: 1, isGuest };
-  return { streak: liveStreak(p), xp: p.xp, freezesLeft: p.freezes_left, isGuest };
+  if (!p) return { streak: 0, xp: 0, freezesLeft: 1, dailyMinutes: 10, isGuest };
+  return { streak: liveStreak(p), xp: p.xp, freezesLeft: p.freezes_left, dailyMinutes: p.daily_minutes, isGuest };
 }
 
 export async function getDailyQuiz(userId: string, isGuest: boolean): Promise<DailyQuiz> {
@@ -79,14 +90,13 @@ export async function getDailyQuiz(userId: string, isGuest: boolean): Promise<Da
     return { done: true, result: { score: session.score, total: session.total, xpEarned: session.xp_earned }, stats };
   }
 
-  const [{ data: profile }, { data: progress }, { data: rows }, cards] = await Promise.all([
-    supabase.from("profiles").select("daily_minutes").eq("id", userId).maybeSingle(),
+  const [{ data: progress }, { data: rows }, cards] = await Promise.all([
     supabase.from("card_progress").select("card_id, due_date"),
     supabase.from("quiz_questions").select("id, card_id, kind, question, options").eq("status", "approved"),
     getCardList(),
   ]);
 
-  const length = { 5: 4, 10: 7, 15: 10 }[profile?.daily_minutes as 5 | 10 | 15] ?? 7;
+  const length = quizLength(stats.dailyMinutes);
   const rand = seeded(`${userId}:${today}`);
   const due = new Map((progress ?? []).map((p) => [p.card_id, p.due_date as string]));
   const titles = new Map(cards.map((c) => [c.id, c.title]));

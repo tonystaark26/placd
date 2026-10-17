@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { setQuizLength } from "@/app/actions/settings";
 import { getAccount } from "@/lib/account";
-import { getStats, istToday } from "@/lib/quiz";
+import { getStats, istToday, QUIZ_LENGTHS } from "@/lib/quiz";
 import { createClient } from "@/lib/supabase/server";
 
 // The "Today's quiz" box at the top of the Library, with the student's streak and XP
@@ -30,10 +31,28 @@ export async function TodayCard() {
           </div>
         )}
       </div>
+      {!today && !account.isGuest && (
+        <form action={setQuizLength} className="mt-4 flex items-center gap-2 font-sans text-[12px]">
+          <span className="mr-1 text-crema">Questions:</span>
+          {QUIZ_LENGTHS.map(({ minutes, questions }) => (
+            <button
+              key={minutes}
+              name="minutes"
+              value={minutes}
+              aria-pressed={stats.dailyMinutes === minutes}
+              className={`h-8 min-w-11 touch-manipulation rounded-full px-3 font-semibold ${
+                stats.dailyMinutes === minutes ? "bg-cream text-coffee" : "border border-crema/40 text-crema"
+              }`}
+            >
+              {questions}
+            </button>
+          ))}
+        </form>
+      )}
       {!today && (
         <Link
           href="/quiz"
-          className="mt-4 flex h-11 w-full items-center justify-center rounded-[10px] bg-cream font-sans text-[15px] font-semibold text-coffee"
+          className="mt-3 flex h-11 w-full items-center justify-center rounded-[10px] bg-cream font-sans text-[15px] font-semibold text-coffee"
         >
           Start today&apos;s quiz
         </Link>
