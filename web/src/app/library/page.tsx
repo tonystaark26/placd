@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
+import { AccountBar } from "@/components/AccountBar";
 import { getCardList, SUBJECT_NAMES } from "@/lib/cards";
 
 export const metadata: Metadata = { title: "Library · PLACED" };
@@ -10,10 +12,15 @@ export default async function Library() {
 
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-8">
-      <Link href="/" className="flex items-center gap-2.5">
-        <span className="h-2.5 w-2.5 rounded-full bg-coffee" aria-hidden="true" />
-        <span className="font-sans text-xs font-semibold tracking-[3px]">PLACED</span>
-      </Link>
+      <div className="flex min-h-8 items-center justify-between">
+        <Link href="/" className="flex items-center gap-2.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-coffee" aria-hidden="true" />
+          <span className="font-sans text-xs font-semibold tracking-[3px]">PLACED</span>
+        </Link>
+        <Suspense fallback={null}>
+          <AccountBar />
+        </Suspense>
+      </div>
 
       <h1 className="mt-7 text-[22px] font-bold leading-snug">Library</h1>
       <p className="mt-1.5 text-[15px] text-mocha">

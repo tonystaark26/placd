@@ -166,7 +166,12 @@ running alongside the building.
    news → concept card → quiz → result → tabs.
    ✅ **Library + concept card screens live** (17 Oct): https://placd-delta.vercel.app/library.
    They read all 23 cards from the database, with hidden answers to tap open and Previous/Next.
+   ✅ **Pictures on all 23 cards** (17 Oct), drawn from each card's ₹100 example.
 5. **Login** (Google sign-in) and saving each student's streak and XP.
+   ✅ **Login pages built** (17 Oct): welcome page with Continue with Google, Sign up with email
+   (one-tap email link, no password), Try it first (guest), then Pick a display name.
+   **Waiting on you:** the switches in [supabase/LOGIN_SETUP.md](supabase/LOGIN_SETUP.md).
+   Later: email service for the pilot, keeping a guest's progress when they sign up, streak/XP saving.
 
 **Decide soon: how does daily news get made?** Proposed: each morning a script
 collects headlines from reliable sources, AI drafts plain-language summaries, concept
