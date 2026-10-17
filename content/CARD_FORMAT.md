@@ -18,6 +18,7 @@ can show any card, link it to news, and build quizzes from it automatically.
 | 8 | **Quiz** | 3 questions: 1 concept, 1 application, 1 mini case | — |
 | 9 | **Source** | Which file and page in `materials/` this comes from | — |
 | 10 | **Status** | `DRAFT` → `REVIEWED` (by you) → `VERIFIED` (by a professor, if needed) | — |
+| 11 | **Picture** | A simple café-style diagram shown under the title, drawn from the card's own ₹100 example (made in code: `web/src/components/diagrams/`) | One idea per picture |
 
 ## Rules
 - **No jargon without explaining it** in the same sentence.
