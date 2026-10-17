@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const promises = [
   "The news, without the jargon",
   "The concept behind every story",
@@ -37,13 +39,12 @@ export default function Welcome() {
       </div>
 
       <div className="mt-10 flex flex-col items-center gap-3">
-        <button
-          type="button"
-          disabled
-          className="h-12 w-full rounded-[10px] bg-coffee font-sans text-[15px] font-semibold text-cream disabled:opacity-60"
+        <Link
+          href="/library"
+          className="flex h-12 w-full items-center justify-center rounded-[10px] bg-coffee font-sans text-[15px] font-semibold text-cream"
         >
-          Coming soon
-        </button>
+          Explore the concept cards
+        </Link>
         <span className="font-sans text-xs text-mocha-2">
           Built by MBA students, for MBA students
         </span>
