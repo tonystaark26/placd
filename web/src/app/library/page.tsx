@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { AccountBar } from "@/components/AccountBar";
+import { BriefLink } from "@/components/BriefLink";
 import { TodayCard } from "@/components/TodayCard";
 import { getCardList, SUBJECT_NAMES } from "@/lib/cards";
 
@@ -27,6 +28,9 @@ export default async function Library() {
 
       <Suspense fallback={<div className="mt-6 h-[124px] animate-pulse rounded-[10px] bg-crema" />}>
         <TodayCard />
+      </Suspense>
+      <Suspense fallback={<div className="mt-3 h-[68px] animate-pulse rounded-[10px] bg-latte" />}>
+        <BriefLink />
       </Suspense>
 
       <h1 className="mt-8 text-[22px] font-bold leading-snug">Library</h1>
