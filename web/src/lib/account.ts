@@ -1,3 +1,4 @@
+import { connection } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 
 export type Account = {
@@ -8,6 +9,8 @@ export type Account = {
 
 /** Who is signed in right now, and the display name they chose (if any). */
 export async function getAccount(): Promise<Account | null> {
+  // Who's signed in is only known when a real request arrives, never ahead of time
+  await connection();
   const supabase = await createClient();
   const {
     data: { user },
