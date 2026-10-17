@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { DIAGRAMS } from "@/components/diagrams";
 import { Prose } from "@/components/Prose";
 import { getCard, getCardList, SUBJECT_NAMES } from "@/lib/cards";
 
@@ -51,7 +52,8 @@ async function CardBody({ id }: { id: string }) {
   const [card, list] = await Promise.all([getCard(id), getCardList()]);
   if (!card) notFound();
 
-  const sameSubject = list.filter((c) => c.subject_id === card.subject_id);
+  const Diagram = DIAGRAMS[card.id];
+  const sameSubject =list.filter((c) => c.subject_id === card.subject_id);
   const at = sameSubject.findIndex((c) => c.id === card.id);
   const prev = sameSubject[at - 1];
   const next = sameSubject[at + 1];
@@ -78,6 +80,12 @@ async function CardBody({ id }: { id: string }) {
           </p>
         )}
       </header>
+
+      {Diagram && (
+        <figure className="mt-5 rounded-[10px] border border-line bg-cream px-3 py-4">
+          <Diagram />
+        </figure>
+      )}
 
       <Prose
         text={card.one_line}
