@@ -184,6 +184,10 @@ running alongside the building.
    answered, and only real accounts can claim names. After editing questions:
    `node scripts/quiz-to-sql.mjs`, then paste `supabase/004_quiz_questions.sql` into the SQL Editor.
    **Next ideas:** leaderboard, choosing subjects and daily time, news screen.
+7. ✅ **Cost & Financial Accounting** (18 Oct): 13 cards (7 cost: stock levels, EOQ, FIFO/LIFO,
+   ABC, inventory turnover, Halsey/Rowan, labour turnover; 6 financial: users, accounting
+   equation, statements, concepts I & II, conventions), each with a picture and 3 quiz questions.
+   Overtime follows the notes (1.5×). **Totals: 36 cards, 108 quiz questions.**
 
 **Decide soon: how does daily news get made?** Proposed: each morning a script
 collects headlines from reliable sources, AI drafts plain-language summaries, concept
