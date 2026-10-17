@@ -9,7 +9,9 @@ export const metadata: Metadata = { title: "Library · PLACED" };
 
 export default async function Library() {
   const cards = await getCardList();
-  const subjects = [...new Set(cards.map((c) => c.subject_id))];
+  // Show subjects in course order (Economics, Marketing, Accounting…), not alphabetically
+  const present = new Set(cards.map((c) => c.subject_id));
+  const subjects = [...Object.keys(SUBJECT_NAMES), ...present].filter((s, i, all) => present.has(s) && all.indexOf(s) === i);
 
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-8">

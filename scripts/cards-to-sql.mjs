@@ -11,6 +11,7 @@ import { join } from "node:path";
 const SUBJECTS = [
   { id: "econ", folder: "content/managerial-economics" },
   { id: "mkt", folder: "content/marketing" },
+  { id: "acct", folder: "content/cost-accounting" },
 ];
 
 // Bold headings that start each part of a card (see content/CARD_FORMAT.md)
@@ -26,7 +27,7 @@ const PARTS = {
 
 function parseCard(block, subjectId) {
   const lines = block.split(/\r?\n/);
-  const head = lines[0].match(/^## Card (M?)(\d+) · (.+)$/);
+  const head = lines[0].match(/^## Card ([A-Z]?)(\d+) · (.+)$/);
   const num = Number(head[2]);
   const card = {
     id: `${subjectId}-${String(num).padStart(2, "0")}`,
@@ -138,6 +139,12 @@ const sql = `-- ================================================================
 -- Safe to run more than once: existing cards are updated, not duplicated.
 -- =====================================================================
 
+-- Subjects (new ones are added; existing ones are left alone)
+insert into subjects (id, name, sort) values
+  ('econ', 'Managerial Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
+  ('acct', 'Cost & Financial Accounting', 4)
+on conflict (id) do nothing;
+
 -- Two parts of each card that the first version of the table didn't have room for
 alter table concept_cards add column if not exists news_label text;   -- e.g. '✅ Verified (Sept 2025)'
 alter table concept_cards add column if not exists news       text;   -- "Seen in the news"
@@ -162,4 +169,4 @@ select subject_id, count(*) as cards from concept_cards group by subject_id orde
 
 writeFileSync("supabase/002_cards.sql", sql);
 const count = (s) => cards.filter((c) => c.subject_id === s).length;
-console.log(`Wrote supabase/002_cards.sql: ${cards.length} cards (econ ${count("econ")}, mkt ${count("mkt")})`);
+console.log(`Wrote supabase/002_cards.sql: ${cards.length} cards (econ ${count("econ")}, mkt ${count("mkt")}, acct ${count("acct")})`);

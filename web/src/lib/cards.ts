@@ -30,6 +30,7 @@ export const SUBJECT_NAMES: Record<string, string> = {
   econ: "Managerial Economics",
   fin: "Finance",
   mkt: "Marketing",
+  acct: "Cost & Financial Accounting",
 };
 
 function db() {

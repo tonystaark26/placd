@@ -1,3 +1,4 @@
+import { ABCAnalysis, EOQ, IncentivePlans, InventoryTurnover, LabourTurnover, StockLevels, StockValuation } from "./acct";
 import { BuyingBehaviour } from "./BuyingBehaviour";
 import {
   CrossElasticity,
@@ -51,4 +52,11 @@ export const DIAGRAMS: Record<string, () => React.ReactElement> = {
   "mkt-10": MarketSizing,
   "mkt-11": ResearchSteps,
   "mkt-12": DarkPatterns,
+  "acct-01": StockLevels,
+  "acct-02": EOQ,
+  "acct-03": StockValuation,
+  "acct-04": ABCAnalysis,
+  "acct-05": InventoryTurnover,
+  "acct-06": IncentivePlans,
+  "acct-07": LabourTurnover,
 };
