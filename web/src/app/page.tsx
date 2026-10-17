@@ -109,6 +109,16 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
 
         <p className="text-center font-sans text-xs leading-relaxed text-mocha-2">
           Free for early members. Others only ever see the display name you choose.
+          <br />
+          By continuing you agree to our{" "}
+          <Link href="/terms" className="underline underline-offset-2">
+            Terms
+          </Link>{" "}
+          and{" "}
+          <Link href="/privacy" className="underline underline-offset-2">
+            Privacy Policy
+          </Link>
+          .
         </p>
       </div>
     </main>
