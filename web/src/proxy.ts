@@ -2,7 +2,8 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 // Runs before every page request. It quietly refreshes the student's login
-// so they stay signed in, and passes the fresh login cookie along.
+// so they stay signed in, passes the fresh login cookie along, and sends
+// signed-out visitors to the welcome page.
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request });
 
@@ -23,7 +24,18 @@ export async function proxy(request: NextRequest) {
     },
   );
 
-  await supabase.auth.getClaims();
+  const { data } = await supabase.auth.getClaims();
+
+  // The app always opens at the welcome page: signed-out visitors can't jump straight
+  // into the Library or a card (guests count as signed in).
+  const path = request.nextUrl.pathname;
+  const insideApp = path === "/library" || path.startsWith("/cards/");
+  if (!data?.claims && insideApp) {
+    const welcome = NextResponse.redirect(new URL("/", request.url));
+    response.cookies.getAll().forEach((cookie) => welcome.cookies.set(cookie));
+    return welcome;
+  }
+
   return response;
 }
 
