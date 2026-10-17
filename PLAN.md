@@ -170,8 +170,12 @@ running alongside the building.
 5. **Login** (Google sign-in) and saving each student's streak and XP.
    ✅ **Login pages built** (17 Oct): welcome page with Continue with Google, Sign up with email
    (one-tap email link, no password), Try it first (guest), then Pick a display name.
-   **Waiting on you:** the switches in [supabase/LOGIN_SETUP.md](supabase/LOGIN_SETUP.md).
-   Later: email service for the pilot, keeping a guest's progress when they sign up, streak/XP saving.
+   ✅ **Login switched on** (18 Oct): Google sign-in tested end to end (published in Google, with
+   Branding done), guest mode tested. Privacy Policy and Terms live at /privacy and /terms.
+   Signed-out visitors always land on the welcome page.
+   **Before the pilot:** connect a free email service (Supabase's built-in one sends only a few
+   emails an hour); only real accounts can take display names / appear on the leaderboard.
+   Later: keep a guest's progress when they sign up; streak/XP saving.
 
 **Decide soon: how does daily news get made?** Proposed: each morning a script
 collects headlines from reliable sources, AI drafts plain-language summaries, concept
