@@ -263,8 +263,8 @@ export function LabourTurnover() {
     { n: 5, label: "new posts", cls: "fill-crema-line" },
   ];
   let col = 0;
-  const person = (x: number, y: number, cls: string, faded: boolean) => (
-    <g opacity={faded ? 0.45 : 1}>
+  const person = (key: string, x: number, y: number, cls: string, faded: boolean) => (
+    <g key={key} opacity={faded ? 0.45 : 1}>
       <circle cx={x} cy={y} r={3.6} className={cls} />
       <path d={`M ${x - 5} ${y + 15} q 0 -9 5 -9 q 5 0 5 9 z`} className={cls} />
     </g>
@@ -280,7 +280,7 @@ export function LabourTurnover() {
         col += g.n + 1;
         return (
           <g key={g.label}>
-            {Array.from({ length: g.n }, (_, i) => person(14 + (startCol + i) * 11.8, 40, g.cls, g.label === "left"))}
+            {Array.from({ length: g.n }, (_, i) => person(`${g.label}-${i}`, 14 + (startCol + i) * 11.8, 40, g.cls, g.label === "left"))}
             <Txt x={8 + (startCol + g.n / 2) * 11.8} y={78} size={9.5} bold tone={g.label === "left" ? "bad" : g.label === "replaced" ? "good" : "mocha"} anchor="middle">
               {`${g.n} ${g.label}`}
             </Txt>

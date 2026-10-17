@@ -1,5 +1,6 @@
 import { ABCAnalysis, EOQ, IncentivePlans, InventoryTurnover, LabourTurnover, StockLevels, StockValuation } from "./acct";
 import { BuyingBehaviour } from "./BuyingBehaviour";
+import { AccountingEquation, AccountingUsers, AccrualTimeline, ConceptsOne, Conventions, FinancialStatements } from "./fin";
 import {
   CrossElasticity,
   DiminishingUtility,
@@ -59,4 +60,10 @@ export const DIAGRAMS: Record<string, () => React.ReactElement> = {
   "acct-05": InventoryTurnover,
   "acct-06": IncentivePlans,
   "acct-07": LabourTurnover,
+  "acct-08": AccountingUsers,
+  "acct-09": AccountingEquation,
+  "acct-10": FinancialStatements,
+  "acct-11": ConceptsOne,
+  "acct-12": AccrualTimeline,
+  "acct-13": Conventions,
 };
