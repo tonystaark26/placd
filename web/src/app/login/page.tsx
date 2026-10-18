@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { EMAIL_SIGN_IN } from "@/lib/features";
 import { EmailForm } from "./EmailForm";
 
 export const metadata: Metadata = { title: "Sign in with email · PLACED" };
 
 export default function Login() {
+  if (!EMAIL_SIGN_IN) redirect("/"); // off for the pilot: see lib/features.ts
   return (
     <main className="mx-auto w-full max-w-md px-6 pb-12 pt-8">
       <Link href="/" className="font-sans text-[13px] font-medium text-coffee">

@@ -3,6 +3,7 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { getAccount } from "@/lib/account";
+import { EMAIL_SIGN_IN } from "@/lib/features";
 import { createClient } from "@/lib/supabase/server";
 
 async function siteOrigin() {
@@ -36,6 +37,7 @@ export async function tryAsGuest(formData?: FormData) {
 export type EmailState = { status: "idle" | "sent" | "error"; message?: string; email?: string };
 
 export async function sendSignInLink(_prev: EmailState, formData: FormData): Promise<EmailState> {
+  if (!EMAIL_SIGN_IN) return { status: "error", message: "Email sign-in is coming soon. Please use Google for now." };
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return { status: "error", message: "That doesn't look like an email address.", email };

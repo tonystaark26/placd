@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { continueWithGoogle, tryAsGuest } from "@/app/actions/auth";
 import { SubmitButton } from "@/components/SubmitButton";
 import { getAccount, homeFor } from "@/lib/account";
+import { EMAIL_SIGN_IN } from "@/lib/features";
 import { getBrief, todaysPick } from "@/lib/news";
 import { istToday } from "@/lib/quiz";
 
@@ -155,12 +156,14 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
           </SubmitButton>
         </form>
 
-        <Link
-          href="/login"
-          className="flex h-12 w-full items-center justify-center rounded-[10px] bg-coffee font-sans text-[15px] font-semibold text-cream"
-        >
-          Sign up with email
-        </Link>
+        {EMAIL_SIGN_IN && (
+          <Link
+            href="/login"
+            className="flex h-12 w-full items-center justify-center rounded-[10px] bg-coffee font-sans text-[15px] font-semibold text-cream"
+          >
+            Sign up with email
+          </Link>
+        )}
 
         <form action={tryAsGuest}>
           <SubmitButton variant="text" pendingText="Starting…">
