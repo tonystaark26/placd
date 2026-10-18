@@ -7,8 +7,10 @@
 // Safe to run again: stories with the same slug are updated, not duplicated
 // (an already-approved story keeps its approval).
 //
-// "Today's pick": mark ONE story with "featured": true plus a "teaser_title" and "teaser"
-// written in story language. It appears on the Study Desk and the welcome page.
+// Teasers: EVERY story needs a "teaser_title" (the hook) and "teaser" (2–3 sentences) written in
+// story language, true to the story. Mark ONE story "featured": true as the suggested pick; the
+// admin can pick another on the approval page and its hook is already there. The pick appears
+// on the Study Desk and the welcome page.
 // Re-running never overrides a pick or teaser you changed on the approval page.
 //
 // THE 24-HOUR RULE: Chai & Charts is today's news only. Every story needs "published": the time
@@ -47,7 +49,9 @@ for (const s of stories) {
   if (!s.slug?.startsWith(day)) problems.push(`${s.slug}: slug must start with ${day}`);
   if (!/^https:\/\//.test(s.source_url)) problems.push(`${s.slug}: source_url must be https`);
   for (const k of ["headline", "summary", "source_name"]) if (!s[k]) problems.push(`${s.slug}: missing ${k}`);
-  if (s.featured && !(s.teaser_title && s.teaser)) problems.push(`${s.slug}: a featured story needs teaser_title and teaser`);
+  // Every story gets a ready-made hook, so whichever one the admin picks, its teaser is already written
+  if (!(s.teaser_title && s.teaser)) problems.push(`${s.slug}: every story needs teaser_title and teaser`);
+  if ((s.teaser_title ?? "").length > 120) problems.push(`${s.slug}: teaser_title is over 120 characters`);
 }
 if (stories.filter((s) => s.featured).length > 1) problems.push("Only one story per day can be featured");
 if (problems.length) {

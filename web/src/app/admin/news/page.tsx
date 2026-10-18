@@ -99,14 +99,23 @@ async function ApprovalList() {
 // Today's pick: the one story told as a story on the Study Desk and the welcome page
 function TodaysPick({ story }: { story: Story }) {
   if (!story.featured) {
+    // Every story arrives with its hook already written, so picking is one tap
     return (
-      <form action={featureStory} className="mt-3">
-        <input type="hidden" name="id" value={story.id} />
-        <input type="hidden" name="day" value={story.publish_date} />
-        <button className="h-9 rounded-full border border-coffee px-4 font-sans text-[12px] font-semibold text-coffee">
-          ☕ Make today&apos;s pick
-        </button>
-      </form>
+      <div className="mt-3 rounded-[10px] border border-line px-3.5 py-3">
+        {story.teaser_title && (
+          <p className="text-[14px] leading-snug">
+            <span className="font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-mocha-2">Hook ready · </span>
+            {story.teaser_title}
+          </p>
+        )}
+        <form action={featureStory} className="mt-2.5">
+          <input type="hidden" name="id" value={story.id} />
+          <input type="hidden" name="day" value={story.publish_date} />
+          <button className="h-9 rounded-full border border-coffee px-4 font-sans text-[12px] font-semibold text-coffee">
+            ☕ Make today&apos;s pick
+          </button>
+        </form>
+      </div>
     );
   }
   return (
@@ -121,7 +130,7 @@ function TodaysPick({ story }: { story: Story }) {
       <form action={saveTeaser} className="mt-3 space-y-2.5 font-sans">
         <input type="hidden" name="id" value={story.id} />
         <label className="block text-[12px] font-semibold text-mocha">
-          Hook line
+          Hook line (written for you)
           <input
             name="teaser_title"
             defaultValue={story.teaser_title ?? ""}
@@ -131,7 +140,7 @@ function TodaysPick({ story }: { story: Story }) {
           />
         </label>
         <label className="block text-[12px] font-semibold text-mocha">
-          Teaser (2–3 sentences, true to the story)
+          Teaser (written for you; edit only if you want)
           <textarea
             name="teaser"
             defaultValue={story.teaser ?? ""}

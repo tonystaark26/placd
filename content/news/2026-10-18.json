@@ -9,7 +9,9 @@
     "concept_note": "Each attack makes it harder to move oil, so less is supplied at every price: the supply curve shifts left, and the price rises even though demand hasn't changed.",
     "source_name": "AFP via Daily Tribune (also reported by Reuters)",
     "source_url": "https://tribune.net.ph/2026/10/17/oil-tanker-on-fire-after-hitting-mine-in-hormuz",
-    "card": "econ-08"
+    "card": "econ-08",
+    "teaser_title": "Iran says two tankers just hit mines in the world’s most important oil lane. Here’s why India is watching.",
+    "teaser": "The tankers, each said to carry around 2 million barrels, caught fire in the Strait of Hormuz, a route only about 30 km wide at its narrowest. It carries a fifth of the world’s oil, and India imports most of what it uses. One simple economics idea shows why every attack there pushes prices up."
   },
   {
     "slug": "2026-10-18-imfc-bangkok",
@@ -21,7 +23,9 @@
     "concept_note": "These are macro-environment forces (PESTLE): political (wars), economic (debt, energy prices) and technological (AI). No single company controls them, yet every company's plans depend on them.",
     "source_name": "ThePrint (Reuters)",
     "source_url": "https://theprint.in/world/imfc-chair-says-global-economy-resilient-delegates-walk-out-on-russian-official/3074600/",
-    "card": "mkt-05"
+    "card": "mkt-05",
+    "teaser_title": "The world’s finance chiefs met in Bangkok, and nearly half walked out of one speech.",
+    "teaser": "The IMF says the global economy is “remarkably resilient”, yet warns of wars, high debt and fast-moving AI. Behind that one sentence are the forces every company has to plan around, and the framework interviewers expect you to name."
   },
   {
     "slug": "2026-10-18-jio-ipo",
@@ -33,7 +37,9 @@
     "concept_note": "Building towers and buying spectrum is capital expenditure: it creates assets that earn for years. As that spending falls as a share of revenue, more cash is left over, which is one reason analysts like the issue.",
     "source_name": "LatestLY (ANI)",
     "source_url": "https://www.latestly.com/agency-news/business-news-brokerages-back-jio-platforms-ipo-cite-strong-earnings-growth-cash-flows-and-digital-expansion-7648993.html",
-    "card": "acct-18"
+    "card": "acct-18",
+    "teaser_title": "₹30,213 crore in three days: Jio is going public, and brokerages say subscribe.",
+    "teaser": "Jio Platforms opens its IPO on Wednesday at ₹1,065–1,119 a share. Analysts keep pointing to one number: its spending on towers and spectrum fell from nearly half its revenue to under a quarter in two years. Here’s why that single shift matters."
   },
   {
     "slug": "2026-10-18-durga-puja-two-economies",
@@ -60,6 +66,8 @@
     "concept_note": "Each figure has a home in the statements: net interest income and profit in the profit and loss statement; deposits (what the bank owes) and loans (what it is owed) in the balance sheet.",
     "source_name": "Business Standard",
     "source_url": "https://www.business-standard.com/companies/quarterly-results/hdfc-bank-q2fy27-result-net-profit-rises-4-7-to-19-510-cr-nii-up-9-7-126101700465_1.html",
-    "card": "acct-10"
+    "card": "acct-10",
+    "teaser_title": "India’s biggest private bank earned ₹19,510 crore in three months, yet its profit grew only 4.7%.",
+    "teaser": "HDFC Bank’s deposits and loans grew 16–19%, and bad loans fell. So why did profit barely move? The answer hides in one line of its statements, and it’s exactly the kind of question a bank interviewer asks."
   }
 ]
