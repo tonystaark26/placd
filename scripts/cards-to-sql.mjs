@@ -131,7 +131,7 @@ const rows = cards.map((c) => `(
 )`);
 
 const sql = `-- =====================================================================
--- PLACED concept cards: ${cards.length} cards
+-- ChaiCase concept cards: ${cards.length} cards
 -- Made automatically by scripts/cards-to-sql.mjs from the files in content/.
 -- Don't edit this file by hand: edit the card files, then run the script again.
 --

@@ -15,7 +15,7 @@ const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
 });
 
-// Only for the PLACED wordmark on the welcome page: Bookman where installed (Windows),
+// Only for the ChaiCase wordmark on the welcome page: Bookman where installed (Windows),
 // Libre Baskerville (a free, similar serif) on phones
 const baskerville = Libre_Baskerville({
   variable: "--font-baskerville",
@@ -24,7 +24,7 @@ const baskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "PLACED: crack your placement interview",
+  title: "ChaiCase: crack your placement interview",
   description:
     "Ten minutes a day: business news explained simply, the MBA concept behind it, and a quick quiz.",
 };

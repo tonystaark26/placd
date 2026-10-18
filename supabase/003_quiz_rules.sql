@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED database, version 3: daily quiz, streaks and XP
+-- ChaiCase database, version 3: daily quiz, streaks and XP
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Safe to run again after edits.
 --
 -- The big idea: scoring happens INSIDE the database, never in the browser.

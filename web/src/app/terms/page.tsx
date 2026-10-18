@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPage, Mail, Section } from "@/components/LegalPage";
 
-export const metadata: Metadata = { title: "Terms of Use · PLACED" };
+export const metadata: Metadata = { title: "Terms of Use · ChaiCase" };
 
 export default function Terms() {
   return (
     <LegalPage
       title="Terms of Use"
-      intro="These are the simple rules for using PLACED. By creating an account or using the app as a guest, you agree to them."
+      intro="These are the simple rules for using ChaiCase. By creating an account or using the app as a guest, you agree to them."
     >
-      <Section title="What PLACED is">
+      <Section title="What ChaiCase is">
         <p>
-          PLACED helps MBA students revise core concepts and follow business news to prepare for placement interviews.
+          ChaiCase helps MBA students revise core concepts and follow business news to prepare for placement interviews.
           It is a study aid.
         </p>
         <p>
@@ -45,14 +45,14 @@ export default function Terms() {
 
       <Section title="Our content">
         <p>
-          The concept cards, summaries, pictures and quizzes are written by the PLACED team. You&apos;re welcome to use
+          The concept cards, summaries, pictures and quizzes are written by the ChaiCase team. You&apos;re welcome to use
           them for your own studies. News summaries are written in our own words and link to the original source.
         </p>
       </Section>
 
       <Section title="Price">
         <p>
-          PLACED is free for early members. If we ever introduce paid plans, we&apos;ll give at least one month&apos;s
+          ChaiCase is free for early members. If we ever introduce paid plans, we&apos;ll give at least one month&apos;s
           notice in the app first, and you&apos;ll never be charged without choosing to pay.
         </p>
       </Section>
@@ -63,7 +63,7 @@ export default function Terms() {
           a way that matters, we&apos;ll tell you in the app first.
         </p>
         <p>
-          To the extent the law allows, PLACED is provided &ldquo;as is&rdquo;, and we aren&apos;t liable for losses
+          To the extent the law allows, ChaiCase is provided &ldquo;as is&rdquo;, and we aren&apos;t liable for losses
           from using it.
         </p>
       </Section>

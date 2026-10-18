@@ -7,7 +7,7 @@ import { getCardList } from "@/lib/cards";
 import { getBrief, LANES, prettyDate, todaysPick } from "@/lib/news";
 import { istToday } from "@/lib/quiz";
 
-export const metadata: Metadata = { title: "Chai & Charts · PLACED" };
+export const metadata: Metadata = { title: "Chai & Charts · ChaiCase" };
 
 async function Brief() {
   await connection(); // "today" depends on when the student opens the page

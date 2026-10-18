@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/cards/[id]">): Promise<Metadata> {
   const card = await getCard((await params).id);
-  return { title: card ? `${card.title} · PLACED` : "Card not found · PLACED" };
+  return { title: card ? `${card.title} · ChaiCase` : "Card not found · ChaiCase" };
 }
 
 const QUIZ_LABELS = { concept: "Concept", application: "Application", case: "Mini case" };

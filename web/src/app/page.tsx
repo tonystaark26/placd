@@ -67,7 +67,7 @@ async function TodaysStory() {
   if (!pick) return null;
   return (
     <section className="rounded-[12px] bg-coffee px-5 py-5 text-cream">
-      <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">☕ Today on PLACED</p>
+      <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">☕ Today on ChaiCase</p>
       <h2 className="mt-3 font-serif text-[23px] leading-tight">{pick.teaser_title}</h2>
       <p className="mt-2.5 text-[14px] leading-relaxed text-cream/90">{pick.teaser}</p>
       <form action={tryAsGuest} className="mt-4">
@@ -88,9 +88,9 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
       </Suspense>
 
       <div className="flex flex-col gap-9">
-        {/* The PLACED wordmark: bold serif, centred, with a coffee rule underneath */}
+        {/* The ChaiCase wordmark: bold serif, centred, with a coffee rule underneath */}
         <div className="flex flex-col items-center">
-          <span className="pl-[0.18em] font-bookman text-[44px] font-bold leading-none tracking-[0.18em] text-espresso">PLACED</span>
+          <span className="font-bookman text-[46px] font-bold leading-none tracking-[0.01em] text-espresso">ChaiCase</span>
           <span className="mt-3 flex items-center gap-2" aria-hidden="true">
             <span className="h-px w-10 bg-coffee" />
             <span className="h-2 w-2 rotate-45 bg-coffee" />
@@ -114,7 +114,7 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
         </Suspense>
 
         <section className="rounded-[12px] border border-crema-line bg-latte px-5 py-5">
-          {/* Same Bookman serif as the PLACED wordmark, so the two feel like one family */}
+          {/* Same Bookman serif as the ChaiCase wordmark, so the two feel like one family */}
           <h2 className="pl-[3px] text-center font-serif text-[11px] uppercase tracking-[3px] text-coffee">
             The Blueprint
           </h2>

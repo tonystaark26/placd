@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED database, version 7: when each news story was published
+-- ChaiCase database, version 7: when each news story was published
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Safe to run again.
 --
 -- Chai & Charts is today's news only. Each story records when its source

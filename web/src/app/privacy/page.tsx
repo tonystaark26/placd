@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { LegalPage, Mail, Section } from "@/components/LegalPage";
 
-export const metadata: Metadata = { title: "Privacy Policy · PLACED" };
+export const metadata: Metadata = { title: "Privacy Policy · ChaiCase" };
 
 export default function Privacy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      intro="PLACED is a free study app built by MBA students in Kolkata to help students prepare for placement interviews. This page explains, in plain language, what information we keep, why, and how you can see or delete it."
+      intro="ChaiCase is a free study app built by MBA students in Kolkata to help students prepare for placement interviews. This page explains, in plain language, what information we keep, why, and how you can see or delete it."
     >
       <Section title="What we collect">
         <ul>
@@ -53,7 +53,7 @@ export default function Privacy() {
       </Section>
 
       <Section title="Who helps us run the app">
-        <p>We use a few trusted services that process data only to run PLACED for us:</p>
+        <p>We use a few trusted services that process data only to run ChaiCase for us:</p>
         <ul>
           <li>
             <strong>Supabase</strong>: our database and sign-in system. Your data is stored on servers in Mumbai,
@@ -91,8 +91,8 @@ export default function Privacy() {
         </p>
       </Section>
 
-      <Section title="Who can use PLACED">
-        <p>PLACED is meant for college students aged 18 and over.</p>
+      <Section title="Who can use ChaiCase">
+        <p>ChaiCase is meant for college students aged 18 and over.</p>
       </Section>
 
       <Section title="Changes to this policy">

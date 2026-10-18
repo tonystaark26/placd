@@ -6,7 +6,7 @@ import { getAccount } from "@/lib/account";
 import { getDailyQuiz } from "@/lib/quiz";
 import { QuizRunner } from "./QuizRunner";
 
-export const metadata: Metadata = { title: "Today's quiz · PLACED" };
+export const metadata: Metadata = { title: "Today's quiz · ChaiCase" };
 
 async function TodaysQuiz() {
   const account = await getAccount();

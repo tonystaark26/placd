@@ -41,7 +41,7 @@ const rows = questions.map(
 );
 
 const sql = `-- =====================================================================
--- PLACED quiz questions: ${questions.length} questions
+-- ChaiCase quiz questions: ${questions.length} questions
 -- Made automatically by scripts/quiz-to-sql.mjs from content/quiz/questions.json.
 -- Don't edit this file by hand: edit the JSON, then run the script again.
 --

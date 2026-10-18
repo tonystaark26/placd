@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED database, version 6: "today's pick", one story told as a story
+-- ChaiCase database, version 6: "today's pick", one story told as a story
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Safe to run again.
 --
 -- Each day, one story can be FEATURED. It gets a short teaser in story language

@@ -80,7 +80,7 @@ const rows = stories.map(
 const slugs = stories.map((s) => t(s.slug)).join(", ");
 
 const sql = `-- =====================================================================
--- PLACED news brief for ${day}: ${stories.length} stories (as DRAFTS)
+-- ChaiCase news brief for ${day}: ${stories.length} stories (as DRAFTS)
 -- Made by scripts/news-to-sql.mjs from content/news/${day}.json.
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Then approve in the app.
 -- Every story was published between ${prevDay} 7 AM and ${day} (India time).

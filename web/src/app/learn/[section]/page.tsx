@@ -19,7 +19,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/learn/[section]">): Promise<Metadata> {
   const { section: id } = await params;
   const section = SECTIONS.find((s) => s.id === id);
-  return { title: section ? `${section.name} · PLACED` : "PLACED" };
+  return { title: section ? `${section.name} · ChaiCase` : "ChaiCase" };
 }
 
 export default function SectionPage({ params }: PageProps<"/learn/[section]">) {

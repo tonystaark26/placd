@@ -8,7 +8,7 @@ export function LegalPage({ title, intro, children }: { title: string; intro: st
   return (
     <main className="mx-auto w-full max-w-2xl px-6 pb-16 pt-8">
       <Link href="/" className="font-sans text-[13px] font-medium text-coffee">
-        ← PLACED
+        ← ChaiCase
       </Link>
       <h1 className="mt-8 text-[30px] leading-snug">{title}</h1>
       <p className="mt-2 font-sans text-[12px] text-mocha-2">Last updated: {LAST_UPDATED}</p>

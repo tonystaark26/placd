@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED news brief for 2026-10-18: 10 stories (as DRAFTS)
+-- ChaiCase news brief for 2026-10-18: 10 stories (as DRAFTS)
 -- Made by scripts/news-to-sql.mjs from content/news/2026-10-18.json.
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Then approve in the app.
 -- Every story was published between 2026-10-17 7 AM and 2026-10-18 (India time).

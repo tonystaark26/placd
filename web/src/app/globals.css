@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* PLACED "Café" design system: see design/DESIGN_SYSTEM.md */
+/* ChaiCase "Café" design system: see design/DESIGN_SYSTEM.md */
 @theme inline {
   --color-bg: #e9e6e1;        /* warm grey background */
   --color-foam: #f5f3ef;      /* cards, panels */
@@ -21,7 +21,7 @@
   /* Font pairing (like wahresume.com): DM Serif Display for headlines, Sora for everything else */
   --font-serif: var(--font-dm-serif), Georgia, serif;
   --font-sans: var(--font-sora), system-ui, sans-serif;
-  /* Only the PLACED wordmark on the welcome page */
+  /* Only the ChaiCase wordmark on the welcome page */
   --font-bookman: "Bookman Old Style", "Bookman", "URW Bookman", var(--font-baskerville), Georgia, serif;
 }
 

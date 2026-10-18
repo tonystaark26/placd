@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED database, version 5: the daily news brief and the admin role
+-- ChaiCase database, version 5: the daily news brief and the admin role
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Safe to run again.
 --
 -- Students only ever see APPROVED stories. Admins (you) can see drafts,

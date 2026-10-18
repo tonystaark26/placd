@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED database, version 8: rank each day's stories by news value
+-- ChaiCase database, version 8: rank each day's stories by news value
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Safe to run again.
 --
 -- Chai & Charts carries at least 10 stories a day. Each gets a rank (1 = the

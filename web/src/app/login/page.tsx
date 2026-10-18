@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { EMAIL_SIGN_IN } from "@/lib/features";
 import { EmailForm } from "./EmailForm";
 
-export const metadata: Metadata = { title: "Sign in with email · PLACED" };
+export const metadata: Metadata = { title: "Sign in with email · ChaiCase" };
 
 export default function Login() {
   if (!EMAIL_SIGN_IN) redirect("/"); // off for the pilot: see lib/features.ts

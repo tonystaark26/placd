@@ -17,7 +17,7 @@ import { getCardList } from "@/lib/cards";
 import { LANES, prettyDate, STORY_COLUMNS, type Story } from "@/lib/news";
 import { createClient } from "@/lib/supabase/server";
 
-export const metadata: Metadata = { title: "Approve news · PLACED" };
+export const metadata: Metadata = { title: "Approve news · ChaiCase" };
 
 async function ApprovalList() {
   const account = await getAccount();

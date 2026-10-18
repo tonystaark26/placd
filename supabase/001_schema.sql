@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED database, version 1
+-- ChaiCase database, version 1
 -- Run this ONCE in Supabase: Dashboard → SQL Editor → New query → paste → Run.
 --
 -- Think of each "table" as an Excel sheet: columns are fields, rows are records.

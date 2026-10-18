@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED quiz questions: 138 questions
+-- ChaiCase quiz questions: 138 questions
 -- Made automatically by scripts/quiz-to-sql.mjs from content/quiz/questions.json.
 -- Don't edit this file by hand: edit the JSON, then run the script again.
 --

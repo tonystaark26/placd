@@ -1,5 +1,5 @@
 -- =====================================================================
--- PLACED concept cards: 46 cards
+-- ChaiCase concept cards: 46 cards
 -- Made automatically by scripts/cards-to-sql.mjs from the files in content/.
 -- Don't edit this file by hand: edit the card files, then run the script again.
 --

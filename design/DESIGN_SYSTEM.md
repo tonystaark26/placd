@@ -1,4 +1,4 @@
-# PLACED Design System: "Café"
+# ChaiCase Design System: "Café"
 
 Chosen 17 Oct 2026. History: clean minimal (too plain) → bright & playful (too loud,
 text too big) → black & gold (layout and fonts kept) → **café colours**.
@@ -53,7 +53,7 @@ with IBM Plex Sans). Both fonts are free Google fonts, loaded through Next.js.
 | Welcome headline | 32 px serif |
 | Screen title | 30 px serif (card titles, login, onboarding: 27 px) |
 | Teaser headline | 23 px serif |
-| PLACED wordmark | 40 px / 800 Sora, letter-spaced |
+| ChaiCase wordmark | 46 px / 700 Bookman (Libre Baskerville on phones); 15 px in the app header |
 | Score / big number | 40 px / 700 Sora |
 | Headline | 16–17 px / 700 Sora |
 | Body | 15 px / 400 Sora, line height 1.6 |

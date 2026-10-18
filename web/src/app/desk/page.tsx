@@ -6,7 +6,7 @@ import { BriefLink } from "@/components/BriefLink";
 import { TodayCard } from "@/components/TodayCard";
 import { SECTIONS } from "@/lib/cards";
 
-export const metadata: Metadata = { title: "Study Desk · PLACED" };
+export const metadata: Metadata = { title: "Study Desk · ChaiCase" };
 
 function MarketingIcon() {
   return (

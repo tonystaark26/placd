@@ -1,6 +1,6 @@
-# PLACED: Product Plan
+# ChaiCase: Product Plan
 
-> Working name. A daily app that gets MBA students placement-ready by linking
+> Name changed from PLACED to ChaiCase on 18 Oct 2026 (another app already uses PLACED on the Play Store). A daily app that gets MBA students placement-ready by linking
 > first-year concepts to today's business news, then testing them on both.
 
 Last updated: 16 Oct 2026
