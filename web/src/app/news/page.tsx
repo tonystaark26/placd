@@ -14,6 +14,9 @@ async function Brief() {
   const [{ date, stories }, cards] = await Promise.all([getBrief(istToday()), getCardList()]);
   const titles = new Map(cards.map((c) => [c.id, c.title]));
   const pick = todaysPick(stories);
+  const top = stories.slice(0, 3); // already in order of news value
+  const rest = stories.slice(3);
+  const laneName = (id: string) => LANES.find((l) => l.id === id)?.name ?? id;
 
   if (!date || stories.length === 0) {
     return (
@@ -29,17 +32,36 @@ async function Brief() {
         {prettyDate(date)} · {stories.length} {stories.length === 1 ? "story" : "stories"}
       </p>
 
-      {/* jump links to each lane */}
+      {/* jump links: the day's top stories, then each lane that has more */}
       <nav className="mt-4 flex flex-wrap gap-2 font-sans text-[12px]">
-        {LANES.filter((l) => stories.some((s) => s.lane === l.id)).map((l) => (
+        <a href="#top" className="rounded-full bg-coffee px-3 py-1.5 font-semibold text-cream">
+          Top stories
+        </a>
+        {LANES.filter((l) => rest.some((s) => s.lane === l.id)).map((l) => (
           <a key={l.id} href={`#${l.id}`} className="rounded-full border border-crema-line bg-latte px-3 py-1.5 font-semibold text-coffee">
             {l.name}
           </a>
         ))}
       </nav>
 
+      {/* Stories arrive ranked by that day's news value, so the biggest ones lead */}
+      <section id="top" className="mt-8 scroll-mt-4">
+        <h2 className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-coffee">Top stories today</h2>
+        <div className="mt-3 space-y-3">
+          {top.map((s) => (
+            <StoryCard
+              key={s.id}
+              story={s}
+              pick={s.id === pick?.id}
+              lane={laneName(s.lane)}
+              cardTitle={s.card_id ? titles.get(s.card_id) : undefined}
+            />
+          ))}
+        </div>
+      </section>
+
       {LANES.map((lane) => {
-        const list = stories.filter((s) => s.lane === lane.id);
+        const list = rest.filter((s) => s.lane === lane.id);
         if (list.length === 0) return null;
         return (
           <section key={lane.id} id={lane.id} className="mt-8 scroll-mt-4">

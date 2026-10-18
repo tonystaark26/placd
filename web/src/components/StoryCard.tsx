@@ -6,11 +6,13 @@ export function StoryCard({
   story,
   cardTitle,
   pick = false,
+  lane,
   children,
 }: {
   story: Story;
   cardTitle?: string;
   pick?: boolean; // today's featured story: gets a badge and a coffee border
+  lane?: string; // shown next to the tag in "Top stories", where lanes are mixed
   children?: React.ReactNode;
 }) {
   return (
@@ -25,7 +27,9 @@ export function StoryCard({
       )}
       {(story.tag || story.published_at) && (
         <p className="flex items-baseline justify-between gap-3 font-sans text-[11px]">
-          <span className="font-semibold uppercase tracking-[1.5px] text-coffee">{story.tag}</span>
+          <span className="font-semibold uppercase tracking-[1.5px] text-coffee">
+            {lane && story.tag ? `${lane} · ${story.tag}` : (lane ?? story.tag)}
+          </span>
           {story.published_at && <span className="text-mocha-2">{publishedTime(story.published_at, story.publish_date)}</span>}
         </p>
       )}

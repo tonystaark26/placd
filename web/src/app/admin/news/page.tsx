@@ -28,7 +28,7 @@ async function ApprovalList() {
   if (!isAdmin) notFound(); // students never learn this page exists
 
   const [{ data }, cards] = await Promise.all([
-    supabase.from("news_stories").select(STORY_COLUMNS).order("publish_date", { ascending: false }).order("id").limit(60),
+    supabase.from("news_stories").select(STORY_COLUMNS).order("publish_date", { ascending: false }).order("rank", { ascending: true, nullsFirst: false }).order("id").limit(60),
     getCardList(),
   ]);
   const stories = (data ?? []) as Story[];

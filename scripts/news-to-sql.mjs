@@ -19,6 +19,9 @@
 // (Concept cards can use older news and historic cases; this rule is only for the daily brief.)
 //
 // The file is the whole day: stories of this day that are no longer in the file are removed.
+//
+// AT LEAST 10 STORIES, RANKED: every story needs a "rank" by that day's news value (1 = the most
+// important). Ranks must be 1, 2, 3… with no gaps. The lane split isn't fixed; it follows the news.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
@@ -54,6 +57,9 @@ for (const s of stories) {
   if ((s.teaser_title ?? "").length > 120) problems.push(`${s.slug}: teaser_title is over 120 characters`);
 }
 if (stories.filter((s) => s.featured).length > 1) problems.push("Only one story per day can be featured");
+if (stories.length < 10) problems.push(`Only ${stories.length} stories: the brief needs at least 10`);
+const ranks = stories.map((s) => s.rank).sort((a, b) => a - b);
+if (ranks.some((r, i) => r !== i + 1)) problems.push(`Ranks must be 1 to ${stories.length} with no gaps or repeats (got ${ranks.join(", ")})`);
 if (problems.length) {
   console.error(problems.join("\n"));
   process.exit(1);
@@ -69,7 +75,7 @@ const rows = stories.map(
   (s) =>
     `(${t(s.slug)}, '${day}', ${t(s.lane)}, ${t(s.tag)},\n  ${t(s.headline)},\n  ${t(s.summary)},\n  ${t(s.concept_note)},\n  ${t(s.source_name)}, ${t(s.source_url)}, ${t(s.card)}, 'draft',
   ${t(s.teaser_title)},
-  ${t(s.teaser)}, ${s.featured ? "true" : "false"}, ${t(s.published)})`,
+  ${t(s.teaser)}, ${s.featured ? "true" : "false"}, ${t(s.published)}, ${Number(s.rank)})`,
 );
 const slugs = stories.map((s) => t(s.slug)).join(", ");
 
@@ -83,14 +89,14 @@ const sql = `-- ================================================================
 -- This file is the whole day: remove the day's stories that are no longer in it
 delete from news_stories where publish_date = '${day}' and (slug is null or slug not in (${slugs}));
 
-insert into news_stories (slug, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured, published_at)
+insert into news_stories (slug, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured, published_at, rank)
 values
 ${rows.join(",\n")}
 on conflict (slug) do update set
   publish_date = excluded.publish_date, lane = excluded.lane, tag = excluded.tag,
   headline = excluded.headline, summary = excluded.summary, concept_note = excluded.concept_note,
   source_name = excluded.source_name, source_url = excluded.source_url, card_id = excluded.card_id,
-  published_at = excluded.published_at,
+  published_at = excluded.published_at, rank = excluded.rank,
   -- the pick and teaser only fill in blanks, so changes made on the approval page are kept
   teaser_title = coalesce(news_stories.teaser_title, excluded.teaser_title),
   teaser = coalesce(news_stories.teaser, excluded.teaser),
@@ -101,6 +107,9 @@ on conflict (slug) do update set
 select lane, count(*) as stories, count(*) filter (where status = 'approved') as approved,
   count(*) filter (where featured) as todays_pick
 from news_stories where publish_date = '${day}' group by lane order by lane;
+
+-- Check: the day's running order
+select rank, lane, headline, status, featured from news_stories where publish_date = '${day}' order by rank;
 `;
 
 mkdirSync("supabase/news", { recursive: true });

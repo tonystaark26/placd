@@ -28,10 +28,11 @@ export type Story = {
   teaser: string | null;
   featured: boolean;
   published_at: string | null; // when the source published it (always within the last 24 hours)
+  rank: number | null; // news value that day: 1 = the most important story
 };
 
 const COLUMNS =
-  "id, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured, published_at";
+  "id, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured, published_at, rank";
 
 function db() {
   return createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
@@ -47,7 +48,9 @@ export async function getBrief(today: string): Promise<{ date: string | null; st
   "use cache";
   cacheTag("news");
   cacheLife("minutes");
-  const { data, error } = await db().from("news_stories").select(COLUMNS).eq("publish_date", today).order("id");
+  const { data, error } = await db().from("news_stories").select(COLUMNS).eq("publish_date", today)
+    .order("rank", { ascending: true, nullsFirst: false })
+    .order("id");
   if (error) throw new Error(`Could not load the news: ${error.message}`);
   const stories = (data ?? []) as Story[];
   return { date: stories.length ? today : null, stories };
