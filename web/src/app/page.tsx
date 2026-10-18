@@ -89,7 +89,7 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
       <div className="flex flex-col gap-9">
         {/* The PLACED wordmark: bold serif, centred, with a coffee rule underneath */}
         <div className="flex flex-col items-center">
-          <span className="pl-[0.18em] text-[40px] font-extrabold leading-none tracking-[0.18em] text-espresso">PLACED</span>
+          <span className="pl-[0.18em] font-bookman text-[44px] font-bold leading-none tracking-[0.18em] text-espresso">PLACED</span>
           <span className="mt-3 flex items-center gap-2" aria-hidden="true">
             <span className="h-px w-10 bg-coffee" />
             <span className="h-2 w-2 rotate-45 bg-coffee" />
