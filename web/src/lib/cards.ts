@@ -27,10 +27,10 @@ export type Card = {
 export type CardSummary = Pick<Card, "id" | "subject_id" | "num" | "title" | "one_line" | "status">;
 
 export const SUBJECT_NAMES: Record<string, string> = {
-  econ: "Managerial Economics",
+  econ: "Economics",
   fin: "Finance",
   mkt: "Marketing",
-  acct: "Cost & Financial Accounting",
+  acct: "Accounting",
 };
 
 /** The two big areas on the Study Desk. Every subject belongs to one of them. */

@@ -141,8 +141,8 @@ const sql = `-- ================================================================
 
 -- Subjects (new ones are added; existing ones are left alone)
 insert into subjects (id, name, sort) values
-  ('econ', 'Managerial Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
-  ('acct', 'Cost & Financial Accounting', 4)
+  ('econ', 'Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
+  ('acct', 'Accounting', 4)
 on conflict (id) do nothing;
 
 -- Two parts of each card that the first version of the table didn't have room for
