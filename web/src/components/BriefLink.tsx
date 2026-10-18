@@ -3,7 +3,7 @@ import { connection } from "next/server";
 import { getBrief, LANES } from "@/lib/news";
 import { istToday } from "@/lib/quiz";
 
-// "Today's brief" at the top of the Study Desk, with a peek at the first headlines
+// "Chai & Charts" (the daily news) at the top of the Study Desk, with a peek at the first headlines
 export async function BriefLink() {
   await connection();
   const today = istToday();
@@ -15,13 +15,13 @@ export async function BriefLink() {
     <Link href="/news" className="mt-6 block rounded-[12px] bg-coffee px-4 pb-4 pt-4 text-cream active:opacity-95">
       <span className="flex items-baseline justify-between gap-3">
         <span className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">
-          {fresh || stories.length === 0 ? "Today's brief" : "Latest brief"}
+          ☕ Chai &amp; Charts{fresh || stories.length === 0 ? " · today" : " · latest"}
         </span>
         {stories.length > 0 && <span className="font-sans text-[11px] text-crema">5 min read</span>}
       </span>
 
       {stories.length === 0 ? (
-        <span className="mt-2 block text-[17px] font-bold leading-snug">Today&apos;s news is being prepared. Check back soon.</span>
+        <span className="mt-2 block text-[17px] font-bold leading-snug">Today&apos;s Chai &amp; Charts is still brewing. Check back soon.</span>
       ) : (
         <>
           <span className="mt-2 block text-[17px] font-bold leading-snug">The news, minus the jargon, and why it matters for your interview</span>
@@ -36,7 +36,7 @@ export async function BriefLink() {
             ))}
           </span>
           <span className="mt-3 flex h-11 items-center justify-center rounded-[10px] bg-cream font-sans text-[15px] font-semibold text-coffee">
-            Read today&apos;s brief →
+            Grab your chai and read →
           </span>
         </>
       )}

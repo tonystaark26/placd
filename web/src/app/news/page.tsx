@@ -7,7 +7,7 @@ import { getCardList } from "@/lib/cards";
 import { getBrief, LANES, prettyDate } from "@/lib/news";
 import { istToday } from "@/lib/quiz";
 
-export const metadata: Metadata = { title: "Today's brief · PLACED" };
+export const metadata: Metadata = { title: "Chai & Charts · PLACED" };
 
 async function Brief() {
   await connection(); // "today" depends on when the student opens the page
@@ -17,7 +17,7 @@ async function Brief() {
   if (!date || stories.length === 0) {
     return (
       <p className="mt-6 rounded-[10px] border border-line bg-foam px-4 py-5 text-[15px] text-mocha">
-        Today&apos;s brief isn&apos;t ready yet. Check back a little later.
+        Today&apos;s Chai &amp; Charts is still brewing. Check back a little later.
       </p>
     );
   }
@@ -70,8 +70,10 @@ export default function NewsPage() {
           ← Study Desk
         </Link>
       </nav>
-      <h1 className="mt-5 text-[22px] font-bold leading-snug">Today&apos;s brief</h1>
-      <p className="mt-1 text-[15px] text-mocha">The news, without the jargon, and the concept behind each story.</p>
+      <h1 className="mt-5 text-[22px] font-bold leading-snug">☕ Chai &amp; Charts</h1>
+      <p className="mt-1 text-[15px] text-mocha">
+        Today&apos;s business news over a cup of chai: no jargon, and the concept behind every story.
+      </p>
       <Suspense fallback={<div className="mt-6 h-64 animate-pulse rounded-[10px] bg-foam" />}>
         <Brief />
       </Suspense>
