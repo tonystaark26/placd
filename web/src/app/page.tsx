@@ -1,14 +1,26 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { connection } from "next/server";
 import { Suspense } from "react";
 import { continueWithGoogle, tryAsGuest } from "@/app/actions/auth";
 import { SubmitButton } from "@/components/SubmitButton";
 import { getAccount, homeFor } from "@/lib/account";
+import { getBrief, todaysPick } from "@/lib/news";
+import { istToday } from "@/lib/quiz";
 
-const promises = [
-  "Daily business news with your chai",
-  "The concept behind every story",
-  "A quiz that keeps your basics sharp",
+// Each step of the blueprint, paired with what the app does for it
+const blueprint = [
+  { goal: "Know the news.", step: "The story", detail: "What happened in the business world, explained simply." },
+  {
+    goal: "Understand business.",
+    step: "The MBA connection",
+    detail: "Connect real-world events to concepts you can use in exams and interviews.",
+  },
+  {
+    goal: "Own the interview.",
+    step: "The quick challenge",
+    detail: "Answer a few questions. Find your gaps. Make the learning stick.",
+  },
 ];
 
 const ERRORS: Record<string, string> = {
@@ -46,6 +58,27 @@ async function ErrorNote({ searchParams }: { searchParams: PageProps<"/">["searc
   );
 }
 
+// Today's pick, told as a story, to give newcomers a taste. Reading it starts a free guest session.
+async function TodaysStory() {
+  await connection(); // "today" depends on when the visitor opens the page
+  const { stories } = await getBrief(istToday());
+  const pick = todaysPick(stories);
+  if (!pick) return null;
+  return (
+    <section className="rounded-[12px] bg-coffee px-5 py-5 text-cream">
+      <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">☕ Today on PLACED</p>
+      <h2 className="mt-3 text-[20px] font-bold leading-snug">{pick.teaser_title}</h2>
+      <p className="mt-2.5 text-[14px] leading-relaxed text-cream/90">{pick.teaser}</p>
+      <form action={tryAsGuest} className="mt-4">
+        <input type="hidden" name="next" value={`/news#story-${pick.id}`} />
+        <SubmitButton variant="light" pendingText="Opening the story…">
+          Read the full story, free →
+        </SubmitButton>
+      </form>
+    </section>
+  );
+}
+
 export default function Welcome({ searchParams }: PageProps<"/">) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col justify-between px-6 pb-9 pt-16">
@@ -53,33 +86,61 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
         <SendSignedInStudentsOn />
       </Suspense>
 
-      <div className="flex flex-col gap-7">
-        <div className="flex items-center gap-2.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-coffee" aria-hidden="true" />
-          <span className="font-sans text-xs font-semibold tracking-[3px]">PLACED</span>
+      <div className="flex flex-col gap-9">
+        {/* The PLACED wordmark: bold serif, centred, with a coffee rule underneath */}
+        <div className="flex flex-col items-center">
+          <span className="pl-[0.18em] text-[44px] font-bold leading-none tracking-[0.18em] text-espresso">PLACED</span>
+          <span className="mt-3 flex items-center gap-2" aria-hidden="true">
+            <span className="h-px w-10 bg-coffee" />
+            <span className="h-2 w-2 rotate-45 bg-coffee" />
+            <span className="h-px w-10 bg-coffee" />
+          </span>
         </div>
 
-        <h1 className="text-3xl font-bold leading-snug">
-          Ten minutes a day.
+        <h1 className="text-center text-[26px] font-bold leading-snug">
+          10 Minutes here,
           <br />
-          <span className="text-coffee">Ready for any interview.</span>
+          <span className="text-coffee">1 Step Up!</span>
         </h1>
 
-        <p className="text-[15px] leading-relaxed text-mocha">
-          Today&apos;s business news, explained simply and linked to the MBA concept
-          behind it. Then a short quiz to keep your basics sharp.
+        <p className="-mt-3 text-center text-[15px] leading-relaxed text-mocha">
+          The business stories worth knowing, the MBA concepts behind them, and a quick daily quiz to keep
+          your thinking sharp.
         </p>
 
-        <ol className="border-t border-line">
-          {promises.map((text, i) => (
-            <li key={text} className="flex gap-3.5 border-b border-line py-3.5">
-              <span className="pt-0.5 font-sans text-xs font-semibold text-coffee">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="text-sm leading-normal">{text}</span>
-            </li>
-          ))}
-        </ol>
+        <Suspense fallback={null}>
+          <TodaysStory />
+        </Suspense>
+
+        <section className="rounded-[12px] border border-crema-line bg-latte px-5 py-5">
+          {/* Same Bookman serif as the PLACED wordmark, so the two feel like one family */}
+          <h2 className="pl-[3px] text-center font-serif text-[11px] font-bold uppercase tracking-[3px] text-coffee">
+            The Blueprint
+          </h2>
+          <ol className="mt-5 space-y-5">
+            {blueprint.map((b, i) => (
+              <li key={b.goal} className="flex gap-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-coffee font-sans text-[13px] font-semibold text-cream">
+                  {i + 1}
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-[18px] font-bold leading-snug">{b.goal}</span>
+                  <span className="mt-1 block text-[14px] leading-snug text-mocha">
+                    <span className="font-sans text-[12px] font-semibold uppercase tracking-[1.5px] text-coffee">
+                      {b.step}
+                    </span>
+                    <br />
+                    {b.detail}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <p className="text-center text-[16px] italic text-coffee">
+          Small daily effort. Stronger business thinking.
+        </p>
       </div>
 
       <div className="mt-10 flex flex-col gap-3">

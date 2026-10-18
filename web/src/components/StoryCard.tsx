@@ -2,9 +2,27 @@ import Link from "next/link";
 import type { Story } from "@/lib/news";
 
 // One news story: plain-language summary, the concept behind it, and the original source
-export function StoryCard({ story, cardTitle, children }: { story: Story; cardTitle?: string; children?: React.ReactNode }) {
+export function StoryCard({
+  story,
+  cardTitle,
+  pick = false,
+  children,
+}: {
+  story: Story;
+  cardTitle?: string;
+  pick?: boolean; // today's featured story: gets a badge and a coffee border
+  children?: React.ReactNode;
+}) {
   return (
-    <article className="rounded-[10px] border border-line bg-foam px-4 py-4">
+    <article
+      id={`story-${story.id}`}
+      className={`scroll-mt-4 rounded-[10px] border bg-foam px-4 py-4 ${pick ? "border-coffee" : "border-line"}`}
+    >
+      {pick && (
+        <p className="mb-2 inline-block rounded-full bg-coffee px-2.5 py-0.5 font-sans text-[11px] font-semibold text-cream">
+          ☕ Today&apos;s pick
+        </p>
+      )}
       {story.tag && (
         <p className="font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-coffee">{story.tag}</p>
       )}

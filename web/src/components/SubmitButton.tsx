@@ -10,11 +10,13 @@ export function SubmitButton({
 }: {
   children: React.ReactNode;
   pendingText?: string;
-  variant?: "primary" | "outline" | "text";
+  variant?: "primary" | "outline" | "text" | "light";
 }) {
   const { pending } = useFormStatus();
   const styles = {
     primary: "h-12 w-full rounded-[10px] bg-coffee text-cream",
+    light: "h-11 w-full rounded-[10px] bg-cream text-coffee", // on a coffee background
+
     outline: "h-12 w-full rounded-[10px] border border-line bg-foam text-espresso",
     text: "h-11 w-full text-coffee underline underline-offset-4",
   }[variant];

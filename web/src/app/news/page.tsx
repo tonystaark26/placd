@@ -4,7 +4,7 @@ import { connection } from "next/server";
 import { Suspense } from "react";
 import { StoryCard } from "@/components/StoryCard";
 import { getCardList } from "@/lib/cards";
-import { getBrief, LANES, prettyDate } from "@/lib/news";
+import { getBrief, LANES, prettyDate, todaysPick } from "@/lib/news";
 import { istToday } from "@/lib/quiz";
 
 export const metadata: Metadata = { title: "Chai & Charts · PLACED" };
@@ -13,6 +13,7 @@ async function Brief() {
   await connection(); // "today" depends on when the student opens the page
   const [{ date, stories }, cards] = await Promise.all([getBrief(istToday()), getCardList()]);
   const titles = new Map(cards.map((c) => [c.id, c.title]));
+  const pick = todaysPick(stories);
 
   if (!date || stories.length === 0) {
     return (
@@ -45,7 +46,12 @@ async function Brief() {
             <h2 className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-mocha-2">{lane.name}</h2>
             <div className="mt-3 space-y-3">
               {list.map((s) => (
-                <StoryCard key={s.id} story={s} cardTitle={s.card_id ? titles.get(s.card_id) : undefined} />
+                <StoryCard
+                  key={s.id}
+                  story={s}
+                  pick={s.id === pick?.id}
+                  cardTitle={s.card_id ? titles.get(s.card_id) : undefined}
+                />
               ))}
             </div>
           </section>

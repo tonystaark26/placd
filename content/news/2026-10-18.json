@@ -8,7 +8,10 @@
     "card": "econ-08",
     "concept_note": "A supply shock: when oil can't move freely, less is supplied at every price, so the supply curve shifts left and the price jumps.",
     "source_name": "Fortune",
-    "source_url": "https://fortune.com/article/price-of-oil-10-16-2026"
+    "source_url": "https://fortune.com/article/price-of-oil-10-16-2026",
+    "featured": true,
+    "teaser_title": "A narrow strip of sea, over 3,000 km away, is making India’s fuel costlier.",
+    "teaser": "Attacks on ships near the Strait of Hormuz have pushed oil past $100 a barrel. India buys most of its oil from abroad, so the shock travels all the way here: into fuel, freight, even plastics. One simple economics idea explains the jump."
   },
   {
     "slug": "2026-10-18-imf-outlook",

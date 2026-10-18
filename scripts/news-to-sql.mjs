@@ -6,6 +6,10 @@
 // Stories go in as DRAFTS. Approve them on the app's "Approve news" page.
 // Safe to run again: stories with the same slug are updated, not duplicated
 // (an already-approved story keeps its approval).
+//
+// "Today's pick": mark ONE story with "featured": true plus a "teaser_title" and "teaser"
+// written in story language. It appears on the Study Desk and the welcome page.
+// Re-running never overrides a pick or teaser you changed on the approval page.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
@@ -25,7 +29,9 @@ for (const s of stories) {
   if (!s.slug?.startsWith(day)) problems.push(`${s.slug}: slug must start with ${day}`);
   if (!/^https:\/\//.test(s.source_url)) problems.push(`${s.slug}: source_url must be https`);
   for (const k of ["headline", "summary", "source_name"]) if (!s[k]) problems.push(`${s.slug}: missing ${k}`);
+  if (s.featured && !(s.teaser_title && s.teaser)) problems.push(`${s.slug}: a featured story needs teaser_title and teaser`);
 }
+if (stories.filter((s) => s.featured).length > 1) problems.push("Only one story per day can be featured");
 if (problems.length) {
   console.error(problems.join("\n"));
   process.exit(1);
@@ -39,7 +45,9 @@ const t = (v) => {
 
 const rows = stories.map(
   (s) =>
-    `(${t(s.slug)}, '${day}', ${t(s.lane)}, ${t(s.tag)},\n  ${t(s.headline)},\n  ${t(s.summary)},\n  ${t(s.concept_note)},\n  ${t(s.source_name)}, ${t(s.source_url)}, ${t(s.card)}, 'draft')`,
+    `(${t(s.slug)}, '${day}', ${t(s.lane)}, ${t(s.tag)},\n  ${t(s.headline)},\n  ${t(s.summary)},\n  ${t(s.concept_note)},\n  ${t(s.source_name)}, ${t(s.source_url)}, ${t(s.card)}, 'draft',
+  ${t(s.teaser_title)},
+  ${t(s.teaser)}, ${s.featured ? "true" : "false"})`,
 );
 
 const sql = `-- =====================================================================
@@ -48,16 +56,22 @@ const sql = `-- ================================================================
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Then approve in the app.
 -- =====================================================================
 
-insert into news_stories (slug, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status)
+insert into news_stories (slug, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured)
 values
 ${rows.join(",\n")}
 on conflict (slug) do update set
   publish_date = excluded.publish_date, lane = excluded.lane, tag = excluded.tag,
   headline = excluded.headline, summary = excluded.summary, concept_note = excluded.concept_note,
-  source_name = excluded.source_name, source_url = excluded.source_url, card_id = excluded.card_id;
+  source_name = excluded.source_name, source_url = excluded.source_url, card_id = excluded.card_id,
+  -- the pick and teaser only fill in blanks, so changes made on the approval page are kept
+  teaser_title = coalesce(news_stories.teaser_title, excluded.teaser_title),
+  teaser = coalesce(news_stories.teaser, excluded.teaser),
+  featured = news_stories.featured or (excluded.featured and not exists (
+    select 1 from news_stories f where f.publish_date = excluded.publish_date and f.featured));
 
 -- Check: this day's stories by lane
-select lane, count(*) as stories, count(*) filter (where status = 'approved') as approved
+select lane, count(*) as stories, count(*) filter (where status = 'approved') as approved,
+  count(*) filter (where featured) as todays_pick
 from news_stories where publish_date = '${day}' group by lane order by lane;
 `;
 

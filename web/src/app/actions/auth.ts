@@ -20,11 +20,17 @@ export async function continueWithGoogle() {
   redirect(data.url);
 }
 
-export async function tryAsGuest() {
+// "next" lets the welcome page's story teaser open that story; only news links are allowed
+export async function tryAsGuest(formData?: FormData) {
+  const next = String(formData?.get("next") ?? "");
   const supabase = await createClient();
-  const { error } = await supabase.auth.signInAnonymously();
-  if (error) redirect("/?error=guest");
-  redirect("/desk");
+  // A returning guest keeps their session (and progress) instead of getting a new one
+  const { data } = await supabase.auth.getClaims();
+  if (!data?.claims) {
+    const { error } = await supabase.auth.signInAnonymously();
+    if (error) redirect("/?error=guest");
+  }
+  redirect(/^\/news(#story-\d+)?$/.test(next) ? next : "/desk");
 }
 
 export type EmailState = { status: "idle" | "sent" | "error"; message?: string; email?: string };

@@ -24,9 +24,12 @@ export type Story = {
   source_url: string;
   card_id: string | null;
   status: "draft" | "approved";
+  teaser_title: string | null; // "today's pick": the hook, in story language
+  teaser: string | null;
+  featured: boolean;
 };
 
-const COLUMNS = "id, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status";
+const COLUMNS = "id, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured";
 
 function db() {
   return createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
@@ -58,6 +61,11 @@ export async function getBrief(today: string): Promise<{ date: string | null; st
 }
 
 export { COLUMNS as STORY_COLUMNS };
+
+/** The day's featured story, if one is picked and has its teaser written */
+export function todaysPick(stories: Story[]) {
+  return stories.find((s) => s.featured && s.teaser_title && s.teaser) ?? null;
+}
 
 /** "Saturday, 18 October" */
 export function prettyDate(isoDate: string) {

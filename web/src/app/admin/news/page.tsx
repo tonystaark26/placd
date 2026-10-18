@@ -2,7 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
-import { approveAllForDay, approveStory, deleteStory, unapproveStory } from "@/app/actions/news";
+import {
+  approveAllForDay,
+  approveStory,
+  deleteStory,
+  featureStory,
+  saveTeaser,
+  unapproveStory,
+  unfeatureStory,
+} from "@/app/actions/news";
 import { StoryCard } from "@/components/StoryCard";
 import { getAccount } from "@/lib/account";
 import { getCardList } from "@/lib/cards";
@@ -56,6 +64,7 @@ async function ApprovalList() {
             <div className="mt-3 space-y-3">
               {list.map((s) => (
                 <StoryCard key={s.id} story={s} cardTitle={s.card_id ? titles.get(s.card_id) : undefined}>
+                  <TodaysPick story={s} />
                   <div className="mt-3 flex items-center justify-between gap-2 border-t border-line pt-3 font-sans text-[12px]">
                     <span className={s.status === "approved" ? "font-semibold text-good" : "font-semibold text-coffee"}>
                       {laneName(s.lane)} · {s.status === "approved" ? "✓ Live" : "Draft"}
@@ -84,6 +93,60 @@ async function ApprovalList() {
         );
       })}
     </>
+  );
+}
+
+// Today's pick: the one story told as a story on the Study Desk and the welcome page
+function TodaysPick({ story }: { story: Story }) {
+  if (!story.featured) {
+    return (
+      <form action={featureStory} className="mt-3">
+        <input type="hidden" name="id" value={story.id} />
+        <input type="hidden" name="day" value={story.publish_date} />
+        <button className="h-9 rounded-full border border-coffee px-4 font-sans text-[12px] font-semibold text-coffee">
+          ☕ Make today&apos;s pick
+        </button>
+      </form>
+    );
+  }
+  return (
+    <div className="mt-3 rounded-[10px] border border-crema-line bg-crema px-3.5 py-3.5">
+      <div className="flex items-center justify-between gap-2">
+        <span className="font-sans text-[12px] font-semibold uppercase tracking-[1.5px] text-coffee">☕ Today&apos;s pick</span>
+        <form action={unfeatureStory}>
+          <input type="hidden" name="id" value={story.id} />
+          <button className="font-sans text-[12px] text-mocha underline underline-offset-2">Remove pick</button>
+        </form>
+      </div>
+      <form action={saveTeaser} className="mt-3 space-y-2.5 font-sans">
+        <input type="hidden" name="id" value={story.id} />
+        <label className="block text-[12px] font-semibold text-mocha">
+          Hook line
+          <input
+            name="teaser_title"
+            defaultValue={story.teaser_title ?? ""}
+            required
+            maxLength={120}
+            className="mt-1 block w-full rounded-[8px] border border-line bg-cream px-3 py-2 font-serif text-[15px] font-bold text-espresso"
+          />
+        </label>
+        <label className="block text-[12px] font-semibold text-mocha">
+          Teaser (2–3 sentences, true to the story)
+          <textarea
+            name="teaser"
+            defaultValue={story.teaser ?? ""}
+            required
+            rows={4}
+            maxLength={400}
+            className="mt-1 block w-full rounded-[8px] border border-line bg-cream px-3 py-2 font-serif text-[14px] leading-snug text-espresso"
+          />
+        </label>
+        <button className="h-9 rounded-full bg-coffee px-4 text-[12px] font-semibold text-cream">Save teaser</button>
+        {story.status !== "approved" && (
+          <p className="text-[12px] text-bad">Approve this story too, or the teaser won&apos;t show.</p>
+        )}
+      </form>
+    </div>
   );
 }
 
