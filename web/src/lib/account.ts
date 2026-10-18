@@ -24,5 +24,5 @@ export async function getAccount(): Promise<Account | null> {
 /** Where a signed-in student should land next */
 export function homeFor(account: Account) {
   if (!account.isGuest && !account.alias) return "/onboarding";
-  return "/library";
+  return "/desk";
 }

@@ -31,10 +31,10 @@ async function TodaysQuiz() {
         )}
         <p className="mt-6 text-center text-[15px] text-mocha">A fresh quiz unlocks at midnight. Meanwhile, revise a card or two.</p>
         <Link
-          href="/library"
+          href="/desk"
           className="mt-4 flex h-12 w-full items-center justify-center rounded-[10px] border border-line bg-foam font-sans text-[15px] font-semibold"
         >
-          Back to the Library
+          Back to the Study Desk
         </Link>
       </div>
     );
@@ -51,8 +51,8 @@ export default function QuizPage() {
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-6">
       <nav className="font-sans text-[13px]">
-        <Link href="/library" className="font-medium text-coffee">
-          ← Library
+        <Link href="/desk" className="font-medium text-coffee">
+          ← Study Desk
         </Link>
       </nav>
       <h1 className="mt-5 text-[22px] font-bold leading-snug">Today&apos;s quiz</h1>

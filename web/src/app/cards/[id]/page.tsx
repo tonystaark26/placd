@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { DIAGRAMS } from "@/components/diagrams";
 import { Prose } from "@/components/Prose";
-import { getCard, getCardList, SUBJECT_NAMES } from "@/lib/cards";
+import { getCard, getCardList, sectionOf, SUBJECT_NAMES } from "@/lib/cards";
 
 // Build every card page ahead of time, so they open instantly
 export async function generateStaticParams() {
@@ -53,6 +53,7 @@ async function CardBody({ id }: { id: string }) {
   if (!card) notFound();
 
   const Diagram = DIAGRAMS[card.id];
+  const section = sectionOf(card.subject_id);
   const sameSubject =list.filter((c) => c.subject_id === card.subject_id);
   const at = sameSubject.findIndex((c) => c.id === card.id);
   const prev = sameSubject[at - 1];
@@ -61,8 +62,8 @@ async function CardBody({ id }: { id: string }) {
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-6">
       <nav className="flex items-center justify-between font-sans text-[13px]">
-        <Link href="/library" className="font-medium text-coffee">
-          ← Library
+        <Link href={`/learn/${section.id}`} className="font-medium text-coffee">
+          ← {section.name}
         </Link>
         <span className="text-mocha-2">
           {at + 1} of {sameSubject.length}

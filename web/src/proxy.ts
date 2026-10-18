@@ -27,10 +27,10 @@ export async function proxy(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
 
   // The app always opens at the welcome page: signed-out visitors can't jump straight
-  // into the Library or a card (guests count as signed in).
+  // into the Study Desk or a card (guests count as signed in).
   const path = request.nextUrl.pathname;
   const insideApp =
-    path === "/library" || path === "/quiz" || path === "/news" || path.startsWith("/cards/") || path.startsWith("/admin");
+    path === "/desk" || path.startsWith("/learn/") || path === "/quiz" || path === "/news" || path.startsWith("/cards/") || path.startsWith("/admin");
   if (!data?.claims && insideApp) {
     const welcome = NextResponse.redirect(new URL("/", request.url));
     response.cookies.getAll().forEach((cookie) => welcome.cookies.set(cookie));

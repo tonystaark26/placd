@@ -66,8 +66,8 @@ export default function NewsPage() {
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-6">
       <nav className="font-sans text-[13px]">
-        <Link href="/library" className="font-medium text-coffee">
-          ← Library
+        <Link href="/desk" className="font-medium text-coffee">
+          ← Study Desk
         </Link>
       </nav>
       <h1 className="mt-5 text-[22px] font-bold leading-snug">Today&apos;s brief</h1>

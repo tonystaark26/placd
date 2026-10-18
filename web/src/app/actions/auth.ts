@@ -24,7 +24,7 @@ export async function tryAsGuest() {
   const supabase = await createClient();
   const { error } = await supabase.auth.signInAnonymously();
   if (error) redirect("/?error=guest");
-  redirect("/library");
+  redirect("/desk");
 }
 
 export type EmailState = { status: "idle" | "sent" | "error"; message?: string; email?: string };
@@ -72,7 +72,7 @@ export async function saveDisplayName(_prev: NameState, formData: FormData): Pro
     const taken = error.code === "23505";
     return { status: "error", message: taken ? "Someone already has that name. Try another." : "Couldn't save. Please try again.", alias };
   }
-  redirect("/library");
+  redirect("/desk");
 }
 
 export async function signOut() {

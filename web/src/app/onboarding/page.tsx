@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Choose your name · PLACED" };
 async function OnlyNewStudents() {
   const account = await getAccount();
   if (!account) redirect("/");
-  if (account.alias || account.isGuest) redirect("/library");
+  if (account.alias || account.isGuest) redirect("/desk");
   return <NameForm />;
 }
 

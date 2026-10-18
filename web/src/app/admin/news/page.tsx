@@ -91,8 +91,8 @@ export default function AdminNewsPage() {
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-6">
       <nav className="flex justify-between font-sans text-[13px]">
-        <Link href="/library" className="font-medium text-coffee">
-          ← Library
+        <Link href="/desk" className="font-medium text-coffee">
+          ← Study Desk
         </Link>
         <Link href="/news" className="font-medium text-coffee">
           See what students see →

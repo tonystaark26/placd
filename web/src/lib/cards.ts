@@ -33,6 +33,18 @@ export const SUBJECT_NAMES: Record<string, string> = {
   acct: "Cost & Financial Accounting",
 };
 
+/** The two big areas on the Study Desk. Every subject belongs to one of them. */
+export const SECTIONS = [
+  { id: "marketing", name: "Marketing", blurb: "Consumers, research, strategy & ethics", subjects: ["mkt"] },
+  { id: "finance", name: "Finance", blurb: "Economics & accounting", subjects: ["econ", "acct", "fin"] },
+] as const;
+
+export type SectionId = (typeof SECTIONS)[number]["id"];
+
+export function sectionOf(subjectId: string) {
+  return SECTIONS.find((s) => (s.subjects as readonly string[]).includes(subjectId)) ?? SECTIONS[1];
+}
+
 function db() {
   return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

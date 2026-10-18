@@ -189,10 +189,10 @@ function ResultCard({ result, isGuest }: { result: Extract<FinishResult, { ok: t
 
       <p className="mt-6 text-center text-[15px] text-mocha">Come back tomorrow for a fresh quiz.</p>
       <Link
-        href="/library"
+        href="/desk"
         className="mt-4 flex h-12 w-full items-center justify-center rounded-[10px] border border-line bg-foam font-sans text-[15px] font-semibold"
       >
-        Back to the Library
+        Back to the Study Desk
       </Link>
     </div>
   );

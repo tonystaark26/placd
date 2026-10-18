@@ -14,5 +14,5 @@ export async function setQuizLength(formData: FormData) {
 
   const supabase = await createClient();
   await supabase.from("profiles").update({ daily_minutes: minutes }).eq("id", account.id);
-  redirect("/library");
+  redirect("/desk");
 }
