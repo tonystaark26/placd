@@ -6,7 +6,7 @@ import { SubmitButton } from "@/components/SubmitButton";
 import { getAccount, homeFor } from "@/lib/account";
 
 const promises = [
-  "The news, without the jargon",
+  "Daily business news with your chai",
   "The concept behind every story",
   "A quiz that keeps your basics sharp",
 ];

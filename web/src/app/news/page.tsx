@@ -72,7 +72,7 @@ export default function NewsPage() {
       </nav>
       <h1 className="mt-5 text-[22px] font-bold leading-snug">☕ Chai &amp; Charts</h1>
       <p className="mt-1 text-[15px] text-mocha">
-        Today&apos;s business news over a cup of chai: no jargon, and the concept behind every story.
+        Today&apos;s business news over a cup of chai, and the concept behind every story.
       </p>
       <Suspense fallback={<div className="mt-6 h-64 animate-pulse rounded-[10px] bg-foam" />}>
         <Brief />

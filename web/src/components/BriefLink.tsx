@@ -24,7 +24,7 @@ export async function BriefLink() {
         <span className="mt-2 block text-[17px] font-bold leading-snug">Today&apos;s Chai &amp; Charts is still brewing. Check back soon.</span>
       ) : (
         <>
-          <span className="mt-2 block text-[17px] font-bold leading-snug">The news, minus the jargon, and why it matters for your interview</span>
+          <span className="mt-2 block text-[17px] font-bold leading-snug">Today&apos;s news, and why it matters in your interview</span>
           <span className="mt-3 block space-y-2">
             {stories.slice(0, 3).map((s) => (
               <span key={s.id} className="block rounded-[8px] bg-espresso/25 px-3 py-2">
