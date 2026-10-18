@@ -41,7 +41,7 @@ export function AccountingUsers() {
       <Box x={182} y={210} w={86} h={58} title="Sound vendor" lines={["Will I be", "paid?"]} titleSize={10.5} />
       <Box x={272} y={210} w={84} h={58} title="Auditor" lines={["Is it all", "true?"]} titleSize={10.5} />
       <Txt x={180} y={290} size={10} bold tone="coffee" anchor="middle">Same numbers, different questions</Txt>
-      <Txt x={180} y={305} size={9.5} anchor="middle">Lenders, tax authorities and regulators read company accounts the same way</Txt>
+      <Txt x={180} y={305} size={9.5} anchor="middle">Lenders, tax officials and regulators all read the same accounts</Txt>
     </Figure>
   );
 }
@@ -217,7 +217,7 @@ export function AccrualTimeline() {
 
       <Txt x={180} y={250} size={10} bold tone="coffee" anchor="middle">Count it when it&apos;s earned or incurred, not when cash moves</Txt>
       <rect x={4} y={262} width={352} height={30} rx="15" className="fill-latte stroke-crema-line" />
-      <Txt x={180} y={281} size={10} tone="espresso" anchor="middle">Laptop bought for ₹60,000 (now ₹70,000) stays at ₹60,000: cost concept</Txt>
+      <Txt x={180} y={281} size={9.5} tone="espresso" anchor="middle">Cost concept: ₹60,000 laptop, now worth ₹70,000, stays at ₹60,000</Txt>
     </Figure>
   );
 }

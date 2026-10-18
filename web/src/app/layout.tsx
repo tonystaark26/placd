@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans, Libre_Baskerville } from "next/font/google";
+import { DM_Serif_Display, Sora } from "next/font/google";
 import "./globals.css";
 
-const baskerville = Libre_Baskerville({
-  variable: "--font-baskerville",
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
+// Sora: the everyday interface and reading text
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
 });
 
-const plex = IBM_Plex_Sans({
-  variable: "--font-plex",
-  weight: ["400", "500", "600"],
+// DM Serif Display: page headlines and editorial moments (it has one weight)
+const dmSerif = DM_Serif_Display({
+  variable: "--font-dm-serif",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${baskerville.variable} ${plex.variable} h-full antialiased`}
+      className={`${sora.variable} ${dmSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

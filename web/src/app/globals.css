@@ -18,13 +18,21 @@
   --color-bad: #a3322b;
   --color-bad-bg: #f6dedb;
 
-  /* Bookman where installed; Libre Baskerville everywhere else */
-  --font-serif: "Bookman Old Style", "Bookman", "URW Bookman", var(--font-baskerville), Georgia, serif;
-  --font-sans: var(--font-plex), system-ui, sans-serif;
+  /* Font pairing (like wahresume.com): DM Serif Display for headlines, Sora for everything else */
+  --font-serif: var(--font-dm-serif), Georgia, serif;
+  --font-sans: var(--font-sora), system-ui, sans-serif;
 }
 
 body {
   background: var(--color-bg);
   color: var(--color-espresso);
+  font-family: var(--font-sans);
+}
+
+/* Page headlines are the editorial moments. DM Serif Display has a single (regular) weight,
+   so this deliberately overrides any bold class on h1. */
+h1 {
   font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.005em;
 }

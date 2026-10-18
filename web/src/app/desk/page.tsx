@@ -33,7 +33,7 @@ export default function StudyDesk() {
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-8">
       <AppHeader />
 
-      <h1 className="mt-7 text-[24px] font-bold leading-snug">Study Desk</h1>
+      <h1 className="mt-7 text-[30px] leading-snug">Study Desk</h1>
       <p className="mt-1 text-[15px] text-mocha">Read the news, revise a concept, then test yourself.</p>
 
       <Suspense fallback={<div className="mt-6 h-[260px] animate-pulse rounded-[12px] bg-crema" />}>

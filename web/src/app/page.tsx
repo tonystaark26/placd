@@ -67,7 +67,7 @@ async function TodaysStory() {
   return (
     <section className="rounded-[12px] bg-coffee px-5 py-5 text-cream">
       <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">☕ Today on PLACED</p>
-      <h2 className="mt-3 text-[20px] font-bold leading-snug">{pick.teaser_title}</h2>
+      <h2 className="mt-3 font-serif text-[23px] leading-tight">{pick.teaser_title}</h2>
       <p className="mt-2.5 text-[14px] leading-relaxed text-cream/90">{pick.teaser}</p>
       <form action={tryAsGuest} className="mt-4">
         <input type="hidden" name="next" value={`/news#story-${pick.id}`} />
@@ -89,7 +89,7 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
       <div className="flex flex-col gap-9">
         {/* The PLACED wordmark: bold serif, centred, with a coffee rule underneath */}
         <div className="flex flex-col items-center">
-          <span className="pl-[0.18em] text-[44px] font-bold leading-none tracking-[0.18em] text-espresso">PLACED</span>
+          <span className="pl-[0.18em] text-[40px] font-extrabold leading-none tracking-[0.18em] text-espresso">PLACED</span>
           <span className="mt-3 flex items-center gap-2" aria-hidden="true">
             <span className="h-px w-10 bg-coffee" />
             <span className="h-2 w-2 rotate-45 bg-coffee" />
@@ -97,7 +97,7 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
           </span>
         </div>
 
-        <h1 className="text-center text-[26px] font-bold leading-snug">
+        <h1 className="text-center text-[32px] leading-tight">
           10 Minutes here,
           <br />
           <span className="text-coffee">1 Step Up!</span>
@@ -114,7 +114,7 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
 
         <section className="rounded-[12px] border border-crema-line bg-latte px-5 py-5">
           {/* Same Bookman serif as the PLACED wordmark, so the two feel like one family */}
-          <h2 className="pl-[3px] text-center font-serif text-[11px] font-bold uppercase tracking-[3px] text-coffee">
+          <h2 className="pl-[3px] text-center font-serif text-[11px] uppercase tracking-[3px] text-coffee">
             The Blueprint
           </h2>
           <ol className="mt-5 space-y-5">

@@ -11,7 +11,7 @@ export default function Login() {
         ← Back
       </Link>
 
-      <h1 className="mt-8 text-[22px] font-bold leading-snug">Sign up or sign in with email</h1>
+      <h1 className="mt-8 text-[27px] leading-snug">Sign up or sign in with email</h1>
       <p className="mt-2 text-[15px] leading-relaxed text-mocha">
         No password to remember. We&apos;ll email you a link, and one tap signs you in. New here? The same link creates
         your account.

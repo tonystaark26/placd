@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Story } from "@/lib/news";
+import { publishedTime, type Story } from "@/lib/news";
 
 // One news story: plain-language summary, the concept behind it, and the original source
 export function StoryCard({
@@ -23,8 +23,11 @@ export function StoryCard({
           ☕ Today&apos;s pick
         </p>
       )}
-      {story.tag && (
-        <p className="font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-coffee">{story.tag}</p>
+      {(story.tag || story.published_at) && (
+        <p className="flex items-baseline justify-between gap-3 font-sans text-[11px]">
+          <span className="font-semibold uppercase tracking-[1.5px] text-coffee">{story.tag}</span>
+          {story.published_at && <span className="text-mocha-2">{publishedTime(story.published_at, story.publish_date)}</span>}
+        </p>
       )}
       <h3 className="mt-1.5 text-[17px] font-bold leading-snug">{story.headline}</h3>
       <p className="mt-2 text-[15px] leading-relaxed">{story.summary}</p>

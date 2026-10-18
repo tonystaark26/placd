@@ -55,7 +55,7 @@ export default function QuizPage() {
           ← Study Desk
         </Link>
       </nav>
-      <h1 className="mt-5 text-[22px] font-bold leading-snug">Today&apos;s quiz</h1>
+      <h1 className="mt-5 text-[30px] leading-snug">Today&apos;s quiz</h1>
       <div className="mt-5">
         <Suspense fallback={<div className="h-72 animate-pulse rounded-[10px] bg-foam" />}>
           <TodaysQuiz />

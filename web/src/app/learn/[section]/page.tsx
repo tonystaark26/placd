@@ -49,7 +49,7 @@ async function Section({ id }: { id: string }) {
 
   return (
     <>
-      <h1 className="mt-4 text-[24px] font-bold leading-snug">{section.name}</h1>
+      <h1 className="mt-4 text-[30px] leading-snug">{section.name}</h1>
       <p className="mt-1 text-[15px] text-mocha">{section.blurb}. Tap a subject to see its concepts.</p>
 
       <div className="mt-6 space-y-3">

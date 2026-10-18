@@ -10,6 +10,13 @@
 // "Today's pick": mark ONE story with "featured": true plus a "teaser_title" and "teaser"
 // written in story language. It appears on the Study Desk and the welcome page.
 // Re-running never overrides a pick or teaser you changed on the approval page.
+//
+// THE 24-HOUR RULE: Chai & Charts is today's news only. Every story needs "published": the time
+// its source published it, with the India offset (e.g. "2026-10-18T09:30:00+05:30"). It must fall
+// between 7 AM the previous day and the end of this day (India time), or the script refuses to run.
+// (Concept cards can use older news and historic cases; this rule is only for the daily brief.)
+//
+// The file is the whole day: stories of this day that are no longer in the file are removed.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
@@ -22,8 +29,19 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(day ?? "")) {
 const stories = JSON.parse(readFileSync(`content/news/${day}.json`, "utf8"));
 const cardIds = new Set([...readFileSync("supabase/002_cards.sql", "utf8").matchAll(/\(\s*\$c\$([a-z]+-\d+)\$c\$/g)].map((m) => m[1]));
 
+// The freshness window: 7 AM India time the day before, to the end of this day
+const prevDay = new Date(Date.parse(`${day}T00:00:00Z`) - 86400000).toISOString().slice(0, 10);
+const windowStart = Date.parse(`${prevDay}T07:00:00+05:30`);
+const windowEnd = Date.parse(`${day}T23:59:59+05:30`);
+
 const problems = [];
 for (const s of stories) {
+  const published = Date.parse(s.published ?? "");
+  if (!/[+-]\d{2}:\d{2}$|Z$/.test(s.published ?? "") || Number.isNaN(published)) {
+    problems.push(`${s.slug}: "published" must be a date and time with offset, e.g. ${day}T09:30:00+05:30`);
+  } else if (published < windowStart || published > windowEnd) {
+    problems.push(`${s.slug}: published ${s.published} is outside the 24-hour window (from ${prevDay} 7 AM IST)`);
+  }
   if (!["global", "india", "local", "recruiter"].includes(s.lane)) problems.push(`${s.slug}: unknown lane`);
   if (s.card && !cardIds.has(s.card)) problems.push(`${s.slug}: unknown card ${s.card}`);
   if (!s.slug?.startsWith(day)) problems.push(`${s.slug}: slug must start with ${day}`);
@@ -47,22 +65,28 @@ const rows = stories.map(
   (s) =>
     `(${t(s.slug)}, '${day}', ${t(s.lane)}, ${t(s.tag)},\n  ${t(s.headline)},\n  ${t(s.summary)},\n  ${t(s.concept_note)},\n  ${t(s.source_name)}, ${t(s.source_url)}, ${t(s.card)}, 'draft',
   ${t(s.teaser_title)},
-  ${t(s.teaser)}, ${s.featured ? "true" : "false"})`,
+  ${t(s.teaser)}, ${s.featured ? "true" : "false"}, ${t(s.published)})`,
 );
+const slugs = stories.map((s) => t(s.slug)).join(", ");
 
 const sql = `-- =====================================================================
 -- PLACED news brief for ${day}: ${stories.length} stories (as DRAFTS)
 -- Made by scripts/news-to-sql.mjs from content/news/${day}.json.
 -- Run in Supabase: SQL Editor → New snippet → paste → Run. Then approve in the app.
+-- Every story was published between ${prevDay} 7 AM and ${day} (India time).
 -- =====================================================================
 
-insert into news_stories (slug, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured)
+-- This file is the whole day: remove the day's stories that are no longer in it
+delete from news_stories where publish_date = '${day}' and (slug is null or slug not in (${slugs}));
+
+insert into news_stories (slug, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured, published_at)
 values
 ${rows.join(",\n")}
 on conflict (slug) do update set
   publish_date = excluded.publish_date, lane = excluded.lane, tag = excluded.tag,
   headline = excluded.headline, summary = excluded.summary, concept_note = excluded.concept_note,
   source_name = excluded.source_name, source_url = excluded.source_url, card_id = excluded.card_id,
+  published_at = excluded.published_at,
   -- the pick and teaser only fill in blanks, so changes made on the approval page are kept
   teaser_title = coalesce(news_stories.teaser_title, excluded.teaser_title),
   teaser = coalesce(news_stories.teaser, excluded.teaser),

@@ -15,7 +15,8 @@ A soft grey background, espresso-dark text, and coffee brown used sparingly for 
    highlights. Never for decoration.
 3. **Modest type sizes.** Professional apps whisper; they don't shout.
 4. **One main action per screen**, in coffee brown with cream text.
-5. **Serif for reading, sans for small labels**, like a quality newspaper.
+5. **Serif for headlines, sans for everything you read and use.** DM Serif Display for page
+   titles and editorial moments; Sora for lessons, labels, buttons and numbers.
 
 ## 2. Colour
 
@@ -39,20 +40,29 @@ Tweaks panel are a lighter caramel (`#8B5E3C`) and a dark roast (`#3E2A1F`).
 
 ## 3. Type
 
+Changed 18 Oct 2026, inspired by wahresume.com's pairing (earlier: Bookman / Libre Baskerville
+with IBM Plex Sans). Both fonts are free Google fonts, loaded through Next.js.
+
 | Role | Font | Notes |
 |---|---|---|
-| Headings & reading text | **Bookman Old Style** | Where it isn't installed (most phones), it falls back to **Libre Baskerville**, a free, similar serif |
-| Labels, buttons, numbers in UI | **IBM Plex Sans** | Small, crisp, professional |
+| Page titles (every `h1`), teaser headlines, The Blueprint label | **DM Serif Display** | One weight only (regular), so it's never bolded |
+| Everything else: lessons, labels, buttons, numbers, pictures | **Sora** | Weights 300–800; no italic, so italics are slanted automatically |
 
 | Style | Size / weight |
 |---|---|
-| Score / big number | 40 px / 700 serif |
-| Screen title | 22 px / 700 serif |
-| Headline | 16 px / 700 serif |
-| Body | 15 px / 400 serif, line height 1.6 |
+| Welcome headline | 32 px serif |
+| Screen title | 30 px serif (card titles, login, onboarding: 27 px) |
+| Teaser headline | 23 px serif |
+| PLACED wordmark | 40 px / 800 Sora, letter-spaced |
+| Score / big number | 40 px / 700 Sora |
+| Headline | 16–17 px / 700 Sora |
+| Body | 15 px / 400 Sora, line height 1.6 |
 | Small | 13 px / 400 |
-| Label | 11 px / 600 sans, capitals, letter-spaced |
-| Button | 14 px / 600 sans |
+| Label | 11 px / 600 Sora, capitals, letter-spaced |
+| Button | 14–15 px / 600 Sora |
+
+Sora is wider than IBM Plex Sans, so long picture labels were shortened to fit (checked
+automatically across all 46 pictures).
 
 ## 4. Shape & spacing
 

@@ -74,7 +74,7 @@ async function CardBody({ id }: { id: string }) {
         <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-coffee">
           {SUBJECT_NAMES[card.subject_id] ?? card.subject_id} · Card {card.num}
         </p>
-        <h1 className="mt-2 text-[22px] font-bold leading-snug">{card.title}</h1>
+        <h1 className="mt-2 text-[27px] leading-snug">{card.title}</h1>
         {card.status !== "verified" && (
           <p className="mt-2.5 inline-block rounded-full border border-crema-line bg-crema px-2.5 py-0.5 font-sans text-[11px] font-medium text-mocha">
             {card.status === "draft" ? "Draft · being checked" : "Reviewed · awaiting final check"}

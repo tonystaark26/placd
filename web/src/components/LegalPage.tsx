@@ -10,7 +10,7 @@ export function LegalPage({ title, intro, children }: { title: string; intro: st
       <Link href="/" className="font-sans text-[13px] font-medium text-coffee">
         ← PLACED
       </Link>
-      <h1 className="mt-8 text-[26px] font-bold leading-snug">{title}</h1>
+      <h1 className="mt-8 text-[30px] leading-snug">{title}</h1>
       <p className="mt-2 font-sans text-[12px] text-mocha-2">Last updated: {LAST_UPDATED}</p>
       <p className="mt-5 text-[15px] leading-relaxed text-mocha">{intro}</p>
       <div className="legal mt-8 space-y-8 text-[15px] leading-relaxed">{children}</div>

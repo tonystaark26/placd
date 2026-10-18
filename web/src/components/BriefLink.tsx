@@ -8,8 +8,7 @@ import { istToday } from "@/lib/quiz";
 export async function BriefLink() {
   await connection();
   const today = istToday();
-  const { date, stories } = await getBrief(today);
-  const fresh = date === today;
+  const { stories } = await getBrief(today); // today's news only
   const laneName = (id: string) => LANES.find((l) => l.id === id)?.name ?? id;
   const pick = todaysPick(stories);
 
@@ -20,7 +19,7 @@ export async function BriefLink() {
     >
       <span className="flex items-baseline justify-between gap-3">
         <span className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">
-          ☕ Chai &amp; Charts{fresh || stories.length === 0 ? " · today" : " · latest"}
+          ☕ Chai &amp; Charts · today
         </span>
         {stories.length > 0 && <span className="font-sans text-[11px] text-crema">5 min read</span>}
       </span>
@@ -29,7 +28,7 @@ export async function BriefLink() {
         <span className="mt-2 block text-[17px] font-bold leading-snug">Today&apos;s Chai &amp; Charts is still brewing. Check back soon.</span>
       ) : pick ? (
         <>
-          <span className="mt-3 block text-[20px] font-bold leading-snug">{pick.teaser_title}</span>
+          <span className="mt-3 block font-serif text-[23px] leading-tight">{pick.teaser_title}</span>
           <span className="mt-2.5 block text-[14px] leading-relaxed text-cream/90">{pick.teaser}</span>
           <span className="mt-4 flex h-11 items-center justify-center rounded-[10px] bg-cream font-sans text-[15px] font-semibold text-coffee">
             Read the story →

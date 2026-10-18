@@ -18,7 +18,7 @@ export default function Onboarding() {
   return (
     <main className="mx-auto w-full max-w-md px-6 pb-12 pt-14">
       <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-coffee">Welcome to PLACED</p>
-      <h1 className="mt-3 text-[22px] font-bold leading-snug">Pick a display name</h1>
+      <h1 className="mt-3 text-[27px] leading-snug">Pick a display name</h1>
       <p className="mt-2 text-[15px] leading-relaxed text-mocha">
         This is the only name other students see, for example on the leaderboard. Make it anything you like. Your real
         name and email stay private.

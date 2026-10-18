@@ -161,7 +161,7 @@ export default function AdminNewsPage() {
           See what students see →
         </Link>
       </nav>
-      <h1 className="mt-5 text-[22px] font-bold leading-snug">Approve news</h1>
+      <h1 className="mt-5 text-[30px] leading-snug">Approve news</h1>
       <p className="mt-1 text-[15px] text-mocha">
         Only approved stories reach students. To fix a typo, edit the story in Supabase&apos;s Table Editor
         (news_stories).

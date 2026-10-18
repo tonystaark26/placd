@@ -122,7 +122,8 @@ export function SubsidiaryBooks() {
           acc.els.push(
             <g key={i}>
               <rect x={acc.x} y={160} width={seg.w * s - 1.5} height={22} rx="3" className={seg.cls} opacity={seg.cls === "fill-bad" ? 0.85 : 1} />
-              <Txt x={acc.x + (seg.w * s) / 2} y={196} size={8.5} anchor="middle">{seg.label}</Txt>
+              {/* the last label sits a little lower so it doesn't touch its neighbour */}
+              <Txt x={acc.x + (seg.w * s) / 2} y={i === 3 ? 207 : 196} size={8.5} anchor="middle">{seg.label}</Txt>
             </g>,
           );
           acc.x += seg.w * s;
@@ -192,7 +193,7 @@ export function CapitalRevenue() {
       <Txt x={202} y={93} size={9}>(maintains capacity)</Txt>
       <Txt x={192} y={118} size={9.5} bold tone="coffee">Benefit used up this year</Txt>
 
-      <Txt x={4} y={156} size={9.5} bold caps tone="mocha2">SELLING THE OLD FRIDGE FOR ₹10,000 (BOOK VALUE ₹8,000)</Txt>
+      <Txt x={4} y={156} size={9.5} bold caps tone="mocha2">OLD FRIDGE SOLD FOR ₹10,000 · BOOK VALUE ₹8,000</Txt>
       <rect x={4} y={164} width={256} height={26} rx="4" className="fill-crema-line" />
       <Txt x={132} y={181} size={10} bold tone="espresso" anchor="middle">₹8,000 · capital receipt (asset gone)</Txt>
       <rect x={262} y={164} width={94} height={26} rx="4" className="fill-good" />
@@ -285,7 +286,7 @@ export function MeasurementBases() {
           </g>
         );
       })}
-      <Txt x={180} y={222} size={10} anchor="middle">Balance sheets mostly use historical cost; stock uses the lower of cost &amp; NRV</Txt>
+      <Txt x={180} y={222} size={10} anchor="middle">Balance sheets: mostly historical cost; stock at lower of cost &amp; NRV</Txt>
     </Figure>
   );
 }
@@ -350,7 +351,7 @@ export function BillsOfExchange() {
       <rect x={4} y={160} width={352} height={50} rx="10" className="fill-latte stroke-crema-line" />
       <Txt x={14} y={180} size={10.5} bold tone="espresso">Needs cash now? Discount it at a bank (12% a year)</Txt>
       <Txt x={14} y={198} size={10}>₹1,00,000 − ₹3,000 discount = </Txt>
-      <Txt x={170} y={198} size={11} bold tone="good">₹97,000 today</Txt>
+      <Txt x={178} y={198} size={11} bold tone="good">₹97,000 today</Txt>
 
       <Box x={4} y={220} w={174} h={50} style="warm" title="Bill of exchange" lines={["creditor orders · 3 parties"]} titleSize={10.5} />
       <Box x={182} y={220} w={174} h={50} title="Promissory note" lines={["debtor promises · 2 parties"]} titleSize={10.5} />

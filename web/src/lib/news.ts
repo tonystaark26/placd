@@ -27,9 +27,11 @@ export type Story = {
   teaser_title: string | null; // "today's pick": the hook, in story language
   teaser: string | null;
   featured: boolean;
+  published_at: string | null; // when the source published it (always within the last 24 hours)
 };
 
-const COLUMNS = "id, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured";
+const COLUMNS =
+  "id, publish_date, lane, tag, headline, summary, concept_note, source_name, source_url, card_id, status, teaser_title, teaser, featured, published_at";
 
 function db() {
   return createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
@@ -37,27 +39,28 @@ function db() {
   });
 }
 
-/** The latest day that has approved stories, up to and including `today` (YYYY-MM-DD, India time). */
+/**
+ * Today's approved stories (`today` is YYYY-MM-DD, India time). Chai & Charts is today's news only:
+ * until today's brief is approved, this is empty, and students see "brewing", never yesterday's news.
+ */
 export async function getBrief(today: string): Promise<{ date: string | null; stories: Story[] }> {
   "use cache";
   cacheTag("news");
   cacheLife("minutes");
-  const { data: latest } = await db()
-    .from("news_stories")
-    .select("publish_date")
-    .lte("publish_date", today)
-    .order("publish_date", { ascending: false })
-    .limit(1)
-    .maybeSingle();
-  if (!latest) return { date: null, stories: [] };
-
-  const { data, error } = await db()
-    .from("news_stories")
-    .select(COLUMNS)
-    .eq("publish_date", latest.publish_date)
-    .order("id");
+  const { data, error } = await db().from("news_stories").select(COLUMNS).eq("publish_date", today).order("id");
   if (error) throw new Error(`Could not load the news: ${error.message}`);
-  return { date: latest.publish_date, stories: (data ?? []) as Story[] };
+  const stories = (data ?? []) as Story[];
+  return { date: stories.length ? today : null, stories };
+}
+
+/** "Yesterday, 9:42 PM" or "Today", India time. Midnight means the source gave a date but no time. */
+export function publishedTime(iso: string, briefDate: string) {
+  const at = new Date(iso);
+  const part = (o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat("en-IN", { ...o, timeZone: "Asia/Kolkata" }).format(at);
+  const day = part({ year: "numeric", month: "2-digit", day: "2-digit" }).split("/").reverse().join("-"); // YYYY-MM-DD
+  const label = day === briefDate ? "Today" : "Yesterday";
+  const time = part({ hour: "numeric", minute: "2-digit", hour12: true }).toUpperCase();
+  return time === "12:00 AM" ? label : `${label}, ${time}`;
 }
 
 export { COLUMNS as STORY_COLUMNS };

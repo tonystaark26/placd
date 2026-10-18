@@ -131,7 +131,7 @@ export function StockValuation() {
           <Txt x={106 + b.profit * 2} y={184 + i * 26} size={10.5} bold tone="espresso">{`₹${b.profit}`}</Txt>
         </g>
       ))}
-      <Txt x={180} y={254} size={9.5} anchor="middle">Rising prices → FIFO shows the most profit · LIFO isn&apos;t allowed under Ind AS 2</Txt>
+      <Txt x={180} y={254} size={9.5} anchor="middle">Rising prices → FIFO shows most profit · Ind AS 2 bans LIFO</Txt>
     </Figure>
   );
 }
