@@ -22,12 +22,19 @@
 //
 // AT LEAST 10 STORIES, RANKED: every story needs a "rank" by that day's news value (1 = the most
 // important). Ranks must be 1, 2, 3… with no gaps. The lane split isn't fixed; it follows the news.
+//
+// AUTOMATIC PUBLISHING:   node scripts/news-to-sql.mjs 2026-10-19 --upload
+// After the same checks, sends the brief to Supabase's ingest_news() door (supabase/009_news_upload.sql),
+// which publishes it straight away. Needs the environment variable NEWS_INGEST_KEY, plus the Supabase URL
+// and publishable key (NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY, read from
+// web/.env.local when not set). Never write the key into a file.
 
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const day = process.argv[2];
+const upload = process.argv.includes("--upload");
 if (!/^\d{4}-\d{2}-\d{2}$/.test(day ?? "")) {
-  console.error("Usage: node scripts/news-to-sql.mjs YYYY-MM-DD");
+  console.error("Usage: node scripts/news-to-sql.mjs YYYY-MM-DD [--upload]");
   process.exit(1);
 }
 
@@ -115,3 +122,32 @@ select rank, lane, headline, status, featured from news_stories where publish_da
 mkdirSync("supabase/news", { recursive: true });
 writeFileSync(`supabase/news/${day}.sql`, sql);
 console.log(`Wrote supabase/news/${day}.sql: ${stories.length} stories`);
+
+if (upload) {
+  // Supabase address and publishable key: from the environment, or the app's local settings file
+  const env = { ...process.env };
+  if (existsSync("web/.env.local")) {
+    for (const line of readFileSync("web/.env.local", "utf8").split(/\r?\n/)) {
+      const at = line.indexOf("=");
+      if (at > 0 && !env[line.slice(0, at).trim()]) env[line.slice(0, at).trim()] = line.slice(at + 1).trim();
+    }
+  }
+  const url = env.NEXT_PUBLIC_SUPABASE_URL;
+  const publishable = env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+  const key = env.NEWS_INGEST_KEY;
+  if (!url || !publishable || !key) {
+    console.error("Upload needs NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY and NEWS_INGEST_KEY");
+    process.exit(1);
+  }
+  const res = await fetch(`${url.replace(/\/+$/, "")}/rest/v1/rpc/ingest_news`, {
+    method: "POST",
+    headers: { apikey: publishable, Authorization: `Bearer ${publishable}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ p_key: key, p_day: day, p_stories: stories }),
+  });
+  const body = await res.text();
+  if (!res.ok) {
+    console.error(`Upload refused (${res.status}): ${body}`);
+    process.exit(1);
+  }
+  console.log(`Uploaded and live: ${body}`);
+}
