@@ -1,6 +1,6 @@
 # Cost & Financial Accounting: Batch 2, Financial Accounting Foundations
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md) · Rule: news examples from 2024 onwards, fact-checked.
 Sources: `Introduction to Financial Accounting (2).pptx`, `Accounting Concepts and Conventions (1).pptx`, `3. Accounting Equation (1).docx`.
 (Much of the slide text is inside diagrams and pictures; it was read from those directly.)
@@ -63,7 +63,7 @@ Using book-keeping and accounting as if they mean the same thing. Book-keeping i
    **Answer:** An **external user (a lender/creditor)**. It will focus on the firm's ability to repay: cash flows, existing debt, assets available as security and steady profits.
 
 **Source:** `Introduction to Financial Accounting (2).pptx` slides 3–9
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -116,7 +116,7 @@ Thinking an expense paid in cash only reduces assets. It reduces **capital** too
    **Answer:** **Assets fall ₹5,000 (cash), and capital falls ₹5,000** (an expense reduces the owner's claim). Liabilities don't change.
 
 **Source:** `3. Accounting Equation (1).docx` sections 3.1–3.2 and Illustration 1
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -173,7 +173,7 @@ Thinking profit equals cash. A company can be profitable but short of cash, for 
    **Answer:** It's **selling on credit and not collecting cash fast enough**. Profit is recorded when sales are made, but the cash is stuck with customers. Check the cash flow statement and customers' credit quality.
 
 **Source:** `Introduction to Financial Accounting (2).pptx` slides 10–16
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -223,7 +223,7 @@ Thinking the entity concept applies only to companies. It applies to a sole prop
    **Answer: No.** Under **money measurement** (and the cost concept), only transactions measured in money are recorded. The manager's talent wasn't purchased as an asset; the salary is an expense.
 
 **Source:** `Accounting Concepts and Conventions (1).pptx` slides 6–9, 11–14
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -267,7 +267,7 @@ Treating cash received as revenue. Advances are a **liability** until the goods 
    **Answer: ₹30,000** (3 months × ₹10,000). The remaining **₹90,000 is income received in advance**, a liability, because those classes haven't been delivered yet.
 
 **Source:** `Accounting Concepts and Conventions (1).pptx` slides 9–12
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -318,7 +318,7 @@ Taking conservatism too far and creating hidden reserves by under-valuing assets
    **Answer:** **Disclose it as a contingent liability** in the notes to the accounts (full disclosure). If a loss becomes probable and can be estimated, provide for it (conservatism).
 
 **Source:** `Accounting Concepts and Conventions (1).pptx` slides 15–20
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 

@@ -1,6 +1,6 @@
 # Marketing: Batch 1, Foundations, Environment & Competition
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md) · Rule: news examples from 2024 onwards, fact-checked.
 Sources: the 3 files in `materials/MARKETING/Introduction to Marketing-20261017/`
 (based on Kotler, Keller et al., *Marketing Management* 17th ed.; Kotler, Armstrong et al.,
@@ -53,7 +53,7 @@ Treating "want" and "demand" as the same thing. A want without purchasing power 
    **Answer:** High **want** but low **demand**. People like the idea but either can't afford or aren't willing to pay the price. Fixes: trial passes, monthly plans, student pricing.
 
 **Source:** `Introduction to Marketing Management.pdf` slide 07
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -107,7 +107,7 @@ Counting only price as cost. Time, effort and risk are costs too. That's why "10
    **Answer:** Perceived benefits (work-friendly space) rose more than perceived costs (₹20), so net value went *up* for students who study there.
 
 **Source:** `Introduction to Marketing Management.pdf` slides 09–11, 19
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -160,7 +160,7 @@ Thinking "delight" just means over-promising. If ads promise too much, expectati
    **Answer:** Satisfaction compares performance with **expectations**, not with competitors. The ad set expectations at 10 minutes, so 18 feels like failure.
 
 **Source:** `Introduction to Marketing Management.pdf` slides 12–14
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -217,7 +217,7 @@ Thinking a *selling* orientation is the same as *marketing*. Selling starts with
    **Answer:** "Helping people create beautiful, lasting homes." That opens up waterproofing, home décor, painting services and design consultation.
 
 **Source:** `Introduction to Marketing Management.pdf` slides 16–23
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -275,7 +275,7 @@ Listing PESTLE factors as a checklist. Interviewers want the **"so what"**: what
    **Answer:** Get **clear, informed consent** for what it collects and why, give proper notice, protect the data and report breaches. Personalisation is still possible, but only built on trust and consent.
 
 **Source:** `Marketing Environment.pdf` slides 02–18, 22
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -333,7 +333,7 @@ Defining substitutes as "similar products". A substitute solves the **same need*
    **Answer:** **Substitutes defined by need**: tea, energy drinks, soft drinks, even "a place to sit with friends". Its real competitive set is much broader.
 
 **Source:** `Industry Structure and Competitive Analysis.pdf` slides 02–15
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 

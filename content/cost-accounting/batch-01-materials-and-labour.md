@@ -1,6 +1,6 @@
 # Cost & Financial Accounting: Batch 1, Materials & Labour Cost
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md) · Rule: news examples from 2024 onwards, fact-checked.
 Sources: `cost module 2.LMS.pptx`, `Module-2 Inventory_Control_Concept ( NSA).pptx`, `Formulas for Inventory control.docx`,
 `LMS-MOdule -3.pptx`, `Module -3 Labour_Cost_Concept (NSA).pptx`.
@@ -57,7 +57,7 @@ Ordering when stock hits the **minimum** level. By then it's too late: the order
    **Answer:** Raise the **reorder level and safety stock** (order earlier) so production doesn't stop. The cost is more **working capital** tied up in stock, so it should also look for nearer or second suppliers.
 
 **Source:** `cost module 2.LMS.pptx` slides 3–7 · `Formulas for Inventory control.docx`
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -105,7 +105,7 @@ Thinking EOQ gives the cheapest *purchase price*. It doesn't consider discounts 
    **Answer:** Compare **total annual cost** both ways: purchase cost + ordering cost + holding cost. Take the discount only if the saving on price beats the extra holding cost (and you have space and cash).
 
 **Source:** `cost module 2.LMS.pptx` slides 14–19 · `Module-2 Inventory_Control_Concept ( NSA).pptx` slide 7
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -159,7 +159,7 @@ Thinking FIFO or LIFO describes how goods physically leave the store. It's only 
    **Answer:** **LIFO isn't allowed** under Ind AS 2 / AS 2 for financial statements. She can choose FIFO or weighted average. Weighted average smooths price swings.
 
 **Source:** `cost module 2.LMS.pptx` slides 20–33 · `Formulas for Inventory control.docx`
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -209,7 +209,7 @@ Treating C items as unimportant. **Low value isn't low risk.**
    **Answer:** **Criticality.** ABC ranks by value only. A VED (Vital, Essential, Desirable) check would mark the sensor as vital and keep safety stock.
 
 **Source:** `cost module 2.LMS.pptx` slides 38–41 · `Module-2 Inventory_Control_Concept ( NSA).pptx` slides 5–6
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -259,7 +259,7 @@ Thinking higher turnover is *always* better. Too high can mean frequent stockout
    **Answer:** **X needs about half as much cash tied up in stock** (about 30 vs 61 days), so it can fund growth more cheaply. Y may be overstocked or carry slow-moving items.
 
 **Source:** `cost module 2.LMS.pptx` slides 34–37
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -309,7 +309,7 @@ Assuming Halsey always pays less than Rowan. It depends on how much time is save
    **Answer: Rowan.** Time wages ₹540. Halsey bonus = 50% × 3 × 60 = ₹90 (₹630). Rowan bonus = (3 ÷ 12) × 9 × 60 = ₹135 (₹675). She saved less than half the standard time, so Rowan pays more.
 
 **Source:** `LMS-MOdule -3.pptx` slides 3–13 · `Module -3 Labour_Cost_Concept (NSA).pptx` slides 4–7
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -360,7 +360,7 @@ Counting hires for **new posts** (expansion) as replacements. Only hires that fi
    **Answer: 16%** ((10 + 6) ÷ 100 × 100). It shows the total churn, both exits and refills, which is what drives hiring and training costs.
 
 **Source:** `LMS-MOdule -3.pptx` slides 14–20 · `Module -3 Labour_Cost_Concept (NSA).pptx` slides 8–9
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 

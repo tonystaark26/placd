@@ -58,7 +58,7 @@ buy more now. Strictly speaking that last case doesn't break the law; it shifts 
 through expectations."$c$,
   $c$Mixing up Giffen and Veblen. **Giffen = poor buyers + cheap staple. Veblen = rich buyers + status item.** They are opposite ends of the income scale.$c$,
   $c$[{"kind":"concept","question":"Which is a Veblen good? (a) Rice (b) A Rolex watch (c) Salt (d) Bus tickets","answer":"**(b).** Its appeal comes from its high price and status."},{"kind":"application","question":"All Giffen goods are inferior goods, but are all inferior goods Giffen goods?","answer":"**No.** A Giffen good is an inferior good with no close substitutes that takes up a large share of a poor household's budget. Most inferior goods don't meet all three conditions."},{"kind":"case","question":"A jewellery brand raises prices on its premium \"heritage\" line by 15%, and sales *rise*. The CFO calls it a pricing mistake that got lucky. Is she right?","answer":"Probably not. The heritage line is likely a Veblen good, where the higher price strengthens the status signal. The brand should test whether *discounting* would actually hurt that line."}]$c$::jsonb,
-  $c$Demand_Notes.PDF pp. 2.7, 2.11–2.13 · Demand_in_Economics.pptx slide 8$c$, $c$draft$c$
+  $c$Demand_Notes.PDF pp. 2.7, 2.11–2.13 · Demand_in_Economics.pptx slide 8$c$, $c$verified$c$
 ),
 (
   $c$econ-02$c$, $c$econ$c$, 2, $c$Change in Demand vs Change in Quantity Demanded$c$,
@@ -86,7 +86,7 @@ shift. As a manager I'd want to know which, because one is bought with discounts
 other comes free."$c$,
   $c$Saying "demand increased" when only the price fell. Economists keep the terms strictly separate: **price change = quantity demanded; everything else = demand.**$c$,
   $c$[{"kind":"concept","question":"Which causes a **shift** in the demand curve for tea? (a) Tea becomes cheaper (b) Coffee becomes more expensive (c) Tea becomes costlier (d) None","answer":"**(b).** Coffee's price is a non-price factor for tea, so tea's whole curve shifts right."},{"kind":"application","question":"An advertising campaign makes people want more of a soap at every price. Movement or shift?","answer":"**Shift (right).** Advertising changes tastes, a non-price factor. The notes point out this is exactly what advertising aims to do."},{"kind":"case","question":"A Kolkata sweet shop sells more rosogolla in October than in July at the same price. The owner credits his new signboard. What's a more likely explanation?","answer":"Durga Puja season. Festive demand (tastes, customs, gifting) shifts the demand curve right. The signboard may help, but the season is the bigger non-price factor."}]$c$::jsonb,
-  $c$Demand_Notes.PDF pp. 2.13–2.17 · Demand_in_Economics.pptx slide 6$c$, $c$draft$c$
+  $c$Demand_Notes.PDF pp. 2.13–2.17 · Demand_in_Economics.pptx slide 6$c$, $c$verified$c$
 ),
 (
   $c$econ-03$c$, $c$econ$c$, 3, $c$Price Elasticity of Demand$c$,
@@ -123,7 +123,7 @@ and revenue rises. If it's inelastic, as with a strong brand or a necessity, a p
 increase raises revenue. So first I'd estimate elasticity from past price changes."$c$,
   $c$Thinking *petrol* and *Indian Oil's petrol* have the same elasticity. Petrol as a whole is inelastic, but **one brand is elastic** because you can simply go to the next pump.$c$,
   $c$[{"kind":"concept","question":"Price falls 5%, quantity demanded rises 15%. Elasticity?","answer":"**3, elastic.**"},{"kind":"application","question":"Price drops from ₹6 to ₹4 and quantity rises from 10 to 15 units. Find elasticity.","answer":"(Δq ÷ Δp) × (p ÷ q) = (5 ÷ 2) × (6 ÷ 10) = **1.5, elastic.**"},{"kind":"case","question":"An airline and a salt company both plan a 10% price hike. Which should worry more about revenue, and why?","answer":"**The airline.** Air travel is elastic (substitutes like trains, and trips can be postponed), so revenue likely falls. Salt is highly inelastic (no substitute, tiny budget share), so revenue likely rises."}]$c$::jsonb,
-  $c$Demand_Notes.PDF pp. 2.17–2.30 · Elasticity_in_Economics.pdf slides 4–6, 10$c$, $c$draft$c$
+  $c$Demand_Notes.PDF pp. 2.17–2.30 · Elasticity_in_Economics.pdf slides 4–6, 10$c$, $c$verified$c$
 ),
 (
   $c$econ-04$c$, $c$econ$c$, 4, $c$Income Elasticity of Demand$c$,
@@ -154,7 +154,7 @@ Salt is a necessity with elasticity near zero, so its sales barely move. Some go
 used cars, can even sell *more* in a slowdown because they're inferior goods."$c$,
   $c$Assuming "inferior good" means bad quality. It only means people buy less of it as they get richer, like **used cars** in the notes' example, which have an elasticity of −0.375.$c$,
   $c$[{"kind":"concept","question":"Income rises 10%, TV demand rises 20%. What type of good?","answer":"**Luxury (elasticity 2).**"},{"kind":"application","question":"Income rises 5%, bajra demand falls 2%. Elasticity and type?","answer":"**−0.4, an inferior good.**"},{"kind":"case","question":"A car dealer sees new-car sales rise from 400 to 500 and used-car sales fall from 4,000 to 3,850 after incomes rose 10%. What should they stock more of if incomes keep rising?","answer":"**New cars.** New cars: +25% ÷ 10% = **2.5 (luxury)**. Used cars: −3.75% ÷ 10% = **−0.375 (inferior)**. Rising incomes favour new cars."}]$c$::jsonb,
-  $c$Demand_Notes.PDF pp. 2.30–2.32 · Elasticity_in_Economics.pdf slide 7$c$, $c$draft$c$
+  $c$Demand_Notes.PDF pp. 2.30–2.32 · Elasticity_in_Economics.pdf slide 7$c$, $c$verified$c$
 ),
 (
   $c$econ-05$c$, $c$econ$c$, 5, $c$Cross Elasticity of Demand$c$,
@@ -184,7 +184,7 @@ are substitutes for petrol, so EV makers and metro or bus services may gain. Tha
 fuel price news moves auto stocks differently."$c$,
   $c$Assuming a negative cross elasticity *always* means complements. The notes warn that a strong **income effect** can also cause it. Positive reliably means substitutes; negative needs a closer look.$c$,
   $c$[{"kind":"concept","question":"Cross elasticity between two brands of notebooks is +1.5. What are they?","answer":"**Close substitutes.**"},{"kind":"application","question":"Printers are sold cheap but ink cartridges are expensive. Which concept explains this strategy?","answer":"**Complementary goods (tied demand).** Once you own the printer, your demand for that brand's ink is inelastic, so the company profits on the ink."},{"kind":"case","question":"A Kolkata metro fare cut is announced. Which local businesses should be worried: app-based cab services, or the tea stalls outside metro stations?","answer":"**Cab services.** Metro rides are a *substitute* for cabs (positive cross elasticity), so cheaper metro fares reduce cab demand. Tea stalls near stations are closer to *complements*, since more metro riders means more footfall, so they may gain."}]$c$::jsonb,
-  $c$Demand_Notes.PDF pp. 2.29, 2.33–2.35 · Elasticity_in_Economics.pdf slide 8$c$, $c$draft$c$
+  $c$Demand_Notes.PDF pp. 2.29, 2.33–2.35 · Elasticity_in_Economics.pdf slide 8$c$, $c$verified$c$
 ),
 (
   $c$econ-06$c$, $c$econ$c$, 6, $c$Scarcity & Opportunity Cost$c$,
@@ -211,7 +211,7 @@ gave up for two years. I chose the MBA because I expect the long-term return, th
 better roles and faster growth, to be higher than what I gave up."$c$,
   $c$Adding up *all* the alternatives, or counting only money. Opportunity cost is **only the single next-best option**, and it includes time and experience, not just rupees.$c$,
   $c$[{"kind":"concept","question":"Opportunity cost is… (a) the money you spend (b) the value of the next-best option you give up (c) the total of all options (d) a sunk cost","answer":"**(b).**"},{"kind":"application","question":"Rahul leaves a ₹6 lakh-a-year job for a 2-year MBA with ₹10 lakh in fees. What's the full economic cost?","answer":"**₹22 lakh** = ₹10 lakh fees (money actually paid) + ₹12 lakh salary given up (opportunity cost)."},{"kind":"case","question":"A company can spend ₹50 crore on a new factory or on a marketing campaign. It picks the factory. What should the CFO call the marketing campaign's expected return?","answer":"The **opportunity cost** of building the factory. The factory only makes sense if its expected return beats the campaign's."}]$c$::jsonb,
-  $c$foundation of economics (1).ppt slides 2–10$c$, $c$draft$c$
+  $c$foundation of economics (1).ppt slides 2–10$c$, $c$verified$c$
 ),
 (
   $c$econ-07$c$, $c$econ$c$, 7, $c$Production Possibility Frontier (PPF)$c$,
@@ -241,7 +241,7 @@ resources, not new ones. Moving outward from the curve itself needs new resource
 better technology."$c$,
   $c$Calling points *outside* the curve "inefficient". They are **unattainable** for now. Points *inside* are the inefficient ones.$c$,
   $c$[{"kind":"concept","question":"A point inside the PPF shows… (a) efficiency (b) unused resources (c) an impossible output (d) growth","answer":"**(b).**"},{"kind":"application","question":"Which shifts India's PPF outward? (a) A strike in factories (b) Better use of idle machines (c) New technology in manufacturing (d) Moving along the curve","answer":"**(c).** (a) moves production inside the curve; (b) moves it *towards* the curve, not beyond it."},{"kind":"case","question":"A textile firm's machines run at 60% capacity, yet the CEO wants to build a new plant. What would you ask first?","answer":"\"Why not use the 40% idle capacity first?\" The firm is inside its own PPF. A new plant makes sense only if demand will outgrow even full capacity."}]$c$::jsonb,
-  $c$foundation of economics (1).ppt slides 11–18$c$, $c$draft$c$
+  $c$foundation of economics (1).ppt slides 11–18$c$, $c$verified$c$
 ),
 (
   $c$econ-08$c$, $c$econ$c$, 8, $c$Law of Supply & What Shifts It$c$,
@@ -272,7 +272,7 @@ curve left. Demand for a daily staple barely changes, so the price jumped. And b
 tomatoes are perishable, supply can't respond quickly, which makes the spike sharper."$c$,
   $c$Saying "supply increased" when sellers sold more *because the price rose*. That's an increase in **quantity supplied** (a movement). **Supply** only increases when the curve shifts.$c$,
   $c$[{"kind":"concept","question":"Which causes a **shift** in supply? (a) The product's price rises (b) A new technology cuts production costs (c) Buyers' incomes rise (d) None","answer":"**(b).** (c) shifts *demand*, not supply."},{"kind":"application","question":"The government gives a subsidy to solar panel makers. What happens to the supply curve?","answer":"**It shifts right.** Lower costs mean more is supplied at every price."},{"kind":"case","question":"A Kolkata flower seller can't increase supply during Durga Puja even though prices triple. Which exception is this?","answer":"**Perishable / seasonal goods.** Supply is nearly fixed in the short run, so a demand spike becomes a price spike."}]$c$::jsonb,
-  $c$Supply_in_Economics.pptx slides 2–8 · Demand_vs_Supply_Comparative_Analysis.pptx slides 2–6$c$, $c$draft$c$
+  $c$Supply_in_Economics.pptx slides 2–8 · Demand_vs_Supply_Comparative_Analysis.pptx slides 2–6$c$, $c$verified$c$
 ),
 (
   $c$econ-09$c$, $c$econ$c$, 9, $c$Market Equilibrium, Shortage & Surplus$c$,
@@ -305,7 +305,7 @@ looks unfair. The better options are what they did: add shows to increase supply
 resale with ID-linked tickets. It's a trade-off between revenue and brand goodwill."$c$,
   $c$Thinking a shortage just means "not enough was made". A shortage only exists **at a given price**: at a high enough price, the shortage disappears.$c$,
   $c$[{"kind":"concept","question":"If the price is set above equilibrium, there will be… (a) a shortage (b) a surplus (c) equilibrium (d) no effect","answer":"**(b).**"},{"kind":"application","question":"A heatwave raises demand for ACs while a GST cut makes them cheaper to supply. What happens to AC sales quantity?","answer":"**It rises.** Both demand ↑ and supply ↑ push quantity up. The price effect is unclear, since the two forces pull it in opposite directions."},{"kind":"case","question":"A new café's ₹49 cold coffee has a 30-minute queue every evening. What's the economic signal?","answer":"The price is below equilibrium, so there's a shortage. The café can raise the price, add capacity (supply), or accept the queue as free marketing."}]$c$::jsonb,
-  $c$Demand_vs_Supply_Comparative_Analysis.pptx slides 4–8$c$, $c$draft$c$
+  $c$Demand_vs_Supply_Comparative_Analysis.pptx slides 4–8$c$, $c$verified$c$
 ),
 (
   $c$econ-10$c$, $c$econ$c$, 10, $c$Law of Diminishing Marginal Utility$c$,
@@ -334,7 +334,7 @@ plentiful, so the value of one extra litre is low. Diamonds are scarce, so one m
 valued highly. Total usefulness and price per unit are different things."$c$,
   $c$Mixing up total and marginal utility. Total utility can still be *rising* while marginal utility *falls*, as long as MU is positive.$c$,
   $c$[{"kind":"concept","question":"TU after 3 cups = 65, after 4 cups = 75. What is the MU of the 4th cup?","answer":"**10** (75 − 65)."},{"kind":"application","question":"When MU becomes negative, what happens to TU?","answer":"**TU starts falling.**"},{"kind":"case","question":"A pizza chain offers \"second pizza at 50% off\". Which concept explains the discount?","answer":"**Diminishing marginal utility.** The second pizza is worth less to you, so the chain lowers its price to match what you'd pay for it."}]$c$::jsonb,
-  $c$Consumer Eqm. - revision basics.PDF slides 3–18 · Demand_Notes.PDF p. 2.11$c$, $c$draft$c$
+  $c$Consumer Eqm. - revision basics.PDF slides 3–18 · Demand_Notes.PDF p. 2.11$c$, $c$verified$c$
 ),
 (
   $c$econ-11$c$, $c$econ$c$, 11, $c$Indifference Curves & Consumer Equilibrium$c$,
@@ -364,7 +364,7 @@ indifference curve they can reach. There, the rate at which they're willing to s
 goods (MRS) equals the rate at which the market lets them swap (the price ratio)."$c$,
   $c$Drawing two indifference curves that cross. They **never** intersect: that would mean one combination gives two different levels of satisfaction.$c$,
   $c$[{"kind":"concept","question":"Why are indifference curves convex to the origin?","answer":"**Diminishing MRS.** You give up less and less of one good for each extra unit of the other."},{"kind":"application","question":"Which approach does the indifference curve use: cardinal or ordinal?","answer":"**Ordinal** (Hicks & Allen). It ranks preferences without measuring utility."},{"kind":"case","question":"A student spends all her pocket money on chai and samosas. Chai's price doubles. What happens to her budget line, and can she stay on the same indifference curve?","answer":"The budget line pivots inward on the chai side. She can no longer afford her old combination, so she moves to a **lower** indifference curve and, in all likelihood, buys fewer chais."}]$c$::jsonb,
-  $c$Consumer Eqm. - revision basics.PDF slides 2, 25–43$c$, $c$draft$c$
+  $c$Consumer Eqm. - revision basics.PDF slides 2, 25–43$c$, $c$verified$c$
 ),
 (
   $c$mkt-01$c$, $c$mkt$c$, 1, $c$Needs, Wants & Demands$c$,
@@ -392,7 +392,7 @@ people always needed transport, but marketing and rising incomes shaped *how* th
 want to meet that need."$c$,
   $c$Treating "want" and "demand" as the same thing. A want without purchasing power is not demand, so it doesn't count when estimating market size.$c$,
   $c$[{"kind":"concept","question":"A student wants an iPhone but can't afford one. Is this demand?","answer":"**No.** It's a want without purchasing power."},{"kind":"application","question":"A bank launches easy EMIs for two-wheelers. Which stage is it targeting?","answer":"**Turning wants into demand** by increasing purchasing power."},{"kind":"case","question":"A premium gym in Kolkata gets thousands of Instagram likes but few sign-ups. What's the likely gap?","answer":"High **want** but low **demand**. People like the idea but either can't afford or aren't willing to pay the price. Fixes: trial passes, monthly plans, student pricing."}]$c$::jsonb,
-  $c$Introduction to Marketing Management.pdf slide 07$c$, $c$draft$c$
+  $c$Introduction to Marketing Management.pdf slide 07$c$, $c$verified$c$
 ),
 (
   $c$mkt-02$c$, $c$mkt$c$, 2, $c$Customer Value & Value Proposition$c$,
@@ -424,7 +424,7 @@ about battery life and price, a cheaper phone gives *more* value. That's why mar
 start with what the customer values, not with what the engineers can build."$c$,
   $c$Counting only price as cost. Time, effort and risk are costs too. That's why "10-minute delivery" sells even when prices are higher.$c$,
   $c$[{"kind":"concept","question":"Customer value is… (a) price paid (b) perceived benefits − perceived costs (c) product quality (d) brand awareness","answer":"**(b).**"},{"kind":"application","question":"Name two non-money costs a customer pays when shopping at a crowded mall on a Sunday.","answer":"For example, **time** (travel and queues) and **effort** (parking, crowds)."},{"kind":"case","question":"A café raises coffee prices by ₹20 but adds free Wi-Fi and charging points, and its student footfall *rises*. Explain using customer value.","answer":"Perceived benefits (work-friendly space) rose more than perceived costs (₹20), so net value went *up* for students who study there."}]$c$::jsonb,
-  $c$Introduction to Marketing Management.pdf slides 09–11, 19$c$, $c$draft$c$
+  $c$Introduction to Marketing Management.pdf slides 09–11, 19$c$, $c$verified$c$
 ),
 (
   $c$mkt-03$c$, $c$mkt$c$, 3, $c$Customer Satisfaction & Customer Lifetime Value (CLV)$c$,
@@ -456,7 +456,7 @@ customer lifetime value. The exception is when the big spender also has high rep
 potential."$c$,
   $c$Thinking "delight" just means over-promising. If ads promise too much, expectations rise and the *same* performance now produces dissatisfaction. Under-promise and over-deliver.$c$,
   $c$[{"kind":"concept","question":"Performance exceeds expectations. The customer feels…","answer":"**Delight.**"},{"kind":"application","question":"A customer contributes ₹200 profit per purchase, buys twice a month and stays 2 years. CLV before adjustments?","answer":"₹200 × 2 × 24 = **₹9,600.**"},{"kind":"case","question":"A new app's ads promise \"delivery in 10 minutes, every time\", but deliveries average 18 minutes. Customers are angry, even though 18 minutes is faster than most rivals. Why?","answer":"Satisfaction compares performance with **expectations**, not with competitors. The ad set expectations at 10 minutes, so 18 feels like failure."}]$c$::jsonb,
-  $c$Introduction to Marketing Management.pdf slides 12–14$c$, $c$draft$c$
+  $c$Introduction to Marketing Management.pdf slides 12–14$c$, $c$verified$c$
 ),
 (
   $c$mkt-04$c$, $c$mkt$c$, 4, $c$Marketing Orientations & Marketing Myopia$c$,
@@ -494,7 +494,7 @@ becoming Eternal is a recent example of avoiding it: it saw itself as serving ev
 convenience, not just food delivery, and Blinkit became its biggest growth engine."$c$,
   $c$Thinking a *selling* orientation is the same as *marketing*. Selling starts with the product and pushes it out; marketing starts with the customer and pulls the product in.$c$,
   $c$[{"kind":"concept","question":"\"Consumers won't buy enough unless persuaded\" describes which orientation?","answer":"**Selling.**"},{"kind":"application","question":"A phone brand adds a 200 MP camera, but its target buyers care more about battery life. Which trap is this?","answer":"**Product orientation, leading to marketing myopia.** A superior feature isn't a superior value proposition."},{"kind":"case","question":"A paint company sees itself as being in \"the paint business\". What would a non-myopic definition be, and what new opportunities does it open?","answer":"\"Helping people create beautiful, lasting homes.\" That opens up waterproofing, home décor, painting services and design consultation."}]$c$::jsonb,
-  $c$Introduction to Marketing Management.pdf slides 16–23$c$, $c$draft$c$
+  $c$Introduction to Marketing Management.pdf slides 16–23$c$, $c$verified$c$
 ),
 (
   $c$mkt-05$c$, $c$mkt$c$, 5, $c$The Marketing Environment: Micro & Macro (PESTLE)$c$,
@@ -531,7 +531,7 @@ forces act *together*, so carmakers must change product, pricing, communication 
 charging partnerships at the same time."$c$,
   $c$Listing PESTLE factors as a checklist. Interviewers want the **"so what"**: what each force means for the company's decisions.$c$,
   $c$[{"kind":"concept","question":"Are competitors part of the micro- or macroenvironment?","answer":"**Microenvironment.**"},{"kind":"application","question":"Rising edible-oil prices hit an FMCG company. Name three marketing responses from the notes.","answer":"For example, **raise prices, shrink pack sizes, reformulate, or revise promotions.**"},{"kind":"case","question":"A fashion app collects users' location, browsing and purchase history to personalise ads. Under DPDP, what must it change?","answer":"Get **clear, informed consent** for what it collects and why, give proper notice, protect the data and report breaches. Personalisation is still possible, but only built on trust and consent."}]$c$::jsonb,
-  $c$Marketing Environment.pdf slides 02–18, 22$c$, $c$draft$c$
+  $c$Marketing Environment.pdf slides 02–18, 22$c$, $c$verified$c$
 ),
 (
   $c$mkt-06$c$, $c$mkt$c$, 6, $c$Porter's Five Forces & Competitive Advantage$c$,
@@ -571,7 +571,7 @@ regular e-commerce. So it's a tough industry for profits, and winners will need 
 advantages such as density of dark stores, private labels and loyalty programs."$c$,
   $c$Defining substitutes as "similar products". A substitute solves the **same need** in a different way. Netflix competes with Instagram and sleep for your time, not just with Prime Video.$c$,
   $c$[{"kind":"concept","question":"Which force is high when switching costs are low and information is easily available?","answer":"**Bargaining power of buyers.**"},{"kind":"application","question":"Only two companies in the world make an advanced chip that phone makers need. Which force is strong?","answer":"**Supplier power.**"},{"kind":"case","question":"A coffee chain only tracks other coffee chains as competitors. What is it missing?","answer":"**Substitutes defined by need**: tea, energy drinks, soft drinks, even \"a place to sit with friends\". Its real competitive set is much broader."}]$c$::jsonb,
-  $c$Industry Structure and Competitive Analysis.pdf slides 02–15$c$, $c$draft$c$
+  $c$Industry Structure and Competitive Analysis.pdf slides 02–15$c$, $c$verified$c$
 ),
 (
   $c$mkt-07$c$, $c$mkt$c$, 7, $c$Four Types of Buying Behaviour$c$,
@@ -606,7 +606,7 @@ focus on *after* the sale: a 100-night trial, easy returns, follow-up calls, and
 happy customers."$c$,
   $c$Assuming involvement just means "expensive". A ₹500 baby food can be very high-involvement because the risk to the baby feels high.$c$,
   $c$[{"kind":"concept","question":"Low involvement + significant brand differences = ?","answer":"**Variety-seeking buying.**"},{"kind":"application","question":"For habitual products like salt, what matters most to the marketer?","answer":"**Availability and easy recognition**: distribution, distinctive packaging, repetition."},{"kind":"case","question":"An insurance company finds that many customers cancel within 15 days of buying a policy. Which buying type is this, and what's the fix?","answer":"**Dissonance-reducing.** Policies look similar, so buyers doubt their choice afterwards. The fix is post-purchase reassurance: a welcome call, a clear benefits summary, and testimonials."}]$c$::jsonb,
-  $c$Understanding Consumer and Business Markets.pdf slides 06–11$c$, $c$draft$c$
+  $c$Understanding Consumer and Business Markets.pdf slides 06–11$c$, $c$verified$c$
 ),
 (
   $c$mkt-08$c$, $c$mkt$c$, 8, $c$The Consumer Decision Process (and Why It's No Longer a Straight Line)$c$,
@@ -640,7 +640,7 @@ reaching 237 stores is a good example. The brand has to feel like one experience
 every touchpoint."$c$,
   $c$Treating purchase *intention* as a sale. Plenty of things happen between "I'll buy this" and paying: stock, price, EMI, delivery time, family.$c$,
   $c$[{"kind":"concept","question":"Researching online, then buying in a store, is called…","answer":"**Webrooming.**"},{"kind":"application","question":"A buyer rejects every laptop under 16 GB RAM, however good the other features are. Which evaluation rule is this?","answer":"**A cut-off (non-compensatory) rule.**"},{"kind":"case","question":"An electronics brand sees high traffic on its product page but low sales. Using the decision process, where would you look first?","answer":"At **evaluation and purchase**: price compared with rivals, reviews, stock availability, EMI or exchange offers, delivery time. Traffic shows interest; something is blocking the final step."}]$c$::jsonb,
-  $c$Understanding Consumer and Business Markets.pdf slides 12–28$c$, $c$draft$c$
+  $c$Understanding Consumer and Business Markets.pdf slides 12–28$c$, $c$verified$c$
 ),
 (
   $c$mkt-09$c$, $c$mkt$c$, 9, $c$B2B Buying: The Buying Centre & Buying Situations$c$,
@@ -681,7 +681,7 @@ negotiation. Third, it's relationship-driven: after-sales service and reliabilit
 you get the repeat order. And demand is *derived*, so I'd watch the customer's own market."$c$,
   $c$Pitching only to the person who signs the order. In B2B, the user or the IT gatekeeper can quietly kill a deal the decider liked.$c$,
   $c$[{"kind":"concept","question":"A hospital reorders the same gloves from the same supplier every month. Which buying situation?","answer":"**Straight rebuy.**"},{"kind":"application","question":"Demand for steel rises because car sales are booming. What concept is this?","answer":"**Derived demand.**"},{"kind":"case","question":"You sell CRM software to a large company. The sales head loves your demo, but the deal stalls for months. Who in the buying centre should you engage?","answer":"The **IT team** (influencer and gatekeeper: security, integration), **finance** (total cost and approval) and **procurement** (buyer: terms). Winning the user isn't enough."}]$c$::jsonb,
-  $c$Understanding Consumer and Business Markets.pdf slides 45–63$c$, $c$draft$c$
+  $c$Understanding Consumer and Business Markets.pdf slides 45–63$c$, $c$verified$c$
 ),
 (
   $c$mkt-10$c$, $c$mkt$c$, 10, $c$Market Measurement & Demand Estimation$c$,
@@ -714,7 +714,7 @@ I'd state each assumption out loud and give a range, not one number. The structu
 more than the exact answer."$c$,
   $c$Quoting one market-size number without saying *which* market and *which* period, or confusing **market potential** (the ceiling) with **your sales forecast** (your realistic share).$c$,
   $c$[{"kind":"concept","question":"The upper limit of industry sales as marketing effort becomes very large is called…","answer":"**Market potential.**"},{"kind":"application","question":"10,000 households × 20% buy × 4 packs a year × ₹100. What's the market?","answer":"**₹8,00,000 (₹8 lakh).**"},{"kind":"case","question":"Two consultants give a client very different market sizes for the same product. What's the first thing you check?","answer":"Their **definitions**: product scope, customer group, geography, time period (FY vs calendar year) and assumptions. Most gaps come from defining different markets."}]$c$::jsonb,
-  $c$Market Measurement Research.pdf slides 05–12$c$, $c$draft$c$
+  $c$Market Measurement Research.pdf slides 05–12$c$, $c$verified$c$
 ),
 (
   $c$mkt-11$c$, $c$mkt$c$, 11, $c$Marketing Research: From Data to Insight$c$,
@@ -747,7 +747,7 @@ to size the main reasons, and finally a small experiment to test the fix. Second
 primary data only for what's still uncertain."$c$,
   $c$Treating search interest or likes as market size, or assuming **correlation means causation**. Ice-cream sales and AC sales rise together, but neither causes the other; summer causes both.$c$,
   $c$[{"kind":"concept","question":"\"Why do first-time users not return?\" Qualitative or quantitative?","answer":"**Qualitative first** (interviews, journey observation), then quantitative to size it."},{"kind":"application","question":"Which landing page converts better, A or B? Best method?","answer":"**A randomised A/B experiment.**"},{"kind":"case","question":"A manager says: \"Our survey of 5,000 Instagram followers shows 90% love our new flavour, so let's launch nationally.\" What's wrong?","answer":"**Sampling bias.** Followers already like the brand, so they don't represent the whole market. A large biased sample can still be confidently wrong."}]$c$::jsonb,
-  $c$Market Measurement Research.pdf slides 14–31$c$, $c$draft$c$
+  $c$Market Measurement Research.pdf slides 14–31$c$, $c$verified$c$
 ),
 (
   $c$mkt-12$c$, $c$mkt$c$, 12, $c$Marketing Ethics: Dark Patterns, Greenwashing & Disclosure$c$,
@@ -780,7 +780,7 @@ fair, and the front-page test. India's 2025 dark-patterns crackdown shows the la
 with what was already unethical."$c$,
   $c$Mixing up **CSR** (a company's responsibility to society), **social marketing** (using marketing to change behaviour for good, like road-safety campaigns) and **cause-related marketing** ("₹1 from every purchase goes to…").$c$,
   $c$[{"kind":"concept","question":"A shopping app adds an item to your cart that you didn't choose. Which dark pattern?","answer":"**Basket sneaking.**"},{"kind":"application","question":"A brand says \"eco-friendly packaging\" with no details or evidence. What's the issue?","answer":"**Greenwashing.** Claims must be specific and substantiated."},{"kind":"case","question":"A fitness creator praises a protein powder without mentioning the brand paid them ₹50,000. The post is popular. What's the problem, and what's the fix?","answer":"**Undisclosed paid promotion.** Followers think it's an independent opinion, which is misleading. Fix: a clear \"#ad / paid partnership\" label at the start, as advertising standards require."}]$c$::jsonb,
-  $c$Ethics and Social Responsibility in Marketing.pdf slides 02–16 · Emerging Trends in Marketing.pdf slides 04, 10–11$c$, $c$draft$c$
+  $c$Ethics and Social Responsibility in Marketing.pdf slides 02–16 · Emerging Trends in Marketing.pdf slides 04, 10–11$c$, $c$verified$c$
 ),
 (
   $c$acct-01$c$, $c$acct$c$, 1, $c$Stock Levels: Reorder, Minimum, Maximum & Danger$c$,
@@ -815,7 +815,7 @@ uncertainty, and accept higher working capital in the short run. Then I'd fix th
 second or local supplier, so we're not holding extra stock forever."$c$,
   $c$Ordering when stock hits the **minimum** level. By then it's too late: the order should go out at the **reorder** level, which is higher.$c$,
   $c$[{"kind":"concept","question":"Maximum usage is 40 units a day and maximum lead time is 4 days. What's the reorder level?","answer":"**160 units** (40 × 4)."},{"kind":"application","question":"Reorder level is 500 units, normal usage 60 units a week and normal lead time 5 weeks. What's the minimum level?","answer":"**200 units** (500 − 60 × 5)."},{"kind":"case","question":"Shipping delays add two weeks to an importer's lead time. What should it do first, and what's the cost?","answer":"Raise the **reorder level and safety stock** (order earlier) so production doesn't stop. The cost is more **working capital** tied up in stock, so it should also look for nearer or second suppliers."}]$c$::jsonb,
-  $c$cost module 2.LMS.pptx slides 3–7 · Formulas for Inventory control.docx$c$, $c$draft$c$
+  $c$cost module 2.LMS.pptx slides 3–7 · Formulas for Inventory control.docx$c$, $c$verified$c$
 ),
 (
   $c$acct-02$c$, $c$acct$c$, 2, $c$Economic Order Quantity (EOQ)$c$,
@@ -845,7 +845,7 @@ or to protect against **supply disruption**. I'd compare the total cost, includi
 price and the risk of a stockout, not just the EOQ cost."$c$,
   $c$Thinking EOQ gives the cheapest *purchase price*. It doesn't consider discounts at all; it only minimises ordering + holding costs.$c$,
   $c$[{"kind":"concept","question":"At the EOQ, how do yearly ordering costs compare with yearly holding costs?","answer":"**They're equal.**"},{"kind":"application","question":"D = 800 units, S = ₹100 per order, H = ₹4 per unit per year. What's the EOQ?","answer":"**200 units** (√(2 × 800 × 100 ÷ 4) = √40,000)."},{"kind":"case","question":"A supplier offers a 5% discount if you order 1,000 units at a time, well above your EOQ of 300. How do you decide?","answer":"Compare **total annual cost** both ways: purchase cost + ordering cost + holding cost. Take the discount only if the saving on price beats the extra holding cost (and you have space and cash)."}]$c$::jsonb,
-  $c$cost module 2.LMS.pptx slides 14–19 · Module-2 Inventory_Control_Concept ( NSA).pptx slide 7$c$, $c$draft$c$
+  $c$cost module 2.LMS.pptx slides 14–19 · Module-2 Inventory_Control_Concept ( NSA).pptx slide 7$c$, $c$verified$c$
 ),
 (
   $c$acct-03$c$, $c$acct$c$, 3, $c$Valuing Stock: FIFO, LIFO & Weighted Average$c$,
@@ -881,7 +881,7 @@ lower tax, but LIFO isn't permitted under Ind AS 2 or AS 2 in India. So Indian c
 between FIFO and weighted average."$c$,
   $c$Thinking FIFO or LIFO describes how goods physically leave the store. It's only how **costs** are assigned.$c$,
   $c$[{"kind":"concept","question":"Under FIFO, closing stock is valued at…","answer":"**The latest purchase prices.**"},{"kind":"application","question":"Opening stock 50 units at ₹20, purchase 50 units at ₹30, issue 60 units. Cost of the issue under FIFO?","answer":"**₹1,300** (50 × ₹20 + 10 × ₹30)."},{"kind":"case","question":"Inflation is high, and a CFO in India wants to switch to LIFO to cut taxes. What do you tell her?","answer":"**LIFO isn't allowed** under Ind AS 2 / AS 2 for financial statements. She can choose FIFO or weighted average. Weighted average smooths price swings."}]$c$::jsonb,
-  $c$cost module 2.LMS.pptx slides 20–33 · Formulas for Inventory control.docx$c$, $c$draft$c$
+  $c$cost module 2.LMS.pptx slides 20–33 · Formulas for Inventory control.docx$c$, $c$verified$c$
 ),
 (
   $c$acct-04$c$, $c$acct$c$, 4, $c$ABC Analysis$c$,
@@ -913,7 +913,7 @@ criticality check like VED, because a cheap C part that stops the line deserves 
 The 2025 rare-earth magnet shortage is a good example."$c$,
   $c$Treating C items as unimportant. **Low value isn't low risk.**$c$,
   $c$[{"kind":"concept","question":"In ABC analysis, A items are roughly…","answer":"**10–20% of items but 70–80% of value.**"},{"kind":"application","question":"An item is 5% of the number of items but 60% of the value. Which category?","answer":"**A.**"},{"kind":"case","question":"A ₹50 sensor runs out and stops a whole production line. What did the company's ABC-only system miss?","answer":"**Criticality.** ABC ranks by value only. A VED (Vital, Essential, Desirable) check would mark the sensor as vital and keep safety stock."}]$c$::jsonb,
-  $c$cost module 2.LMS.pptx slides 38–41 · Module-2 Inventory_Control_Concept ( NSA).pptx slides 5–6$c$, $c$draft$c$
+  $c$cost module 2.LMS.pptx slides 38–41 · Module-2 Inventory_Control_Concept ( NSA).pptx slides 5–6$c$, $c$verified$c$
 ),
 (
   $c$acct-05$c$, $c$acct$c$, 5, $c$Inventory Turnover Ratio$c$,
@@ -945,7 +945,7 @@ is bad news, while deliberately stocking up before a price rise or a new store l
 sensible. I'd compare with competitors too."$c$,
   $c$Thinking higher turnover is *always* better. Too high can mean frequent stockouts and lost sales.$c$,
   $c$[{"kind":"concept","question":"Inventory turnover is…","answer":"**Cost of goods sold ÷ average inventory.**"},{"kind":"application","question":"Opening stock ₹30,000, closing stock ₹50,000, cost of goods sold ₹2,40,000. What's the turnover?","answer":"**6 times** (2,40,000 ÷ 40,000), about 61 days."},{"kind":"case","question":"Two grocery chains have the same sales. Chain X turns its stock 12 times a year, chain Y 6 times. What does that tell an investor?","answer":"**X needs about half as much cash tied up in stock** (about 30 vs 61 days), so it can fund growth more cheaply. Y may be overstocked or carry slow-moving items."}]$c$::jsonb,
-  $c$cost module 2.LMS.pptx slides 34–37$c$, $c$draft$c$
+  $c$cost module 2.LMS.pptx slides 34–37$c$, $c$verified$c$
 ),
 (
   $c$acct-06$c$, $c$acct$c$, 6, $c$Paying Workers: Time Rate, Piece Rate, Halsey & Rowan$c$,
@@ -977,7 +977,7 @@ resolution rate and customer ratings. Piece rate works best when output is easy 
 is easy to check, as in garment stitching or data entry."$c$,
   $c$Assuming Halsey always pays less than Rowan. It depends on how much time is saved; they're equal when exactly half the standard time is saved.$c$,
   $c$[{"kind":"concept","question":"Under a piece rate system, wages depend on…","answer":"**Units produced.**"},{"kind":"application","question":"A worker's normal day is 8 hours at ₹80 an hour. She works 10 hours, with overtime at 1.5 times the normal rate. Total wages?","answer":"**₹880** (8 × 80 = 640, plus 2 × 120 = 240)."},{"kind":"case","question":"Standard time is 12 hours, a worker takes 9 hours, and the rate is ₹60 an hour. Which plan does the worker prefer, Halsey or Rowan?","answer":"**Rowan.** Time wages ₹540. Halsey bonus = 50% × 3 × 60 = ₹90 (₹630). Rowan bonus = (3 ÷ 12) × 9 × 60 = ₹135 (₹675). She saved less than half the standard time, so Rowan pays more."}]$c$::jsonb,
-  $c$LMS-MOdule -3.pptx slides 3–13 · Module -3 Labour_Cost_Concept (NSA).pptx slides 4–7$c$, $c$draft$c$
+  $c$LMS-MOdule -3.pptx slides 3–13 · Module -3 Labour_Cost_Concept (NSA).pptx slides 4–7$c$, $c$verified$c$
 ),
 (
   $c$acct-07$c$, $c$acct$c$, 7, $c$Labour Turnover$c$,
@@ -1010,7 +1010,7 @@ for the people covering gaps, mistakes, lost client knowledge, and lower morale.
 causes through exit interviews, then target the biggest one, whether that's pay, managers or growth."$c$,
   $c$Counting hires for **new posts** (expansion) as replacements. Only hires that fill someone's exit are replacements.$c$,
   $c$[{"kind":"concept","question":"The separation method divides the number of leavers by…","answer":"**The average number of workers.**"},{"kind":"application","question":"Average workers 200 and 50 separations. What's labour turnover by the separation method?","answer":"**25%.**"},{"kind":"case","question":"A factory starts the year with 80 workers and ends with 120. 10 workers left and 6 were replaced. What's the flux rate, and why is it useful?","answer":"**16%** ((10 + 6) ÷ 100 × 100). It shows the total churn, both exits and refills, which is what drives hiring and training costs."}]$c$::jsonb,
-  $c$LMS-MOdule -3.pptx slides 14–20 · Module -3 Labour_Cost_Concept (NSA).pptx slides 8–9$c$, $c$draft$c$
+  $c$LMS-MOdule -3.pptx slides 14–20 · Module -3 Labour_Cost_Concept (NSA).pptx slides 8–9$c$, $c$verified$c$
 ),
 (
   $c$acct-08$c$, $c$acct$c$, 8, $c$What Accounting Is, Its Branches & Who Uses It$c$,
@@ -1051,7 +1051,7 @@ profit, and regulators like SEBI check compliance. The same statements answer ve
 questions, which is why they must be reliable and standardised."$c$,
   $c$Using book-keeping and accounting as if they mean the same thing. Book-keeping is just the recording step; accounting goes on to summarise, interpret and communicate.$c$,
   $c$[{"kind":"concept","question":"The routine, clerical recording of transactions is called…","answer":"**Book-keeping.**"},{"kind":"application","question":"The canteen wants to know what each plate of biryani really costs. Which branch of accounting helps?","answer":"**Cost accounting.**"},{"kind":"case","question":"A bank is deciding whether to lend ₹50 lakh to a small firm. Which kind of user is the bank, and what will it focus on?","answer":"An **external user (a lender/creditor)**. It will focus on the firm's ability to repay: cash flows, existing debt, assets available as security and steady profits."}]$c$::jsonb,
-  $c$Introduction to Financial Accounting (2).pptx slides 3–9$c$, $c$draft$c$
+  $c$Introduction to Financial Accounting (2).pptx slides 3–9$c$, $c$verified$c$
 ),
 (
   $c$acct-09$c$, $c$acct$c$, 9, $c$The Accounting Equation$c$,
@@ -1086,7 +1086,7 @@ since we owe the supplier. Capital doesn't change, because no income or expense 
 The equation stays balanced. Later, depreciation on the machine will reduce both assets and capital."$c$,
   $c$Thinking an expense paid in cash only reduces assets. It reduces **capital** too, which keeps the equation balanced.$c$,
   $c$[{"kind":"concept","question":"Which equation is the basis of double-entry book-keeping?","answer":"**Assets = Liabilities + Capital.**"},{"kind":"application","question":"A firm has assets of ₹2,00,000 and liabilities of ₹80,000. What's the capital?","answer":"**₹1,20,000.**"},{"kind":"case","question":"A firm pays ₹5,000 salary in cash. Which parts of the equation change?","answer":"**Assets fall ₹5,000 (cash), and capital falls ₹5,000** (an expense reduces the owner's claim). Liabilities don't change."}]$c$::jsonb,
-  $c$3. Accounting Equation (1).docx sections 3.1–3.2 and Illustration 1$c$, $c$draft$c$
+  $c$3. Accounting Equation (1).docx sections 3.1–3.2 and Illustration 1$c$, $c$verified$c$
 ),
 (
   $c$acct-10$c$, $c$acct$c$, 10, $c$Reading the Financial Statements$c$,
@@ -1125,7 +1125,7 @@ revenue, expenses and profit. They connect: the year's profit flows into retaine
 balance sheet. If I had to pick one for a quick health check, I'd read both, plus the cash flow statement."$c$,
   $c$Thinking profit equals cash. A company can be profitable but short of cash, for example when customers pay late (high trade receivables).$c$,
   $c$[{"kind":"concept","question":"Which statement shows the financial position on a particular date?","answer":"**The balance sheet.**"},{"kind":"application","question":"Classify: a patent, a fixed deposit and a delivery van.","answer":"Patent: **intangible**. Fixed deposit: **financial**. Van: **tangible**."},{"kind":"case","question":"A company reports record profit, but its cash balance fell and trade receivables doubled. What's going on?","answer":"It's **selling on credit and not collecting cash fast enough**. Profit is recorded when sales are made, but the cash is stuck with customers. Check the cash flow statement and customers' credit quality."}]$c$::jsonb,
-  $c$Introduction to Financial Accounting (2).pptx slides 10–16$c$, $c$draft$c$
+  $c$Introduction to Financial Accounting (2).pptx slides 10–16$c$, $c$verified$c$
 ),
 (
   $c$acct-11$c$, $c$acct$c$, 11, $c$Accounting Concepts I: Entity, Money Measurement, Going Concern, Dual Aspect & Periodicity$c$,
@@ -1157,7 +1157,7 @@ expenses, so they mustn't reduce business profit. Mixing them would overstate ex
 profit and taxes, and mislead lenders. It's exactly the concern SEBI raised in the Gensol case."$c$,
   $c$Thinking the entity concept applies only to companies. It applies to a sole proprietor too, even though the law sees owner and business as one.$c$,
   $c$[{"kind":"concept","question":"\"The business will continue to operate for the foreseeable future.\" Which concept?","answer":"**Going concern.**"},{"kind":"application","question":"The owner takes ₹10,000 of stock home for personal use. How is it treated?","answer":"**Drawings**, which reduce capital (entity concept), not a business expense."},{"kind":"case","question":"A start-up's founder wants to record the \"value\" of a newly hired star manager as a ₹10 lakh asset. Is that allowed?","answer":"**No.** Under **money measurement** (and the cost concept), only transactions measured in money are recorded. The manager's talent wasn't purchased as an asset; the salary is an expense."}]$c$::jsonb,
-  $c$Accounting Concepts and Conventions (1).pptx slides 6–9, 11–14$c$, $c$draft$c$
+  $c$Accounting Concepts and Conventions (1).pptx slides 6–9, 11–14$c$, $c$verified$c$
 ),
 (
   $c$acct-12$c$, $c$acct$c$, 12, $c$Accounting Concepts II: Accrual, Cost, Matching & Revenue Recognition$c$,
@@ -1183,7 +1183,7 @@ income received in advance, a liability, because the company still owes 11 month
 the accrual and revenue recognition concepts. Cash received isn't the same as revenue earned."$c$,
   $c$Treating cash received as revenue. Advances are a **liability** until the goods or service are delivered.$c$,
   $c$[{"kind":"concept","question":"Assets are recorded at their purchase price, not their current market value. Which concept is this?","answer":"**The cost concept.**"},{"kind":"application","question":"March's rent of ₹20,000 is paid on 5 April. In which year's accounts is it an expense, if the year ends 31 March?","answer":"**The year ending 31 March** (accrual). It's shown as an outstanding expense."},{"kind":"case","question":"A coaching institute collects ₹1,20,000 in January for a 12-month course starting 1 January, and its year ends 31 March. How much revenue should it record for the year?","answer":"**₹30,000** (3 months × ₹10,000). The remaining **₹90,000 is income received in advance**, a liability, because those classes haven't been delivered yet."}]$c$::jsonb,
-  $c$Accounting Concepts and Conventions (1).pptx slides 9–12$c$, $c$draft$c$
+  $c$Accounting Concepts and Conventions (1).pptx slides 9–12$c$, $c$verified$c$
 ),
 (
   $c$acct-13$c$, $c$acct$c$, 13, $c$Accounting Conventions: Consistency, Full Disclosure, Materiality & Conservatism$c$,
@@ -1216,7 +1216,7 @@ and lenders far more than cautious ones. The IndusInd case shows the damage when
 before they're real."$c$,
   $c$Taking conservatism too far and creating hidden reserves by under-valuing assets on purpose. Prudence means caution, not distortion.$c$,
   $c$[{"kind":"concept","question":"Valuing stock at the lower of cost or net realisable value follows which convention?","answer":"**Conservatism.**"},{"kind":"application","question":"A company switches its depreciation method every year to show smoother profits. Which convention does it break?","answer":"**Consistency.**"},{"kind":"case","question":"A company faces a ₹50 crore lawsuit that it may or may not lose. Its CFO wants to leave it out of the annual report. What do you advise?","answer":"**Disclose it as a contingent liability** in the notes to the accounts (full disclosure). If a loss becomes probable and can be estimated, provide for it (conservatism)."}]$c$::jsonb,
-  $c$Accounting Concepts and Conventions (1).pptx slides 15–20$c$, $c$draft$c$
+  $c$Accounting Concepts and Conventions (1).pptx slides 15–20$c$, $c$verified$c$
 ),
 (
   $c$acct-14$c$, $c$acct$c$, 14, $c$Double Entry: The Rules of Debit and Credit$c$,
@@ -1260,7 +1260,7 @@ for the company and its auditors).
 the accounting equation still balances: assets and liabilities both go down by the same amount."$c$,
   $c$Thinking "credit" means money coming in, as on a bank statement. In the business's books, cash coming in is a **debit** to cash. A bank statement shows the bank's view, which is reversed.$c$,
   $c$[{"kind":"concept","question":"An increase in an expense is recorded as a…","answer":"**Debit.**"},{"kind":"application","question":"The stall pays ₹10,000 to Mondal Traders, a creditor. What's the entry?","answer":"**Debit Mondal Traders** (liability falls), **credit Cash** (asset falls), ₹10,000 each."},{"kind":"case","question":"A business takes a ₹5 lakh bank loan, credited to its bank account. Which accounts are debited and credited?","answer":"**Debit Bank** (asset rises), **credit Bank Loan** (liability rises), ₹5 lakh each."}]$c$::jsonb,
-  $c$ICAI Ch 2 Unit 1, paras 1.1–1.9 (93942bos-aps6170-ch2u1.pdf)$c$, $c$draft$c$
+  $c$ICAI Ch 2 Unit 1, paras 1.1–1.9 (93942bos-aps6170-ch2u1.pdf)$c$, $c$verified$c$
 ),
 (
   $c$acct-15$c$, $c$acct$c$, 15, $c$The Trial Balance, and the Errors It Can't Catch$c$,
@@ -1291,7 +1291,7 @@ omissions, compensating errors and postings to the wrong account on the correct 
 balance agreeing. That's why we still need reconciliations, internal controls and audits."$c$,
   $c$Treating the suspense account as permanent. It's a **temporary** holding account, and must be cleared once the errors are found.$c$,
   $c$[{"kind":"concept","question":"Which error does NOT affect the agreement of the trial balance?","answer":"**An error of principle** (e.g., an asset purchase debited to expenses)."},{"kind":"application","question":"The trial balance's debit side is ₹500 more than the credit side, and the error can't be found yet. What do you do?","answer":"Put ₹500 on the credit side of a **suspense account** until the error is found and rectified."},{"kind":"case","question":"A ₹2,000 credit sale to Mr Sen is left out of the books completely. Will the trial balance agree, and what's the effect?","answer":"**It will agree** (complete omission). But sales and debtors are both **understated by ₹2,000**, and so is profit."}]$c$::jsonb,
-  $c$ICAI Ch 2 Unit 3, paras 3.1–3.5; Unit 6, paras 6.2–6.5$c$, $c$draft$c$
+  $c$ICAI Ch 2 Unit 3, paras 3.1–3.5; Unit 6, paras 6.2–6.5$c$, $c$verified$c$
 ),
 (
   $c$acct-16$c$, $c$acct$c$, 16, $c$Subsidiary Books, the Cash Book and Petty Cash$c$,
@@ -1325,7 +1325,7 @@ efficient at one book, makes totals easy to post to the ledger, and makes errors
 spot. The journal proper is kept only for unusual entries."$c$,
   $c$Recording a **cash** purchase in the purchases book. The purchases book is only for **credit** purchases of goods; cash purchases go in the cash book.$c$,
   $c$[{"kind":"concept","question":"A credit purchase of goods for resale is recorded in the…","answer":"**Purchases book.**"},{"kind":"application","question":"Where does a cash sale of goods go?","answer":"**The cash book** (not the sales book, which records only credit sales)."},{"kind":"case","question":"A petty cashier holds an imprest of ₹5,000 and spends ₹4,200 during the month. How much does the main cashier give her at month-end?","answer":"**₹4,200**, exactly what was spent, restoring the float to ₹5,000."}]$c$::jsonb,
-  $c$ICAI Ch 2 Unit 4, paras 4.1–4.6; Unit 5, paras 5.1–5.4$c$, $c$draft$c$
+  $c$ICAI Ch 2 Unit 4, paras 4.1–4.6; Unit 5, paras 5.1–5.4$c$, $c$verified$c$
 ),
 (
   $c$acct-17$c$, $c$acct$c$, 17, $c$Accounting for GST: Input Tax Credit$c$,
@@ -1352,7 +1352,7 @@ inventory would overstate costs and double-count the tax. Only when credit isn't
 on blocked items, does GST become part of cost."$c$,
   $c$Thinking businesses "bear" GST. They collect it and pass the credit along the chain; the **final consumer** bears the tax.$c$,
   $c$[{"kind":"concept","question":"A supply from West Bengal to Odisha attracts which GST?","answer":"**IGST** (inter-state)."},{"kind":"application","question":"Input GST paid is ₹18,000 and output GST charged is ₹27,000. How much GST does the business pay the government?","answer":"**₹9,000.**"},{"kind":"case","question":"A company gets a GST demand because it claimed input tax credit on invoices its suppliers never reported. What should it fix?","answer":"Its **ITC controls**: claim credit only on valid invoices that suppliers have actually reported, and reconcile the purchases register with supplier filings every month, before filing returns."}]$c$::jsonb,
-  $c$ICAI Ch 2 Unit 1, para 1.11 (Accounting for GST)$c$, $c$draft$c$
+  $c$ICAI Ch 2 Unit 1, para 1.11 (Accounting for GST)$c$, $c$verified$c$
 ),
 (
   $c$acct-18$c$, $c$acct$c$, 18, $c$Capital vs Revenue: Expenditure and Receipts$c$,
@@ -1380,7 +1380,7 @@ routine costs inflates profit and assets. Wrongly expensing an asset understates
 this, and it's a classic way profits get manipulated."$c$,
   $c$Treating the whole sale price of an old asset as income. Only the **profit or loss** on the sale goes to the P&L; the rest is a capital receipt.$c$,
   $c$[{"kind":"concept","question":"Ordinary repairs to keep a machine running are…","answer":"**Revenue expenditure.**"},{"kind":"application","question":"Legal fees paid to buy a plot of land are…","answer":"**Capital expenditure** (part of the land's cost)."},{"kind":"case","question":"A ₹2,00,000 fixed deposit matures and the bank also pays ₹14,000 interest. How is each amount treated?","answer":"The **₹2,00,000 is a capital receipt** (return of the investment). The **₹14,000 interest is a revenue receipt**, credited to the P&L."}]$c$::jsonb,
-  $c$ICAI Ch 1 Unit 3, paras 3.1–3.4 (93937bos-aps6170-ch1u3.pdf)$c$, $c$draft$c$
+  $c$ICAI Ch 1 Unit 3, paras 3.1–3.4 (93937bos-aps6170-ch1u3.pdf)$c$, $c$verified$c$
 ),
 (
   $c$acct-19$c$, $c$acct$c$, 19, $c$Contingent Liabilities, Provisions and Contingent Assets$c$,
@@ -1407,7 +1407,7 @@ A contingent liability is only possible, or not probable, or can't be measured, 
 notes without hitting profit. As a case develops, a contingent liability can become a provision."$c$,
   $c$Recording a contingent **asset** as income because you expect to win. Prudence says don't, until it's virtually certain.$c$,
   $c$[{"kind":"concept","question":"How is a contingent liability shown?","answer":"**Disclosed in the notes to accounts**, not recorded in the balance sheet."},{"kind":"application","question":"A company guarantees a bank loan taken by another company. What is the guarantee?","answer":"**A contingent liability.**"},{"kind":"case","question":"A lawsuit that was \"unlikely to succeed\" now looks likely to cost about ₹10 lakh. What changes in the accounts?","answer":"It becomes a **provision**: record ₹10 lakh as a liability and an expense, because the outflow is now **probable and measurable**."}]$c$::jsonb,
-  $c$ICAI Ch 1 Unit 4, paras 4.1–4.4 (93938bos-aps6170-ch1u4.pdf)$c$, $c$draft$c$
+  $c$ICAI Ch 1 Unit 4, paras 4.1–4.4 (93938bos-aps6170-ch1u4.pdf)$c$, $c$verified$c$
 ),
 (
   $c$acct-20$c$, $c$acct$c$, 20, $c$Accounting Standards, Policies and Estimates$c$,
@@ -1434,7 +1434,7 @@ effect, so users can compare years. Changing policies to manage profit breaks co
 investors."$c$,
   $c$Mixing up a **policy** change (changing the method, e.g. FIFO → weighted average) with an **estimate** change (revising a judgement within the method, e.g. useful life).$c$,
   $c$[{"kind":"concept","question":"Which companies must follow Ind AS?","answer":"**Listed companies, NBFCs and unlisted companies with net worth of ₹250 crore or more.**"},{"kind":"application","question":"Which is a valid reason to change an accounting policy?","answer":"It's **required by law or an accounting standard**, or it gives a **more appropriate presentation**."},{"kind":"case","question":"A CFO wants to switch the inventory method every year, picking whichever gives higher profit. What's wrong?","answer":"It breaks **consistency**: years can't be compared and profits are manipulated. Policy changes need a valid reason and must be quantified and disclosed."}]$c$::jsonb,
-  $c$ICAI Ch 1 Unit 5, paras 5.1–5.3; Unit 7, paras 7.1–7.5$c$, $c$draft$c$
+  $c$ICAI Ch 1 Unit 5, paras 5.1–5.3; Unit 7, paras 7.1–7.5$c$, $c$verified$c$
 ),
 (
   $c$acct-21$c$, $c$acct$c$, 21, $c$Measurement Bases: Historical Cost, Current Cost, Realisable Value and Present Value$c$,
@@ -1467,7 +1467,7 @@ use them there. And inventories are capped at realisable value for prudence. It'
 reliability and relevance."$c$,
   $c$Assuming the balance sheet shows what a company is "worth". Most assets are at historical cost less depreciation, not market value.$c$,
   $c$[{"kind":"concept","question":"Inventories are measured at…","answer":"**The lower of cost and net realisable value.**"},{"kind":"application","question":"A machine costs ₹7,00,000 plus ₹1,00,000 for installation. What's its historical cost?","answer":"**₹8,00,000.**"},{"kind":"case","question":"A bank bought a government bond for ₹100. After yields rose, its market price is ₹96. If the bank measures it at market value, what does it report?","answer":"A **mark-to-market loss of ₹4**, even though it hasn't sold the bond. That's the cost of measuring at current value."}]$c$::jsonb,
-  $c$ICAI Ch 1 Unit 6, paras 6.6–6.8 (93940bos-aps6170-ch1u6.pdf)$c$, $c$draft$c$
+  $c$ICAI Ch 1 Unit 6, paras 6.6–6.8 (93940bos-aps6170-ch1u6.pdf)$c$, $c$verified$c$
 ),
 (
   $c$acct-22$c$, $c$acct$c$, 22, $c$Depreciation: Straight Line vs Written Down Value$c$,
@@ -1499,7 +1499,7 @@ reduces taxable profit, which does save cash. And heavy depreciation signals hea
 telecom companies show this after 5G rollouts."$c$,
   $c$Thinking depreciation is a fund of cash set aside to replace the asset. It's an **allocation of cost**, not a savings account.$c$,
   $c$[{"kind":"concept","question":"Under the straight line method, the depreciation charge is…","answer":"**The same amount every year.**"},{"kind":"application","question":"Cost ₹1,00,000, residual value ₹10,000, useful life 9 years. What's the annual SLM depreciation?","answer":"**₹10,000.**"},{"kind":"case","question":"A company's laptops lose most of their value in the first two years. Which method fits better, and why?","answer":"**Written down value.** It charges more depreciation early, when the laptops actually lose most of their value (obsolescence)."}]$c$::jsonb,
-  $c$ICAI Ch 5, paras on meaning of depreciation, SLM and reducing balance methods (93957bos-aps6170-ch5.pdf)$c$, $c$draft$c$
+  $c$ICAI Ch 5, paras on meaning of depreciation, SLM and reducing balance methods (93957bos-aps6170-ch5.pdf)$c$, $c$verified$c$
 ),
 (
   $c$acct-23$c$, $c$acct$c$, 23, $c$Bills of Exchange and Promissory Notes$c$,
@@ -1532,7 +1532,7 @@ shifts the collection wait to the bank. Platforms like TReDS make this cheaper f
 is really relying on the big buyer's credit, not the small supplier's."$c$,
   $c$Mixing up the parties. In a bill, the **creditor** draws it and the **debtor** accepts it. In a promissory note, the **debtor** makes it.$c$,
   $c$[{"kind":"concept","question":"How many parties does a bill of exchange generally have?","answer":"**Three:** drawer, drawee and payee."},{"kind":"application","question":"A bill dated 1 March is payable 2 months after date. When does it mature?","answer":"**4 May** (due 1 May + 3 days of grace)."},{"kind":"case","question":"A bill for ₹50,000 is dishonoured at maturity, and the bank charges ₹200 noting charges. What does the drawer do in its books?","answer":"**Debit the drawee ₹50,200** (bill amount + noting charges) and reverse the bills receivable entry. The customer owes the full amount again, plus the charges."}]$c$::jsonb,
-  $c$ICAI Ch 6, paras 1–8 (93958bos-aps6170-ch6.pdf)$c$, $c$draft$c$
+  $c$ICAI Ch 6, paras 1–8 (93958bos-aps6170-ch6.pdf)$c$, $c$verified$c$
 )
 on conflict (id) do update set
   subject_id = excluded.subject_id, num = excluded.num, title = excluded.title,

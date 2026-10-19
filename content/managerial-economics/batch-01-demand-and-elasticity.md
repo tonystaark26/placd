@@ -1,6 +1,6 @@
 # Managerial Economics: Batch 1, Demand & Elasticity
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md)
 
 **How to review:** read each card as if you were a student the night before an
@@ -65,7 +65,7 @@ Mixing up Giffen and Veblen. **Giffen = poor buyers + cheap staple. Veblen = ric
    **Answer:** Probably not. The heritage line is likely a Veblen good, where the higher price strengthens the status signal. The brand should test whether *discounting* would actually hurt that line.
 
 **Source:** `Demand_Notes.PDF` pp. 2.7, 2.11–2.13 · `Demand_in_Economics.pptx` slide 8
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -115,7 +115,7 @@ Saying "demand increased" when only the price fell. Economists keep the terms st
    **Answer:** Durga Puja season. Festive demand (tastes, customs, gifting) shifts the demand curve right. The signboard may help, but the season is the bigger non-price factor.
 
 **Source:** `Demand_Notes.PDF` pp. 2.13–2.17 · `Demand_in_Economics.pptx` slide 6
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -173,7 +173,7 @@ Thinking *petrol* and *Indian Oil's petrol* have the same elasticity. Petrol as 
    **Answer: The airline.** Air travel is elastic (substitutes like trains, and trips can be postponed), so revenue likely falls. Salt is highly inelastic (no substitute, tiny budget share), so revenue likely rises.
 
 **Source:** `Demand_Notes.PDF` pp. 2.17–2.30 · `Elasticity_in_Economics.pdf` slides 4–6, 10
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -225,7 +225,7 @@ Assuming "inferior good" means bad quality. It only means people buy less of it 
    **Answer: New cars.** New cars: +25% ÷ 10% = **2.5 (luxury)**. Used cars: −3.75% ÷ 10% = **−0.375 (inferior)**. Rising incomes favour new cars.
 
 **Source:** `Demand_Notes.PDF` pp. 2.30–2.32 · `Elasticity_in_Economics.pdf` slide 7
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -276,7 +276,7 @@ Assuming a negative cross elasticity *always* means complements. The notes warn 
    **Answer: Cab services.** Metro rides are a *substitute* for cabs (positive cross elasticity), so cheaper metro fares reduce cab demand. Tea stalls near stations are closer to *complements*, since more metro riders means more footfall, so they may gain.
 
 **Source:** `Demand_Notes.PDF` pp. 2.29, 2.33–2.35 · `Elasticity_in_Economics.pdf` slide 8
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 

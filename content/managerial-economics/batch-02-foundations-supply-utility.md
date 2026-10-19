@@ -1,6 +1,6 @@
 # Managerial Economics: Batch 2, Foundations, Supply, Equilibrium & Utility
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md) · Rule: news examples from 2024 onwards, fact-checked.
 
 ---
@@ -50,7 +50,7 @@ Adding up *all* the alternatives, or counting only money. Opportunity cost is **
    **Answer:** The **opportunity cost** of building the factory. The factory only makes sense if its expected return beats the campaign's.
 
 **Source:** `foundation of economics (1).ppt` slides 2–10
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -102,7 +102,7 @@ Calling points *outside* the curve "inefficient". They are **unattainable** for 
    **Answer:** "Why not use the 40% idle capacity first?" The firm is inside its own PPF. A new plant makes sense only if demand will outgrow even full capacity.
 
 **Source:** `foundation of economics (1).ppt` slides 11–18
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -155,7 +155,7 @@ Saying "supply increased" when sellers sold more *because the price rose*. That'
    **Answer: Perishable / seasonal goods.** Supply is nearly fixed in the short run, so a demand spike becomes a price spike.
 
 **Source:** `Supply_in_Economics.pptx` slides 2–8 · `Demand_vs_Supply_Comparative_Analysis.pptx` slides 2–6
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -210,7 +210,7 @@ Thinking a shortage just means "not enough was made". A shortage only exists **a
    **Answer:** The price is below equilibrium, so there's a shortage. The café can raise the price, add capacity (supply), or accept the queue as free marketing.
 
 **Source:** `Demand_vs_Supply_Comparative_Analysis.pptx` slides 4–8
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -259,7 +259,7 @@ Mixing up total and marginal utility. Total utility can still be *rising* while 
    **Answer: Diminishing marginal utility.** The second pizza is worth less to you, so the chain lowers its price to match what you'd pay for it.
 
 **Source:** `Consumer Eqm. - revision basics.PDF` slides 3–18 · `Demand_Notes.PDF` p. 2.11
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -309,7 +309,7 @@ Drawing two indifference curves that cross. They **never** intersect: that would
    **Answer:** The budget line pivots inward on the chai side. She can no longer afford her old combination, so she moves to a **lower** indifference curve and, in all likelihood, buys fewer chais.
 
 **Source:** `Consumer Eqm. - revision basics.PDF` slides 2, 25–43
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 

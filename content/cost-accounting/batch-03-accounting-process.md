@@ -1,6 +1,6 @@
 # Cost & Financial Accounting: Batch 3, The Accounting Process & Framework (ICAI)
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md) · Rule: news examples from 2024 onwards, fact-checked.
 Sources: the ICAI CA Foundation study material in `materials/CHART ACCOUNTS`:
 Chapter 1 (Theoretical Framework) Units 3–7, Chapter 2 (Accounting Process) Units 1–6, Chapter 5 (Depreciation), Chapter 6 (Bills of Exchange).
@@ -66,7 +66,7 @@ Thinking "credit" means money coming in, as on a bank statement. In the business
    **Answer:** **Debit Bank** (asset rises), **credit Bank Loan** (liability rises), ₹5 lakh each.
 
 **Source:** ICAI Ch 2 Unit 1, paras 1.1–1.9 (`93942bos-aps6170-ch2u1.pdf`)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -115,7 +115,7 @@ Treating the suspense account as permanent. It's a **temporary** holding account
    **Answer:** **It will agree** (complete omission). But sales and debtors are both **understated by ₹2,000**, and so is profit.
 
 **Source:** ICAI Ch 2 Unit 3, paras 3.1–3.5; Unit 6, paras 6.2–6.5
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -167,7 +167,7 @@ Recording a **cash** purchase in the purchases book. The purchases book is only 
    **Answer: ₹4,200**, exactly what was spent, restoring the float to ₹5,000.
 
 **Source:** ICAI Ch 2 Unit 4, paras 4.1–4.6; Unit 5, paras 5.1–5.4
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -212,7 +212,7 @@ Thinking businesses "bear" GST. They collect it and pass the credit along the ch
    **Answer:** Its **ITC controls**: claim credit only on valid invoices that suppliers have actually reported, and reconcile the purchases register with supplier filings every month, before filing returns.
 
 **Source:** ICAI Ch 2 Unit 1, para 1.11 (Accounting for GST)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -258,7 +258,7 @@ Treating the whole sale price of an old asset as income. Only the **profit or lo
    **Answer:** The **₹2,00,000 is a capital receipt** (return of the investment). The **₹14,000 interest is a revenue receipt**, credited to the P&L.
 
 **Source:** ICAI Ch 1 Unit 3, paras 3.1–3.4 (`93937bos-aps6170-ch1u3.pdf`)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -303,7 +303,7 @@ Recording a contingent **asset** as income because you expect to win. Prudence s
    **Answer:** It becomes a **provision**: record ₹10 lakh as a liability and an expense, because the outflow is now **probable and measurable**.
 
 **Source:** ICAI Ch 1 Unit 4, paras 4.1–4.4 (`93938bos-aps6170-ch1u4.pdf`)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -348,7 +348,7 @@ Mixing up a **policy** change (changing the method, e.g. FIFO → weighted avera
    **Answer:** It breaks **consistency**: years can't be compared and profits are manipulated. Policy changes need a valid reason and must be quantified and disclosed.
 
 **Source:** ICAI Ch 1 Unit 5, paras 5.1–5.3; Unit 7, paras 7.1–7.5
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -399,7 +399,7 @@ Assuming the balance sheet shows what a company is "worth". Most assets are at h
    **Answer:** A **mark-to-market loss of ₹4**, even though it hasn't sold the bond. That's the cost of measuring at current value.
 
 **Source:** ICAI Ch 1 Unit 6, paras 6.6–6.8 (`93940bos-aps6170-ch1u6.pdf`)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -449,7 +449,7 @@ Thinking depreciation is a fund of cash set aside to replace the asset. It's an 
    **Answer:** **Written down value.** It charges more depreciation early, when the laptops actually lose most of their value (obsolescence).
 
 **Source:** ICAI Ch 5, paras on meaning of depreciation, SLM and reducing balance methods (`93957bos-aps6170-ch5.pdf`)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -500,7 +500,7 @@ Mixing up the parties. In a bill, the **creditor** draws it and the **debtor** a
    **Answer:** **Debit the drawee ₹50,200** (bill amount + noting charges) and reverse the bills receivable entry. The customer owes the full amount again, plus the charges.
 
 **Source:** ICAI Ch 6, paras 1–8 (`93958bos-aps6170-ch6.pdf`)
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 

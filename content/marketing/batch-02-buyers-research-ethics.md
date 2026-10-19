@@ -1,6 +1,6 @@
 # Marketing: Batch 2, Buyers, Research & Ethics
 
-Status of every card: **DRAFT**, waiting for your review.
+Status of every card: **VERIFIED** (reviewed by the user, 19 Oct 2026).
 Format: [CARD_FORMAT.md](../CARD_FORMAT.md) · Rule: news examples from 2024 onwards, fact-checked.
 Sources: `Understanding Consumer and Business Markets.pdf`, `Market Measurement Research.pdf`,
 `Emerging Trends in Marketing.pdf`, `Ethics and Social Responsibility in Marketing.pdf`.
@@ -58,7 +58,7 @@ Assuming involvement just means "expensive". A ₹500 baby food can be very high
    **Answer: Dissonance-reducing.** Policies look similar, so buyers doubt their choice afterwards. The fix is post-purchase reassurance: a welcome call, a clear benefits summary, and testimonials.
 
 **Source:** `Understanding Consumer and Business Markets.pdf` slides 06–11
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -111,7 +111,7 @@ Treating purchase *intention* as a sale. Plenty of things happen between "I'll b
    **Answer:** At **evaluation and purchase**: price compared with rivals, reviews, stock availability, EMI or exchange offers, delivery time. Traffic shows interest; something is blocking the final step.
 
 **Source:** `Understanding Consumer and Business Markets.pdf` slides 12–28
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -170,7 +170,7 @@ Pitching only to the person who signs the order. In B2B, the user or the IT gate
    **Answer:** The **IT team** (influencer and gatekeeper: security, integration), **finance** (total cost and approval) and **procurement** (buyer: terms). Winning the user isn't enough.
 
 **Source:** `Understanding Consumer and Business Markets.pdf` slides 45–63
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -221,7 +221,7 @@ Quoting one market-size number without saying *which* market and *which* period,
    **Answer:** Their **definitions**: product scope, customer group, geography, time period (FY vs calendar year) and assumptions. Most gaps come from defining different markets.
 
 **Source:** `Market Measurement Research.pdf` slides 05–12
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -274,7 +274,7 @@ Treating search interest or likes as market size, or assuming **correlation mean
    **Answer:** **Sampling bias.** Followers already like the brand, so they don't represent the whole market. A large biased sample can still be confidently wrong.
 
 **Source:** `Market Measurement Research.pdf` slides 14–31
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
@@ -327,7 +327,7 @@ Mixing up **CSR** (a company's responsibility to society), **social marketing** 
    **Answer:** **Undisclosed paid promotion.** Followers think it's an independent opinion, which is misleading. Fix: a clear "#ad / paid partnership" label at the start, as advertising standards require.
 
 **Source:** `Ethics and Social Responsibility in Marketing.pdf` slides 02–16 · `Emerging Trends in Marketing.pdf` slides 04, 10–11
-**Status:** DRAFT
+**Status:** VERIFIED
 
 ---
 
