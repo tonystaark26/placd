@@ -30,7 +30,7 @@ export function StoryCard({
           <span className="font-semibold uppercase tracking-[1.5px] text-coffee">
             {lane && story.tag ? `${lane} · ${story.tag}` : (lane ?? story.tag)}
           </span>
-          {story.published_at && <span className="text-mocha-2">{publishedTime(story.published_at, story.publish_date)}</span>}
+          {story.published_at && <span className="text-mocha-2">{publishedTime(story.published_at)}</span>}
         </p>
       )}
       <h3 className="mt-1.5 text-[17px] font-bold leading-snug">{story.headline}</h3>

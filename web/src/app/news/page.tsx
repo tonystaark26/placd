@@ -31,6 +31,11 @@ async function Brief() {
       <p className="mt-1.5 font-sans text-[13px] text-mocha-2">
         {prettyDate(date)} · {stories.length} {stories.length === 1 ? "story" : "stories"}
       </p>
+      {date !== istToday() && (
+        <p className="mt-3 rounded-[10px] bg-crema px-3.5 py-2.5 font-sans text-[13px] text-mocha">
+          This is yesterday&apos;s edition. Today&apos;s Chai &amp; Charts arrives by about 7 AM.
+        </p>
+      )}
 
       {/* jump links: the day's top stories, then each lane that has more */}
       <nav className="mt-4 flex flex-wrap gap-2 font-sans text-[12px]">
@@ -46,7 +51,7 @@ async function Brief() {
 
       {/* Stories arrive ranked by that day's news value, so the biggest ones lead */}
       <section id="top" className="mt-8 scroll-mt-4">
-        <h2 className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-coffee">Top stories today</h2>
+        <h2 className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-coffee">{date === istToday() ? "Top stories today" : "Top stories"}</h2>
         <div className="mt-3 space-y-3">
           {top.map((s) => (
             <StoryCard

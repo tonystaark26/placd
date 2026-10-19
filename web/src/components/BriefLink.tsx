@@ -8,7 +8,8 @@ import { istToday } from "@/lib/quiz";
 export async function BriefLink() {
   await connection();
   const today = istToday();
-  const { stories } = await getBrief(today); // today's news only
+  const { date, stories } = await getBrief(today); // today's edition, or yesterday's until it arrives
+  const fresh = date === today;
   const laneName = (id: string) => LANES.find((l) => l.id === id)?.name ?? id;
   const pick = todaysPick(stories);
 
@@ -19,7 +20,7 @@ export async function BriefLink() {
     >
       <span className="flex items-baseline justify-between gap-3">
         <span className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">
-          ☕ Chai &amp; Charts · today
+          ☕ Chai &amp; Charts · {fresh || !date ? "today" : "yesterday"}
         </span>
         {stories.length > 0 && <span className="font-sans text-[11px] text-crema">5 min read</span>}
       </span>
@@ -35,7 +36,7 @@ export async function BriefLink() {
           </span>
           {stories.length > 1 && (
             <span className="mt-2.5 block text-center font-sans text-[12px] text-crema">
-              + {stories.length - 1} more {stories.length - 1 === 1 ? "story" : "stories"} in today&apos;s Chai &amp; Charts
+              + {stories.length - 1} more {stories.length - 1 === 1 ? "story" : "stories"} in {fresh ? "today's" : "yesterday's"} Chai &amp; Charts
             </span>
           )}
         </>

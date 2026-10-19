@@ -63,12 +63,13 @@ async function ErrorNote({ searchParams }: { searchParams: PageProps<"/">["searc
 // Today's pick, told as a story, to give newcomers a taste. Reading it starts a free guest session.
 async function TodaysStory() {
   await connection(); // "today" depends on when the visitor opens the page
-  const { stories } = await getBrief(istToday());
+  const today = istToday();
+  const { date, stories } = await getBrief(today); // yesterday's edition until today's arrives
   const pick = todaysPick(stories);
   if (!pick) return null;
   return (
     <section className="rounded-[12px] bg-coffee px-5 py-5 text-cream">
-      <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">☕ Today on ChaiCase</p>
+      <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">☕ {date === today ? "Today" : "Yesterday"} on ChaiCase</p>
       <h2 className="mt-3 font-serif text-[23px] leading-tight">{pick.teaser_title}</h2>
       <p className="mt-2.5 text-[14px] leading-relaxed text-cream/90">{pick.teaser}</p>
       <form action={tryAsGuest} className="mt-4">

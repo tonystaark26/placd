@@ -40,28 +40,48 @@ function db() {
   });
 }
 
+/** The day before an ISO date (YYYY-MM-DD) */
+export function dayBefore(isoDate: string) {
+  return new Date(Date.parse(`${isoDate}T00:00:00Z`) - 86400000).toISOString().slice(0, 10);
+}
+
 /**
- * Today's approved stories (`today` is YYYY-MM-DD, India time). Chai & Charts is today's news only:
- * until today's brief is approved, this is empty, and students see "brewing", never yesterday's news.
+ * The current Chai & Charts edition (`today` is YYYY-MM-DD, India time). Like a newspaper, the new
+ * edition arrives in the morning (the cloud job publishes it around 6 AM IST): until today's brief is
+ * live, this returns YESTERDAY's brief, so the app never goes blank after midnight. It never reaches
+ * further back than yesterday. `date` tells callers which day they got, so they can label it.
  */
 export async function getBrief(today: string): Promise<{ date: string | null; stories: Story[] }> {
   "use cache";
   cacheTag("news");
   cacheLife("minutes");
-  const { data, error } = await db().from("news_stories").select(COLUMNS).eq("publish_date", today)
+  const { data, error } = await db()
+    .from("news_stories")
+    .select(COLUMNS)
+    .in("publish_date", [today, dayBefore(today)])
     .order("rank", { ascending: true, nullsFirst: false })
     .order("id");
   if (error) throw new Error(`Could not load the news: ${error.message}`);
-  const stories = (data ?? []) as Story[];
-  return { date: stories.length ? today : null, stories };
+  const all = (data ?? []) as Story[];
+  const todays = all.filter((s) => s.publish_date === today);
+  const stories = todays.length ? todays : all.filter((s) => s.publish_date !== today);
+  return { date: stories.length ? stories[0].publish_date : null, stories };
 }
 
-/** "Yesterday, 9:42 PM" or "Today", India time. Midnight means the source gave a date but no time. */
-export function publishedTime(iso: string, briefDate: string) {
+/**
+ * "Yesterday, 9:42 PM", "Today" or "18 Oct, 9:42 PM", India time, counted from the real current day
+ * (so yesterday's edition, shown before today's arrives, reads correctly). Midnight means the source
+ * gave a date but no time.
+ */
+export function publishedTime(iso: string) {
   const at = new Date(iso);
+  const ymd = (d: Date) =>
+    new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Asia/Kolkata" }).format(d);
   const part = (o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat("en-IN", { ...o, timeZone: "Asia/Kolkata" }).format(at);
-  const day = part({ year: "numeric", month: "2-digit", day: "2-digit" }).split("/").reverse().join("-"); // YYYY-MM-DD
-  const label = day === briefDate ? "Today" : "Yesterday";
+  const day = ymd(at);
+  const today = ymd(new Date());
+  const label =
+    day === today ? "Today" : day === dayBefore(today) ? "Yesterday" : part({ day: "numeric", month: "short" });
   const time = part({ hour: "numeric", minute: "2-digit", hour12: true }).toUpperCase();
   return time === "12:00 AM" ? label : `${label}, ${time}`;
 }
