@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { AppHeader } from "@/components/AppHeader";
 import { BriefLink } from "@/components/BriefLink";
+import { InstallHint } from "@/components/InstallHint";
 import { TodayCard } from "@/components/TodayCard";
 import { SECTIONS } from "@/lib/cards";
 
@@ -67,6 +68,8 @@ export default function StudyDesk() {
       <Suspense fallback={<div className="mt-6 h-[150px] animate-pulse rounded-[12px] bg-latte" />}>
         <TodayCard />
       </Suspense>
+
+      <InstallHint />
 
       <Link
         href="/leaderboard"

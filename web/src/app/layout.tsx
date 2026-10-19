@@ -28,6 +28,8 @@ export const metadata: Metadata = {
   title: "ChaiCase: crack your placement interview",
   description:
     "Ten minutes a day: business news explained simply, the MBA concept behind it, and a quick quiz.",
+  // Opening from the iPhone home screen: full-screen, named ChaiCase
+  appleWebApp: { capable: true, title: "ChaiCase", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
