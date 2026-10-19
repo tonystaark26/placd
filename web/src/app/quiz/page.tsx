@@ -29,6 +29,12 @@ async function TodaysQuiz() {
             🔥 {quiz.stats.streak}-day streak · {quiz.stats.xp} XP
           </p>
         )}
+        <Link
+          href="/leaderboard"
+          className="mt-4 flex h-12 w-full items-center justify-center rounded-[10px] bg-coffee font-sans text-[15px] font-semibold text-cream"
+        >
+          See where you stand ↗
+        </Link>
         <p className="mt-6 text-center text-[15px] text-mocha">A fresh quiz unlocks at midnight. Meanwhile, revise a card or two.</p>
         <Link
           href="/desk"

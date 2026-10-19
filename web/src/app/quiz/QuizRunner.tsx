@@ -182,6 +182,14 @@ function ResultCard({ result, isGuest }: { result: Extract<FinishResult, { ok: t
         </p>
       )}
 
+      <Link
+        href="/leaderboard"
+        className="cc-fade-up mt-4 flex h-12 w-full items-center justify-center rounded-[10px] bg-coffee font-sans text-[15px] font-semibold text-cream"
+        style={{ animationDelay: "1400ms" }}
+      >
+        See where you stand ↗
+      </Link>
+
       <p className="mt-6 text-center text-[15px] text-mocha">Come back tomorrow for a fresh quiz.</p>
       <Link
         href="/desk"

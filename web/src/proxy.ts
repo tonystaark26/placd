@@ -30,7 +30,7 @@ export async function proxy(request: NextRequest) {
   // into the Study Desk or a card (guests count as signed in).
   const path = request.nextUrl.pathname;
   const insideApp =
-    path === "/desk" || path.startsWith("/learn/") || path === "/quiz" || path === "/news" || path.startsWith("/cards/") || path.startsWith("/admin");
+    path === "/desk" || path.startsWith("/learn/") || path === "/quiz" || path === "/news" || path === "/leaderboard" || path.startsWith("/cards/") || path.startsWith("/admin");
   if (!data?.claims && insideApp) {
     const welcome = NextResponse.redirect(new URL("/", request.url));
     response.cookies.getAll().forEach((cookie) => welcome.cookies.set(cookie));

@@ -67,6 +67,19 @@ export default function StudyDesk() {
       <Suspense fallback={<div className="mt-6 h-[150px] animate-pulse rounded-[12px] bg-latte" />}>
         <TodayCard />
       </Suspense>
+
+      <Link
+        href="/leaderboard"
+        className="mt-3 flex items-center justify-between gap-3 rounded-[12px] border border-line bg-foam px-4 py-3.5 active:bg-latte"
+      >
+        <span>
+          <span className="block text-[16px] font-bold leading-snug">🏆 Leaderboard</span>
+          <span className="mt-0.5 block font-sans text-[12px] text-mocha">See where you stand this week, and who to climb past</span>
+        </span>
+        <span className="font-sans text-[18px] text-coffee" aria-hidden="true">
+          ↗
+        </span>
+      </Link>
     </main>
   );
 }
