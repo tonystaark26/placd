@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { continueWithGoogle, tryAsGuest } from "@/app/actions/auth";
+import { LogoMark } from "@/components/Logo";
 import { SubmitButton } from "@/components/SubmitButton";
 import { getAccount, homeFor } from "@/lib/account";
 import { EMAIL_SIGN_IN } from "@/lib/features";
@@ -88,8 +89,9 @@ export default function Welcome({ searchParams }: PageProps<"/">) {
       </Suspense>
 
       <div className="flex flex-col gap-9">
-        {/* The ChaiCase wordmark: bold serif, centred, with a coffee rule underneath */}
+        {/* The ChaiCase logo: the cup-on-books mark, the name in bold serif, a coffee rule underneath */}
         <div className="flex flex-col items-center">
+          <LogoMark className="mb-2 h-24 w-24" />
           <span className="font-bookman text-[46px] font-bold leading-none tracking-[0.01em] text-espresso">ChaiCase</span>
           <span className="mt-3 flex items-center gap-2" aria-hidden="true">
             <span className="h-px w-10 bg-coffee" />

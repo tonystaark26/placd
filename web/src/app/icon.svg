@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="305 96 104 104">
+<rect x="305" y="96" width="104" height="104" rx="22" fill="#f5f3ef"/>
+<path d="M349 121 q-4 -5 0 -10 q4 -5 0 -9" fill="none" stroke="#b08a68" stroke-width="3" stroke-linecap="round" />
+      <path d="M357 119 q-4.5 -5.5 0 -11 q4.5 -5.5 0 -10" fill="none" stroke="#6f4e37" stroke-width="3.5" stroke-linecap="round" />
+      <path d="M365 121 q-4 -5 0 -10 q4 -5 0 -9" fill="none" stroke="#b08a68" stroke-width="3" stroke-linecap="round" />
+      <path d="M381 137 a8.5 8.5 0 0 1 0 17" fill="none" stroke="#6f4e37" stroke-width="5" stroke-linecap="round" />
+      <path d="M332 128 H382 L377 158 Q375 167 366 167 H348 Q339 167 337 158 Z" fill="#6f4e37" />
+      <rect x="345" y="151" width="5" height="8" rx="1" fill="#eadbc8" />
+      <rect x="353" y="147" width="5" height="12" rx="1" fill="#eadbc8" />
+      <rect x="361" y="143" width="5" height="16" rx="1" fill="#eadbc8" />
+      <path d="M343 146 L351 140 L357 143 L368 133" fill="none" stroke="#fbf7f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M363 133 L368.5 132.5 L368 138" fill="none" stroke="#fbf7f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="318" y="170" width="78" height="11" rx="2" fill="#2b1e16" />
+      <rect x="324" y="172.5" width="66" height="2" fill="#eadbc8" />
+      <rect x="312" y="182" width="86" height="12" rx="2" fill="#b08a68" />
+      <rect x="318" y="185" width="74" height="2" fill="#fbf7f1" />
+</svg>
