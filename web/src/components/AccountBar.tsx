@@ -29,9 +29,14 @@ export async function AccountBar() {
   return (
     <form action={signOut} className="flex items-center gap-3 font-sans text-[13px]">
       {isAdmin && (
-        <Link href="/admin/news" className="rounded-full bg-coffee px-3 py-1 text-[12px] font-semibold text-cream">
-          Approve news
-        </Link>
+        <>
+          <Link href="/admin/news" className="rounded-full bg-coffee px-3 py-1 text-[12px] font-semibold text-cream">
+            News
+          </Link>
+          <Link href="/admin/feedback" className="rounded-full bg-coffee px-3 py-1 text-[12px] font-semibold text-cream">
+            Feedback
+          </Link>
+        </>
       )}
       <span className="font-semibold">{account.alias ?? "You"}</span>
       <button type="submit" className="text-mocha-2 underline underline-offset-2">

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import type { QuizQuestion } from "@/lib/quiz";
+import { GrowthCelebration } from "@/components/GrowthCelebration";
 import { finishQuiz, submitAnswer, type FinishResult } from "@/lib/quiz-client";
 
 const KIND_LABEL = { concept: "Concept", application: "Application", case: "Mini case", news: "In the news" };
@@ -157,16 +158,10 @@ export function QuizRunner({
 function ResultCard({ result, isGuest }: { result: Extract<FinishResult, { ok: true }>; isGuest: boolean }) {
   return (
     <div className="mt-4">
-      <div className="rounded-[10px] bg-coffee px-5 py-6 text-center text-cream">
-        <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">Today&apos;s quiz done</p>
-        <p className="mt-2 text-[40px] font-bold leading-none">
-          {result.score}/{result.total}
-        </p>
-        <p className="mt-2 font-sans text-[14px] text-crema">+{result.xpEarned} XP</p>
-      </div>
+      <GrowthCelebration score={result.score} total={result.total} xpEarned={result.xpEarned} />
 
       {result.saved && !isGuest ? (
-        <div className="mt-4 grid grid-cols-2 gap-3">
+        <div className="cc-fade-up mt-4 grid grid-cols-2 gap-3" style={{ animationDelay: "1300ms" }}>
           <Stat label="Day streak" value={`🔥 ${result.streak}`} />
           <Stat label="Total XP" value={String(result.xpTotal)} />
         </div>

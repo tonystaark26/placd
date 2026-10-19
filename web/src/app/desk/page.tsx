@@ -30,7 +30,7 @@ function FinanceIcon() {
 
 export default function StudyDesk() {
   return (
-    <main className="mx-auto w-full max-w-md px-5 pb-14 pt-8">
+    <main className="cc-stagger mx-auto w-full max-w-md px-5 pb-14 pt-8">
       <AppHeader />
 
       <h1 className="mt-7 text-[30px] leading-snug">Study Desk</h1>

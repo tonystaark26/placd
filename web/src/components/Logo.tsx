@@ -8,13 +8,15 @@ const CARAMEL = "#b08a68";
 const CREMA = "#eadbc8";
 const CREAM = "#fbf7f1";
 
-export function LogoMark({ className = "h-10 w-10" }: { className?: string }) {
+export function LogoMark({ className = "h-10 w-10", animated = false }: { className?: string; animated?: boolean }) {
+  // When animated, the steam drifts gently (only if the phone allows motion)
+  const steam = (delay: number) => (animated ? { className: "cc-steam", style: { animationDelay: `${delay}ms` } } : {});
   return (
     <svg viewBox="305 96 104 104" className={className} aria-hidden="true">
       {/* steam */}
-      <path d="M349 121 q-4 -5 0 -10 q4 -5 0 -9" fill="none" stroke={CARAMEL} strokeWidth="3" strokeLinecap="round" />
-      <path d="M357 119 q-4.5 -5.5 0 -11 q4.5 -5.5 0 -10" fill="none" stroke={COFFEE} strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M365 121 q-4 -5 0 -10 q4 -5 0 -9" fill="none" stroke={CARAMEL} strokeWidth="3" strokeLinecap="round" />
+      <path d="M349 121 q-4 -5 0 -10 q4 -5 0 -9" fill="none" stroke={CARAMEL} strokeWidth="3" strokeLinecap="round" {...steam(400)} />
+      <path d="M357 119 q-4.5 -5.5 0 -11 q4.5 -5.5 0 -10" fill="none" stroke={COFFEE} strokeWidth="3.5" strokeLinecap="round" {...steam(0)} />
+      <path d="M365 121 q-4 -5 0 -10 q4 -5 0 -9" fill="none" stroke={CARAMEL} strokeWidth="3" strokeLinecap="round" {...steam(800)} />
       {/* cup and handle */}
       <path d="M381 137 a8.5 8.5 0 0 1 0 17" fill="none" stroke={COFFEE} strokeWidth="5" strokeLinecap="round" />
       <path d="M332 128 H382 L377 158 Q375 167 366 167 H348 Q339 167 337 158 Z" fill={COFFEE} />

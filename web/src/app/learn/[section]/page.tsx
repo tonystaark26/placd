@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps<"/learn/[section]">
 
 export default function SectionPage({ params }: PageProps<"/learn/[section]">) {
   return (
-    <main className="mx-auto w-full max-w-md px-5 pb-14 pt-8">
+    <main className="cc-stagger mx-auto w-full max-w-md px-5 pb-14 pt-8">
       <AppHeader />
       <nav className="mt-6 font-sans text-[13px]">
         <Link href="/desk" className="font-medium text-coffee">

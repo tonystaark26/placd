@@ -84,15 +84,15 @@ async function TodaysStory() {
 
 export default function Welcome({ searchParams }: PageProps<"/">) {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col justify-between px-6 pb-9 pt-16">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col justify-between px-6 pb-20 pt-16">
       <Suspense fallback={null}>
         <SendSignedInStudentsOn />
       </Suspense>
 
-      <div className="flex flex-col gap-9">
+      <div className="cc-stagger flex flex-col gap-9">
         {/* The ChaiCase logo: the cup-on-books mark, the name in bold serif, a coffee rule underneath */}
         <div className="flex flex-col items-center">
-          <LogoMark className="mb-2 h-24 w-24" />
+          <LogoMark className="mb-2 h-24 w-24" animated />
           <span className="font-bookman text-[46px] font-bold leading-none tracking-[0.01em] text-espresso">ChaiCase</span>
           <span className="mt-3 flex items-center gap-2" aria-hidden="true">
             <span className="h-px w-10 bg-coffee" />

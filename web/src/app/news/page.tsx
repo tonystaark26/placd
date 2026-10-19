@@ -97,7 +97,7 @@ async function Brief() {
 
 export default function NewsPage() {
   return (
-    <main className="mx-auto w-full max-w-md px-5 pb-14 pt-6">
+    <main className="cc-stagger mx-auto w-full max-w-md px-5 pb-14 pt-6">
       <nav className="font-sans text-[13px]">
         <Link href="/desk" className="font-medium text-coffee">
           ← Study Desk

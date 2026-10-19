@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Serif_Display, Libre_Baskerville, Sora } from "next/font/google";
+import { FeedbackButton } from "@/components/FeedbackButton";
 import "./globals.css";
 
 // Sora: the everyday interface and reading text
@@ -39,7 +40,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${sora.variable} ${dmSerif.variable} ${baskerville.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <FeedbackButton />
+      </body>
     </html>
   );
 }

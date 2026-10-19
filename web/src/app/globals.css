@@ -38,3 +38,53 @@ h1 {
   font-weight: 400;
   letter-spacing: -0.005em;
 }
+
+/* ---------------------------------------------------------------------------------------------
+   Motion. Light and quick, with a growth feel (things rise). Everything here only runs when the
+   phone hasn't asked to reduce motion; otherwise elements simply appear in their final state.
+   --------------------------------------------------------------------------------------------- */
+@keyframes cc-fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes cc-rise {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes cc-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes cc-pop {
+  0% { opacity: 0; transform: scale(0.6); }
+  70% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes cc-steam {
+  0%, 100% { opacity: 0.75; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-2px); }
+}
+@keyframes cc-sheet {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Children of .cc-stagger rise in one after another */
+  .cc-stagger > * { animation: cc-fade-up 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  .cc-stagger > *:nth-child(2) { animation-delay: 70ms; }
+  .cc-stagger > *:nth-child(3) { animation-delay: 140ms; }
+  .cc-stagger > *:nth-child(4) { animation-delay: 210ms; }
+  .cc-stagger > *:nth-child(5) { animation-delay: 280ms; }
+  .cc-stagger > *:nth-child(6) { animation-delay: 350ms; }
+  .cc-stagger > *:nth-child(n + 7) { animation-delay: 420ms; }
+
+  .cc-fade-up { animation: cc-fade-up 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  /* Bars grow upward from their base; set the delay inline for a staircase */
+  .cc-rise { transform-box: fill-box; transform-origin: bottom; animation: cc-rise 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  /* A line that draws itself (give the path pathLength="1" and stroke-dasharray="1") */
+  .cc-draw { animation: cc-draw 0.7s ease-out both; }
+  .cc-pop { animation: cc-pop 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .cc-steam { transform-box: fill-box; animation: cc-steam 3s ease-in-out infinite; }
+  .cc-sheet { animation: cc-sheet 0.25s ease-out both; }
+}

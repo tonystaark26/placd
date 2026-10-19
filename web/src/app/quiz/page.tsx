@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
+import { GrowthCelebration } from "@/components/GrowthCelebration";
 import { getAccount } from "@/lib/account";
 import { getDailyQuiz } from "@/lib/quiz";
 import { QuizRunner } from "./QuizRunner";
@@ -17,13 +18,12 @@ async function TodaysQuiz() {
   if (quiz.done) {
     return (
       <div className="mt-4">
-        <div className="rounded-[10px] bg-coffee px-5 py-6 text-center text-cream">
-          <p className="font-sans text-[11px] font-semibold uppercase tracking-[2px] text-crema">Already done today</p>
-          <p className="mt-2 text-[40px] font-bold leading-none">
-            {quiz.result.score}/{quiz.result.total}
-          </p>
-          <p className="mt-2 font-sans text-[14px] text-crema">+{quiz.result.xpEarned} XP</p>
-        </div>
+        <GrowthCelebration
+          score={quiz.result.score}
+          total={quiz.result.total}
+          xpEarned={quiz.result.xpEarned}
+          label="Already done today"
+        />
         {!quiz.stats.isGuest && (
           <p className="mt-4 text-center font-sans text-[14px]">
             🔥 {quiz.stats.streak}-day streak · {quiz.stats.xp} XP
