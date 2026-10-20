@@ -29,6 +29,17 @@ function FinanceIcon() {
   );
 }
 
+function PeopleIcon() {
+  return (
+    <svg viewBox="0 0 32 32" className="h-8 w-8 shrink-0" aria-hidden="true">
+      <circle cx="11" cy="11" r="4" className="fill-none stroke-coffee" strokeWidth="2" />
+      <circle cx="22" cy="12" r="3.2" className="fill-none stroke-coffee" strokeWidth="2" />
+      <path d="M3 26q0-8 8-8t8 8" className="fill-none stroke-coffee" strokeWidth="2" strokeLinecap="round" />
+      <path d="M19 19.5q1.5-1 3-1q6 0 6 7" className="fill-none stroke-coffee" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export default function StudyDesk() {
   return (
     <main className="cc-stagger mx-auto w-full max-w-md px-5 pb-14 pt-8">
@@ -44,6 +55,21 @@ export default function StudyDesk() {
       <h2 className="mt-8 font-sans text-[11px] font-semibold uppercase tracking-[2px] text-mocha-2">Concepts</h2>
       <div className="mt-3 grid grid-cols-2 gap-3">
         {SECTIONS.map((s) => {
+          if (s.id === "people") {
+            return (
+              <Link
+                key={s.id}
+                href={`/learn/${s.id}`}
+                className="col-span-2 flex items-center gap-4 rounded-[12px] bg-latte px-4 py-4 active:opacity-90"
+              >
+                <PeopleIcon />
+                <span>
+                  <span className="block text-[18px] font-bold leading-snug">{s.name}</span>
+                  <span className="mt-1 block font-sans text-[12px] leading-snug text-mocha">{s.blurb}</span>
+                </span>
+              </Link>
+            );
+          }
           const dark = s.id === "finance";
           return (
             <Link

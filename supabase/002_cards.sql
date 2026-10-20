@@ -1,5 +1,5 @@
 -- =====================================================================
--- ChaiCase concept cards: 46 cards
+-- ChaiCase concept cards: 66 cards
 -- Made automatically by scripts/cards-to-sql.mjs from the files in content/.
 -- Don't edit this file by hand: edit the card files, then run the script again.
 --
@@ -10,7 +10,7 @@
 -- Subjects (new ones are added; existing ones are left alone)
 insert into subjects (id, name, sort) values
   ('econ', 'Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
-  ('acct', 'Accounting', 4)
+  ('acct', 'Accounting', 4), ('ob', 'Organisational Behaviour', 5)
 on conflict (id) do nothing;
 
 -- Two parts of each card that the first version of the table didn't have room for
@@ -1533,6 +1533,747 @@ is really relying on the big buyer's credit, not the small supplier's."$c$,
   $c$Mixing up the parties. In a bill, the **creditor** draws it and the **debtor** accepts it. In a promissory note, the **debtor** makes it.$c$,
   $c$[{"kind":"concept","question":"How many parties does a bill of exchange generally have?","answer":"**Three:** drawer, drawee and payee."},{"kind":"application","question":"A bill dated 1 March is payable 2 months after date. When does it mature?","answer":"**4 May** (due 1 May + 3 days of grace)."},{"kind":"case","question":"A bill for ₹50,000 is dishonoured at maturity, and the bank charges ₹200 noting charges. What does the drawer do in its books?","answer":"**Debit the drawee ₹50,200** (bill amount + noting charges) and reverse the bills receivable entry. The customer owes the full amount again, plus the charges."}]$c$::jsonb,
   $c$ICAI Ch 6, paras 1–8 (93958bos-aps6170-ch6.pdf)$c$, $c$verified$c$
+),
+(
+  $c$ob-01$c$, $c$ob$c$, 1, $c$What Organisational Behaviour Is$c$,
+  $c$OB studies how people think, feel and act at work, so managers can understand, predict and shape that behaviour.$c$,
+  $c$Fred Luthans put it in three verbs: OB is about **understanding, predicting and controlling** human behaviour in organisations.
+It works at **three levels**:
+- **Individual:** personality, perception, motivation, stress.
+- **Group:** teams, roles, norms, conflict, leadership.
+- **Organisation:** structure, culture, change.
+
+OB borrows from other subjects:
+- **psychology** for the individual;
+- **sociology** and **social psychology** for groups;
+- **anthropology** for culture;
+- **political science** for power.
+
+It is **applied**: the aim is better performance and more satisfied people.$c$,
+  $c$Two tea stalls stand side by side near College Street. Both charge **₹10** a cup and have the same kettle. One sells **200** cups a day, the other **80**.
+The difference isn't the tea. In one stall, the helper is greeted, trusted and shares tips. In the other, he is shouted at and keeps leaving.
+That gap of **120 cups (₹1,200 a day)** is OB.$c$,
+  $c$✅ Verified (Sept 2024)$c$,
+  $c$On **16 September 2024**, Amazon CEO Andy Jassy told corporate staff to return to the office **five days a week from 2 January 2025**. Since May 2023 they had come in three days a week.
+He said he wanted Amazon to run like "the world's largest startup", and planned fewer layers of managers.
+One decision touched all three OB levels:
+- **individual:** commute, stress, motivation;
+- **team:** how people collaborate;
+- **organisation:** culture and structure.
+
+*Sources: Amazon memo as reported by Sinclair/ABC News affiliates, Sept 2024.*$c$,
+  $c$What is organisational behaviour, and why should a finance or marketing manager care?$c$,
+  $c$"OB is the study of how individuals, groups and structures shape behaviour at work, used to improve performance and satisfaction. Every manager gets results *through* people.
+A great pricing strategy fails if the sales team is demotivated. A budget fails if teams hide bad news.
+OB gives me tools to read people, build teams and manage change. Those are the things that decide whether a plan actually gets done."$c$,
+  $c$Calling OB "common sense". Research often contradicts common sense: for example, a happy worker is not automatically a productive one. OB tests these beliefs systematically.$c$,
+  $c$[{"kind":"concept","question":"Name the three levels at which OB studies behaviour.","answer":"**Individual, group and organisation.**"},{"kind":"application","question":"A company studies how its office culture differs between its Kolkata and Tokyo branches. Which discipline is OB borrowing from most?","answer":"**Anthropology**, the study of cultures and how they shape behaviour."},{"kind":"case","question":"A startup has good funding and a strong product, but 40% of new hires quit within six months. The founder says \"it's a salary problem\". What would an OB view add?","answer":"**Look beyond pay to all three levels.** Individual: role fit and stress. Group: how managers and teams treat newcomers. Organisation: culture and onboarding. Exit interviews would show which level is driving the quits."}]$c$::jsonb,
+  $c$OB_Introduction_2026.pptx slides 11–15; Robbins & Judge 15e, ch. 1$c$, $c$draft$c$
+),
+(
+  $c$ob-02$c$, $c$ob$c$, 2, $c$Lewin's Equation: B = f(P, E)$c$,
+  $c$Behaviour is a function of the Person and the Environment. To change what people do, change one or both.$c$,
+  $c$Kurt Lewin (1936) gave OB its simplest model:
+- **B** is behaviour: what we can see someone do.
+- **P** is the person: personality, skills, values, mood.
+- **E** is the environment: the boss, team, rules, rewards, the physical setting.
+
+The same person behaves differently in different settings. Different people behave differently in the same setting.
+For a manager, **E** is often easier to change than **P**. You can redesign rewards, rules and teams far faster than you can change someone's personality.$c$,
+  $c$Riya is quiet in a 60-student lecture at her Park Street college. She never speaks.
+In a 5-person case-study group with a friendly senior, she speaks up and wins a **₹100** prize for the best idea.
+Her **P** didn't change; the **E** did, from a big hall to a small, safe group. So did her **B**.$c$,
+  $c$✅ Verified (Apr 2024)$c$,
+  $c$In **April 2024**, TCS tied employees' **quarterly variable pay to office attendance**, according to an HR note reported by NDTV Profit and Business Today.
+Below 60% attendance meant no variable pay. Full pay needed 85% or more.
+TCS's HR head later said about **70%** of staff were back in office.
+That is Lewin in action: TCS didn't try to change people's personalities (**P**). It changed the reward environment (**E**), and behaviour (**B**) followed.
+*Sources: Business Today, NDTV Profit, Apr 2024.*$c$,
+  $c$If an employee is underperforming, is it the person or the situation?$c$,
+  $c$"Usually both. Lewin said behaviour is a function of the person and the environment.
+Before blaming the person, I'd check the environment:
+- Are the targets clear?
+- Do they have the tools?
+- Is the manager supportive?
+- Do the rewards match what we want?
+
+If others in the same setting do well, the issue may be skills or fit. Then I'd coach or move them to a better-fitting role.
+Fixing the environment is often faster and helps the whole team."$c$,
+  $c$Treating it as maths. You can't plug in numbers. It's a way of thinking that says don't explain behaviour by personality *alone*.$c$,
+  $c$[{"kind":"concept","question":"In B = f(P, E), what does E stand for?","answer":"**Environment**: the situation around the person, such as the boss, team, rules and rewards."},{"kind":"application","question":"A bank cuts long queues by adding a token machine and seating, and staff complaints drop. Which part of Lewin's equation did it change?","answer":"**E, the environment**, which changed staff behaviour without changing the staff."},{"kind":"case","question":"A star salesperson becomes average after moving from Kolkata to the Delhi branch. Use Lewin's equation to suggest two causes.","answer":"**Look at E and P together.** E: a different manager, territory or team support. P: stress from relocating, or a mismatch between their skills and the new market."}]$c$::jsonb,
+  $c$OB_Introduction_2026.pptx slide 22$c$, $c$draft$c$
+),
+(
+  $c$ob-03$c$, $c$ob$c$, 3, $c$The Five OB Models: Autocratic to System$c$,
+  $c$Organisations run on different beliefs about people, from "obey because I'm the boss" to "we're partners who trust each other".$c$,
+  $c$| Model | Rests on | Employee feels | Result |
+|---|---|---|---|
+| **Autocratic** | Power | Obedience, fear | Minimum effort |
+| **Custodial** | Money and benefits | Security, dependence | Passive cooperation |
+| **Supportive** | Leadership | Recognition | Motivated effort |
+| **Collegial** | Partnership | Responsibility | Enthusiasm, teamwork |
+| **System** | Trust and community | Meaning, belonging | Passion, commitment |
+
+Most firms mix models. The trend over time has been from top to bottom: from power towards trust.$c$,
+  $c$Five sweet shops in Kolkata pay their helpers the same **₹100** for an evening shift:
+- **Autocratic:** "Do it or you're out."
+- **Custodial:** the owner adds free dinner.
+- **Supportive:** the owner coaches the helper and thanks him.
+- **Collegial:** the helper suggests a new sandesh flavour and the owner tries it.
+- **System:** the helper feels the shop is *his* too, and stays late in the Durga Puja rush without being asked.$c$,
+  $c$✅ Verified (Jan 2025)$c$,
+  $c$In **January 2025**, a video of L&T chairman **S.N. Subrahmanyan** went viral. He said he wished he could make staff work on Sundays, and asked "how long can you stare at your wife?" He was talking about a **90-hour week**.
+The backlash was swift:
+- Bajaj Auto's **Rajiv Bajaj** said the quality of work matters, not the hours.
+- **Harsh Goenka** joked about renaming Sunday "Sun-duty".
+
+L&T said the remarks were about "nation-building", not a mandate. The debate was really autocratic thinking (output through pressure) against supportive and collegial thinking (output through engagement).
+*Sources: People Matters, Gulf News, Storyboard18, Jan 2025.*$c$,
+  $c$Which OB model would you use to manage a team, and why?$c$,
+  $c$"It depends on the team. A new team in a crisis might need clear, firm direction for a short time. But for knowledge work I'd aim for the **supportive and collegial** models.
+People who feel trusted and responsible bring ideas, not just hours. Fear-based control gets minimum effort and high attrition.
+Custodial benefits help with security, but they don't create drive."$c$,
+  $c$Thinking custodial means caring. Benefits create *dependence and security*, not motivation. People stay but don't push themselves.$c$,
+  $c$[{"kind":"concept","question":"Which OB model is based on economic resources such as pensions and benefits?","answer":"**The custodial model.**"},{"kind":"application","question":"A startup gives every employee a say in product decisions and treats them as partners. Which model is this?","answer":"**Collegial**, built on partnership and shared responsibility."},{"kind":"case","question":"A factory pays well and offers housing, but workers do the bare minimum and never suggest improvements. Diagnose it.","answer":"**A custodial model with no leadership support.** Benefits buy loyalty and security, but not effort. Moving towards supportive (recognition, coaching) and collegial (involving workers in decisions) would raise motivation."}]$c$::jsonb,
+  $c$OB_Introduction_2026.pptx slide 21; OB models after Keith Davis$c$, $c$draft$c$
+),
+(
+  $c$ob-04$c$, $c$ob$c$, 4, $c$Schools of Management Thought$c$,
+  $c$Management thinking moved from "people are parts of a machine" (classical), to "people have feelings and needs" (neoclassical), to "it depends on the situation" (modern).$c$,
+  $c$**1. Classical (about 1880–1920): efficiency first.**
+- **Scientific management (Taylor):** study each task, find the "one best way", pay by output.
+- **Administrative (Fayol):** principles for managing the whole organisation, such as planning, organising and command.
+- **Bureaucracy (Weber):** a clear hierarchy and written rules, not personal favours.
+
+**2. Neoclassical (about 1920–1950): people first.**
+- **Human relations:** satisfied workers work better, so communication, leadership and group behaviour matter.
+- **Behavioural:** study what actually drives behaviour at work.
+
+**3. Modern: it depends.**
+- **Systems:** the organisation is a set of connected parts.
+- **Contingency:** there is no single best way; fit the style to the situation.
+- **Organisational humanism:** let people use all their abilities.
+- **Management science:** use numbers and models.$c$,
+  $c$A momo stall near New Market sells plates at **₹100**:
+- **Taylor** times every step and finds rolling takes 40 seconds, so he redesigns the counter and output doubles.
+- **Fayol** writes clear roles: who cooks, who serves, who handles cash.
+- **Weber** fixes rules: no free plates for friends.
+- **Human relations:** the owner notices staff work faster when he eats with them.
+- **Contingency:** on Puja nights he hires two more people and simplifies the menu. On a rainy Tuesday he doesn't.$c$,
+  $c$✅ Verified (Dec 2024)$c$,
+  $c$In **December 2024**, a US Senate committee led by **Bernie Sanders** released a report on Amazon's warehouses, "The Injury-Productivity Trade-off".
+It said Amazon's internal studies linked **speed quotas** to injuries. It also said executives rejected safety staff's advice to ease the quotas.
+Amazon called the report "fundamentally flawed". It said injury rates had fallen while speed rose.
+This is the oldest debate in management: Taylor's focus on measured efficiency against the human relations view that worker wellbeing drives long-term performance.
+*Sources: US Senate HELP Committee report; CNN, Boston Globe, Dec 2024.*$c$,
+  $c$Is Taylor's scientific management still relevant today?$c$,
+  $c$"Very much. Delivery apps timing every order, call centres tracking handling time, and warehouse pick rates are all Taylor's ideas with software added.
+But the classical schools ignored people's feelings and needs. That's why human relations followed.
+Today, contingency thinking makes most sense to me. Measure efficiency where tasks are routine, but give autonomy where work needs judgement and creativity. And watch the human cost of pure speed targets."$c$,
+  $c$Thinking the newer schools replaced the old ones. They didn't. Modern firms use all of them together, in different parts of the business.$c$,
+  $c$[{"kind":"concept","question":"Who is linked with bureaucracy, the ideal of a hierarchy governed by written rules?","answer":"**Max Weber.**"},{"kind":"application","question":"A manager says \"there's no one best way; it depends on our market and technology\". Which school is this?","answer":"**Contingency theory.**"},{"kind":"case","question":"A call centre doubles productivity by scripting and timing every call, but attrition hits 60% a year. Which school drove the gain, and which school explains the problem?","answer":"**Scientific management drove the gain; human relations explains the attrition.** Ignoring workers' needs for recognition and autonomy made them leave. The fix is to keep the efficient processes and add people-focused practices."}]$c$::jsonb,
+  $c$Schools of Thought.pdf pages 3–19$c$, $c$draft$c$
+),
+(
+  $c$ob-05$c$, $c$ob$c$, 5, $c$OB's Big Challenges Today$c$,
+  $c$Managers today must handle diverse, global, often temporary workforces, while pushing quality, empowerment and constant innovation.$c$,
+  $c$The challenges (and opportunities) that OB helps with:
+- **People skills:** managers succeed through others, so they need soft skills.
+- **Quality and productivity:** for example, Total Quality Management, where everyone improves the process.
+- **Workforce diversity:** different genders, ages, regions, languages and abilities.
+- **Globalisation:** working across cultures and time zones.
+- **Empowerment:** pushing decisions down to the people closest to the work.
+- **Temporariness:** contracts, gig work and constant reorganisation.
+- **Innovation and change:** adapt fast or fall behind.$c$,
+  $c$A Salt Lake café's evening team:
+- a Bengali manager;
+- a Nepali chef;
+- two part-time students from Odisha;
+- a delivery rider from an app, paid about **₹100** per order run.
+
+In one shift the manager handles diversity (three languages), temporariness (the rider changes every week) and empowerment (letting the chef change the menu).
+That is today's OB in one small kitchen.$c$,
+  $c$✅ Verified (Feb 2025)$c$,
+  $c$In the **Union Budget on 1 February 2025**, Finance Minister Nirmala Sitharaman announced that gig and platform workers would get:
+- **identity cards**;
+- registration on the **e-Shram** portal;
+- health cover under **PM-JAY**.
+
+That covers workers who deliver or drive for platforms such as Zomato, Swiggy, Blinkit, Ola and Uber. The plan was expected to help about **1 crore** gig workers.
+It is a policy answer to OB's "temporariness" challenge: people who work for a company without being its employees.
+*Sources: Union Budget 2025-26 coverage, Outlook Money, Exchange4media, YourStory, Feb 2025.*$c$,
+  $c$What's the biggest people challenge Indian companies face today?$c$,
+  $c$"I'd say the shift to a temporary, hybrid and diverse workforce.
+- A growing share of work is done by gig workers, contractors and remote teams who may never meet the manager.
+- At the same time, firms need innovation, which needs trust and commitment.
+
+So the challenge is building engagement with people who aren't permanent or present. Clear goals, fair treatment, recognition and inclusion become more important, not less."$c$,
+  $c$Listing challenges without the "opportunity" side. For example, diversity is a challenge to manage, but it is also a source of better ideas and wider markets.$c$,
+  $c$[{"kind":"concept","question":"What does \"coping with temporariness\" mean in OB?","answer":"**Managing in constant change**: contract and gig workers, frequent reorganisation, and skills that go out of date fast."},{"kind":"application","question":"A bank lets branch staff approve small loans without head-office sign-off. Which challenge is it responding to?","answer":"**Empowering people.** Decisions are pushed to those closest to the customer."},{"kind":"case","question":"A Kolkata IT firm wins its first Japanese client, and its project team now spans three cities and two cultures. Name two OB challenges and one response to each.","answer":"**Globalisation and workforce diversity.** For globalisation: cross-cultural training on Japanese business norms. For diversity: clear communication norms and inclusive meetings, so no one city dominates."}]$c$::jsonb,
+  $c$OB_Introduction_2026.pptx slide 9; Robbins & Judge 15e, ch. 1$c$, $c$draft$c$
+),
+(
+  $c$ob-06$c$, $c$ob$c$, 6, $c$Personality: The Big Five (and the MBTI)$c$,
+  $c$Personality is a person's stable pattern of thinking, feeling and acting. The Big Five is the best-supported way to describe it.$c$,
+  $c$The **Big Five** traits (remember **OCEAN**):
+- **O: Openness.** Curious and creative, or conventional.
+- **C: Conscientiousness.** Organised and dependable, or careless.
+- **E: Extraversion.** Sociable and energetic, or reserved.
+- **A: Agreeableness.** Warm and cooperative, or tough and critical.
+- **N: Neuroticism.** Anxious, or emotionally stable.
+
+**Conscientiousness** predicts job performance best, across almost all jobs.
+Earlier models in the notes:
+- **Jung:** introvert or extrovert.
+- **Eysenck:** three factors, including introversion–extraversion and stability–neuroticism.
+- **Cattell:** 16 traits.
+
+The popular **MBTI** sorts people into 16 types using four pairs (E/I, S/N, T/F, J/P). It's useful for self-awareness, but research says it predicts job performance poorly.$c$,
+  $c$Five friends each get **₹100** at a Gariahat fair:
+- **High C:** writes a budget and keeps ₹30 back.
+- **High O:** tries the strangest street food.
+- **High E:** spends it treating everyone.
+- **High A:** lends half to a friend who forgot his wallet.
+- **High N:** worries the whole time about losing it.
+
+Same money, five different stable patterns.$c$,
+  $c$✅ Verified (Oct 2024)$c$,
+  $c$**Ratan Tata** died on **9 October 2024**, aged 86. The tributes kept naming the same traits:
+- the Tata Group's statement and PM Modi stressed his **humility** and kindness: high **agreeableness**;
+- Tata Sons chairman N. Chandrasekaran also praised his humility;
+- others pointed to his ethical consistency, a sign of high **conscientiousness**, and to his bold bets, which show high **openness**.
+
+Whatever one thinks of individual deals, the public remembered the *pattern*. That is what personality means.
+*Sources: Deccan Herald, ETV Bharat, Asia News Network, Oct 2024.*$c$,
+  $c$Describe your personality using the Big Five.$c$,
+  $c$"I'd say I'm high on **conscientiousness**. I plan my week and I meet deadlines, like running our fest budget of ₹2 lakh without overspending.
+I'm moderately **extraverted**: comfortable presenting, but I recharge alone.
+I'm high on **openness**, which is why I enjoy case competitions.
+I'm working on **agreeableness** in tough negotiations, where I sometimes give in too fast."$c$,
+  $c$Treating MBTI types as scientific fact. Interviewers trained in OB know the Big Five has much stronger evidence. Use it, and back each trait with an example.$c$,
+  $c$[{"kind":"concept","question":"Which Big Five trait best predicts job performance across jobs?","answer":"**Conscientiousness.**"},{"kind":"application","question":"A role needs calm decisions under pressure, such as an emergency room or a trading desk. Which trait should be *low*?","answer":"**Neuroticism.** You want high emotional stability."},{"kind":"case","question":"A company hires sales staff purely by MBTI type (\"only ENTJs\") and finds results no better than before. Why, and what's better?","answer":"**MBTI predicts performance poorly.** It puts people in boxes and is not strongly linked to results. Better: assess Big Five traits such as conscientiousness and extraversion, together with structured interviews and work samples."}]$c$::jsonb,
+  $c$Theories of Personality.pdf; Robbins & Judge 15e, ch. 5$c$, $c$draft$c$
+),
+(
+  $c$ob-07$c$, $c$ob$c$, 7, $c$Freud: Id, Ego, Superego and Defence Mechanisms$c$,
+  $c$Freud saw personality as a tug-of-war. The id wants pleasure now, the superego says "be good", and the ego referees with reality.$c$,
+  $c$Freud's **iceberg**: most of the mind sits below the surface, in the unconscious.
+- **Id:** instinct and impulse. "I want it now."
+- **Superego:** conscience and rules learned from parents and society. "That's wrong."
+- **Ego:** the realistic manager that balances the two.
+
+When anxiety rises, the ego uses **defence mechanisms**, often without us knowing:
+- **denial:** "it's not a problem";
+- **rationalisation:** a good-sounding excuse;
+- **projection:** blaming others for our own feelings;
+- **displacement:** taking anger out on a safer target.
+
+At work, these explain why people make excuses, blame others or ignore bad news.$c$,
+  $c$Arjun has **₹100** left for the week.
+- His **id** says "biryani from Arsalan, now!"
+- His **superego** says "save it, your parents work hard for this."
+- His **ego** decides: a ₹40 roll today and ₹60 saved.
+
+He fails a test and says "the questions were out of syllabus anyway." That is **rationalisation**: an excuse that protects his self-image.$c$,
+  $c$✅ Verified (Sept 2024)$c$,
+  $c$On **23 September 2024**, SEBI published a study of equity futures and options (F&O) trading. It found that **93% of over 1 crore individual traders lost money** between FY22 and FY24.
+- The average loss was about **₹2 lakh** each, including costs.
+- Total losses were above **₹1.8 lakh crore**.
+- Yet more than **75% of loss-makers kept trading**.
+
+Freud's ideas help explain why: the id's thrill of a quick win, and defences like "I was just unlucky" (rationalisation) or "next time will be different" (denial).
+*Sources: SEBI press release, Sept 2024; Business Standard, Outlook Business.*$c$,
+  $c$Tell me about a failure. What did you learn?"*
+(This question quietly tests whether you use defence mechanisms.)$c$,
+  $c$"In my second semester I lost a case competition because I hadn't checked our market-size numbers. My first instinct was to blame the judges, and I caught myself doing it.
+I realised that was an excuse. So I went back, found my error, and now I build a quick sanity check into every analysis. In the next competition our numbers were the thing judges praised."$c$,
+  $c$Saying Freud is "outdated" and skipping him. Much of his theory isn't testable. But defence mechanisms are a very practical lens for feedback, failure and blame at work.$c$,
+  $c$[{"kind":"concept","question":"Which part of Freud's model acts as our conscience?","answer":"**The superego.**"},{"kind":"application","question":"A manager scolded by the boss goes back and snaps at a junior. Which defence mechanism is this?","answer":"**Displacement.** Anger is moved to a safer target."},{"kind":"case","question":"A project lead keeps saying \"the delay is fine, clients always wait\" while the deadline slips week after week. Which defence mechanisms are at work, and how should a manager respond?","answer":"**Denial and rationalisation.** Respond with facts in a calm, safe conversation: show the timeline and the client impact. Focus on fixing the problem, not blaming the person, so their ego doesn't need to defend itself."}]$c$::jsonb,
+  $c$Theories of Personality.pdf (Freud, iceberg model, defence mechanisms)$c$, $c$draft$c$
+),
+(
+  $c$ob-08$c$, $c$ob$c$, 8, $c$Locus of Control and Self-Efficacy$c$,
+  $c$Locus of control is whether you believe *you* or *outside forces* control your results. Self-efficacy is your belief that you can do a specific task.$c$,
+  $c$**Locus of control (Rotter):**
+- **Internals** believe "my effort decides my results." They tend to perform better, take initiative and handle setbacks.
+- **Externals** believe "luck, fate or other people decide." They're more likely to give up, which can slide into **learned helplessness**.
+
+**Self-efficacy (Bandura):** confidence for a *particular* task: "I can crack this case interview." It grows from four sources:
+1. **past success** (the strongest);
+2. **watching similar people succeed**;
+3. **encouragement**;
+4. **managing stress and emotions**.
+
+Robbins adds **core self-evaluation**: an overall belief in your own worth and ability.$c$,
+  $c$Two students each lose **₹100** on a bad online order.
+- **Priya (internal):** "I didn't check the seller rating. Next time I will." She checks, and never loses money that way again.
+- **Rahul (external):** "These apps are all scams, nothing I can do." He keeps losing.
+
+Same loss. The belief about *control* changed what happened next.$c$,
+  $c$✅ Verified (Dec 2024)$c$,
+  $c$On **12 December 2024**, **D. Gukesh** beat Ding Liren in Singapore to become the **youngest world chess champion, at 18**.
+After winning the Candidates, he asked for a mental trainer and brought in **Paddy Upton**. Upton had worked with India's 2011 World Cup cricket team.
+Gukesh credited the work with helping him handle the "emotional pressure". That is self-efficacy built through two of Bandura's sources: mastery from past wins and managing emotional states.
+*Sources: The Bridge, Onmanorama, DTNext, Dec 2024.*$c$,
+  $c$What do you do when things go wrong despite your best efforts?$c$,
+  $c$"I separate what I control from what I don't.
+When our team's internship project lost its data source a week before the deadline, I didn't blame the vendor. I listed what we could still do: we found a public dataset, cut the scope and told the client early.
+Focusing on what I can control keeps me moving. And every time it works, my confidence for the next problem grows."$c$,
+  $c$Confusing self-efficacy with self-esteem. Self-esteem is how much you like yourself overall. Self-efficacy is task-specific: you can be confident in Excel and not at all in public speaking.$c$,
+  $c$[{"kind":"concept","question":"According to Bandura, what is the strongest source of self-efficacy?","answer":"**Mastery experiences**, meaning your own past successes at the task."},{"kind":"application","question":"An employee says \"promotions here are just politics, so why try?\" Internal or external locus?","answer":"**External**, and it puts them at risk of learned helplessness."},{"kind":"case","question":"A new joinee is scared of client presentations. As her manager, how would you build her self-efficacy?","answer":"**Use Bandura's sources.** Start her with small internal presentations so she gets early wins (mastery). Let her watch a peer present (modelling). Give specific encouragement (persuasion). Help her rehearse to manage nerves (emotional state)."}]$c$::jsonb,
+  $c$Theories of Personality.pdf (Rotter, Bandura); Robbins & Judge 15e, ch. 5$c$, $c$draft$c$
+),
+(
+  $c$ob-09$c$, $c$ob$c$, 9, $c$Perception: How We Make Sense of the World$c$,
+  $c$Perception is how we select, organise and interpret what our senses pick up. We react to *our version* of reality, not reality itself.$c$,
+  $c$**The process:** stimuli → we **select** (pay attention to some things) → **organise** (group them into patterns) → **interpret** (give them meaning) → respond.
+Three sets of factors shape what we see:
+- **The perceiver:** attitudes, motives, interests, past experience and expectations.
+- **The target:** size, intensity, novelty, motion, background, and how close or similar it is to other things.
+- **The situation:** time, work setting and social setting.
+
+The ambiguous pictures in the slides, such as the vase that is also two faces, show this. Same picture, different perceptions.$c$,
+  $c$A new café in Gariahat charges **₹100** for a cutting chai.
+- A Salt Lake IT worker thinks: "Fair, it's an *experience*."
+- A retired professor thinks: "Daylight robbery, I pay ₹10 at the corner."
+- A student on a date thinks: "Worth it to impress."
+
+Same chai, same ₹100. The perceivers' experience, motives and situation create three different realities.$c$,
+  $c$✅ Verified (Oct 2024)$c$,
+  $c$In **October 2024**, the Central Consumer Protection Authority (CCPA) sent **Ola Electric** a show-cause notice. It was based on **10,644 complaints** to the National Consumer Helpline in a year, mostly about service delays.
+Around the same time, comedian Kunal Kamra and founder Bhavish Aggarwal had a public spat online about service quality.
+Ola said it had resolved **99.1%** of the complaints. But for many buyers, *perception* had already formed from their own past experience: "service is poor."
+Once formed, a perception filters what people notice next.
+*Sources: Business Today, The News Minute, MediaNama, Oct 2024.*$c$,
+  $c$Why do two managers rate the same employee so differently?$c$,
+  $c$"Because perception is shaped by the perceiver, not just the target.
+One manager may value speed and notice the employee's quick turnaround. Another may value polish and notice the typos. Their past experiences and the situations they've seen the employee in also differ.
+That's why good appraisal systems use clear criteria, several raters and documented examples. They make the rating about the work, not the rater's lens."$c$,
+  $c$Thinking perception is just "seeing". It is an *active* process of choosing, organising and interpreting. That's why it can be managed, through framing, first impressions and experience.$c$,
+  $c$[{"kind":"concept","question":"What are the three stages in the middle of the perception process?","answer":"**Selecting, organising and interpreting.**"},{"kind":"application","question":"A bright red \"50% OFF\" sign stands out in a row of plain shop boards. Which target factors make it noticed?","answer":"**Intensity, size and novelty, plus contrast with the background.**"},{"kind":"case","question":"A new HR policy allowing two work-from-home days is welcomed by young staff, but older managers see it as \"slacking\". Using perception factors, explain why.","answer":"**Perceiver factors.** The two groups have different past experiences, attitudes and expectations about work. Managers trained in \"presence means productivity\" interpret the same policy differently. Sharing data on output would help align their perceptions."}]$c$::jsonb,
+  $c$Perception.pptx (definition, factors, process); Robbins & Judge 15e, ch. 6$c$, $c$draft$c$
+),
+(
+  $c$ob-10$c$, $c$ob$c$, 10, $c$Attribution Theory: Who Gets the Blame?$c$,
+  $c$When we see someone's behaviour, we judge whether it was caused by *them* (internal) or by the *situation* (external), using three clues.$c$,
+  $c$Harold Kelley's three clues:
+| Clue | Question | If HIGH, points to |
+|---|---|---|
+| **Distinctiveness** | Do they behave this way only in this situation? | External |
+| **Consensus** | Do others behave the same way in the same situation? | External |
+| **Consistency** | Do they behave this way every time? | Internal |
+
+Two common biases:
+- **Fundamental attribution error:** we blame *other people's* failures on their personality and ignore the situation.
+- **Self-serving bias:** we credit *our own* successes to our talent, and blame our failures on bad luck.$c$,
+  $c$Sumit is late to class, so the professor fines him **₹100**.
+- Is he late only on rainy days (high **distinctiveness**)?
+- Is the whole class late, because the metro broke down (high **consensus**)?
+- Is he late every Monday (high **consistency**)?
+
+If the whole class was late because the metro broke down, it's external, and the fine is unfair.
+If only Sumit is late, every week, it's internal.$c$,
+  $c$✅ Verified (Nov 2024)$c$,
+  $c$On **3 November 2024**, New Zealand beat India by 25 runs in Mumbai to complete a **3-0 Test series sweep**. It was India's first home whitewash in a series of three or more Tests. It also ended a run of **18 home series wins in a row** since 2012.
+The debate that followed was pure attribution theory:
+- **External:** spin-friendly pitches and a brilliant Ajaz Patel (11 wickets in the match).
+- **Internal:** India's batters' technique against spin.
+
+Low **distinctiveness** (struggles against spin had shown up before) pointed many experts towards internal causes.
+*Sources: ESPNcricinfo, Al Jazeera, Wisden, Nov 2024.*$c$,
+  $c$Your team member missed a deadline. How do you decide what to do?$c$,
+  $c$"First, I'd avoid the fundamental attribution error of assuming they're careless. I'd check three things:
+- Did others on similar tasks also miss? That's consensus.
+- Is this unusual for this person? That's distinctiveness.
+- Has it happened before? That's consistency.
+
+If it's a one-off and others struggled too, the cause is probably external, like unclear scope or a tool failure, and I fix the system. If it's a repeated pattern only with them, it's a coaching conversation."$c$,
+  $c$Mixing up the clues. High **consistency** points *internal*, but high **distinctiveness** and high **consensus** point *external*. Students often say all three point the same way.$c$,
+  $c$[{"kind":"concept","question":"What is the fundamental attribution error?","answer":"**Blaming others' behaviour on their personality** while underestimating the effect of the situation."},{"kind":"application","question":"A salesperson says \"I hit target because I'm brilliant; I missed last quarter because the market was bad.\" Which bias is this?","answer":"**Self-serving bias.**"},{"kind":"case","question":"All five branch managers in Bihar missed their loan targets this quarter. Their regional head wants to replace them all. Apply attribution theory.","answer":"**High consensus points to an external cause.** Everyone in the same situation failed, so check the region's economy, product fit or the targets themselves before blaming individual managers."}]$c$::jsonb,
+  $c$Robbins & Judge 15e, ch. 6 (attribution theory); builds on Perception.pptx$c$, $c$draft$c$
+),
+(
+  $c$ob-11$c$, $c$ob$c$, 11, $c$Perception Shortcuts: Halo, Stereotypes and More$c$,
+  $c$To save effort, we judge people with mental shortcuts. They're fast, but they often lead us wrong at work.$c$,
+  $c$- **Selective perception:** we notice what fits our interests and background, and miss the rest.
+- **Halo effect:** one good trait colours our whole view of a person, such as "great speaker, so must be great at everything". A bad trait does the reverse.
+- **Contrast effect:** we judge someone against whoever came just before them, not against a fixed standard.
+- **Stereotyping:** judging a person by the group they belong to.
+- **Self-fulfilling prophecy (Pygmalion effect):** expectations change how we treat people, and that makes the expectation come true.
+
+These shortcuts matter most in **interviews, appraisals and investment decisions**.$c$,
+  $c$At a Kolkata college fest, three students pitch to sell **₹100** tickets.
+- The first is so polished that the second looks weak next to him, even though she's good. That's the **contrast effect**.
+- The third went to a famous school, so the judges assume he'll sell the most. That's the **halo effect**.
+
+At the end of the day the second student sold the most tickets.$c$,
+  $c$✅ Verified (Apr 2025)$c$,
+  $c$On **15 April 2025**, SEBI passed an interim order against **Gensol Engineering's** promoters, the Jaggi brothers, and barred them from the securities market.
+- Gensol had raised about **₹978 crore** in loans from IREDA and PFC to buy EVs for its sister company **BluSmart**.
+- SEBI's forensic analysis found about **₹262 crore** unaccounted for. It alleged that some was diverted for personal uses such as a luxury flat in Gurugram.
+
+BluSmart soon shut down. A "green, fast-growing EV startup" image can create a **halo** that makes outsiders ask fewer hard questions.
+*Sources: SEBI order as reported by Value Research, Moneylife, Entrackr, Apr 2025.*$c$,
+  $c$How would you make your hiring decisions fairer?$c$,
+  $c$"I'd design against the shortcuts:
+- **Structured interviews**, with the same questions for everyone and scoring against a rubric, so the halo effect and contrast effects matter less.
+- **Several interviewers** who score independently before discussing.
+- **Work samples or case tests**, so we judge the work, not the college name or accent, which reduces stereotyping.
+
+It's also important to tell interviewers about these biases, so they catch themselves using them."$c$,
+  $c$Thinking only "bad" people use stereotypes. Everyone uses shortcuts. The skill is designing processes such as rubrics and blind reviews that limit their damage.$c$,
+  $c$[{"kind":"concept","question":"What is the halo effect?","answer":"**Forming a general impression of someone from a single trait**, such as appearance, a famous college or good speaking."},{"kind":"application","question":"An average candidate seems excellent because the two before her were poor. Which shortcut is this?","answer":"**The contrast effect.**"},{"kind":"case","question":"A manager told that a new trainee is \"a topper\" gives him the best projects and extra mentoring, and the trainee indeed shines. Another equally capable trainee gets routine work and stays average. Name the effect and its risk.","answer":"**Self-fulfilling prophecy (Pygmalion effect).** The manager's expectations shaped the opportunities. The risk is that talent is wasted and treatment becomes unfair. The fix is to give everyone similar stretch work and judge by results."}]$c$::jsonb,
+  $c$Robbins & Judge 15e, ch. 6 (shortcuts in judging others); builds on Perception.pptx$c$, $c$draft$c$
+),
+(
+  $c$ob-12$c$, $c$ob$c$, 12, $c$Stress: Eustress vs Distress$c$,
+  $c$Stress is the body's response when demands feel bigger than our resources. A little sharpens performance (eustress); too much breaks it (distress).$c$,
+  $c$NIOSH defines job stress as the harmful physical and emotional reaction that happens when a job's demands don't match a worker's abilities, resources or needs.
+Stress isn't all bad. Think of an upside-down **U** curve:
+- **Too little stress:** calm turns into boredom, and performance is low.
+- **Moderate stress (eustress):** alert, energised, focused. Performance peaks.
+- **Too much stress (distress):** anxiety, mistakes, exhaustion. Performance falls.
+
+The skill is staying near the top of the curve: enough challenge to stretch people, with enough support to avoid burnout.$c$,
+  $c$A ₹100-a-head quiz night at a Park Street café, three teams:
+- One team is told it doesn't matter: they're bored and score **4/20**.
+- One is told the top team wins dinner: they're excited and score **16/20**. That's **eustress**.
+- One is told losers pay for everyone: they panic and score **7/20**. That's **distress**.$c$,
+  $c$✅ Verified (Jan 2025)$c$,
+  $c$The **Economic Survey 2024-25**, tabled on **31 January 2025**, said studies show health harms once working hours go beyond about **55–60 hours a week**.
+- Citing Sapien Labs data, it said people sitting at a desk **12 or more hours a day** reported distressed mental well-being.
+- It added that **workplace culture** matters as much as hours.
+
+The Survey arrived during the "70-hour" and "90-hour week" debate. Its message was the inverted U: longer isn't always better.
+*Sources: Business Today, ETV Bharat, The Federal, Jan 2025.*$c$,
+  $c$How do you handle pressure?$c$,
+  $c$"I actually work well with *some* pressure. A deadline makes me focused. That's the good kind of stress.
+The key for me is noticing when it tips into the bad kind. When I'm making careless errors or losing sleep, I break the work into smaller pieces, cut what isn't essential, and ask for help early.
+During our final exams plus a live consulting project, that's how I delivered both without burning out."$c$,
+  $c$Saying "I never feel stress". It sounds fake, and it misses the point: moderate stress *helps* performance. Show that you recognise both kinds and manage the tipping point.$c$,
+  $c$[{"kind":"concept","question":"What is eustress?","answer":"**Positive, moderate stress** that energises people and improves performance."},{"kind":"application","question":"A team with no deadlines and no targets keeps underperforming. Where are they on the stress curve?","answer":"**The low end**: too little challenge, so boredom and low performance."},{"kind":"case","question":"A consulting firm asks analysts to work 80-hour weeks for months. Output rose in the first fortnight, but now errors and resignations are climbing. Explain with the stress curve.","answer":"**They've crossed from eustress into distress.** The short push raised performance, but sustained overload sent them past the peak. Reset hours to a sustainable level, add support, and space out the crunch periods."}]$c$::jsonb,
+  $c$Work Stress GD TB.pptx (NIOSH definition, eustress and distress curve)$c$, $c$draft$c$
+),
+(
+  $c$ob-13$c$, $c$ob$c$, 13, $c$Where Stress Comes From and How It Shows$c$,
+  $c$Stress comes from the environment, the organisation and personal life, and it shows up in the mind, the body and behaviour.$c$,
+  $c$**Sources (stressors):**
+- **Environmental:** the economy, politics, technology, security fears.
+- **Organisational:**
+  - **task demands:** workload, deadlines, little control;
+  - **role demands:** role conflict and ambiguity;
+  - **interpersonal demands:** poor relationships, harassment, low support.
+- **Personal:** family problems, money worries, personality.
+
+**Symptoms:**
+- **Psychological:** anxiety, irritability, low job satisfaction.
+- **Physiological:** headaches, blood pressure, poor sleep.
+- **Behavioural:** absenteeism, quitting, mistakes, eating or smoking more.
+
+Stressors **add up**. A small issue on top of a big load can tip someone over.$c$,
+  $c$Ankita, a first-year MBA student:
+- skips the **₹100** canteen lunch to save money (**personal:** money);
+- her group project has no clear leader (**role ambiguity**);
+- three submissions fall due on one day (**task demands**).
+
+By week three she has headaches, is snapping at friends and is missing classes: **physiological, psychological and behavioural** symptoms.$c$,
+  $c$✅ Verified (Sept 2024)$c$,
+  $c$In **September 2024**, the mother of **Anna Sebastian Perayil**, a 26-year-old chartered accountant at EY in Pune, wrote to EY India chairman Rajiv Memani. Anna had died in July 2024, about four months into the job. Her mother's letter linked the death to work pressure, describing a heavy workload and late-night tasks.
+- The **Labour Ministry** said it would look into the working environment.
+- EY said it was committed to employee well-being.
+
+The case set off a national discussion about workload and role demands in high-pressure professional firms.
+*Sources: Business Today, The Week, Tribune, Outlook, Sept 2024.*$c$,
+  $c$What signs would tell you a team member is stressed, and what would you do?$c$,
+  $c$"I'd look for changes, not just levels:
+- **behavioural:** someone punctual starts coming late, or makes unusual errors;
+- **psychological:** irritability or withdrawal;
+- **physical:** fatigue, falling sick often.
+
+Then I'd have a private, non-judgemental conversation and look for the stressor. Is it task load, an unclear role, a conflict, or something personal? Then I'd fix what's in my control, like redistributing work or clarifying roles, and point them to support, like counselling, for the rest."$c$,
+  $c$Treating stress as only the individual's problem ("they should be tougher"). Many stressors, such as role ambiguity, overload and poor managers, are *organisational*, and only management can fix them.$c$,
+  $c$[{"kind":"concept","question":"Name the three categories of stress symptoms.","answer":"**Psychological, physiological and behavioural.**"},{"kind":"application","question":"An employee reports to two bosses who give opposite instructions. What type of stressor is this?","answer":"**Role conflict**, an organisational role demand."},{"kind":"case","question":"After a merger, staff don't know their new reporting lines, and absenteeism has doubled. Identify the stressor and the symptom, and suggest one fix.","answer":"**Role ambiguity (stressor), shown by absenteeism (behavioural symptom).** Fix: quickly publish clear role charts and reporting lines, and hold team meetings to answer questions."}]$c$::jsonb,
+  $c$Work Stress GD TB.pptx (environmental, organisational and personal factors; symptoms)$c$, $c$draft$c$
+),
+(
+  $c$ob-14$c$, $c$ob$c$, 14, $c$Coping with Stress: Individual and Organisational$c$,
+  $c$Individuals manage stress through habits like exercise and time management. Organisations manage it by removing stressors and supporting people.$c$,
+  $c$**Individual strategies:**
+- time management (prioritise, plan, say no);
+- physical exercise;
+- relaxation and meditation;
+- **cognitive restructuring:** reframing "I'll fail" into "this is hard but doable";
+- building social support.
+
+**Organisational strategies:**
+- better selection and placement;
+- realistic, clear goals;
+- job redesign that gives more control;
+- involving employees in decisions;
+- wellness programmes;
+- counselling services;
+- limits on overwork.
+
+The best results come when **both** act together. A yoga class can't fix a toxic boss.$c$,
+  $c$A hostel spends **₹100 per student per month** on a Sunday morning yoga session. That's an organisational wellness programme.
+But it also fixes the real stressor: the Wi-Fi used to crash every night before deadlines.
+Students who also use a simple weekly planner (individual time management) report the fewest all-nighters.$c$,
+  $c$✅ Verified (Jun–Jul 2025)$c$,
+  $c$In mid-**2025**, The Economic Times reported, and others picked up, that **Infosys** had begun sending alerts to employees who worked beyond **9 hours 15 minutes a day**, especially when working remotely.
+The emails reportedly showed each person their hours and asked them to rest and recharge.
+It drew notice because co-founder Narayana Murthy had earlier called for 70-hour weeks. Here was the company using an organisational coping tool: monitoring overwork and nudging people back to balance.
+*Sources: HCAMag, People Matters, MIT Sloan ME, Onmanorama, Jun–Jul 2025.*$c$,
+  $c$If you were HR head, how would you reduce burnout in a fast-growing company?$c$,
+  $c$"I'd work on two levels.
+**Organisationally:**
+- fix the biggest stressors first: unclear roles and unrealistic targets;
+- set limits on after-hours work;
+- train managers to spot early signs;
+- offer confidential counselling.
+
+**For individuals:** time-management and resilience workshops, and protected leave.
+Then I'd track it, with pulse surveys, attrition and sick days, so we know it's working, not just looking good."$c$,
+  $c$Offering only individual fixes like meditation apps. Interviewers want to hear that the organisation removes stressors at the source.$c$,
+  $c$[{"kind":"concept","question":"What is cognitive restructuring?","answer":"**Changing negative thought patterns** into more realistic ones, such as \"I'll fail\" into \"this is tough but I've handled tough before.\""},{"kind":"application","question":"A company redesigns jobs so employees can choose how to complete their tasks. Which stressor does this target?","answer":"**Low task control.** More control reduces stress."},{"kind":"case","question":"A bank offers free gym memberships, but stress surveys don't improve. Staff say targets change every week. What's missing?","answer":"**Organisational action on the real stressor.** Wellness perks help individuals, but changing targets create role ambiguity and overload. Set stable, realistic targets and involve staff in setting them."}]$c$::jsonb,
+  $c$Work Stress GD TB.pptx (individual and organisational coping)$c$, $c$draft$c$
+),
+(
+  $c$ob-15$c$, $c$ob$c$, 15, $c$Groups vs Teams, and the Types of Groups$c$,
+  $c$A group is people who share information. A team is people whose combined effort produces more than they could alone.$c$,
+  $c$| | Work group | Work team |
+|---|---|---|
+| Goal | Share information | Collective performance |
+| Synergy | Neutral or negative | Positive (1+1 > 2) |
+| Accountability | Individual | Individual *and* mutual |
+| Skills | Random, varied | Complementary |
+
+**Types of groups:**
+- **Formal:** set up by the organisation.
+  - **Command group:** a boss and direct reports.
+  - **Task group:** people brought together for a job.
+- **Informal:** formed naturally.
+  - **Interest group:** joined to pursue a shared cause, such as better pay.
+  - **Friendship group:** people who share traits or like each other.
+
+People join groups for **security, status, self-esteem, affiliation, power and goal achievement**. Social identity theory adds that groups also give us a sense of who we are.$c$,
+  $c$Six friends each put **₹100** into a shared WhatsApp "food fund". That's an informal **friendship group**: they share information about deals.
+For the college fest, five students with different skills form a stall team: a cook, a designer, a cashier, a marketer and a manager. They turn **₹500** of ingredients into **₹3,000** in sales.
+That's a **team**: complementary skills, a shared goal and synergy.$c$,
+  $c$✅ Verified (Sept–Oct 2024)$c$,
+  $c$From **9 September 2024**, about **1,450 workers** at **Samsung's plant near Chennai** went on strike for **37 days**. They wanted better pay and recognition of their new union, the Samsung India Workers Union.
+An **interest group** of employees had formed outside the company's formal structure, around a shared goal. The Tamil Nadu government mediated, and the strike was called off in mid-October.
+Later reports say the union was formally registered in **January 2026**.
+*Sources: Deccan Herald, The Quint, Business & Human Rights Resource Centre, Oct 2024.*$c$,
+  $c$What's the difference between a group and a team? Give an example of each from your life.$c$,
+  $c$"A group shares information and each person is judged on their own work, like our class WhatsApp group, which shares notes.
+A team has a common goal, complementary skills and mutual accountability, so the result is more than the sum of parts. In our marketing case competition, I did the research, a teammate built the model and another designed the deck. We were judged together, and we won.
+That's synergy."$c$,
+  $c$Calling every group a team. Putting people together doesn't create synergy. That needs a shared goal, complementary skills and mutual accountability.$c$,
+  $c$[{"kind":"concept","question":"What is the key performance difference between a work group and a work team?","answer":"**Synergy.** A team's combined effort is greater than the sum of individual efforts."},{"kind":"application","question":"Employees from different departments join a \"Save Our Canteen\" campaign. What type of group is it?","answer":"**An informal interest group.**"},{"kind":"case","question":"A company renames every department a \"team\", but nothing changes and people still work alone. What's missing?","answer":"**The features of a real team**: a shared goal, complementary roles, mutual accountability and team-based rewards. Without these, it's still a group with a new name."}]$c$::jsonb,
+  $c$Class Notes Unit 10.pptx; Work Stress GD TB.pptx (groups vs teams tables); OB Group Dynamics Team Building.pptx$c$, $c$draft$c$
+),
+(
+  $c$ob-16$c$, $c$ob$c$, 16, $c$How Groups Develop: Tuckman and Punctuated Equilibrium$c$,
+  $c$Groups typically go through forming, storming, norming, performing and adjourning. Teams with deadlines often change course sharply at the halfway point.$c$,
+  $c$**Tuckman's five stages:**
+1. **Forming:** polite, unsure. "What are we here for?"
+2. **Storming:** conflict over roles, leadership and ideas.
+3. **Norming:** roles and rules settle, and closeness grows.
+4. **Performing:** energy goes into the task.
+5. **Adjourning:** the group wraps up; temporary groups end.
+
+**Punctuated equilibrium (Gersick)**, for temporary groups with deadlines:
+- the first meeting sets the direction;
+- a long phase of inertia follows;
+- at about the **midpoint**, there's a sudden burst of change;
+- then a second phase, and a rush at the end.
+
+Groups don't always move neatly. They can slide back to storming when something changes.$c$,
+  $c$Five MBA students get a 4-week marketing project worth **₹100** in prize vouchers each.
+- Week 1: polite small talk (**forming**).
+- Week 1 ends with a fight over who presents (**storming**).
+- Week 2: they agree roles (**norming**).
+- They do little until the midpoint, when they panic and change their whole approach (**punctuated equilibrium**).
+- They do their best work in the last two weeks (**performing**), then celebrate and disband (**adjourning**).$c$,
+  $c$✅ Verified (Nov 2024)$c$,
+  $c$On **12 November 2024**, **Vistara merged into Air India**, creating a group with about **300 aircraft** and over **30,000 staff**.
+- Around **7,000 Vistara employees** were assessed and fitted into Air India roles.
+- For a time, cabin-crew rosters stayed separate.
+- Reports flagged differences in work culture and pilot retirement ages.
+
+Merging two crews is Tuckman in real life. A new combined group must form and work through storming over roles, rules and culture before it can perform as one airline.
+*Sources: Tata Group release; Business Standard, People Matters, Outlook Business, Nov 2024.*$c$,
+  $c$Tell me about a time your team had conflict. How did it get resolved?$c$,
+  $c$"In our consulting project, two of us disagreed sharply on the recommendation in the first week. That was the storming stage.
+Instead of avoiding it, we set a rule: decisions backed by data, and each side gets 10 minutes to present. That norm settled the roles. By week three we were performing, and the client adopted our plan.
+I learned that early conflict is normal. The job is to turn it into clear norms quickly."$c$,
+  $c$Thinking storming is a failure. It's a normal stage. Teams that skip open disagreement often hide problems that come back later.$c$,
+  $c$[{"kind":"concept","question":"In which of Tuckman's stages do roles and rules become settled?","answer":"**Norming.**"},{"kind":"application","question":"A 6-week task force does little for 3 weeks, then suddenly rethinks its whole approach. Which model explains this?","answer":"**The punctuated-equilibrium model**: a midpoint transition after a phase of inertia."},{"kind":"case","question":"A high-performing team gets a new manager and three new members, and arguments start again. What's happening, and what should the manager do?","answer":"**The team has slipped back to forming and storming.** Membership changed, so it must re-form. Hold a reset meeting to clarify the goal, roles and norms, and let disagreements surface openly so the team can re-norm quickly."}]$c$::jsonb,
+  $c$Class Notes Unit 10.pptx (Tuckman); OB Group Dynamics Team Building.pptx (five-stage and punctuated-equilibrium models)$c$, $c$draft$c$
+),
+(
+  $c$ob-17$c$, $c$ob$c$, 17, $c$Group Properties: Roles, Norms, Status, Size and Cohesiveness$c$,
+  $c$Five properties shape how any group behaves: roles, norms, status, size and cohesiveness.$c$,
+  $c$- **Roles:** the behaviour expected from a position. **Role conflict** happens when expectations clash.
+- **Norms:** the group's unwritten rules, about performance, appearance, social life and resources. Breaking them can lead to **deviant behaviour** or punishment.
+- **Status:** social rank. It can be **ascribed** (given, such as age), **achieved** (earned) or a **master** status that overrides the rest.
+- **Size:** big groups bring more ideas, but also **social loafing**: individuals put in less effort when their contribution can't be seen.
+- **Cohesiveness:** how strongly members are attracted to the group.
+
+**The key insight:**
+| | High performance norms | Low performance norms |
+|---|---|---|
+| **High cohesion** | Very high productivity | Very *low* productivity |
+| **Low cohesion** | Moderate productivity | Low productivity |
+
+A close-knit group that values slacking is the worst combination.$c$,
+  $c$Eight hostel friends get a **₹100** treat for every room that passes the hostel inspection.
+- When all eight clean together, only three actually work: **social loafing**.
+- When they split into pairs, each with its own room, every pair cleans. Each person's effort is now visible.
+- When they make "nobody sleeps till rooms pass" a group rule, with **high cohesion** and a **high norm**, all four rooms pass every week.$c$,
+  $c$✅ Verified (Nov 2025)$c$,
+  $c$On **2 November 2025**, the Indian women's cricket team beat South Africa by **52 runs** in Navi Mumbai to win their **first ODI World Cup**.
+- Shafali Verma (87) and Deepti Sharma (fifty runs and five wickets) led the final.
+- Captain **Harmanpreet Kaur** and coach **Amol Muzumdar** were credited with building the side.
+
+India became only the fourth team to win the title. A tight, cohesive group with demanding performance norms is exactly the top-left box of the grid.
+*Sources: DTNext, The Hitavada, Cricket.com, IANS, Nov 2025.*$c$,
+  $c$How would you prevent social loafing in a group project?$c$,
+  $c$"Social loafing happens when individual effort is invisible, so I'd make it visible:
+- break the work into clear individual pieces with named owners;
+- keep the team small enough that everyone matters;
+- do quick peer check-ins;
+- assess both individual and team results.
+
+I'd also build a norm early, like 'we don't present anything we haven't all reviewed', so the group itself keeps standards high."$c$,
+  $c$Assuming high cohesion is always good. Cohesion amplifies whatever the norms are. A close group with low standards will defend its low output together.$c$,
+  $c$[{"kind":"concept","question":"What is social loafing?","answer":"**The tendency to put in less effort when working in a group than alone**, especially when individual contributions can't be identified."},{"kind":"application","question":"A senior employee who is a long-time favourite gets every comfortable assignment. Which status type is at work?","answer":"**Ascribed status** (seniority) or master status, not achieved status."},{"kind":"case","question":"A sales team is very close: they lunch together and defend each other. But they collectively agree to \"never exceed target, or management will raise it.\" Diagnose it and suggest a fix.","answer":"**High cohesion with low performance norms gives very low productivity.** Fix: change the norms by linking team rewards to beating target, ensuring targets aren't simply raised as punishment, and involving the team in setting goals."}]$c$::jsonb,
+  $c$OB Group Dynamics Team Building.pptx (group properties); Class Notes Unit 10.pptx$c$, $c$draft$c$
+),
+(
+  $c$ob-18$c$, $c$ob$c$, 18, $c$Group Decisions: Groupthink, Groupshift and Better Techniques$c$,
+  $c$Groups can decide better than individuals, but they can also fall into groupthink (no one disagrees) or groupshift (they become more extreme together).$c$,
+  $c$**Groups vs individuals:**
+- **Groups** bring more information, more ideas and more acceptance of the decision.
+- **Individuals** are faster and have clearer accountability.
+
+**Two group traps:**
+- **Groupthink:** the pressure to agree silences doubts. Warning signs are rationalising warnings away, pressure on dissenters, self-censorship and an illusion that everyone agrees.
+- **Groupshift (group polarisation):** after discussion, the group's view becomes more extreme than the members' starting views, either riskier or more cautious.
+
+**Better techniques:**
+- **Brainstorming:** generate ideas freely, with no criticism.
+- **Nominal group technique:** members write ideas silently, present them one by one, discuss, then vote privately. It is great for avoiding domination by one loud voice.$c$,
+  $c$A class committee has to decide how to spend the **₹100 per student** class fund.
+The class rep says "Let's do an expensive trip!" and nobody wants to look cheap, so everyone agrees. That's **groupthink**. In discussion, the trip grows from Digha to Darjeeling to Goa. That's **groupshift** towards risk.
+With the **nominal group technique**, each student writes an idea silently first, then everyone votes privately. The class picks a farewell dinner, which most actually wanted.$c$,
+  $c$✅ Verified (Feb 2024)$c$,
+  $c$In **February 2024**, after a door plug blew off a Boeing 737 MAX 9 in flight in January, an **FAA-appointed expert panel** reported on Boeing's safety culture.
+- It found employees **hesitant to raise safety concerns for fear of retaliation**.
+- It found a **"disconnect"** between what senior management said about safety and what front-line staff experienced.
+- It made **27 findings and 53 recommendations**.
+
+When people stay silent to avoid conflict, an organisation loses the dissent that catches errors. That is the core danger of groupthink.
+*Sources: FAA expert panel report as reported by ABC/6abc, AirlineGeeks, Feb–Apr 2024.*$c$,
+  $c$How would you avoid groupthink in your team?$c$,
+  $c$"Groupthink grows when disagreeing feels unsafe, so I'd make dissent part of the process:
+- the leader shares their view *last*;
+- one person is assigned to be the devil's advocate;
+- for big decisions, everyone writes their view before discussion, as in the nominal group technique;
+- outside experts review the plan.
+
+And I'd thank people publicly when they raise concerns, so speaking up becomes a norm."$c$,
+  $c$Thinking groupthink means a group that's "too friendly". It's about the *suppression of dissent*. It happens in tense, hierarchical groups too, often more so.$c$,
+  $c$[{"kind":"concept","question":"What is groupshift?","answer":"**The tendency for a group's position to become more extreme than members' initial positions** after discussion, either riskier or more cautious."},{"kind":"application","question":"A team wants many ideas fast, with no criticism. Which technique fits?","answer":"**Brainstorming.**"},{"kind":"case","question":"In board meetings, the founder speaks first and directors always agree. Two failed acquisitions later, nobody had raised the risks. Diagnose it and suggest two fixes.","answer":"**Groupthink**: self-censorship and pressure to conform. Fixes: the founder speaks last; appoint a devil's advocate; collect written anonymous views before discussion (nominal group technique); bring in independent reviewers."}]$c$::jsonb,
+  $c$OB Group Dynamics Team Building.pptx (group decision making); Robbins & Judge 15e, ch. 9$c$, $c$draft$c$
+),
+(
+  $c$ob-19$c$, $c$ob$c$, 19, $c$Four Types of Teams$c$,
+  $c$Teams come in four main types: problem-solving, self-managed, cross-functional and virtual. Each suits a different job.$c$,
+  $c$| Type | Who | Does what |
+|---|---|---|
+| **Problem-solving** | 5–12 people from the *same* department | Meet a few hours a week to suggest improvements (but can't act alone) |
+| **Self-managed** | 10–15 people | Plan, schedule and control their own work; take on supervisor duties |
+| **Cross-functional** | Same level, *different* departments | Combine expertise for complex projects |
+| **Virtual** | Any of the above, spread out | Work mainly through technology across places and time zones |
+
+Each type has a typical risk:
+- **Cross-functional** teams take time to build trust across specialties.
+- **Virtual** teams can lack social bonds and clear communication.
+- **Self-managed** teams need mature members.$c$,
+  $c$A Kolkata biryani chain:
+- **Problem-solving:** six kitchen staff meet weekly to cut waste and save **₹100** per batch.
+- **Self-managed:** a night-shift crew sets its own schedule.
+- **Cross-functional:** chef, marketer and finance head design a new **₹100** combo.
+- **Virtual:** the online-delivery team works with an app partner's Bengaluru staff over video calls.$c$,
+  $c$✅ Verified (Jan 2025)$c$,
+  $c$On **16 January 2025**, ISRO docked two satellites in orbit in its **SpaDeX** mission. India became the **fourth country** to do this, after the US, Russia and China.
+- ISRO says the spacecraft were designed by the **U R Rao Satellite Centre** with support from **VSSC, LPSC, SAC, IISU and LEOS**: centres with different specialties.
+- Earlier attempts were postponed to validate the system on the ground.
+
+A mission like this needs a **cross-functional team**: specialists from several centres working as one.
+*Sources: ISRO SpaDeX mission page; Gulf News, Deccan Herald, Jan 2025.*$c$,
+  $c$What challenges would you expect leading a cross-functional team?$c$,
+  $c$"Three challenges:
+1. **Different languages:** finance talks margins, design talks experience.
+2. **Divided loyalty:** members still report to their own department heads.
+3. **Slow trust-building**, because they haven't worked together.
+
+I'd handle these with a clear shared goal and success metric from day one, a short kick-off where each function explains its constraints, and agreed decision rules. I'd also get department heads to protect members' time for the project."$c$,
+  $c$Mixing up problem-solving and self-managed teams. Problem-solving teams only *suggest*; management decides. Self-managed teams actually *run* their own work.$c$,
+  $c$[{"kind":"concept","question":"Which team type takes over many of a supervisor's duties?","answer":"**Self-managed teams.**"},{"kind":"application","question":"A bank brings together people from IT, compliance, marketing and branches to launch a UPI feature. Which team type?","answer":"**Cross-functional.**"},{"kind":"case","question":"A remote team spread across Kolkata, Pune and Singapore keeps missing handovers, and members feel like strangers. What type is it, and what would you fix?","answer":"**A virtual team lacking social bonds and clear processes.** Fixes: regular video check-ins, clear handover templates and owners, overlapping working hours for key tasks, and an occasional in-person meet-up to build trust."}]$c$::jsonb,
+  $c$OB Group Dynamics Team Building.pptx (four types of teams); Work Stress GD TB.pptx$c$, $c$draft$c$
+),
+(
+  $c$ob-20$c$, $c$ob$c$, 20, $c$What Makes Teams Effective$c$,
+  $c$Effective teams need the right context (resources, leadership, trust, rewards), the right composition (skills, roles, size), and the right processes (shared purpose, specific goals, belief in success).$c$,
+  $c$Robbins's **team effectiveness model** has three groups of factors.
+
+**1. Context:**
+- adequate resources;
+- good leadership and structure;
+- a climate of trust;
+- evaluation and rewards that recognise *team* contribution.
+
+**2. Composition:**
+- abilities and personalities;
+- clear role allocation;
+- diversity;
+- the right **size**. Smaller is usually better, often fewer than 10.
+- members who actually *want* teamwork.
+
+**3. Process:**
+- a common purpose;
+- **specific goals**;
+- **team efficacy**: belief that the team can succeed;
+- shared mental models;
+- moderate *task* conflict, but little *relationship* conflict;
+- low social loafing.
+
+The class notes add **psychological safety**: people can speak up without fear. They also suggest celebrating wins.$c$,
+  $c$Two college fest teams each get **₹100 per member** to run a stall.
+- **Team A:** six friends with no roles and no target. They argue, and sell **₹1,500**.
+- **Team B:** five members with clear roles (cook, cashier, two sellers, one social-media lead), a target of "₹5,000 by 8 pm", a captain who listens and a pizza promised if they hit it. They sell **₹6,200**.
+
+Same money. Different context, composition and process.$c$,
+  $c$✅ Verified (Jun 2024)$c$,
+  $c$On **29 June 2024**, India beat South Africa by **7 runs** in Barbados to win the **T20 World Cup**, their first ICC trophy in 11 years. Both teams were unbeaten going into the final.
+- Captain **Rohit Sharma** said the team had worked on giving players **role clarity**.
+- Coach **Rahul Dravid**, in his last match, praised the team's fight.
+- R. Ashwin praised Dravid for turning down a "#DoItForDravid" campaign, saying a team sport shouldn't build narratives around one person.
+
+That covers role allocation (composition), leadership and trust (context) and common purpose (process).
+*Sources: Al Jazeera, ESPNcricinfo, Gulf News, Jun–Jul 2024.*$c$,
+  $c$What makes a team effective? Use an example.$c$,
+  $c$"I think of it in three layers.
+- **Context:** does the team have resources, a leader people trust, and rewards for team results?
+- **Composition:** the right skills, clear roles and a small enough size.
+- **Process:** a shared purpose, specific goals and a belief that we can win.
+
+India's 2024 T20 World Cup win shows it: clear roles for players, a captain and coach the team trusted, and a common purpose bigger than any individual. In my own case-competition team, setting a specific target and splitting roles early is what got us to the national finals."$c$,
+  $c$Saying "conflict is bad for teams". Moderate *task* conflict (debating ideas) improves decisions. It's *relationship* conflict (personal clashes) that hurts.$c$,
+  $c$[{"kind":"concept","question":"What are the three broad groups of factors in the team effectiveness model?","answer":"**Context, composition and process.**"},{"kind":"application","question":"A talented team fails because members are rewarded only for individual targets. Which factor is broken?","answer":"**Context**: the performance evaluation and reward system doesn't recognise team contribution."},{"kind":"case","question":"A 14-person product team has bright members, but meetings drag, two people do most of the work, and no one is sure what \"success\" means. Diagnose it using the model.","answer":"**Composition and process problems.** The team is too big (fewer than 10 is better), which invites social loafing. There is no specific goal or common purpose. Fix: split into smaller sub-teams with clear roles, set a measurable target, and track individual contributions."}]$c$::jsonb,
+  $c$OB Group Dynamics Team Building.pptx (team effectiveness model); Class Notes Unit 10.pptx (team-building strategies)$c$, $c$draft$c$
 )
 on conflict (id) do update set
   subject_id = excluded.subject_id, num = excluded.num, title = excluded.title,

@@ -31,12 +31,14 @@ export const SUBJECT_NAMES: Record<string, string> = {
   fin: "Finance",
   mkt: "Marketing",
   acct: "Accounting",
+  ob: "Organisational Behaviour",
 };
 
-/** The two big areas on the Study Desk. Every subject belongs to one of them. */
+/** The big areas on the Study Desk. Every subject belongs to one of them. */
 export const SECTIONS = [
   { id: "marketing", name: "Marketing", blurb: "Consumers, research, strategy & ethics", subjects: ["mkt"] },
   { id: "finance", name: "Finance", blurb: "Economics & accounting", subjects: ["econ", "acct", "fin"] },
+  { id: "people", name: "People", blurb: "Organisational behaviour: personality, perception, stress & teams", subjects: ["ob"] },
 ] as const;
 
 export type SectionId = (typeof SECTIONS)[number]["id"];

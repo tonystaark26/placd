@@ -10,6 +10,7 @@ const SUBJECT_BLURBS: Record<string, string> = {
   mkt: "Customers, value, research, buying behaviour, strategy and ethics",
   acct: "Cost control, the accounting process and reading financial statements",
   fin: "Money, markets and corporate finance",
+  ob: "Personality, perception, stress, groups and teams",
 };
 
 export function generateStaticParams() {
