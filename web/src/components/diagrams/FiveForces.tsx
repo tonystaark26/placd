@@ -1,4 +1,4 @@
-// Card mkt-06: Five Forces, using the photocopy shop from "The ₹100 example".
+// Card mkt-06: Five Forces, using the photocopy shop from "The everyday example".
 // A strong force is bad for the shop's profits, so "strong" is shown in red, "weak" in green.
 
 type Box = { x: number; y: number; w: number; name: string; strong: boolean; lines: string[] };

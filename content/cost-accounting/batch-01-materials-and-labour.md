@@ -23,7 +23,7 @@ Stock levels tell a storekeeper when to reorder, the lowest safe stock, and the 
 
 If "normal" values aren't given, take the average of the maximum and minimum.
 
-**The ₹100 example: milk packets at the college canteen**
+**The everyday example: milk packets at the college canteen**
 The canteen uses **20–40 packets a day** (normal 30). The dairy takes **2–4 days** to deliver (normal 3), and each order is **150 packets**.
 - Reorder level = 40 × 4 = **160 packets**
 - Minimum level = 160 − (30 × 3) = **70 packets**
@@ -74,7 +74,7 @@ EOQ = √(2DS ÷ H), where **D** = annual demand (units), **S** = cost of placin
 
 It assumes steady demand, a fixed lead time, constant costs and no bulk discounts. Real life often breaks these.
 
-**The ₹100 example: notebooks at a stationery shop**
+**The everyday example: notebooks at a stationery shop**
 The shop sells **3,600 notebooks a year**. Each order costs **₹50** (delivery + paperwork), and holding one notebook for a year costs **₹4**.
 - EOQ = √(2 × 3,600 × 50 ÷ 4) = √90,000 = **300 notebooks**, so **12 orders a year** (once a month).
 - Ordering cost = 12 × ₹50 = **₹600**. Holding cost = average stock 150 × ₹4 = **₹600**. Total **₹1,200**.
@@ -123,7 +123,7 @@ When prices are **rising**: FIFO shows **lower** cost of sales, so **higher prof
 In India, **Ind AS 2 and AS 2 don't allow LIFO** in financial statements, though it still appears in cost accounting exams.
 These are **costing assumptions**: the physical goods can move in any order.
 
-**The ₹100 example: pens at the college stationery shop**
+**The everyday example: pens at the college stationery shop**
 The shop buys **10 pens at ₹10**, then **10 more at ₹14**. It sells **12 pens at ₹20** each (revenue ₹240).
 | Method | Cost of 12 pens sold | Closing stock (8 pens) | Profit |
 |---|---|---|---|
@@ -178,7 +178,7 @@ ABC analysis follows the **Pareto (80/20) principle**:
 
 **Limitation:** it looks only at **value**, not at how **critical** an item is. That's why firms pair it with **VED analysis** (Vital, Essential, Desirable).
 
-**The ₹100 example: the canteen's monthly purchases (₹1,00,000, 50 items)**
+**The everyday example: the canteen's monthly purchases (₹1,00,000, 50 items)**
 - **A:** 5 items (10%): gas cylinders, paneer, oil, rice, milk = **₹75,000** (75%). Check daily, buy carefully.
 - **B:** 15 items (30%): vegetables, bread, sugar… = **₹18,000** (18%). Weekly review.
 - **C:** 30 items (60%): napkins, toothpicks, spices… = **₹7,000** (7%). Buy in bulk once a month.
@@ -226,7 +226,7 @@ How many times a business sells and replaces its stock in a year: faster turnove
 **High** turnover means stock moves fast and less cash is tied up. **Low** turnover means slow sales, overstocking or obsolete stock.
 But *very* high turnover can also mean the business keeps running out.
 
-**The ₹100 example: a Kolkata kirana store**
+**The everyday example: a Kolkata kirana store**
 Opening stock **₹40,000**, closing stock **₹60,000**, cost of goods sold **₹6,00,000** in the year.
 - Average inventory = (40,000 + 60,000) ÷ 2 = **₹50,000**
 - Turnover = 6,00,000 ÷ 50,000 = **12 times a year**
@@ -275,11 +275,11 @@ Workers can be paid for **time** spent, for **output** produced, or with a **bon
 - **Rowan plan:** time wages + (time saved ÷ standard time) × time taken × rate.
 - Labour is **direct** (traceable to a product, like machine operators) or **indirect** (supervisors, security).
 
-**The ₹100 example: a print-shop job**
-Standard time **8 hours**, actual time **6 hours**, rate **₹100 an hour**. Time saved = 2 hours.
-- Time wages = 6 × ₹100 = **₹600**
-- **Halsey:** bonus = 50% × 2 × ₹100 = ₹100 → **₹700**
-- **Rowan:** bonus = (2 ÷ 8) × 6 × ₹100 = ₹150 → **₹750**
+**The everyday example: a print-shop job**
+Standard time **8 hours**, actual time **6 hours**, rate **₹80 an hour**. Time saved = 2 hours.
+- Time wages = 6 × ₹80 = **₹480**
+- **Halsey:** bonus = 50% × 2 × ₹80 = ₹80 → **₹560**
+- **Rowan:** bonus = (2 ÷ 8) × 6 × ₹80 = ₹120 → **₹600**
 
 Rowan pays more here, because the worker saved **less than half** the standard time. If a worker saves **more than half**, Halsey pays more. At exactly half, they're equal.
 
@@ -327,7 +327,7 @@ All three methods divide by **average workers** = (workers at start + workers at
 New hires for **expansion** aren't replacements. Turnover costs include hiring, training, slower output from new joiners, overtime for the team covering gaps, and lost knowledge.
 Causes: low pay, poor conditions, little growth, better offers. Remedies: fair pay, training, career paths, welfare.
 
-**The ₹100 example: canteen staff in a year**
+**The everyday example: canteen staff in a year**
 **18 staff** at the start, **22** at the end, so the average is **20**. **4 people left** and **3 were hired to replace them** (the rest were new posts).
 - Separation = 4 ÷ 20 × 100 = **20%**
 - Replacement = 3 ÷ 20 × 100 = **15%**

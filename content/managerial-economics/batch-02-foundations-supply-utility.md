@@ -17,8 +17,8 @@ everything we want, so we must choose. Every choice is a **trade-off**. The
 and not just the money. Smart decisions are also made **at the margin**: not "study or
 sleep?" but "is *one more* hour of study worth *one less* hour of sleep?"
 
-**The ₹100 example**
-You have ₹100 and one evening. You could go for a pizza, buy a used exam guide, or
+**The everyday example**
+You have ₹250 and one evening. You could go for a pizza, buy a used exam guide, or
 take an auto home instead of the bus. You pick pizza. If the exam guide was your second
 choice, **the exam guide is the opportunity cost of the pizza.** The bus fare saving
 doesn't count, because it wasn't your next-best option.
@@ -68,7 +68,7 @@ Why is it bowed outward? Because of **increasing opportunity cost**: resources a
 specialised. To make more guns, you must turn dairy farms into factories, and each extra
 gun costs more butter than the last.
 
-**The ₹100 example**
+**The everyday example**
 The college canteen has 2 cooks and 1 hour. They can make **40 dosas, or 60 sandwiches**,
 or a mix like 20 dosas + 35 sandwiches. If one cook calls in sick and they make only 15 of
 each, they're **inside** the curve. If the canteen buys a dosa machine, the whole curve
@@ -122,7 +122,7 @@ direction, because a higher price makes producing more profitable.
 items (only one painting exists) and labour (past a point, some people work *fewer* hours
 as wages rise, because they value leisure more).
 
-**The ₹100 example**
+**The everyday example**
 A juice stall sells 20 glasses a day at ₹20. A college fest raises the going price to ₹30, so
 the owner stays open longer and makes 30 glasses. That's a **movement** along the curve.
 Then oranges double in price: even at ₹30 a glass, he now makes only 15. That's a
@@ -176,7 +176,7 @@ The price where the quantity buyers want equals the quantity sellers offer. Abov
 | Supply ↑ (shifts right) | ↓ | ↑ |
 | Supply ↓ | ↑ | ↓ |
 
-**The ₹100 example**
+**The everyday example**
 The canteen makes 100 samosas. At **₹10**, exactly 100 students want one, which is equilibrium.
 At **₹15**, only 60 want one, so 40 are left over (a **surplus**) and the price will come down.
 At **₹5**, 150 want one, so 50 students leave hungry (a **shortage**) and the price will go up.
@@ -228,7 +228,7 @@ MU keeps falling, and can even hit zero or go negative (one samosa too many). Th
 why demand curves slope down: you'll only buy more if it's cheaper, because each extra
 unit is worth less to you.
 
-**The ₹100 example**
+**The everyday example**
 From the notes' tea table: the 1st cup of tea gives 30 units of satisfaction, the 2nd gives 20,
 the 3rd 15, the 4th 10… the 10th gives just 1, and the **11th gives −4**: total satisfaction
 actually *drops* from 99 to 95. In rupees: if your first chai is worth ₹30 to you, the second
@@ -278,9 +278,9 @@ You're happiest where your budget line just touches the highest indifference cur
 - The **budget line** shows everything you can afford. **Equilibrium** is where the two
   touch: the best combination you can actually afford.
 
-**The ₹100 example**
-You have ₹100. Chai costs ₹10 and a samosa ₹20. Your budget line: 10 chai, *or* 5 samosas,
-*or* mixes like 4 chai + 3 samosas (₹40 + ₹60). Among all the mixes costing exactly ₹100,
+**The everyday example**
+You have ₹80. Chai costs ₹10 and a samosa ₹20. Your budget line: 8 chai, *or* 4 samosas,
+*or* mixes like 4 chai + 2 samosas (₹40 + ₹40). Among all the mixes costing exactly ₹80,
 the one you enjoy most is your equilibrium.
 From the notes' table: going from (1 apple, 10 oranges) to (2, 7), you give up 3 oranges for
 1 apple. Next you give up 2, then 1. That's **diminishing MRS**, which is why ICs bow inward.

@@ -21,9 +21,9 @@ rises? Three reasons: we switch to cheaper alternatives (*substitution effect*),
 money now buys less (*income effect*), and each extra unit gives us less satisfaction
 than the last (*diminishing marginal utility*), so we only buy more if it's cheaper.
 
-**The ₹100 example**
-You have ₹100 for snacks. Samosas cost ₹10, so you buy 10. The price rises to ₹20.
-Now ₹100 buys only 5, and you might switch to vada pav instead. Same money, same
+**The everyday example**
+You have ₹60 for snacks. Samosas cost ₹12, so you buy 5. The price rises to ₹20.
+Now ₹60 buys only 3, and you might switch to vada pav instead. Same money, same
 hunger, but the higher price means fewer samosas.
 
 **But it breaks sometimes (interviewers love this part):**
@@ -82,7 +82,7 @@ Picture a demand curve as a menu: "at this price, I'll buy this much."
   such as income, tastes, a substitute's price, expectations, population or government
   policy. You now have a whole new menu.
 
-**The ₹100 example**
+**The everyday example**
 Ice cream costs ₹50 and you buy 2 a week. The price drops to ₹40, so you buy 4. That's a
 **movement** (only the price changed). Now the price is back at ₹50, but your pocket
 money doubles and you buy 3 at the *same* ₹50. That's a **shift** (your income changed).
@@ -133,10 +133,10 @@ the *size* of the reaction.
 What makes demand elastic? Many substitutes, being a luxury, taking a big share of your
 budget, and having time to adjust. Habit and necessity make it inelastic.
 
-**The ₹100 example**
-A café sells 100 coffees a day at ₹100, which is **₹10,000** in revenue. It raises the price 10% to ₹110.
-- If sales fall to **80** (−20%): elasticity = 20 ÷ 10 = **2, elastic**. Revenue = ₹8,800. **Lost money.**
-- If sales fall to **95** (−5%): elasticity = 5 ÷ 10 = **0.5, inelastic**. Revenue = ₹10,450. **Gained money.**
+**The everyday example**
+A café sells 100 cold coffees a day at ₹40, which is **₹4,000** in revenue. It raises the price 10% to ₹44.
+- If sales fall to **80** (−20%): elasticity = 20 ÷ 10 = **2, elastic**. Revenue = ₹3,520. **Lost money.**
+- If sales fall to **95** (−5%): elasticity = 5 ÷ 10 = **0.5, inelastic**. Revenue = ₹4,180. **Gained money.**
 
 Same price hike, opposite results. **That is why managers care about elasticity.**
 
@@ -192,7 +192,7 @@ Income elasticity = % change in demand ÷ % change in income.
 
 Note: "inferior" and "luxury" are economic labels, not judgements about quality.
 
-**The ₹100 example**
+**The everyday example**
 Your monthly pocket money rises from ₹1,000 to ₹1,100 (+10%).
 - Canteen thali spending rises 5% → elasticity **0.5, necessity**
 - Café visits rise 30% → elasticity **3, luxury**
@@ -242,7 +242,7 @@ Cross elasticity = % change in demand for X ÷ % change in price of Y.
 
 The bigger the number, the closer the relationship.
 
-**The ₹100 example**
+**The everyday example**
 At the college canteen, coffee goes from ₹20 to ₹22 (+10%). Tea sales go from 100 to 115
 cups (+15%). Cross elasticity = 15 ÷ 10 = **+1.5**. Tea and coffee are **strong substitutes**,
 and the tea stall just got customers for free.

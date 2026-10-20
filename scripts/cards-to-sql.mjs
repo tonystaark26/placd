@@ -19,7 +19,7 @@ const SUBJECTS = [
 const PARTS = {
   "In one line": "one_line",
   "Explain it simply": "explain",
-  "The ₹100 example": "example",
+  "The everyday example": "example",
   "Seen in the news": "news",
   "How interviewers ask it": "interview",
   "Common trap": "trap",

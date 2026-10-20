@@ -27,7 +27,7 @@ OB borrows from other subjects:
 
 It is **applied**: the aim is better performance and more satisfied people.
 
-**The ₹100 example**
+**The everyday example**
 Two tea stalls stand side by side near College Street. Both charge **₹10** a cup and have the same kettle. One sells **200** cups a day, the other **80**.
 The difference isn't the tea. In one stall, the helper is greeted, trusted and shares tips. In the other, he is shouted at and keeps leaving.
 That gap of **120 cups (₹1,200 a day)** is OB.
@@ -77,9 +77,9 @@ Kurt Lewin (1936) gave OB its simplest model:
 The same person behaves differently in different settings. Different people behave differently in the same setting.
 For a manager, **E** is often easier to change than **P**. You can redesign rewards, rules and teams far faster than you can change someone's personality.
 
-**The ₹100 example**
+**The everyday example**
 Riya is quiet in a 60-student lecture at her Park Street college. She never speaks.
-In a 5-person case-study group with a friendly senior, she speaks up and wins a **₹100** prize for the best idea.
+In a 5-person case-study group with a friendly senior, she speaks up and wins a **₹500** book-voucher prize for the best idea.
 Her **P** didn't change; the **E** did, from a big hall to a small, safe group. So did her **B**.
 
 **Seen in the news** ✅ Verified (Apr 2024)
@@ -132,8 +132,8 @@ Organisations run on different beliefs about people, from "obey because I'm the 
 
 Most firms mix models. The trend over time has been from top to bottom: from power towards trust.
 
-**The ₹100 example**
-Five sweet shops in Kolkata pay their helpers the same **₹100** for an evening shift:
+**The everyday example**
+Five sweet shops in Kolkata pay their helpers the same **₹300** for an evening shift:
 - **Autocratic:** "Do it or you're out."
 - **Custodial:** the owner adds free dinner.
 - **Supportive:** the owner coaches the helper and thanks him.
@@ -191,8 +191,8 @@ Management thinking moved from "people are parts of a machine" (classical), to "
 - **Organisational humanism:** let people use all their abilities.
 - **Management science:** use numbers and models.
 
-**The ₹100 example**
-A momo stall near New Market sells plates at **₹100**:
+**The everyday example**
+A momo stall near New Market sells plates at **₹60**:
 - **Taylor** times every step and finds rolling takes 40 seconds, so he redesigns the counter and output doubles.
 - **Fayol** writes clear roles: who cooks, who serves, who handles cash.
 - **Weber** fixes rules: no free plates for friends.
@@ -242,12 +242,12 @@ The challenges (and opportunities) that OB helps with:
 - **Temporariness:** contracts, gig work and constant reorganisation.
 - **Innovation and change:** adapt fast or fall behind.
 
-**The ₹100 example**
+**The everyday example**
 A Salt Lake café's evening team:
 - a Bengali manager;
 - a Nepali chef;
 - two part-time students from Odisha;
-- a delivery rider from an app, paid about **₹100** per order run.
+- a delivery rider from an app, paid about **₹40** per delivery.
 
 In one shift the manager handles diversity (three languages), temporariness (the rider changes every week) and empowerment (letting the chef change the menu).
 That is today's OB in one small kitchen.
@@ -306,9 +306,9 @@ Earlier models in the notes:
 
 The popular **MBTI** sorts people into 16 types using four pairs (E/I, S/N, T/F, J/P). It's useful for self-awareness, but research says it predicts job performance poorly.
 
-**The ₹100 example**
-Five friends each get **₹100** at a Gariahat fair:
-- **High C:** writes a budget and keeps ₹30 back.
+**The everyday example**
+Five friends each get **₹200** at a Gariahat fair:
+- **High C:** writes a budget and keeps ₹50 back.
 - **High O:** tries the strangest street food.
 - **High E:** spends it treating everyone.
 - **High A:** lends half to a friend who forgot his wallet.
@@ -366,11 +366,11 @@ When anxiety rises, the ego uses **defence mechanisms**, often without us knowin
 
 At work, these explain why people make excuses, blame others or ignore bad news.
 
-**The ₹100 example**
-Arjun has **₹100** left for the week.
+**The everyday example**
+Arjun has **₹150** left for the week.
 - His **id** says "biryani from Arsalan, now!"
 - His **superego** says "save it, your parents work hard for this."
-- His **ego** decides: a ₹40 roll today and ₹60 saved.
+- His **ego** decides: a ₹60 roll today and ₹90 saved.
 
 He fails a test and says "the questions were out of syllabus anyway." That is **rationalisation**: an excuse that protects his self-image.
 
@@ -422,8 +422,8 @@ Locus of control is whether you believe *you* or *outside forces* control your r
 
 Robbins adds **core self-evaluation**: an overall belief in your own worth and ability.
 
-**The ₹100 example**
-Two students each lose **₹100** on a bad online order.
+**The everyday example**
+Two students each lose **₹349** on a bad online order.
 - **Priya (internal):** "I didn't check the seller rating. Next time I will." She checks, and never loses money that way again.
 - **Rahul (external):** "These apps are all scams, nothing I can do." He keeps losing.
 

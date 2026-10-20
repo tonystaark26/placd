@@ -1,4 +1,4 @@
-// Pictures for the Cost & Financial Accounting cards. Every number comes from that card's "₹100 example".
+// Pictures for the Cost & Financial Accounting cards. Every number comes from that card's everyday example.
 
 import { Axes, Box, Curve, Dot, Figure, Heading, Line, Pill, Txt } from "./parts";
 
@@ -214,16 +214,16 @@ export function InventoryTurnover() {
 
 // acct-06 ──────────────────────────────────────────────────────────────
 export function IncentivePlans() {
-  const scale = 0.3; // ₹ → px
+  const scale = 0.36; // ₹ → px
   const rows = [
-    { name: "Time wages", base: 600, bonus: 0, note: "₹600" },
-    { name: "Halsey", base: 600, bonus: 100, note: "₹700" },
-    { name: "Rowan", base: 600, bonus: 150, note: "₹750" },
+    { name: "Time wages", base: 480, bonus: 0, note: "₹480" },
+    { name: "Halsey", base: 480, bonus: 80, note: "₹560" },
+    { name: "Rowan", base: 480, bonus: 120, note: "₹600" },
   ];
   return (
     <Figure
       h={236}
-      label="A print-shop job: standard time 8 hours, actual 6 hours, ₹100 an hour. Time wages ₹600. Halsey adds 50% of the 2 hours saved, ₹100, for ₹700. Rowan adds 2/8 of the time wages, ₹150, for ₹750. Saving less than half the standard time means Rowan pays more."
+      label="A print-shop job: standard time 8 hours, actual 6 hours, ₹80 an hour. Time wages ₹480. Halsey adds 50% of the 2 hours saved, ₹80, for ₹560. Rowan adds 2/8 of the time wages, ₹120, for ₹600. Saving less than half the standard time means Rowan pays more."
     >
       <Heading>Print job: 8 hours allowed, done in 6</Heading>
       {/* hours strip */}
@@ -231,7 +231,7 @@ export function IncentivePlans() {
         <rect key={i} x={70 + i * 34} y={30} width={31} height={20} rx="4" className={i < 6 ? "fill-coffee" : "fill-good-bg stroke-good"} strokeDasharray={i < 6 ? undefined : "3 2"} />
       ))}
       <Txt x={6} y={44} size={10} bold tone="espresso">Hours</Txt>
-      <Txt x={70 + 3 * 34} y={66} size={9.5} anchor="middle">6 hours worked × ₹100</Txt>
+      <Txt x={70 + 3 * 34} y={66} size={9.5} anchor="middle">6 hours worked × ₹80</Txt>
       <Txt x={70 + 7 * 34} y={66} size={9.5} bold tone="good" anchor="middle">2 saved</Txt>
 
       {rows.map((r, i) => {
@@ -248,7 +248,7 @@ export function IncentivePlans() {
           </g>
         );
       })}
-      <Txt x={6} y={210} size={9.5}>Halsey bonus = 50% × 2 h × ₹100 · Rowan bonus = 2/8 × 6 h × ₹100</Txt>
+      <Txt x={6} y={210} size={9.5}>Halsey bonus = 50% × 2 h × ₹80 · Rowan bonus = 2/8 × 6 h × ₹80</Txt>
       <Txt x={6} y={226} size={9.5} bold tone="coffee">Saved less than half the time → Rowan pays more</Txt>
     </Figure>
   );

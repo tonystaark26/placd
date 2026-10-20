@@ -1,5 +1,5 @@
 // Pictures for the Financial Accounting cards (acct-08 to acct-13).
-// Every number comes from that card's "₹100 example".
+// Every number comes from that card's everyday example.
 
 import { Arrow, Box, Figure, Heading, Line, Pill, Txt } from "./parts";
 

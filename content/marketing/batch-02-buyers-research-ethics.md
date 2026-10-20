@@ -25,7 +25,7 @@ What the marketer should do differs for each:
 - **Habitual:** be available everywhere.
 - **Variety-seeking:** give people reasons to try.
 
-**The ₹100 example**
+**The everyday example**
 In one month, a hostel student buys:
 - a **₹10** Parle-G: *habitual*, the same pack every time.
 - a **₹20** chips packet in a new flavour: *variety-seeking*, just to try it.
@@ -78,7 +78,7 @@ Need recognition → information search → evaluation → purchase → post-pur
 
 Digital journeys loop: **showrooming** (look in the store, buy online) and **webrooming** (research online, buy in the store).
 
-**The ₹100 example: a ₹15,000 phone**
+**The everyday example: a ₹15,000 phone**
 You see an Instagram reel (need) → watch 3 YouTube reviews (search) → compare 2 models on
 Flipkart (evaluation) → visit the store to hold both (webrooming) → buy the *other* model because
 it has a ₹1,000 exchange offer (intention changed) → post a 4-star review (post-purchase), which
@@ -136,7 +136,7 @@ When businesses buy, many people decide together, and the effort depends on whet
 the specs, price or supplier; a **new task** is a first-time purchase with the most research and risk.
 **Derived demand:** business demand depends on *end-consumer* demand. Car-part makers sell more only when people buy more cars.
 
-**The ₹100 example: total cost, not price**
+**The everyday example: total cost, not price**
 A college is choosing between two projectors.
 - **A** costs **₹40,000** and needs an **₹8,000** lamp every year for 5 years: **₹80,000** in total.
 - **B** costs **₹55,000** but has an LED with no lamp to replace: **₹55,000** in total.
@@ -188,7 +188,7 @@ Before deciding anything, size the market, and always define exactly *which* mar
   From the notes: 1.2 crore urban households × 28% buy premium coffee × 35% would try specialty
   coffee × 8 packs a year × ₹450 ≈ **₹423 crore**.
 
-**The ₹100 example: cold coffee at your college**
+**The everyday example: cold coffee at your college**
 2,000 students × 60% drink coffee × 40% would buy cold coffee × 3 cups a week × ₹50
 = **₹72,000 a week**. Over 30 college weeks, that's **₹21.6 lakh a year** of market
 potential. If your stall can realistically win 25%, your sales forecast is about **₹5.4 lakh**.
@@ -241,7 +241,7 @@ Research starts with the decision you need to make, not with a questionnaire, an
   is *information*. "First-delivery reliability builds trust, so fix fulfilment before spending on
   discounts" is an **insight**, because it changes a decision.
 
-**The ₹100 example**
+**The everyday example**
 The canteen's samosa sales fell 30%. A weak response is "let's run a survey." A strong response:
 1. **Check existing data first:** did the price go up from ₹10 to ₹15? Did a new café open nearby?
 2. **Talk to 10 students** (qualitative) to learn *why*.
@@ -295,7 +295,7 @@ The key issues:
 
 **Five tests for any decision:** Legal? Truthful? Transparent? Fair to the consumer? Would it survive the **front page** of a newspaper?
 
-**The ₹100 example**
+**The everyday example**
 You add a ₹199 order to your cart. At checkout, a **₹99 membership is pre-ticked** and a
 **₹15 "handling fee"** appears, so your total is now **₹313**. Nothing was hidden in the
 small print, so it may be legal, but you were steered into spending **57% more** than you chose

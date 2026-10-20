@@ -1,4 +1,4 @@
-// Pictures for the Marketing cards. Every number comes from that card's "₹100 example".
+// Pictures for the Marketing cards. Every number comes from that card's everyday example.
 
 import { Arrow, Box, Figure, Heading, Line, Pill, Txt } from "./parts";
 
@@ -12,7 +12,7 @@ export function NeedsWantsDemands() {
   return (
     <Figure
       h={236}
-      label="Need: you're hungry at 1 pm. Want: the ₹250 café burger. Demand: with ₹100 in your pocket, you buy the ₹80 canteen thali. Demand is a want you can pay for."
+      label="Need: you're hungry at 1 pm. Want: the ₹250 café burger. Demand: with ₹120 in your pocket, you buy the ₹80 canteen thali. Demand is a want you can pay for."
     >
       {rows.map((r, i) => {
         const y = 10 + i * 60;
@@ -24,7 +24,7 @@ export function NeedsWantsDemands() {
           </g>
         );
       })}
-      <Txt x={180} y={196} size={10} anchor="middle">You have ₹100, so the want becomes what you can pay for.</Txt>
+      <Txt x={180} y={196} size={10} anchor="middle">You have ₹120, so the want becomes what you can pay for.</Txt>
       <Txt x={180} y={214} size={10} bold tone="coffee" anchor="middle">The café&apos;s real market: people who want it</Txt>
       <Txt x={180} y={228} size={10} bold tone="coffee" anchor="middle">AND can pay ₹250</Txt>
     </Figure>
@@ -36,22 +36,22 @@ export function CustomerValue() {
   return (
     <Figure
       h={248}
-      label="Chai stall: ₹10, 2 minutes. Café: ₹100, AC and Wi-Fi, 15-minute wait. For a quick break between classes, the stall gives more value. For a 2-hour group study, the café wins because seating and Wi-Fi are worth the extra ₹90."
+      label="Chai stall: ₹10, 2 minutes. Café: ₹180, AC and Wi-Fi, 15-minute wait. For a quick break between classes, the stall gives more value. For a 2-hour group study, the café wins because seating and Wi-Fi are worth the extra ₹90."
     >
       <Txt x={6} y={44} size={10} bold tone="espresso">Value =</Txt>
       <Txt x={6} y={58} size={10}>benefits − costs</Txt>
       <Box x={128} y={22} w={112} h={60} style="warm" title="Chai stall" lines={["₹10 · 2 min"]} />
-      <Box x={246} y={22} w={110} h={60} style="warm" title="Café" lines={["₹100 · AC, Wi-Fi", "15-min wait"]} />
+      <Box x={246} y={22} w={110} h={60} style="warm" title="Café" lines={["₹180 · AC, Wi-Fi", "15-min wait"]} />
 
       <Txt x={6} y={116} size={11} bold tone="espresso">Quick break</Txt>
       <Txt x={6} y={130} size={10}>between classes</Txt>
       <Box x={128} y={94} w={112} h={56} style="good" title="✓ More value" lines={["fast and cheap"]} />
-      <Box x={246} y={94} w={110} h={56} style="faded" title="Less value" lines={["slow, ₹90 more"]} dash />
+      <Box x={246} y={94} w={110} h={56} style="faded" title="Less value" lines={["slow, ₹170 more"]} dash />
 
       <Txt x={6} y={182} size={11} bold tone="espresso">2-hour group</Txt>
       <Txt x={6} y={196} size={10}>study session</Txt>
       <Box x={128} y={160} w={112} h={56} style="faded" title="Less value" lines={["nowhere to sit"]} dash />
-      <Box x={246} y={160} w={110} h={56} style="good" title="✓ More value" lines={["worth the ₹90"]} />
+      <Box x={246} y={160} w={110} h={56} style="good" title="✓ More value" lines={["worth the ₹170"]} />
 
       <Txt x={180} y={238} size={10} bold tone="coffee" anchor="middle">
         Same customer, different situation, different value

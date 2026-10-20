@@ -99,7 +99,7 @@ async function CardBody({ id }: { id: string }) {
       </section>
 
       <section className="mt-8 rounded-[10px] border border-crema-line bg-latte px-4 py-4">
-        <Label>The ₹100 example</Label>
+        <Label>The everyday example</Label>
         <Prose text={card.example} className="mt-3" />
       </section>
 

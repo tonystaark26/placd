@@ -44,7 +44,7 @@ they won't forget.
 ## 4. What makes us different
 
 1. **News ↔ concept linking (core feature).** For example, an RBI repo rate hike
-   in the news opens the "Repo Rate" concept card with a simple ₹100 example,
+   in the news opens the "Repo Rate" concept card with a simple everyday example,
    followed by quiz questions.
    Students learn to *relate* theory to real events, which is exactly what
    interviewers test.
@@ -63,7 +63,7 @@ they won't forget.
 |---|---|
 | Sign up + onboarding | Pick subjects, pick daily time (5/10/15 min), choose an anonymous display name |
 | Daily news feed | 8–10 stories across four lanes: **Global · India · Local (Kolkata / West Bengal) · Recruiter Watch** (companies that hire from our campus). Plain language, no jargon. **We write our own short summaries and link to the source. We never copy articles.** |
-| Concept cards | Short, logical explanation + one simple example (the ₹100 style). Linked to news stories. Format: [content/CARD_FORMAT.md](content/CARD_FORMAT.md) |
+| Concept cards | Short, logical explanation + one simple everyday example with small numbers that fit the topic. Linked to news stories. Format: [content/CARD_FORMAT.md](content/CARD_FORMAT.md) |
 | Subjects (v1) | **Managerial Economics first** (materials in hand), then Finance, Marketing |
 | End-of-day quiz | Mix of today's news + older concepts due for revision (spaced repetition) + 1 mini case question |
 | Streaks | A day counts once the quiz is done |

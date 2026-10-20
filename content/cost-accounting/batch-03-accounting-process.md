@@ -30,7 +30,7 @@ Decreases go the other way.
 
 Entries are first written in the **journal** (book of original entry), then posted to the **ledger**.
 
-**The ₹100 example: Riya's chai stall, in journal form**
+**The everyday example: Riya's chai stall, in journal form**
 | Transaction | Debit | Credit |
 |---|---|---|
 | Starts with ₹50,000 of her own cash | Cash ₹50,000 | Capital ₹50,000 |
@@ -87,7 +87,7 @@ After posting to the ledger, all debit balances and credit balances are listed; 
 **Errors it does reveal:** one-sided mistakes, like posting to the wrong side, wrong totals, or partial omission.
 If the difference can't be found in time, it's parked in a temporary **suspense account**, which is cleared when the errors are rectified.
 
-**The ₹100 example: the chai stall's year-end**
+**The everyday example: the chai stall's year-end**
 - Riya buys a **₹30,000 laptop** for the stall but books it as "office expenses". The trial balance still agrees, but profit is **understated by ₹30,000** and assets are missing a ₹30,000 laptop (error of principle).
 - She posts a ₹500 rent payment to the rent account but forgets the cash side. The debits now exceed the credits by **₹500**, so the trial balance doesn't agree. Until she finds it, ₹500 sits in **suspense**.
 
@@ -139,7 +139,7 @@ They allow division of work, specialisation and easier checking.
 The **cash book** comes as simple (cash only), **two-column** (cash + discount) or **three-column** (cash, bank and discount).
 **Petty cash book (imprest system):** a petty cashier gets a fixed float for small payments, and is reimbursed exactly what was spent at the end of each period.
 
-**The ₹100 example: the canteen's petty cash**
+**The everyday example: the canteen's petty cash**
 The petty cashier starts each week with an imprest of **₹2,000**. This week she spends ₹300 on autos, ₹850 on cleaning and ₹500 on stationery, **₹1,650** in all. On Saturday the main cashier hands her **₹1,650**, bringing the float back to ₹2,000. Small spending is controlled without clogging the main cash book.
 
 **Seen in the news** ✅ Verified (Sept 2026)
@@ -182,7 +182,7 @@ Under GST, tax paid on purchases (input tax) is set off against tax collected on
 - **Input tax credit (ITC):** GST paid on purchases is recorded as an **asset (a credit)**, not added to the cost of goods. It's then set off against GST charged on sales (a liability).
 - This removes the old "tax on tax" (cascading) problem.
 
-**The ₹100 example: a Kolkata stationery trader (18% GST, within West Bengal)**
+**The everyday example: a Kolkata stationery trader (18% GST, within West Bengal)**
 - Buys stock worth **₹1,00,000 + ₹18,000 GST** (₹9,000 CGST + ₹9,000 SGST). Cost of stock: **₹1,00,000**; the ₹18,000 is input tax credit.
 - Sells it for **₹1,50,000 + ₹27,000 GST**.
 - Pays the government only **₹27,000 − ₹18,000 = ₹9,000**, which is exactly 18% of the **₹50,000 value added**.
@@ -227,7 +227,7 @@ Spending that gives benefits beyond this year is capital (it goes to the balance
 - **How to tell them apart:** the nature of the business (furniture is stock for a furniture dealer), whether it recurs, its purpose (maintain vs improve), its effect on earning capacity, and materiality.
 - **Receipts:** **revenue receipts** come from normal operations (sales, interest) and go to the P&L. **Capital receipts** (sale of fixed assets, loans, owner's capital, share premium) don't, except for any **profit or loss** on selling an asset.
 
-**The ₹100 example: the college canteen**
+**The everyday example: the college canteen**
 - New **₹60,000 oven** → capital.
 - **₹1,200** monthly gas-burner servicing → revenue.
 - **₹15,000** to rebuild the burners for 30% more output → capital (it increases capacity).
@@ -272,7 +272,7 @@ A possible obligation that depends on an uncertain future event is disclosed in 
 - **Provision:** a **present** obligation where an outflow is **probable** and can be **reliably estimated**. It is **recognised** in the accounts.
 - **Contingent asset:** a possible inflow, such as a claim you're pursuing in court. It is **not recognised** (prudence). It's recognised only when it becomes virtually certain.
 
-**The ₹100 example: Riya's chai stall**
+**The everyday example: Riya's chai stall**
 - A customer sues for **₹50,000**, claiming food poisoning. Her lawyer thinks she will probably win → **contingent liability**, disclosed in a note.
 - If the lawyer says she will probably lose, and a ₹20,000 settlement is likely → record a **₹20,000 provision**.
 - She is suing a supplier for **₹10,000** over spoilt milk → **contingent asset**: not recorded until it's virtually certain.
@@ -319,7 +319,7 @@ Standards set the rules everyone follows; policies are the specific methods a co
 - **Change a policy only if** a statute or standard requires it, or the change gives a more appropriate presentation. The effect must be **quantified and disclosed**.
 - **Estimates:** judgements such as useful life or doubtful debts. When estimates change, the change applies going forward.
 
-**The ₹100 example: the stationery shop**
+**The everyday example: the stationery shop**
 - Its policy is weighted-average stock valuation. Switching to FIFO when prices are rising would raise this year's profit from **₹96 to ₹112** (see Card C3). That's a **policy change**, and it's allowed only with a proper reason, quantified and disclosed.
 - It decides its ₹8,000 shelves will last **8 years instead of 5** → yearly depreciation falls from ₹1,600 to ₹1,000. That's an **estimate change**.
 
@@ -367,7 +367,7 @@ The same asset can be valued four ways: what you paid, what it would cost now, w
 
 Liabilities are measured the same way: proceeds received, current settlement amount, settlement value, or discounted future payments.
 
-**The ₹100 example: the canteen's oven**
+**The everyday example: the canteen's oven**
 - Bought in 2022 for ₹40,000 + ₹5,000 installation → **historical cost ₹45,000**.
 - The same oven new today costs **₹70,000** → current cost.
 - Sold today, it would fetch **₹25,000** → realisable value.
@@ -414,7 +414,7 @@ Under Schedule II of the Companies Act 2013, depreciation is the **systematic al
 - **Straight Line Method (SLM, fixed instalment):** the same amount every year = (cost − residual value) ÷ useful life. Simple.
 - **Written Down Value (WDV, reducing balance):** a fixed **percentage** of the remaining book value each year. Higher depreciation early, lower later, which suits assets that lose value fast or need more repairs as they age.
 
-**The ₹100 example: the canteen's ₹60,000 oven (residual ₹6,000, life 5 years)**
+**The everyday example: the canteen's ₹60,000 oven (residual ₹6,000, life 5 years)**
 | Year | SLM charge | WDV charge at 20% | WDV book value |
 |---|---|---|---|
 | 1 | ₹10,800 | ₹12,000 | ₹48,000 |
@@ -470,7 +470,7 @@ A bill of exchange is a creditor's written **order** to a debtor to pay; a promi
 - **Discounting:** the holder can encash a bill at a bank **before maturity**, receiving less than its face value (the bank's discount).
 - **Dishonour:** if the drawee doesn't pay at maturity, the entry is reversed and **noting charges** are recovered from the drawee.
 
-**The ₹100 example: a Burrabazar saree wholesaler**
+**The everyday example: a Burrabazar saree wholesaler**
 - Sells sarees worth **₹1,00,000** to a Siliguri retailer and draws a **3-month bill dated 1 January**, which the retailer accepts.
 - Due date 1 April + 3 days of grace = **maturity on 4 April**.
 - Needing cash now, the wholesaler **discounts** it at a bank at 12% a year for 3 months, a discount of about **₹3,000**, and receives about **₹97,000** today.

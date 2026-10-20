@@ -28,7 +28,7 @@ Accounting is the language of business: it records money events and turns them i
 
 **Users:** *internal* (managers, employees) and *external* (investors, lenders and creditors, suppliers, customers, tax authorities, regulators).
 
-**The ₹100 example: your college fest**
+**The everyday example: your college fest**
 The treasurer notes every ₹ spent and received: that's **book-keeping**. After the fest, she prepares a statement showing ₹4,00,000 raised and ₹3,60,000 spent, a ₹40,000 surplus: that's **accounting**. Now see who reads it:
 - the **principal** (management) checks it was well run,
 - **sponsors** (like investors) want to know their money was well used,
@@ -80,7 +80,7 @@ Assets = Liabilities + Capital: everything a business owns is financed either by
 Every transaction has two sides (the **dual aspect**), so the equation always balances. It is the base of **double-entry** book-keeping, and the balance sheet is simply this equation written out in detail.
 **Profit increases capital. Expenses, losses and drawings reduce it.**
 
-**The ₹100 example: Riya's chai stall**
+**The everyday example: Riya's chai stall**
 | Transaction | Assets | = Liabilities | + Capital |
 |---|---|---|---|
 | Starts with ₹50,000 of her own cash | 50,000 | 0 | 50,000 |
@@ -137,7 +137,7 @@ Indian companies follow the **Schedule III** formats (Companies Act, 2013).
 - **Intangible:** software, patents, goodwill, franchises, licences.
 - **Financial:** deposits, bonds, money market funds.
 
-**The ₹100 example: Riya's chai stall after one year**
+**The everyday example: Riya's chai stall after one year**
 *Profit and loss for the year:*
 - Revenue **₹6,00,000** − tea, milk and sugar **₹3,60,000** − rent and helper's wages **₹1,20,000** − depreciation on the ₹8,000 stove **₹1,600**
 - = **profit ₹1,18,400** before tax
@@ -189,7 +189,7 @@ Accounting concepts are the basic assumptions every accountant follows, so that 
 - **Dual aspect:** every transaction has a giving side and a receiving side. This is the backbone of double entry.
 - **Periodicity (accounting period):** the business's life is split into periods (usually a year) so results can be measured and compared.
 
-**The ₹100 example: Riya's chai stall again**
+**The everyday example: Riya's chai stall again**
 - She pays her **personal ₹500 phone bill** from the stall's cash → **drawings** (entity concept), not an expense.
 - Her regulars love her chai, but that loyalty isn't recorded → **money measurement**.
 - The ₹8,000 stove is spread over **5 years**, about ₹1,600 a year, because she plans to keep going → **going concern**.
@@ -238,7 +238,7 @@ Record income when it's **earned** and expenses when they're **incurred** (not w
 - **Matching:** this period's revenue is matched with the costs incurred to earn it, giving a true profit.
 - **Revenue recognition (realisation):** revenue is recognised when the sale is made or the service is delivered, not when an order is placed or an advance arrives.
 
-**The ₹100 example: the college fest's March accounts**
+**The everyday example: the college fest's March accounts**
 - A sponsor pays **₹50,000 in February** for the **March** fest → it counts as March revenue (earned in March). In February it's **income received in advance**, a liability.
 - The **₹12,000 electricity bill** for the fest arrives in April → it's still a **March** expense (accrual and matching).
 - The society bought a **laptop for ₹60,000**. A similar one now sells for ₹70,000, but it stays in the books at **₹60,000** (cost concept).
@@ -284,7 +284,7 @@ Conventions are the customs accountants follow when preparing statements: stay c
 
 **Concepts vs conventions:** concepts are basic assumptions set by accounting bodies and are uniform; conventions grew from practice and involve more judgement.
 
-**The ₹100 example: the stationery shop's year-end**
+**The everyday example: the stationery shop's year-end**
 - Calculators cost **₹20,000** but can now sell for only **₹15,000** → show **₹15,000** (conservatism).
 - If they could sell for ₹25,000 → still show **₹20,000**: no unrealised gain is booked.
 - A **₹50 stapler** goes straight to expenses (materiality).

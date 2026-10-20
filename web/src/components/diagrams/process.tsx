@@ -1,5 +1,5 @@
 // Pictures for the ICAI accounting-process cards (acct-14 to acct-23).
-// Every number comes from that card's "₹100 example".
+// Every number comes from that card's everyday example.
 
 import { Arrow, Axes, Box, Curve, Dot, Figure, Heading, Line, Pill, Txt } from "./parts";
 

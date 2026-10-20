@@ -1,4 +1,4 @@
-// Pictures for the Managerial Economics cards. Every number comes from that card's "₹100 example".
+// Pictures for the Managerial Economics cards. Every number comes from that card's everyday example.
 
 import { Arrow, Axes, Box, Curve, Dot, Figure, Guide, Heading, Line, Pill, Txt } from "./parts";
 
@@ -13,24 +13,24 @@ function plot(from: number, to: number, f: (t: number) => [number, number], step
 // econ-01 ───────────────────────────────────────────────────────────────
 export function LawOfDemand() {
   // samosas → x, price → y
-  const x = (q: number) => 50 + q * 13;
+  const x = (q: number) => 50 + q * 28;
   const y = (p: number) => 170 - p * 5.2;
   return (
     <Figure
       h={266}
-      label="Samosas at ₹10: ₹100 buys 10. At ₹20: it buys only 5, so quantity demanded falls. Exceptions: Veblen goods like luxury watches, Giffen goods like coarse grains for very poor families, and speculation in gold or shares."
+      label="Samosas at ₹12: ₹60 buys 5. At ₹20: it buys only 3, so quantity demanded falls. Exceptions: Veblen goods like luxury watches, Giffen goods like coarse grains for very poor families, and speculation in gold or shares."
     >
-      <Heading>₹100 for samosas</Heading>
+      <Heading>₹60 for samosas</Heading>
       <Axes x={50} y={170} w={170} h={140} xName="samosas →" yName="Price" />
-      <Guide ox={50} oy={170} x={x(5)} y={y(20)} xLabel="5" yLabel="₹20" />
-      <Guide ox={50} oy={170} x={x(10)} y={y(10)} xLabel="10" yLabel="₹10" />
-      <Curve d={`M 75 34 L 210 142`} />
-      <Dot x={x(5)} y={y(20)} />
-      <Dot x={x(10)} y={y(10)} />
-      <Txt x={212} y={150} size={10} bold tone="coffee">
+      <Guide ox={50} oy={170} x={x(3)} y={y(20)} xLabel="3" yLabel="₹20" />
+      <Guide ox={50} oy={170} x={x(5)} y={y(12)} xLabel="5" yLabel="₹12" />
+      <Curve d={`M 90 33 L 218 128`} />
+      <Dot x={x(3)} y={y(20)} />
+      <Dot x={x(5)} y={y(12)} />
+      <Txt x={206} y={146} size={10} bold tone="coffee">
         Demand
       </Txt>
-      <Box x={234} y={44} w={122} h={74} style="warm" title="Price doubles" lines={["₹100 buys 10 → 5", "Some switch to", "vada pav"]} />
+      <Box x={234} y={44} w={122} h={74} style="warm" title="Price doubles" lines={["₹60 buys 5 → 3", "Some switch to", "vada pav"]} />
 
       <Txt x={2} y={208} size={9.5} bold tone="mocha2" caps>
         WHEN THE LAW BREAKS
@@ -165,10 +165,10 @@ export function OpportunityCost() {
   return (
     <Figure
       h={222}
-      label="With ₹100 and one evening you can choose pizza, a used exam guide, or an auto home. You choose pizza. The exam guide, your next-best option, is the opportunity cost. The auto ride doesn't count."
+      label="With ₹250 and one evening you can choose pizza, a used exam guide, or an auto home. You choose pizza. The exam guide, your next-best option, is the opportunity cost. The auto ride doesn't count."
     >
       <rect x={100} y={8} width={160} height={40} rx="10" className="fill-coffee" />
-      <Txt x={180} y={33} size={12} bold tone="cream" anchor="middle">₹100 + one evening</Txt>
+      <Txt x={180} y={33} size={12} bold tone="cream" anchor="middle">₹250 + one evening</Txt>
       <Arrow x1={150} y1={50} x2={64} y2={96} />
       <Arrow x1={180} y1={50} x2={180} y2={96} />
       <Arrow x1={210} y1={50} x2={296} y2={96} />
@@ -335,34 +335,34 @@ export function DiminishingUtility() {
 export function IndifferenceCurves() {
   const x = (c: number) => 50 + c * 17;
   const y = (s: number) => 190 - s * 24;
-  // s = k ÷ c^(2/3); k = 7.56 touches the budget line exactly at 4 chai + 3 samosas
-  const ic = (k: number, from: number) => plot(from, 11, (c) => [x(c), y(k / Math.pow(c, 2 / 3))]);
+  // s = k ÷ c; k = 8 touches the budget line exactly at 4 chai + 2 samosas
+  const ic = (k: number, from: number) => plot(from, 11, (c) => [x(c), y(k / c)]);
   return (
     <Figure
       h={220}
-      label="With ₹100, chai at ₹10 and samosas at ₹20, the budget line runs from 10 chai to 5 samosas. The best mix is where the budget line just touches the highest reachable indifference curve, for example 4 chai and 3 samosas. Higher curves can't be afforded; lower ones are less satisfying."
+      label="With ₹80, chai at ₹10 and samosas at ₹20, the budget line runs from 8 chai to 4 samosas. The best mix is where the budget line just touches the highest reachable indifference curve: 4 chai and 2 samosas. Higher curves can't be afforded; lower ones are less satisfying."
     >
-      <Heading>₹100: chai ₹10, samosa ₹20</Heading>
+      <Heading>₹80: chai ₹10, samosa ₹20</Heading>
       <Axes x={50} y={190} w={200} h={160} xName="chai →" yName="samosas" />
-      <Txt x={46} y={y(5) + 3.5} size={9.5} anchor="end">5</Txt>
-      <Txt x={46} y={y(3) + 3.5} size={9.5} anchor="end">3</Txt>
+      <Txt x={46} y={y(4) + 3.5} size={9.5} anchor="end">4</Txt>
+      <Txt x={46} y={y(2) + 3.5} size={9.5} anchor="end">2</Txt>
       <Txt x={x(4)} y={202} size={9.5} anchor="middle">4</Txt>
-      <Txt x={x(10)} y={202} size={9.5} anchor="middle">10</Txt>
-      <Line x1={50} y1={y(3)} x2={x(4)} y2={y(3)} tone="line" width={1} dash />
-      <Line x1={x(4)} y1={y(3)} x2={x(4)} y2={190} tone="line" width={1} dash />
+      <Txt x={x(8)} y={202} size={9.5} anchor="middle">8</Txt>
+      <Line x1={50} y1={y(2)} x2={x(4)} y2={y(2)} tone="line" width={1} dash />
+      <Line x1={x(4)} y1={y(2)} x2={x(4)} y2={190} tone="line" width={1} dash />
 
-      <Line x1={x(0)} y1={y(5)} x2={x(10)} y2={y(0)} tone="espresso" width={2} />
-      <Txt x={x(10) + 4} y={184} size={9.5} bold tone="espresso">budget</Txt>
-      <Curve d={ic(10.5, 2.2)} tone="mocha2" width={1.8} dash />
-      <Curve d={ic(7.56, 1.6)} />
-      <Curve d={ic(5, 1.2)} tone="mocha2" width={1.5} />
-      <Txt x={242} y={y(10.5 / Math.pow(11, 2 / 3)) + 3} size={9}>IC3: can&apos;t afford</Txt>
-      <Txt x={242} y={y(7.56 / Math.pow(11, 2 / 3)) + 3} size={9} bold tone="coffee">IC2: best reachable</Txt>
-      <Txt x={242} y={y(5 / Math.pow(11, 2 / 3)) + 4} size={9}>IC1: less happy</Txt>
+      <Line x1={x(0)} y1={y(4)} x2={x(8)} y2={y(0)} tone="espresso" width={2} />
+      <Txt x={x(8) + 4} y={184} size={9.5} bold tone="espresso">budget</Txt>
+      <Curve d={ic(13, 2.1)} tone="mocha2" width={1.8} dash />
+      <Curve d={ic(8, 1.3)} />
+      <Curve d={ic(4.5, 0.75)} tone="mocha2" width={1.5} />
+      <Txt x={242} y={y(13 / 11) + 3} size={9}>IC3: can&apos;t afford</Txt>
+      <Txt x={242} y={y(8 / 11) + 3} size={9} bold tone="coffee">IC2: best reachable</Txt>
+      <Txt x={242} y={y(4.5 / 11) + 4} size={9}>IC1: less happy</Txt>
 
-      <Line x1={x(4) + 4} y1={y(3) - 4} x2={250} y2={74} tone="line" width={1} dash />
-      <Dot x={x(4)} y={y(3)} tone="good" r={5} />
-      <Box x={250} y={36} w={106} h={52} style="good" title="Best mix" lines={["4 chai + 3 samosas"]} titleSize={11} />
+      <Line x1={x(4) + 4} y1={y(2) - 4} x2={250} y2={74} tone="line" width={1} dash />
+      <Dot x={x(4)} y={y(2)} tone="good" r={5} />
+      <Box x={250} y={36} w={106} h={52} style="good" title="Best mix" lines={["4 chai + 2 samosas"]} titleSize={11} />
       <Txt x={260} y={82} size={9.5} tone="good">MRS = Pₓ ÷ Pᵧ</Txt>
     </Figure>
   );

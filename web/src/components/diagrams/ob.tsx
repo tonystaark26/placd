@@ -1,4 +1,4 @@
-// Pictures for the Organisational Behaviour cards. Every number comes from that card's "₹100 example".
+// Pictures for the Organisational Behaviour cards. Every number comes from that card's everyday example.
 
 import { Arrow, Box, Curve, Dot, Figure, Heading, Line, Pill, Txt } from "./parts";
 
@@ -36,12 +36,12 @@ export function WhatIsOB() {
 export function LewinEquation() {
   const rows = [
     { y: 58, e: "60-student lecture hall", b: "Silent all class", good: false },
-    { y: 140, e: "5-person group, kind senior", b: "Speaks up, wins ₹100", good: true },
+    { y: 140, e: "5-person group, kind senior", b: "Speaks up, wins ₹500", good: true },
   ];
   return (
     <Figure
       h={232}
-      label="Behaviour equals a function of person and environment. Riya, the same person, is silent in a 60-student lecture hall, but in a 5-person group with a friendly senior she speaks up and wins a ₹100 prize. The environment changed, so her behaviour changed."
+      label="Behaviour equals a function of person and environment. Riya, the same person, is silent in a 60-student lecture hall, but in a 5-person group with a friendly senior she speaks up and wins a ₹500 prize. The environment changed, so her behaviour changed."
     >
       <Txt x={180} y={30} size={20} bold tone="espresso" anchor="middle">B = f(P, E)</Txt>
       <Txt x={180} y={46} size={9.5} tone="mocha2" anchor="middle">Behaviour = function of Person and Environment</Txt>
@@ -71,9 +71,9 @@ export function OBModels() {
   return (
     <Figure
       h={250}
-      label="Five sweet shops pay a helper the same ₹100 a shift. Autocratic rests on power: do it or you're out. Custodial on benefits: free dinner. Supportive on leadership: coaching and thanks. Collegial on partnership: his sandesh idea is tried. System on trust: he stays late in the Puja rush without being asked."
+      label="Five sweet shops pay a helper the same ₹300 a shift. Autocratic rests on power: do it or you're out. Custodial on benefits: free dinner. Supportive on leadership: coaching and thanks. Collegial on partnership: his sandesh idea is tried. System on trust: he stays late in the Puja rush without being asked."
     >
-      <Heading>Same ₹100 shift, five ways to run the shop</Heading>
+      <Heading>Same ₹300 shift, five ways to run the shop</Heading>
       {rows.map((r, i) => {
         const y = 28 + i * 40;
         const style = i === 0 ? "fill-bad-bg" : i >= 3 ? "fill-good-bg" : "fill-foam stroke-line";
@@ -102,9 +102,9 @@ export function SchoolsOfThought() {
   return (
     <Figure
       h={236}
-      label="A momo stall near New Market selling ₹100 plates. Classical: Taylor times each step and output doubles; Fayol sets clear roles; Weber's rule: no free plates for friends. Neoclassical: staff work faster when the owner eats with them. Modern contingency: on Puja nights hire two more and simplify the menu, but not on a rainy Tuesday."
+      label="A momo stall near New Market selling ₹60 plates. Classical: Taylor times each step and output doubles; Fayol sets clear roles; Weber's rule: no free plates for friends. Neoclassical: staff work faster when the owner eats with them. Modern contingency: on Puja nights hire two more and simplify the menu, but not on a rainy Tuesday."
     >
-      <Heading>One ₹100 momo stall, three schools</Heading>
+      <Heading>₹60-a-plate momo stall, three schools</Heading>
       {cols.map((c, i) => (
         <g key={c.name}>
           <rect x={c.x} y={28} width={112} height={44} rx="10" className={i === 2 ? "fill-coffee" : "fill-latte stroke-crema-line"} />
@@ -126,14 +126,14 @@ export function SchoolsOfThought() {
 export function OBChallenges() {
   const chips = [
     { x: 4, y: 30, t: "Diversity", s: ["Bengali, Nepali and", "Odia staff: 3 languages"] },
-    { x: 184, y: 30, t: "Temporariness", s: ["App rider, ~₹100 a run,", "changes every week"] },
+    { x: 184, y: 30, t: "Temporariness", s: ["App rider, ~₹40 a drop,", "changes every week"] },
     { x: 4, y: 150, t: "Empowerment", s: ["Chef may change", "the menu himself"] },
     { x: 184, y: 150, t: "Part-time staff", s: ["Two students from", "Odisha, evenings only"] },
   ];
   return (
     <Figure
       h={236}
-      label="One evening shift in a Salt Lake café shows today's OB challenges: diversity, with Bengali, Nepali and Odia staff speaking three languages; temporariness, with an app rider paid about ₹100 a run who changes every week; empowerment, as the chef may change the menu; and part-time student staff."
+      label="One evening shift in a Salt Lake café shows today's OB challenges: diversity, with Bengali, Nepali and Odia staff speaking three languages; temporariness, with an app rider paid about ₹40 a delivery who changes every week; empowerment, as the chef may change the menu; and part-time student staff."
     >
       {chips.map((c) => (
         <Box key={c.t} x={c.x} y={c.y} w={172} h={60} style="warm" title={c.t} lines={c.s} />
@@ -150,7 +150,7 @@ export function OBChallenges() {
 export function BigFive() {
   const rows = [
     { l: "O", n: "Openness", d: "Tries the strangest street food" },
-    { l: "C", n: "Conscientiousness", d: "Writes a budget, keeps ₹30 back" },
+    { l: "C", n: "Conscientiousness", d: "Writes a budget, keeps ₹50 back" },
     { l: "E", n: "Extraversion", d: "Treats everyone with it" },
     { l: "A", n: "Agreeableness", d: "Lends half to a friend" },
     { l: "N", n: "Neuroticism", d: "Worries all day about losing it" },
@@ -158,9 +158,9 @@ export function BigFive() {
   return (
     <Figure
       h={246}
-      label="Five friends each get ₹100 at the Gariahat fair. High openness: tries the strangest street food. High conscientiousness: writes a budget and keeps ₹30 back. High extraversion: treats everyone. High agreeableness: lends half to a friend. High neuroticism: worries all day about losing it."
+      label="Five friends each get ₹200 at the Gariahat fair. High openness: tries the strangest street food. High conscientiousness: writes a budget and keeps ₹50 back. High extraversion: treats everyone. High agreeableness: lends half to a friend. High neuroticism: worries all day about losing it."
     >
-      <Heading>₹100 each at the Gariahat fair</Heading>
+      <Heading>₹200 each at the Gariahat fair</Heading>
       {rows.map((r, i) => {
         const y = 28 + i * 40;
         const best = r.l === "C";
@@ -184,16 +184,16 @@ export function FreudModel() {
   return (
     <Figure
       h={244}
-      label="Arjun has ₹100 left for the week. His id says: Arsalan biryani, now. His superego says: save it, your parents work hard. His ego decides: a ₹40 roll today and ₹60 saved. When he fails a test and says the questions were out of syllabus, that is rationalisation, a defence mechanism."
+      label="Arjun has ₹150 left for the week. His id says: Arsalan biryani, now. His superego says: save it, your parents work hard. His ego decides: a ₹60 roll today and ₹90 saved. When he fails a test and says the questions were out of syllabus, that is rationalisation, a defence mechanism."
     >
-      <Heading>{"Arjun's last ₹100 of the week"}</Heading>
+      <Heading>{"Arjun's last ₹150 of the week"}</Heading>
       <Box x={4} y={28} w={170} h={56} style="bad" title="Id: impulse" lines={["“Arsalan biryani, now!”"]} />
       <Box x={186} y={28} w={170} h={56} style="warm" title="Superego: conscience" lines={["“Save it, your parents", "work hard for this.”"]} />
       <Arrow x1={89} y1={86} x2={150} y2={110} tone="mocha2" />
       <Arrow x1={271} y1={86} x2={210} y2={110} tone="mocha2" />
       <rect x={70} y={112} width={220} height={52} rx="10" className="fill-coffee" />
       <Txt x={180} y={132} size={11.5} bold tone="cream" anchor="middle">Ego: the referee</Txt>
-      <Txt x={180} y={150} size={10} tone="crema" anchor="middle">₹40 roll today + ₹60 saved</Txt>
+      <Txt x={180} y={150} size={10} tone="crema" anchor="middle">₹60 roll today + ₹90 saved</Txt>
       <Line x1={20} y1={180} x2={340} y2={180} tone="line" width={1} dash />
       <Txt x={180} y={198} size={9} bold caps tone="mocha2" anchor="middle">LATER, HE FAILS A TEST</Txt>
       <Pill x={40} y={206} w={280} h={26} tone="crema" size={10}>{"“Out of syllabus anyway” = rationalisation"}</Pill>
@@ -210,9 +210,9 @@ export function LocusOfControl() {
   return (
     <Figure
       h={236}
-      label="Priya and Rahul each lose ₹100 on a bad online order. Priya, with an internal locus of control, says she didn't check the seller rating, checks next time and never loses money that way again. Rahul, with an external locus, says the apps are all scams, changes nothing and keeps losing."
+      label="Priya and Rahul each lose ₹349 on a bad online order. Priya, with an internal locus of control, says she didn't check the seller rating, checks next time and never loses money that way again. Rahul, with an external locus, says the apps are all scams, changes nothing and keeps losing."
     >
-      <Pill x={110} y={6} w={140} h={22} tone="bad" size={10.5}>Both lose ₹100</Pill>
+      <Pill x={110} y={6} w={140} h={22} tone="bad" size={10.5}>Both lose ₹349</Pill>
       {cols.map((c) => (
         <g key={c.name}>
           <Txt x={c.x + 85} y={48} size={11.5} bold tone="espresso" anchor="middle">{c.name}</Txt>
@@ -236,7 +236,7 @@ export function PerceptionProcess() {
   return (
     <Figure
       h={232}
-      label="A Gariahat café's ₹100 cutting chai. Perception selects, organises and interprets. An IT worker thinks it's fair for the experience, a retired professor calls it robbery because he pays ₹10, and a student on a date thinks it's worth it to impress. Same chai, three realities."
+      label="A Gariahat café's ₹120 cutting chai. Perception selects, organises and interprets. An IT worker thinks it's fair for the experience, a retired professor calls it robbery because he pays ₹10, and a student on a date thinks it's worth it to impress. Same chai, three realities."
     >
       {["Select", "Organise", "Interpret"].map((s, i) => (
         <g key={s}>
@@ -245,7 +245,7 @@ export function PerceptionProcess() {
         </g>
       ))}
       <rect x={120} y={40} width={120} height={46} rx="10" className="fill-coffee" />
-      <Txt x={180} y={60} size={12} bold tone="cream" anchor="middle">₹100 chai</Txt>
+      <Txt x={180} y={60} size={12} bold tone="cream" anchor="middle">₹120 chai</Txt>
       <Txt x={180} y={76} size={9.5} tone="crema" anchor="middle">same cup for all</Txt>
       {people.map((p) => (
         <g key={p.who}>
@@ -256,7 +256,7 @@ export function PerceptionProcess() {
           ))}
         </g>
       ))}
-      <Txt x={180} y={210} size={10.5} bold tone="coffee" anchor="middle">Same chai, same ₹100, three different realities</Txt>
+      <Txt x={180} y={210} size={10.5} bold tone="coffee" anchor="middle">Same chai, same ₹120, three different realities</Txt>
       <Txt x={180} y={226} size={9.5} tone="mocha2" anchor="middle">shaped by experience, motives and situation</Txt>
     </Figure>
   );
@@ -272,9 +272,9 @@ export function Attribution() {
   return (
     <Figure
       h={240}
-      label="Sumit is late and fined ₹100. Three clues decide the cause. High distinctiveness, late only on rainy days, points external. High consensus, the whole class late because the metro broke down, points external, so the fine is unfair. High consistency, only Sumit and every Monday, points internal."
+      label="Sumit is late and fined ₹50. Three clues decide the cause. High distinctiveness, late only on rainy days, points external. High consensus, the whole class late because the metro broke down, points external, so the fine is unfair. High consistency, only Sumit and every Monday, points internal."
     >
-      <Heading>Sumit is late. Fine him ₹100?</Heading>
+      <Heading>Sumit is late. Fine him ₹50?</Heading>
       <Txt x={300} y={36} size={9} bold caps tone="mocha2" anchor="middle">IF YES</Txt>
       {clues.map((c, i) => {
         const y = 42 + i * 42;
@@ -304,9 +304,9 @@ export function PerceptionShortcuts() {
   return (
     <Figure
       h={242}
-      label="Three students pitch to sell ₹100 fest tickets. The second looks weak only because she follows a very polished first speaker: the contrast effect. The judges expect the third to sell most because of his famous school: the halo effect. In the end, the second student sold the most."
+      label="Three students pitch to sell ₹150 fest tickets. The second looks weak only because she follows a very polished first speaker: the contrast effect. The judges expect the third to sell most because of his famous school: the halo effect. In the end, the second student sold the most."
     >
-      <Heading>Who will sell the most ₹100 tickets?</Heading>
+      <Heading>Who will sell the most ₹150 tickets?</Heading>
       <Txt x={180} y={40} size={9} bold caps tone="mocha2" anchor="middle">JUDGES GUESS</Txt>
       <Txt x={295} y={40} size={9} bold caps tone="mocha2" anchor="middle">ACTUAL</Txt>
       {ps.map((p, i) => {
@@ -335,9 +335,9 @@ export function StressCurve() {
   return (
     <Figure
       h={240}
-      label="Three teams at a ₹100-a-head quiz night. Told it doesn't matter, one team is bored and scores 4 out of 20. Told the winner gets dinner, one is excited and scores 16: eustress. Told losers pay for everyone, one panics and scores 7: distress. Performance follows an upside-down U."
+      label="Three teams at a ₹50-a-head quiz night. Told it doesn't matter, one team is bored and scores 4 out of 20. Told the winner gets dinner, one is excited and scores 16: eustress. Told losers pay for everyone, one panics and scores 7: distress. Performance follows an upside-down U."
     >
-      <Heading>₹100-a-head quiz night</Heading>
+      <Heading>₹50-a-head quiz night</Heading>
       <Line x1={30} y1={190} x2={344} y2={190} tone="mocha2" width={1} />
       <Line x1={30} y1={30} x2={30} y2={190} tone="mocha2" width={1} />
       <Txt x={36} y={36} size={9} tone="mocha2">score</Txt>
@@ -362,7 +362,7 @@ export function StressCurve() {
 // ob-13 ────────────────────────────────────────────────────────────────
 export function StressSources() {
   const causes = [
-    { t: "Personal: money", s: "skips ₹100 lunch" },
+    { t: "Personal: money", s: "skips ₹70 thali" },
     { t: "Role ambiguity", s: "no group leader" },
     { t: "Task demands", s: "3 due on one day" },
   ];
@@ -374,7 +374,7 @@ export function StressSources() {
   return (
     <Figure
       h={232}
-      label="Ankita, a first-year MBA student, faces three stressors: money worries as she skips the ₹100 lunch, role ambiguity in a group with no leader, and three submissions due on one day. By week three she shows physiological, psychological and behavioural symptoms: headaches, snapping at friends and missing classes."
+      label="Ankita, a first-year MBA student, faces three stressors: money worries as she skips the ₹70 thali, role ambiguity in a group with no leader, and three submissions due on one day. By week three she shows physiological, psychological and behavioural symptoms: headaches, snapping at friends and missing classes."
     >
       <Txt x={70} y={16} size={9} bold caps tone="mocha2" anchor="middle">STRESSORS</Txt>
       <Txt x={290} y={16} size={9} bold caps tone="mocha2" anchor="middle">SYMPTOMS</Txt>
@@ -404,12 +404,12 @@ export function CopingStress() {
   return (
     <Figure
       h={228}
-      label="A hostel spends ₹100 per student a month on Sunday yoga, an organisational wellness programme, and also fixes the Wi-Fi that crashed before deadlines, removing the real stressor. Students who also use a weekly planner, an individual strategy, have the fewest all-nighters."
+      label="A hostel spends ₹40 per student a month on Sunday yoga, an organisational wellness programme, and also fixes the Wi-Fi that crashed before deadlines, removing the real stressor. Students who also use a weekly planner, an individual strategy, have the fewest all-nighters."
     >
       <Heading>The hostel that cut all-nighters</Heading>
       <Txt x={92} y={40} size={9} bold caps tone="mocha2" anchor="middle">ORGANISATION</Txt>
       <Txt x={272} y={40} size={9} bold caps tone="mocha2" anchor="middle">INDIVIDUAL</Txt>
-      <Box x={4} y={48} w={176} h={50} style="warm" title="Sunday yoga" lines={["₹100 per student a month"]} />
+      <Box x={4} y={48} w={176} h={50} style="warm" title="Sunday yoga" lines={["₹40 per student a month"]} />
       <Box x={4} y={104} w={176} h={50} style="good" title="Fixes the Wi-Fi" lines={["the real stressor, gone"]} />
       <Box x={188} y={48} w={168} h={106} style="warm" title="Weekly planner" lines={["simple time", "management by", "each student"]} />
       <Arrow x1={180} y1={158} x2={180} y2={174} tone="coffee" width={2} />
@@ -425,9 +425,9 @@ export function GroupsVsTeams() {
   return (
     <Figure
       h={236}
-      label="A group: six friends put ₹100 each into a WhatsApp food fund and share deals. A team: five students with different roles, cook, designer, cashier, marketer and manager, turn ₹500 of ingredients into ₹3,000 of sales at the college fest. That is synergy."
+      label="A group: six friends put ₹200 each into a WhatsApp food fund and share deals. A team: five students with different roles, cook, designer, cashier, marketer and manager, turn ₹500 of ingredients into ₹3,000 of sales at the college fest. That is synergy."
     >
-      <Box x={4} y={8} w={352} h={70} title="Group: the WhatsApp food fund" lines={["6 friends × ₹100 each", "They share information about deals"]} />
+      <Box x={4} y={8} w={352} h={70} title="Group: the WhatsApp food fund" lines={["6 friends × ₹200 each", "They share information about deals"]} />
       <Txt x={14} y={100} size={11.5} bold tone="espresso">Team: the fest stall</Txt>
       {roles.map((r, i) => (
         <Pill key={r} x={4 + i * 71} y={108} w={66} h={22} tone="crema" size={9.5}>{r}</Pill>
@@ -451,9 +451,9 @@ export function TuckmanStages() {
   return (
     <Figure
       h={236}
-      label="Five MBA students on a 4-week project for ₹100 vouchers each. Forming: polite small talk. Storming: a fight over who presents. Norming: roles agreed. Little happens until the midpoint, when they panic and change their approach: punctuated equilibrium. Performing: best work in the last two weeks. Adjourning: celebrate and disband."
+      label="Five MBA students on a 4-week project for a ₹500 voucher each. Forming: polite small talk. Storming: a fight over who presents. Norming: roles agreed. Little happens until the midpoint, when they panic and change their approach: punctuated equilibrium. Performing: best work in the last two weeks. Adjourning: celebrate and disband."
     >
-      <Heading>A 4-week project, ₹100 vouchers each</Heading>
+      <Heading>A 4-week project, ₹500 voucher each</Heading>
       {steps.map((s, i) => {
         const h = 40 + i * 24;
         const x = 6 + i * 70;
@@ -482,7 +482,7 @@ export function GroupProperties() {
   return (
     <Figure
       h={248}
-      label="Eight hostel friends earn a ₹100 treat for each room that passes inspection. Cleaning all together, only three work: social loafing. In pairs with their own room, every pair cleans. With high cohesion and a high norm, nobody sleeps till rooms pass, all four rooms pass every week. High cohesion with low norms gives the lowest output."
+      label="Eight hostel friends earn a ₹200 pizza treat for each room that passes inspection. Cleaning all together, only three work: social loafing. In pairs with their own room, every pair cleans. With high cohesion and a high norm, nobody sleeps till rooms pass, all four rooms pass every week. High cohesion with low norms gives the lowest output."
     >
       <Box x={4} y={6} w={172} h={48} style="bad" title="All 8 together" lines={["only 3 actually work"]} />
       <Box x={184} y={6} w={172} h={48} style="good" title="In pairs, own room" lines={["every pair cleans"]} />
@@ -512,9 +512,9 @@ export function GroupDecisions() {
   return (
     <Figure
       h={246}
-      label="A class committee decides how to spend a ₹100-per-student fund. The rep pushes an expensive trip and nobody objects: groupthink. In discussion the trip grows from Digha to Darjeeling to Goa: groupshift towards risk. With the nominal group technique, students write ideas silently, present them, and vote privately, and they pick the farewell dinner most actually wanted."
+      label="A class committee decides how to spend a ₹300-per-student fund. The rep pushes an expensive trip and nobody objects: groupthink. In discussion the trip grows from Digha to Darjeeling to Goa: groupshift towards risk. With the nominal group technique, students write ideas silently, present them, and vote privately, and they pick the farewell dinner most actually wanted."
     >
-      <Heading>The ₹100-per-student class fund</Heading>
+      <Heading>The ₹300-per-student class fund</Heading>
       <Txt x={4} y={40} size={9} bold caps tone="bad">GROUPTHINK + GROUPSHIFT</Txt>
       <Txt x={4} y={56} size={10} italic tone="mocha">Rep: “expensive trip!” Nobody wants to look cheap.</Txt>
       {shift.map((s, i) => (
@@ -542,15 +542,15 @@ export function GroupDecisions() {
 // ob-19 ────────────────────────────────────────────────────────────────
 export function TeamTypes() {
   const t = [
-    { x: 4, y: 26, n: "Problem-solving", l: ["6 kitchen staff meet", "weekly, save ₹100 a batch"] },
+    { x: 4, y: 26, n: "Problem-solving", l: ["6 kitchen staff meet", "weekly, save ₹250 a batch"] },
     { x: 184, y: 26, n: "Self-managed", l: ["Night crew sets its", "own schedule"] },
-    { x: 4, y: 116, n: "Cross-functional", l: ["Chef + marketer + finance", "design a ₹100 combo"] },
+    { x: 4, y: 116, n: "Cross-functional", l: ["Chef + marketer + finance", "design a ₹149 combo"] },
     { x: 184, y: 116, n: "Virtual", l: ["Delivery team on video", "calls with Bengaluru"] },
   ];
   return (
     <Figure
       h={232}
-      label="Four team types in a Kolkata biryani chain. Problem-solving: six kitchen staff meet weekly to save ₹100 a batch. Self-managed: the night crew sets its own schedule. Cross-functional: chef, marketer and finance head design a ₹100 combo. Virtual: the delivery team works over video calls with an app partner in Bengaluru."
+      label="Four team types in a Kolkata biryani chain. Problem-solving: six kitchen staff meet weekly to save ₹250 a batch. Self-managed: the night crew sets its own schedule. Cross-functional: chef, marketer and finance head design a ₹149 combo. Virtual: the delivery team works over video calls with an app partner in Bengaluru."
     >
       <Heading>One biryani chain, four kinds of team</Heading>
       {t.map((b, i) => (
@@ -572,7 +572,7 @@ export function TeamEffectiveness() {
   return (
     <Figure
       h={248}
-      label="Two fest teams each get ₹100 per member. Team A, six friends with no roles, no target and no clear leader, sells ₹1,500. Team B, five members with clear roles, a target of ₹5,000 by 8 pm, a captain who listens and a pizza reward, sells ₹6,200. Context, composition and process make the difference."
+      label="Two fest teams each get ₹300 per member. Team A, six friends with no roles, no target and no clear leader, sells ₹1,500. Team B, five members with clear roles, a target of ₹5,000 by 8 pm, a captain who listens and a pizza reward, sells ₹6,200. Context, composition and process make the difference."
     >
       <Txt x={150} y={14} size={10} bold tone="bad" anchor="middle">Team A</Txt>
       <Txt x={286} y={14} size={10} bold tone="good" anchor="middle">Team B</Txt>
@@ -593,7 +593,7 @@ export function TeamEffectiveness() {
       <Txt x={150} y={base - 24} size={11} bold tone="espresso" anchor="middle">₹1,500</Txt>
       <Txt x={286} y={base - 80} size={11} bold tone="espresso" anchor="middle">₹6,200</Txt>
       <Line x1={84} y1={base} x2={356} y2={base} tone="mocha2" width={1} />
-      <Txt x={180} y={238} size={10.5} bold tone="coffee" anchor="middle">Same ₹100 each. Different context, mix and process.</Txt>
+      <Txt x={180} y={238} size={10.5} bold tone="coffee" anchor="middle">Same ₹300 each. Different context, mix and process.</Txt>
     </Figure>
   );
 }

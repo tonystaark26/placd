@@ -30,8 +30,8 @@ A group is people who share information. A team is people whose combined effort 
 
 People join groups for **security, status, self-esteem, affiliation, power and goal achievement**. Social identity theory adds that groups also give us a sense of who we are.
 
-**The ₹100 example**
-Six friends each put **₹100** into a shared WhatsApp "food fund". That's an informal **friendship group**: they share information about deals.
+**The everyday example**
+Six friends each put **₹200** into a shared WhatsApp "food fund". That's an informal **friendship group**: they share information about deals.
 For the college fest, five students with different skills form a stall team: a cook, a designer, a cashier, a marketer and a manager. They turn **₹500** of ingredients into **₹3,000** in sales.
 That's a **team**: complementary skills, a shared goal and synergy.
 
@@ -83,8 +83,8 @@ Groups typically go through forming, storming, norming, performing and adjournin
 
 Groups don't always move neatly. They can slide back to storming when something changes.
 
-**The ₹100 example**
-Five MBA students get a 4-week marketing project worth **₹100** in prize vouchers each.
+**The everyday example**
+Five MBA students get a 4-week marketing project with a **₹500** prize voucher each.
 - Week 1: polite small talk (**forming**).
 - Week 1 ends with a fight over who presents (**storming**).
 - Week 2: they agree roles (**norming**).
@@ -141,8 +141,8 @@ Five properties shape how any group behaves: roles, norms, status, size and cohe
 
 A close-knit group that values slacking is the worst combination.
 
-**The ₹100 example**
-Eight hostel friends get a **₹100** treat for every room that passes the hostel inspection.
+**The everyday example**
+Eight hostel friends get a **₹200** pizza treat for every room that passes the hostel inspection.
 - When all eight clean together, only three actually work: **social loafing**.
 - When they split into pairs, each with its own room, every pair cleans. Each person's effort is now visible.
 - When they make "nobody sleeps till rooms pass" a group rule, with **high cohesion** and a **high norm**, all four rooms pass every week.
@@ -198,8 +198,8 @@ Groups can decide better than individuals, but they can also fall into groupthin
 - **Brainstorming:** generate ideas freely, with no criticism.
 - **Nominal group technique:** members write ideas silently, present them one by one, discuss, then vote privately. It is great for avoiding domination by one loud voice.
 
-**The ₹100 example**
-A class committee has to decide how to spend the **₹100 per student** class fund.
+**The everyday example**
+A class committee has to decide how to spend the **₹300 per student** class fund.
 The class rep says "Let's do an expensive trip!" and nobody wants to look cheap, so everyone agrees. That's **groupthink**. In discussion, the trip grows from Digha to Darjeeling to Goa. That's **groupshift** towards risk.
 With the **nominal group technique**, each student writes an idea silently first, then everyone votes privately. The class picks a farewell dinner, which most actually wanted.
 
@@ -255,11 +255,11 @@ Each type has a typical risk:
 - **Virtual** teams can lack social bonds and clear communication.
 - **Self-managed** teams need mature members.
 
-**The ₹100 example**
+**The everyday example**
 A Kolkata biryani chain:
-- **Problem-solving:** six kitchen staff meet weekly to cut waste and save **₹100** per batch.
+- **Problem-solving:** six kitchen staff meet weekly to cut waste and save **₹250** per batch.
 - **Self-managed:** a night-shift crew sets its own schedule.
-- **Cross-functional:** chef, marketer and finance head design a new **₹100** combo.
+- **Cross-functional:** chef, marketer and finance head design a new **₹149** combo.
 - **Virtual:** the online-delivery team works with an app partner's Bengaluru staff over video calls.
 
 **Seen in the news** ✅ Verified (Jan 2025)
@@ -325,8 +325,8 @@ Robbins's **team effectiveness model** has three groups of factors.
 
 The class notes add **psychological safety**: people can speak up without fear. They also suggest celebrating wins.
 
-**The ₹100 example**
-Two college fest teams each get **₹100 per member** to run a stall.
+**The everyday example**
+Two college fest teams each get **₹300 per member** to run a stall.
 - **Team A:** six friends with no roles and no target. They argue, and sell **₹1,500**.
 - **Team B:** five members with clear roles (cook, cashier, two sellers, one social-media lead), a target of "₹5,000 by 8 pm", a captain who listens and a pizza promised if they hit it. They sell **₹6,200**.
 

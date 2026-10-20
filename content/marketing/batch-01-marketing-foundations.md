@@ -21,9 +21,9 @@ A need is a basic requirement, a want is the specific form it takes, and demand 
 Marketers don't create needs; they influence how needs get expressed as wants, and then
 make those wants affordable enough to become demand.
 
-**The ₹100 example**
+**The everyday example**
 It's 1 pm and you're hungry: that's the **need**. You'd love the ₹250 burger at the café:
-that's the **want**. You have ₹100 in your pocket, so you buy the ₹80 canteen thali:
+that's the **want**. You have ₹120 in your pocket, so you buy the ₹80 canteen thali:
 that's the **demand**. The café's real market is people who want the burger *and* can pay ₹250.
 
 **Seen in the news** ✅ Verified (FY2025)
@@ -72,11 +72,11 @@ Customer value = perceived benefits − perceived costs, and the value propositi
   rather than an alternative?* For example: IKEA = design + affordability + self-service;
   Volvo = safety.
 
-**The ₹100 example**
-Chai at the gate stall costs **₹10** and takes 2 minutes. The café's cappuccino costs **₹100**,
+**The everyday example**
+Chai at the gate stall costs **₹10** and takes 2 minutes. The café's cappuccino costs **₹180**,
 with AC, Wi-Fi and a 15-minute wait. For a quick break between classes, the stall gives more
 value, because benefits are similar and costs are lower. For a 2-hour group study session,
-the café wins, because seating and Wi-Fi are worth the extra ₹90. **Same customer,
+the café wins, because seating and Wi-Fi are worth the extra ₹170. **Same customer,
 different situation, different value.**
 
 **Seen in the news** ✅ Verified (Nov–Dec 2025)
@@ -125,8 +125,8 @@ Satisfaction = performance compared with expectations, and CLV is what a loyal c
 - The manager's question shifts from *"did we make this sale?"* to *"what is this
   relationship worth over time?"*
 
-**The ₹100 example**
-A regular at the canteen spends ₹100 a day, and the canteen makes **₹20 profit** on it.
+**The everyday example**
+A regular at the canteen spends ₹80 a day, and the canteen makes **₹20 profit** on it.
 Over 22 college days a month for 2 years: ₹20 × 22 × 24 = **₹10,560**.
 Serve that student a stale samosa and lose them, and the canteen hasn't lost ₹20; it has
 lost **₹10,560**, plus everyone they tell. (The notes use the same logic: ₹300 × 4
@@ -182,7 +182,7 @@ There are five philosophies of where a business should start: production, produc
 the *customer need*. Railways that saw themselves as "train companies" rather than
 "transport companies" lost out to cars and planes.
 
-**The ₹100 example: the canteen test**
+**The everyday example: the canteen test**
 - *Production:* "How do we make a samosa for ₹5?"
 - *Product:* "How do we make the best samosa in Kolkata?"
 - *Selling:* "How do we push samosa + chai combos?"
@@ -236,7 +236,7 @@ Marketing decisions are shaped by nearby actors (the microenvironment) and by bi
 - Key idea: **the same change is an opportunity for one firm and a threat to another.**
   AI threatens a traditional ad agency but helps an AI-first one.
 
-**The ₹100 example**
+**The everyday example**
 Your favourite Kolkata café:
 - **Micro:** its milk supplier, Swiggy and Zomato, *you*, the café next door, and the local residents' association.
 - **Macro:** milk prices rising with inflation (Economic), GST rates (Political), the
@@ -244,7 +244,7 @@ Your favourite Kolkata café:
   working from cafés (Social).
 
 If your pocket money stays at ₹5,000 but prices rise 6%, your *real* spending power has
-fallen, so the café's ₹100 coffee feels pricier even though nothing at the café changed.
+fallen, so the café's ₹150 coffee feels pricier even though nothing at the café changed.
 
 **Seen in the news** ✅ Verified (Nov 2025)
 In November 2025, the government notified the **Digital Personal Data Protection (DPDP)
@@ -295,7 +295,7 @@ Five forces decide how attractive an industry's profits are: rivalry, new entran
 competitors can't easily copy it. Apple's advantage is its whole *system* (brand,
 ecosystem, services), not the phone's specs.
 
-**The ₹100 example: the photocopy shop at the college gate**
+**The everyday example: the photocopy shop at the college gate**
 - **Rivalry:** three shops side by side, all charging ₹1–2 a page.
 - **New entrants:** anyone with a printer can start one, so barriers are low.
 - **Suppliers:** paper and toner are available everywhere, so supplier power is low.

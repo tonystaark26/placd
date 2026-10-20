@@ -1,5 +1,5 @@
 // Card mkt-07: the 2×2 of involvement × brand differences, using the hostel-student
-// purchases from "The ₹100 example".
+// purchases from "The everyday example".
 
 const COL_X = [40, 202];
 const ROW_Y = [44, 172];

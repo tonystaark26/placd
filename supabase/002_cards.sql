@@ -30,8 +30,8 @@ values
 rises? Three reasons: we switch to cheaper alternatives (*substitution effect*), our
 money now buys less (*income effect*), and each extra unit gives us less satisfaction
 than the last (*diminishing marginal utility*), so we only buy more if it's cheaper.$c$,
-  $c$You have ₹100 for snacks. Samosas cost ₹10, so you buy 10. The price rises to ₹20.
-Now ₹100 buys only 5, and you might switch to vada pav instead. Same money, same
+  $c$You have ₹60 for snacks. Samosas cost ₹12, so you buy 5. The price rises to ₹20.
+Now ₹60 buys only 3, and you might switch to vada pav instead. Same money, same
 hunger, but the higher price means fewer samosas.
 
 **But it breaks sometimes (interviewers love this part):**
@@ -98,9 +98,9 @@ the *size* of the reaction.
 
 What makes demand elastic? Many substitutes, being a luxury, taking a big share of your
 budget, and having time to adjust. Habit and necessity make it inelastic.$c$,
-  $c$A café sells 100 coffees a day at ₹100, which is **₹10,000** in revenue. It raises the price 10% to ₹110.
-- If sales fall to **80** (−20%): elasticity = 20 ÷ 10 = **2, elastic**. Revenue = ₹8,800. **Lost money.**
-- If sales fall to **95** (−5%): elasticity = 5 ÷ 10 = **0.5, inelastic**. Revenue = ₹10,450. **Gained money.**
+  $c$A café sells 100 cold coffees a day at ₹40, which is **₹4,000** in revenue. It raises the price 10% to ₹44.
+- If sales fall to **80** (−20%): elasticity = 20 ÷ 10 = **2, elastic**. Revenue = ₹3,520. **Lost money.**
+- If sales fall to **95** (−5%): elasticity = 5 ÷ 10 = **0.5, inelastic**. Revenue = ₹4,180. **Gained money.**
 
 Same price hike, opposite results. **That is why managers care about elasticity.**
 
@@ -194,7 +194,7 @@ everything we want, so we must choose. Every choice is a **trade-off**. The
 **opportunity cost** is the value of the *next-best* option you gave up, not every option
 and not just the money. Smart decisions are also made **at the margin**: not "study or
 sleep?" but "is *one more* hour of study worth *one less* hour of sleep?"$c$,
-  $c$You have ₹100 and one evening. You could go for a pizza, buy a used exam guide, or
+  $c$You have ₹250 and one evening. You could go for a pizza, buy a used exam guide, or
 take an auto home instead of the bus. You pick pizza. If the exam guide was your second
 choice, **the exam guide is the opportunity cost of the pizza.** The bus fare saving
 doesn't count, because it wasn't your next-best option.$c$,
@@ -347,8 +347,8 @@ valued highly. Total usefulness and price per unit are different things."$c$,
   more of the other, and it keeps falling.
 - The **budget line** shows everything you can afford. **Equilibrium** is where the two
   touch: the best combination you can actually afford.$c$,
-  $c$You have ₹100. Chai costs ₹10 and a samosa ₹20. Your budget line: 10 chai, *or* 5 samosas,
-*or* mixes like 4 chai + 3 samosas (₹40 + ₹60). Among all the mixes costing exactly ₹100,
+  $c$You have ₹80. Chai costs ₹10 and a samosa ₹20. Your budget line: 8 chai, *or* 4 samosas,
+*or* mixes like 4 chai + 2 samosas (₹40 + ₹40). Among all the mixes costing exactly ₹80,
 the one you enjoy most is your equilibrium.
 From the notes' table: going from (1 apple, 10 oranges) to (2, 7), you give up 3 oranges for
 1 apple. Next you give up 2, then 1. That's **diminishing MRS**, which is why ICs bow inward.$c$,
@@ -376,7 +376,7 @@ goods (MRS) equals the rate at which the market lets them swap (the price ratio)
 Marketers don't create needs; they influence how needs get expressed as wants, and then
 make those wants affordable enough to become demand.$c$,
   $c$It's 1 pm and you're hungry: that's the **need**. You'd love the ₹250 burger at the café:
-that's the **want**. You have ₹100 in your pocket, so you buy the ₹80 canteen thali:
+that's the **want**. You have ₹120 in your pocket, so you buy the ₹80 canteen thali:
 that's the **demand**. The café's real market is people who want the burger *and* can pay ₹250.$c$,
   $c$✅ Verified (FY2025)$c$,
   $c$Utility vehicles, mostly SUVs plus some MPVs, made up about **65% of India's passenger
@@ -405,10 +405,10 @@ want to meet that need."$c$,
 - A **value proposition** answers one question: *why should this customer choose us
   rather than an alternative?* For example: IKEA = design + affordability + self-service;
   Volvo = safety.$c$,
-  $c$Chai at the gate stall costs **₹10** and takes 2 minutes. The café's cappuccino costs **₹100**,
+  $c$Chai at the gate stall costs **₹10** and takes 2 minutes. The café's cappuccino costs **₹180**,
 with AC, Wi-Fi and a 15-minute wait. For a quick break between classes, the stall gives more
 value, because benefits are similar and costs are lower. For a 2-hour group study session,
-the café wins, because seating and Wi-Fi are worth the extra ₹90. **Same customer,
+the café wins, because seating and Wi-Fi are worth the extra ₹170. **Same customer,
 different situation, different value.**$c$,
   $c$✅ Verified (Nov–Dec 2025)$c$,
   $c$In November 2025, **Zepto removed handling and surge fees** and made delivery free on
@@ -436,7 +436,7 @@ start with what the customer values, not with what the engineers can build."$c$,
   value** → customer equity (the total value of all customers).
 - The manager's question shifts from *"did we make this sale?"* to *"what is this
   relationship worth over time?"*$c$,
-  $c$A regular at the canteen spends ₹100 a day, and the canteen makes **₹20 profit** on it.
+  $c$A regular at the canteen spends ₹80 a day, and the canteen makes **₹20 profit** on it.
 Over 22 college days a month for 2 years: ₹20 × 22 × 24 = **₹10,560**.
 Serve that student a stale samosa and lose them, and the canteen hasn't lost ₹20; it has
 lost **₹10,560**, plus everyone they tell. (The notes use the same logic: ₹300 × 4
@@ -514,7 +514,7 @@ convenience, not just food delivery, and Blinkit became its biggest growth engin
   working from cafés (Social).
 
 If your pocket money stays at ₹5,000 but prices rise 6%, your *real* spending power has
-fallen, so the café's ₹100 coffee feels pricier even though nothing at the café changed.$c$,
+fallen, so the café's ₹150 coffee feels pricier even though nothing at the café changed.$c$,
   $c$✅ Verified (Nov 2025)$c$,
   $c$In November 2025, the government notified the **Digital Personal Data Protection (DPDP)
 Rules**. The main obligations, including clear notice and consent before collecting
@@ -957,10 +957,10 @@ sensible. I'd compare with competitors too."$c$,
 - Labour is **direct** (traceable to a product, like machine operators) or **indirect** (supervisors, security).$c$,
   $c$**a print-shop job**
 
-Standard time **8 hours**, actual time **6 hours**, rate **₹100 an hour**. Time saved = 2 hours.
-- Time wages = 6 × ₹100 = **₹600**
-- **Halsey:** bonus = 50% × 2 × ₹100 = ₹100 → **₹700**
-- **Rowan:** bonus = (2 ÷ 8) × 6 × ₹100 = ₹150 → **₹750**
+Standard time **8 hours**, actual time **6 hours**, rate **₹80 an hour**. Time saved = 2 hours.
+- Time wages = 6 × ₹80 = **₹480**
+- **Halsey:** bonus = 50% × 2 × ₹80 = ₹80 → **₹560**
+- **Rowan:** bonus = (2 ÷ 8) × 6 × ₹80 = ₹120 → **₹600**
 
 Rowan pays more here, because the worker saved **less than half** the standard time. If a worker saves **more than half**, Halsey pays more. At exactly half, they're equal.$c$,
   $c$✅ Verified (Nov 2025)$c$,
@@ -1581,7 +1581,7 @@ OB gives me tools to read people, build teams and manage change. Those are the t
 The same person behaves differently in different settings. Different people behave differently in the same setting.
 For a manager, **E** is often easier to change than **P**. You can redesign rewards, rules and teams far faster than you can change someone's personality.$c$,
   $c$Riya is quiet in a 60-student lecture at her Park Street college. She never speaks.
-In a 5-person case-study group with a friendly senior, she speaks up and wins a **₹100** prize for the best idea.
+In a 5-person case-study group with a friendly senior, she speaks up and wins a **₹500** book-voucher prize for the best idea.
 Her **P** didn't change; the **E** did, from a big hall to a small, safe group. So did her **B**.$c$,
   $c$✅ Verified (Apr 2024)$c$,
   $c$In **April 2024**, TCS tied employees' **quarterly variable pay to office attendance**, according to an HR note reported by NDTV Profit and Business Today.
@@ -1615,7 +1615,7 @@ Fixing the environment is often faster and helps the whole team."$c$,
 | **System** | Trust and community | Meaning, belonging | Passion, commitment |
 
 Most firms mix models. The trend over time has been from top to bottom: from power towards trust.$c$,
-  $c$Five sweet shops in Kolkata pay their helpers the same **₹100** for an evening shift:
+  $c$Five sweet shops in Kolkata pay their helpers the same **₹300** for an evening shift:
 - **Autocratic:** "Do it or you're out."
 - **Custodial:** the owner adds free dinner.
 - **Supportive:** the owner coaches the helper and thanks him.
@@ -1654,7 +1654,7 @@ Custodial benefits help with security, but they don't create drive."$c$,
 - **Contingency:** there is no single best way; fit the style to the situation.
 - **Organisational humanism:** let people use all their abilities.
 - **Management science:** use numbers and models.$c$,
-  $c$A momo stall near New Market sells plates at **₹100**:
+  $c$A momo stall near New Market sells plates at **₹60**:
 - **Taylor** times every step and finds rolling takes 40 seconds, so he redesigns the counter and output doubles.
 - **Fayol** writes clear roles: who cooks, who serves, who handles cash.
 - **Weber** fixes rules: no free plates for friends.
@@ -1689,7 +1689,7 @@ Today, contingency thinking makes most sense to me. Measure efficiency where tas
 - a Bengali manager;
 - a Nepali chef;
 - two part-time students from Odisha;
-- a delivery rider from an app, paid about **₹100** per order run.
+- a delivery rider from an app, paid about **₹40** per delivery.
 
 In one shift the manager handles diversity (three languages), temporariness (the rider changes every week) and empowerment (letting the chef change the menu).
 That is today's OB in one small kitchen.$c$,
@@ -1729,8 +1729,8 @@ Earlier models in the notes:
 - **Cattell:** 16 traits.
 
 The popular **MBTI** sorts people into 16 types using four pairs (E/I, S/N, T/F, J/P). It's useful for self-awareness, but research says it predicts job performance poorly.$c$,
-  $c$Five friends each get **₹100** at a Gariahat fair:
-- **High C:** writes a budget and keeps ₹30 back.
+  $c$Five friends each get **₹200** at a Gariahat fair:
+- **High C:** writes a budget and keeps ₹50 back.
 - **High O:** tries the strangest street food.
 - **High E:** spends it treating everyone.
 - **High A:** lends half to a friend who forgot his wallet.
@@ -1769,10 +1769,10 @@ When anxiety rises, the ego uses **defence mechanisms**, often without us knowin
 - **displacement:** taking anger out on a safer target.
 
 At work, these explain why people make excuses, blame others or ignore bad news.$c$,
-  $c$Arjun has **₹100** left for the week.
+  $c$Arjun has **₹150** left for the week.
 - His **id** says "biryani from Arsalan, now!"
 - His **superego** says "save it, your parents work hard for this."
-- His **ego** decides: a ₹40 roll today and ₹60 saved.
+- His **ego** decides: a ₹60 roll today and ₹90 saved.
 
 He fails a test and says "the questions were out of syllabus anyway." That is **rationalisation**: an excuse that protects his self-image.$c$,
   $c$✅ Verified (Sept 2024)$c$,
@@ -1805,7 +1805,7 @@ I realised that was an excuse. So I went back, found my error, and now I build a
 4. **managing stress and emotions**.
 
 Robbins adds **core self-evaluation**: an overall belief in your own worth and ability.$c$,
-  $c$Two students each lose **₹100** on a bad online order.
+  $c$Two students each lose **₹349** on a bad online order.
 - **Priya (internal):** "I didn't check the seller rating. Next time I will." She checks, and never loses money that way again.
 - **Rahul (external):** "These apps are all scams, nothing I can do." He keeps losing.
 
@@ -1833,12 +1833,12 @@ Three sets of factors shape what we see:
 - **The situation:** time, work setting and social setting.
 
 The ambiguous pictures in the slides, such as the vase that is also two faces, show this. Same picture, different perceptions.$c$,
-  $c$A new café in Gariahat charges **₹100** for a cutting chai.
+  $c$A new café in Gariahat charges **₹120** for a cutting chai.
 - A Salt Lake IT worker thinks: "Fair, it's an *experience*."
 - A retired professor thinks: "Daylight robbery, I pay ₹10 at the corner."
 - A student on a date thinks: "Worth it to impress."
 
-Same chai, same ₹100. The perceivers' experience, motives and situation create three different realities.$c$,
+Same chai, same ₹120. The perceivers' experience, motives and situation create three different realities.$c$,
   $c$✅ Verified (Oct 2024)$c$,
   $c$In **October 2024**, the Central Consumer Protection Authority (CCPA) sent **Ola Electric** a show-cause notice. It was based on **10,644 complaints** to the National Consumer Helpline in a year, mostly about service delays.
 Around the same time, comedian Kunal Kamra and founder Bhavish Aggarwal had a public spat online about service quality.
@@ -1866,7 +1866,7 @@ That's why good appraisal systems use clear criteria, several raters and documen
 Two common biases:
 - **Fundamental attribution error:** we blame *other people's* failures on their personality and ignore the situation.
 - **Self-serving bias:** we credit *our own* successes to our talent, and blame our failures on bad luck.$c$,
-  $c$Sumit is late to class, so the professor fines him **₹100**.
+  $c$Sumit is late to class, so the professor fines him **₹50**.
 - Is he late only on rainy days (high **distinctiveness**)?
 - Is the whole class late, because the metro broke down (high **consensus**)?
 - Is he late every Monday (high **consistency**)?
@@ -1902,11 +1902,11 @@ If it's a one-off and others struggled too, the cause is probably external, like
 - **Self-fulfilling prophecy (Pygmalion effect):** expectations change how we treat people, and that makes the expectation come true.
 
 These shortcuts matter most in **interviews, appraisals and investment decisions**.$c$,
-  $c$At a Kolkata college fest, three students pitch to sell **₹100** tickets.
+  $c$At a Kolkata college fest, three students pitch to sell **₹150** tickets.
 - The first is so polished that the second looks weak next to him, even though she's good. That's the **contrast effect**.
 - The third went to a famous school, so the judges assume he'll sell the most. That's the **halo effect**.
 
-At the end of the day the second student sold the most tickets.$c$,
+At the end of the day the second student sold the most tickets, and the third sold the fewest.$c$,
   $c$✅ Verified (Apr 2025)$c$,
   $c$On **15 April 2025**, SEBI passed an interim order against **Gensol Engineering's** promoters, the Jaggi brothers, and barred them from the securities market.
 - Gensol had raised about **₹978 crore** in loans from IREDA and PFC to buy EVs for its sister company **BluSmart**.
@@ -1935,7 +1935,7 @@ Stress isn't all bad. Think of an upside-down **U** curve:
 - **Too much stress (distress):** anxiety, mistakes, exhaustion. Performance falls.
 
 The skill is staying near the top of the curve: enough challenge to stretch people, with enough support to avoid burnout.$c$,
-  $c$A ₹100-a-head quiz night at a Park Street café, three teams:
+  $c$A ₹50-a-head quiz night at a Park Street café, three teams:
 - One team is told it doesn't matter: they're bored and score **4/20**.
 - One is told the top team wins dinner: they're excited and score **16/20**. That's **eustress**.
 - One is told losers pay for everyone: they panic and score **7/20**. That's **distress**.$c$,
@@ -1972,7 +1972,7 @@ During our final exams plus a live consulting project, that's how I delivered bo
 
 Stressors **add up**. A small issue on top of a big load can tip someone over.$c$,
   $c$Ankita, a first-year MBA student:
-- skips the **₹100** canteen lunch to save money (**personal:** money);
+- skips the **₹70** canteen thali to save money (**personal:** money);
 - her group project has no clear leader (**role ambiguity**);
 - three submissions fall due on one day (**task demands**).
 
@@ -2015,7 +2015,7 @@ Then I'd have a private, non-judgemental conversation and look for the stressor.
 - limits on overwork.
 
 The best results come when **both** act together. A yoga class can't fix a toxic boss.$c$,
-  $c$A hostel spends **₹100 per student per month** on a Sunday morning yoga session. That's an organisational wellness programme.
+  $c$A hostel spends **₹40 per student per month** on a Sunday morning yoga session. That's an organisational wellness programme.
 But it also fixes the real stressor: the Wi-Fi used to crash every night before deadlines.
 Students who also use a simple weekly planner (individual time management) report the fewest all-nighters.$c$,
   $c$✅ Verified (Jun–Jul 2025)$c$,
@@ -2056,7 +2056,7 @@ Then I'd track it, with pulse surveys, attrition and sick days, so we know it's 
   - **Friendship group:** people who share traits or like each other.
 
 People join groups for **security, status, self-esteem, affiliation, power and goal achievement**. Social identity theory adds that groups also give us a sense of who we are.$c$,
-  $c$Six friends each put **₹100** into a shared WhatsApp "food fund". That's an informal **friendship group**: they share information about deals.
+  $c$Six friends each put **₹200** into a shared WhatsApp "food fund". That's an informal **friendship group**: they share information about deals.
 For the college fest, five students with different skills form a stall team: a cook, a designer, a cashier, a marketer and a manager. They turn **₹500** of ingredients into **₹3,000** in sales.
 That's a **team**: complementary skills, a shared goal and synergy.$c$,
   $c$✅ Verified (Sept–Oct 2024)$c$,
@@ -2089,7 +2089,7 @@ That's synergy."$c$,
 - then a second phase, and a rush at the end.
 
 Groups don't always move neatly. They can slide back to storming when something changes.$c$,
-  $c$Five MBA students get a 4-week marketing project worth **₹100** in prize vouchers each.
+  $c$Five MBA students get a 4-week marketing project with a **₹500** prize voucher each.
 - Week 1: polite small talk (**forming**).
 - Week 1 ends with a fight over who presents (**storming**).
 - Week 2: they agree roles (**norming**).
@@ -2127,7 +2127,7 @@ I learned that early conflict is normal. The job is to turn it into clear norms 
 | **Low cohesion** | Moderate productivity | Low productivity |
 
 A close-knit group that values slacking is the worst combination.$c$,
-  $c$Eight hostel friends get a **₹100** treat for every room that passes the hostel inspection.
+  $c$Eight hostel friends get a **₹200** pizza treat for every room that passes the hostel inspection.
 - When all eight clean together, only three actually work: **social loafing**.
 - When they split into pairs, each with its own room, every pair cleans. Each person's effort is now visible.
 - When they make "nobody sleeps till rooms pass" a group rule, with **high cohesion** and a **high norm**, all four rooms pass every week.$c$,
@@ -2164,7 +2164,7 @@ I'd also build a norm early, like 'we don't present anything we haven't all revi
 **Better techniques:**
 - **Brainstorming:** generate ideas freely, with no criticism.
 - **Nominal group technique:** members write ideas silently, present them one by one, discuss, then vote privately. It is great for avoiding domination by one loud voice.$c$,
-  $c$A class committee has to decide how to spend the **₹100 per student** class fund.
+  $c$A class committee has to decide how to spend the **₹300 per student** class fund.
 The class rep says "Let's do an expensive trip!" and nobody wants to look cheap, so everyone agrees. That's **groupthink**. In discussion, the trip grows from Digha to Darjeeling to Goa. That's **groupshift** towards risk.
 With the **nominal group technique**, each student writes an idea silently first, then everyone votes privately. The class picks a farewell dinner, which most actually wanted.$c$,
   $c$✅ Verified (Feb 2024)$c$,
@@ -2202,9 +2202,9 @@ Each type has a typical risk:
 - **Virtual** teams can lack social bonds and clear communication.
 - **Self-managed** teams need mature members.$c$,
   $c$A Kolkata biryani chain:
-- **Problem-solving:** six kitchen staff meet weekly to cut waste and save **₹100** per batch.
+- **Problem-solving:** six kitchen staff meet weekly to cut waste and save **₹250** per batch.
 - **Self-managed:** a night-shift crew sets its own schedule.
-- **Cross-functional:** chef, marketer and finance head design a new **₹100** combo.
+- **Cross-functional:** chef, marketer and finance head design a new **₹149** combo.
 - **Virtual:** the online-delivery team works with an app partner's Bengaluru staff over video calls.$c$,
   $c$✅ Verified (Jan 2025)$c$,
   $c$On **16 January 2025**, ISRO docked two satellites in orbit in its **SpaDeX** mission. India became the **fourth country** to do this, after the US, Russia and China.
@@ -2251,7 +2251,7 @@ I'd handle these with a clear shared goal and success metric from day one, a sho
 - low social loafing.
 
 The class notes add **psychological safety**: people can speak up without fear. They also suggest celebrating wins.$c$,
-  $c$Two college fest teams each get **₹100 per member** to run a stall.
+  $c$Two college fest teams each get **₹300 per member** to run a stall.
 - **Team A:** six friends with no roles and no target. They argue, and sell **₹1,500**.
 - **Team B:** five members with clear roles (cook, cashier, two sellers, one social-media lead), a target of "₹5,000 by 8 pm", a captain who listens and a pizza promised if they hit it. They sell **₹6,200**.
 

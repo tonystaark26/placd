@@ -31,7 +31,7 @@ A soft grey background, espresso-dark text, and coffee brown used sparingly for 
 | `mocha-2` | `#75695F` | Hints, inactive icons |
 | `coffee` (accent) | `#6F4E37` | Main buttons (with cream text), progress, highlights |
 | `cream` | `#FBF7F1` | Text on coffee buttons |
-| `crema` | `#EADBC8` | Background behind "₹100 example" and concept chips |
+| `crema` | `#EADBC8` | Background behind "everyday example" and concept chips |
 | `good` | `#1E6B45` on `#DCEBDD` | Correct answers |
 | `bad` | `#A3322B` on `#F6DEDB` | Wrong answers, errors |
 

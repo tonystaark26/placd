@@ -21,13 +21,13 @@ Three sets of factors shape what we see:
 
 The ambiguous pictures in the slides, such as the vase that is also two faces, show this. Same picture, different perceptions.
 
-**The ₹100 example**
-A new café in Gariahat charges **₹100** for a cutting chai.
+**The everyday example**
+A new café in Gariahat charges **₹120** for a cutting chai.
 - A Salt Lake IT worker thinks: "Fair, it's an *experience*."
 - A retired professor thinks: "Daylight robbery, I pay ₹10 at the corner."
 - A student on a date thinks: "Worth it to impress."
 
-Same chai, same ₹100. The perceivers' experience, motives and situation create three different realities.
+Same chai, same ₹120. The perceivers' experience, motives and situation create three different realities.
 
 **Seen in the news** ✅ Verified (Oct 2024)
 In **October 2024**, the Central Consumer Protection Authority (CCPA) sent **Ola Electric** a show-cause notice. It was based on **10,644 complaints** to the National Consumer Helpline in a year, mostly about service delays.
@@ -74,8 +74,8 @@ Two common biases:
 - **Fundamental attribution error:** we blame *other people's* failures on their personality and ignore the situation.
 - **Self-serving bias:** we credit *our own* successes to our talent, and blame our failures on bad luck.
 
-**The ₹100 example**
-Sumit is late to class, so the professor fines him **₹100**.
+**The everyday example**
+Sumit is late to class, so the professor fines him **₹50**.
 - Is he late only on rainy days (high **distinctiveness**)?
 - Is the whole class late, because the metro broke down (high **consensus**)?
 - Is he late every Monday (high **consistency**)?
@@ -130,8 +130,8 @@ To save effort, we judge people with mental shortcuts. They're fast, but they of
 
 These shortcuts matter most in **interviews, appraisals and investment decisions**.
 
-**The ₹100 example**
-At a Kolkata college fest, three students pitch to sell **₹100** tickets.
+**The everyday example**
+At a Kolkata college fest, three students pitch to sell **₹150** tickets.
 - The first is so polished that the second looks weak next to him, even though she's good. That's the **contrast effect**.
 - The third went to a famous school, so the judges assume he'll sell the most. That's the **halo effect**.
 
@@ -183,8 +183,8 @@ Stress isn't all bad. Think of an upside-down **U** curve:
 
 The skill is staying near the top of the curve: enough challenge to stretch people, with enough support to avoid burnout.
 
-**The ₹100 example**
-A ₹100-a-head quiz night at a Park Street café, three teams:
+**The everyday example**
+A ₹50-a-head quiz night at a Park Street café, three teams:
 - One team is told it doesn't matter: they're bored and score **4/20**.
 - One is told the top team wins dinner: they're excited and score **16/20**. That's **eustress**.
 - One is told losers pay for everyone: they panic and score **7/20**. That's **distress**.
@@ -239,9 +239,9 @@ Stress comes from the environment, the organisation and personal life, and it sh
 
 Stressors **add up**. A small issue on top of a big load can tip someone over.
 
-**The ₹100 example**
+**The everyday example**
 Ankita, a first-year MBA student:
-- skips the **₹100** canteen lunch to save money (**personal:** money);
+- skips the **₹70** canteen thali to save money (**personal:** money);
 - her group project has no clear leader (**role ambiguity**);
 - three submissions fall due on one day (**task demands**).
 
@@ -303,8 +303,8 @@ Individuals manage stress through habits like exercise and time management. Orga
 
 The best results come when **both** act together. A yoga class can't fix a toxic boss.
 
-**The ₹100 example**
-A hostel spends **₹100 per student per month** on a Sunday morning yoga session. That's an organisational wellness programme.
+**The everyday example**
+A hostel spends **₹40 per student per month** on a Sunday morning yoga session. That's an organisational wellness programme.
 But it also fixes the real stressor: the Wi-Fi used to crash every night before deadlines.
 Students who also use a simple weekly planner (individual time management) report the fewest all-nighters.
 

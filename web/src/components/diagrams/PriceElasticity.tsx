@@ -1,10 +1,10 @@
-// Card econ-03: the café coffee example from "The ₹100 example".
-// Same price hike (₹100 → ₹110), two demand curves: flat (elastic) and steep (inelastic).
+// Card econ-03: the café coffee example from "The everyday example".
+// Same price hike (₹40 → ₹44), two demand curves: flat (elastic) and steep (inelastic).
 
 // Quantity → x position inside a panel (axis starts at x = 34)
 const qx = (q: number) => 34 + (q - 50) * 2.2;
-const P110 = 45; // y position of ₹110
-const P100 = 80; // y position of ₹100
+const P110 = 45; // y position of ₹44
+const P100 = 80; // y position of ₹40
 const AXIS_Y = 120;
 
 function Panel({
@@ -43,8 +43,8 @@ function Panel({
         {/* axes */}
         <line x1="34" y1="8" x2="34" y2={AXIS_Y} className="stroke-mocha-2" strokeWidth="1" />
         <line x1="34" y1={AXIS_Y} x2="165" y2={AXIS_Y} className="stroke-mocha-2" strokeWidth="1" />
-        <text x="30" y={P110 + 3.5} textAnchor="end" className="fill-mocha font-sans" fontSize="9.5">₹110</text>
-        <text x="30" y={P100 + 3.5} textAnchor="end" className="fill-mocha font-sans" fontSize="9.5">₹100</text>
+        <text x="30" y={P110 + 3.5} textAnchor="end" className="fill-mocha font-sans" fontSize="9.5">₹44</text>
+        <text x="30" y={P100 + 3.5} textAnchor="end" className="fill-mocha font-sans" fontSize="9.5">₹40</text>
         <text x="165" y={AXIS_Y + 13} textAnchor="end" className="fill-mocha-2 font-sans" fontSize="9">
           cups sold →
         </text>
@@ -81,16 +81,16 @@ function Panel({
 }
 
 export function PriceElasticity() {
-  // Elastic: flat line through (₹110, 80 cups) and (₹100, 100 cups)
-  // Inelastic: steep line through (₹110, 95 cups) and (₹100, 100 cups)
+  // Elastic: flat line through (₹44, 80 cups) and (₹40, 100 cups)
+  // Inelastic: steep line through (₹44, 95 cups) and (₹40, 100 cups)
   return (
     <svg viewBox="0 0 360 250" role="img" aria-labelledby="pe-title" className="h-auto w-full">
       <title id="pe-title">
-        A café raises coffee from ₹100 to ₹110. With elastic demand, sales fall from 100 to 80 cups and
-        revenue drops to ₹8,800. With inelastic demand, sales fall only to 95 cups and revenue rises to ₹10,450.
+        A café raises cold coffee from ₹40 to ₹44. With elastic demand, sales fall from 100 to 80 cups and
+        revenue drops to ₹3,520. With inelastic demand, sales fall only to 95 cups and revenue rises to ₹4,180.
       </title>
       <text x="180" y="14" textAnchor="middle" className="fill-espresso font-sans" fontSize="12.5" fontWeight="600">
-        Same price hike: coffee ₹100 → ₹110
+        Same price hike: cold coffee ₹40 → ₹44
       </text>
       <Panel
         x={4}
@@ -99,8 +99,8 @@ export function PriceElasticity() {
         qNew={80}
         curve={[70, 21, 160, 92.7]}
         change="−20%"
-        revenue="₹10,000 → ₹8,800"
-        result="Lost ₹1,200"
+        revenue="₹4,000 → ₹3,520"
+        result="Lost ₹480"
         good={false}
       />
       <Panel
@@ -110,8 +110,8 @@ export function PriceElasticity() {
         qNew={95}
         curve={[123.6, 15, 153.4, 110]}
         change="−5%"
-        revenue="₹10,000 → ₹10,450"
-        result="Gained ₹450"
+        revenue="₹4,000 → ₹4,180"
+        result="Gained ₹180"
         good
       />
     </svg>
