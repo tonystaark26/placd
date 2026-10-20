@@ -1,5 +1,5 @@
 -- =====================================================================
--- ChaiCase concept cards: 66 cards
+-- ChaiCase concept cards: 86 cards
 -- Made automatically by scripts/cards-to-sql.mjs from the files in content/.
 -- Don't edit this file by hand: edit the card files, then run the script again.
 --
@@ -10,7 +10,8 @@
 -- Subjects (new ones are added; existing ones are left alone)
 insert into subjects (id, name, sort) values
   ('econ', 'Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
-  ('acct', 'Accounting', 4), ('ob', 'Organisational Behaviour', 5)
+  ('acct', 'Accounting', 4), ('ob', 'Organisational Behaviour', 5),
+  ('law', 'Business Law', 6)
 on conflict (id) do nothing;
 
 -- Two parts of each card that the first version of the table didn't have room for
@@ -2274,6 +2275,662 @@ India's 2024 T20 World Cup win shows it: clear roles for players, a captain and 
   $c$Saying "conflict is bad for teams". Moderate *task* conflict (debating ideas) improves decisions. It's *relationship* conflict (personal clashes) that hurts.$c$,
   $c$[{"kind":"concept","question":"What are the three broad groups of factors in the team effectiveness model?","answer":"**Context, composition and process.**"},{"kind":"application","question":"A talented team fails because members are rewarded only for individual targets. Which factor is broken?","answer":"**Context**: the performance evaluation and reward system doesn't recognise team contribution."},{"kind":"case","question":"A 14-person product team has bright members, but meetings drag, two people do most of the work, and no one is sure what \"success\" means. Diagnose it using the model.","answer":"**Composition and process problems.** The team is too big (fewer than 10 is better), which invites social loafing. There is no specific goal or common purpose. Fix: split into smaller sub-teams with clear roles, set a measurable target, and track individual contributions."}]$c$::jsonb,
   $c$OB Group Dynamics Team Building.pptx (team effectiveness model); Class Notes Unit 10.pptx (team-building strategies)$c$, $c$draft$c$
+),
+(
+  $c$law-01$c$, $c$law$c$, 1, $c$Agreement vs Contract$c$,
+  $c$An agreement is a set of promises. It becomes a contract only when the law will enforce it.$c$,
+  $c$- **Offer (proposal), Sec 2(a):** one person shows willingness to do, or not do, something.
+- **Acceptance, Sec 2(b):** the other person agrees. The offer is now a **promise**.
+- **Agreement, Sec 2(e):** promises that are consideration for each other. Offer + acceptance = agreement.
+- **Contract, Sec 2(h):** an agreement **enforceable by law**.
+
+So: **contract = agreement + enforceability.** All contracts are agreements, but not all agreements are contracts.
+
+A promise to meet a friend for lunch is an agreement, but no court will enforce it. **Balfour v Balfour (1919)** held that domestic and social promises usually lack the **intention to create legal relations**.$c$,
+  $c$- You tell your roommate "I'll pay you ₹200 if you clean the room this week." That's a social agreement, and neither of you expects to go to court.
+- You sign up with a cleaning service at ₹1,500 a month, with written terms. That's a contract, and either side can enforce it.
+
+Same work, different intention, so different legal results.$c$,
+  $c$✅ Verified (Mar 2024)$c$,
+  $c$In **2024**, **Elon Musk** sued OpenAI, claiming it broke a **"founding agreement"** to stay a non-profit that develops AI for humanity.
+OpenAI replied in court papers that there was **no founding agreement, or any agreement at all**, with Musk. Legal experts pointed out that no formal written contract had been signed by all parties.
+Shared intentions and emails may show an *understanding*. Whether they form an *enforceable contract* is a separate question, and that difference is this whole card.
+*Sources: CNBC, NBC, Mar 2024.*$c$,
+  $c$Is every agreement a contract?$c$,
+  $c$"No. A contract is an agreement the law will enforce. Offer plus acceptance gives an agreement. For it to become a contract, it also needs:
+- an intention to create legal relations;
+- lawful consideration and object;
+- parties with capacity;
+- free consent.
+
+A social promise, like inviting a friend to dinner, is an agreement but not a contract, as Balfour v Balfour shows. In business I'd never rely on an understanding. I'd get the key terms in writing."$c$,
+  $c$Saying "a written document makes it a contract". Writing helps prove a contract, but most contracts can be oral. What matters is enforceability, not paper.$c$,
+  $c$[{"kind":"concept","question":"Under Section 2(h), what is a contract?","answer":"**An agreement enforceable by law.**"},{"kind":"application","question":"A father promises his daughter ₹5,000 for topping her class, then doesn't pay. Can she sue?","answer":"**No.** It's a domestic promise with no intention to create legal relations (the Balfour principle)."},{"kind":"case","question":"Two founders agree over WhatsApp to split profits 50:50, but sign nothing. Later one denies it. What must the other prove?","answer":"**That it was an enforceable contract, not just an understanding.** That means a clear offer and acceptance, an intention to be legally bound, and consideration. The messages can be evidence, but vague or social wording weakens the claim."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 3–5, 8 (Balfour v Balfour)$c$, $c$draft$c$
+),
+(
+  $c$law-02$c$, $c$law$c$, 2, $c$The Essentials of a Valid Contract (Section 10)$c$,
+  $c$A valid contract needs a proper offer and acceptance, an intention to be bound, capable parties, free consent, lawful consideration and object, and certainty.$c$,
+  $c$The checklist:
+1. **Offer and acceptance**, properly communicated.
+2. **Intention to create legal relations.**
+3. **Consensus ad idem (Sec 13):** both parties agree on the same thing in the same sense.
+4. **Lawful consideration:** something in return.
+5. **Capacity:** major, sound mind, not disqualified by law.
+6. **Free consent:** no coercion, undue influence, fraud, misrepresentation or mistake.
+7. **Lawful object:** not illegal, immoral or against public policy.
+8. **Certainty and possibility of performance.**
+9. **Writing or registration**, only where a specific law demands it, such as selling land.
+
+If even one is missing, the agreement may be void, voidable or unenforceable (see Card L9).$c$,
+  $c$Riya rents a ₹6,000-a-month PG room near Salt Lake.
+- **Offer and acceptance:** the owner offers, she accepts.
+- **Intention:** both expect to be bound.
+- **Consideration:** ₹6,000 for the room.
+- **Capacity:** she's 21.
+- **Free consent:** nobody forced her.
+- **Lawful object:** renting a room is legal.
+- **Certainty:** room number, rent and term are all clear.
+
+All ticked, so it's a valid contract.$c$,
+  $c$✅ Verified (Dec 2024)$c$,
+  $c$On **20 December 2024**, the Supreme Court set aside a 2008 NCDRC ruling that had treated **credit-card interest above 30% a year** as an unfair trade practice.
+- The Court said the NCDRC could not **rewrite contract terms** that banks and cardholders had **agreed** to.
+- It found no misrepresentation by the banks.
+- It said regulating interest rates is the RBI's job.
+
+The reasoning rests on two essentials: **free consent** and a **lawful object**. When terms are freely agreed and lawful, courts generally enforce them.
+*Sources: LiveLaw, Bar & Bench, Business Standard, Dec 2024.*$c$,
+  $c$What makes a contract valid?$c$,
+  $c$"Section 10 says an agreement is a contract if it's made by the free consent of competent parties, for a lawful consideration and lawful object, and isn't declared void.
+Add offer and acceptance, an intention to be bound, and certainty of terms. When I review a vendor agreement, I run through exactly this list:
+- Who's signing, and do they have authority?
+- Is anything one-sided enough to suggest pressure?
+- Are the price and deliverables clear?"$c$,
+  $c$Forgetting that consideration must be **lawful**, not just present. Paying ₹50,000 to get someone a government job is consideration, but it's unlawful, so the agreement is void.$c$,
+  $c$[{"kind":"concept","question":"What does \"consensus ad idem\" mean?","answer":"**A meeting of minds**: both parties agree on the same thing in the same sense (Sec 13)."},{"kind":"application","question":"A 16-year-old signs a ₹30,000 phone EMI agreement. Which essential is missing?","answer":"**Capacity.** A minor can't contract, so the agreement is void."},{"kind":"case","question":"A supplier agrees to sell \"good-quality cement at a fair price\" with no quantity or price stated. Is it a valid contract?","answer":"**Probably not.** It fails the certainty requirement, because quality, quantity and price are vague (Sec 29: agreements void for uncertainty). Fix it by stating the grade, quantity, price and delivery date."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slide 6; Indian Contract Act Sec 10, 13, 29$c$, $c$draft$c$
+),
+(
+  $c$law-03$c$, $c$law$c$, 3, $c$Offers and Their Types (Carlill's Smoke Ball)$c$,
+  $c$An offer is a definite willingness to be bound. It can be made to one person or to the whole world.$c$,
+  $c$- **Express** (in words) or **implied** (by conduct). A bus running on its route is an implied offer to carry passengers.
+- **Specific offer:** made to a particular person; only they can accept.
+- **General offer:** made to the public. Anyone who performs the conditions accepts it.
+- **Cross offers:** identical offers that cross in the post. There's no contract until one is accepted.
+- **Counter offer:** a reply that changes the terms. It **kills** the original offer and becomes a new one.
+- **Standing offer:** open for a period, such as a tender to supply goods as and when ordered.
+
+**Carlill v Carbolic Smoke Ball Co (1893):** the company promised £100 to anyone who caught flu after using its smoke ball as directed. Mrs Carlill used it, caught flu and claimed. The court held the ad was a **general offer** accepted **by performance**, so there was no need to tell the company in advance.$c$,
+  $c$A lost-dog poster in Ballygunge says "**₹2,000** to whoever returns Bruno."
+- That's a **general offer**. Anyone who finds and returns Bruno accepts it by doing so, and is entitled to the ₹2,000.
+- If the owner had told only his neighbour "I'll pay *you* ₹2,000 to find Bruno", that's a **specific offer**, and only the neighbour could accept.$c$,
+  $c$✅ Verified (Nov 2024)$c$,
+  $c$In **October–November 2024**, Elon Musk's **America PAC** promised **$1 million a day** to registered voters in swing states who signed its petition. It handed out about $16–17 million.
+- Philadelphia's District Attorney sued, calling it an illegal lottery.
+- In court on **4 November**, the PAC's lawyer said winners were **"not chosen by chance"**; they were picked as spokespeople and signed contracts.
+- The judge allowed it to continue.
+
+A public promise of money is a classic general offer, as in Carlill. Its exact terms (random draw, or selected spokesperson?) decide what people actually accepted.
+*Sources: ABC News, Breaking News IE, Nov 2024.*$c$,
+  $c$Is a cashback advertisement legally binding?$c$,
+  $c$"It can be. Carlill v Carbolic Smoke Ball says a clear public promise with definite terms is a general offer, and anyone who meets the conditions accepts it by performance.
+So if a brand advertises '₹500 cashback on every purchase above ₹5,000 this week', a buyer who meets that can enforce it. That's why marketing teams must write offer terms carefully, with clear conditions, limits and end dates."$c$,
+  $c$Thinking a **counter offer** keeps the first offer alive. It doesn't. "I'll take it for ₹900 instead of ₹1,000" rejects the original offer, and you can't go back and accept ₹1,000 unless the seller agrees again.$c$,
+  $c$[{"kind":"concept","question":"Which case established that an advertisement can be a general offer accepted by performance?","answer":"**Carlill v Carbolic Smoke Ball Co (1893).**"},{"kind":"application","question":"A seller offers a bike for ₹40,000; the buyer replies \"₹35,000, final.\" What has the buyer done?","answer":"**Made a counter offer**, which rejects the original ₹40,000 offer."},{"kind":"case","question":"A coaching centre advertises \"₹10,000 to any student who scores 99 percentile after our course\", then refuses to pay a student who did. What's the student's argument?","answer":"**It was a general offer, accepted by performance.** The student met the conditions, so a contract was formed (Carlill). The centre is bound unless its terms clearly said otherwise."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 7, 23–27 (Carlill v Carbolic Smoke Ball)$c$, $c$draft$c$
+),
+(
+  $c$law-04$c$, $c$law$c$, 4, $c$Offer vs Invitation to Offer$c$,
+  $c$A price list, an ad, an auction notice or a quote is usually an **invitation** to make offers, not an offer itself.$c$,
+  $c$An **offer** shows final willingness to be bound if accepted.
+An **invitation to offer (invitation to treat)** only starts negotiations. *You* make the offer; the seller decides whether to accept.
+Examples: goods on a shop shelf with price tags, catalogues, auction ads, tender notices and company prospectuses.
+
+**Cases from the slides:**
+- **Harvey v Facey (1893):** "Lowest price for Bumper Hall Pen £900" was just information about price, not an offer to sell. There was no contract.
+- **Harris v Nickerson (1873):** an auction ad is an invitation, so a buyer who travelled to an auction that was then cancelled couldn't recover his expenses.
+- **Taylor v Portington (1855):** terms like "handsomely decorated" are too vague. An offer must be **definite** (Sec 29).$c$,
+  $c$- A Gariahat shop tags a kurta at **₹899**. You take it to the counter and offer ₹899. The cashier accepts by billing it.
+- If the tag was wrong and the shop refuses, generally there's no breach. The tag invited your offer; it wasn't a promise to sell.
+- "Lowest price for my scooter is ₹45,000" is only information. "I offer to sell you my scooter for ₹45,000" is an offer.$c$,
+  $c$✅ Verified (Oct 2024)$c$,
+  $c$In **October 2024**, **Hyundai Motor India** ran India's **biggest IPO** till then, about **₹27,870 crore**. Bids came in for about **2.37 times** the shares on offer.
+The prospectus is an **invitation to offer**. Each investor's application is the **offer**, and allotment is the company's **acceptance**. That's why, when an issue is oversubscribed, many bidders get fewer shares or none, and no one has a breach claim.
+*Sources: Business Standard, Angel One, IANS, Oct 2024.*$c$,
+  $c$An e-commerce site lists a ₹70,000 phone at ₹7,000 by mistake. Must it deliver?$c$,
+  $c$"Usually a product listing is an invitation to offer. My order is the offer, and the site accepts when it confirms. So if it cancels before confirming, there's usually no contract.
+Once it has confirmed the order, though, Indian consumer forums have held platforms liable for cancelling. The answer depends on the timing of acceptance and the site's terms.
+As a business, I'd make sure our terms say clearly when an order is accepted."$c$,
+  $c$Calling every price display an offer. The law treats most displays and ads as invitations, so shops aren't forced to sell to everyone or honour every typo.$c$,
+  $c$[{"kind":"concept","question":"In Harvey v Facey, why was there no contract?","answer":"**A statement of the lowest price is not an offer to sell.** It's just information."},{"kind":"application","question":"A company invites tenders for supplying uniforms. Is the tender notice an offer?","answer":"**No, it's an invitation to offer.** Each tender submitted is an offer, which the company may accept or reject."},{"kind":"case","question":"An auction house advertises a vintage car, then withdraws it on the day. A collector who flew in from Delhi sues for the ₹18,000 airfare. Will he win?","answer":"**Unlikely.** An auction advertisement is an invitation to offer (Harris v Nickerson). There's no offer, so no contract and no claim for expenses."}]$c$::jsonb,
+  $c$Cases.pptx (Harvey v Facey, Harris v Nickerson, Taylor v Portington); Indian Contract Act.ppt slide 28$c$, $c$draft$c$
+),
+(
+  $c$law-05$c$, $c$law$c$, 5, $c$Rules of Acceptance$c$,
+  $c$Acceptance must be absolute, communicated, in the right mode and on time. You can't accept an offer you don't know about, and silence isn't acceptance.$c$,
+  $c$1. **Absolute and unconditional:** any change is a counter offer.
+2. **Communicated** to the offeror. A mental decision isn't enough.
+3. **In the mode the offeror prescribed**, or a reasonable one if none was named.
+4. **Within the time allowed**, or within a reasonable time.
+5. **By the right person:** anyone for a general offer, only the named person for a specific one.
+6. **With knowledge of the offer.** In **Fitch v Snedaker (1868)**, people who gave information about a crime *before* knowing of a reward couldn't claim it.
+7. **Silence is not acceptance.** "If I don't hear back, the deal's on" doesn't bind the other side.$c$,
+  $c$A gym emails: "Your **₹999** monthly plan will auto-renew at **₹1,499** unless you reply."
+You ignore it. Under contract principles, your **silence** isn't acceptance of the higher price.
+If you reply "OK, renew at ₹1,499", you've accepted. If you reply "Renew, but at ₹999", that's a counter offer.$c$,
+  $c$✅ Verified (Jun 2025)$c$,
+  $c$On **5 June 2025**, India's **Central Consumer Protection Authority** asked e-commerce and other platforms to **self-audit for dark patterns within three months** and remove them. The advisory went to over 50 platforms, including streaming, food delivery and fintech apps.
+Dark patterns include **subscription traps** and free trials that silently turn into paid plans. The idea is simple: real agreement needs a clear, informed "yes", not inertia or pre-ticked boxes.
+*Sources: Outlook Money, Storyboard18, Bar & Bench, Jun 2025.*$c$,
+  $c$Can a company treat a customer's silence as acceptance?$c$,
+  $c$"No. Acceptance has to be communicated, and silence generally isn't acceptance. The offeror can't impose it by saying 'if you don't reply, you've agreed.'
+That's why auto-renewals and price increases need clear consent, and India's dark-pattern rules target subscription traps and pre-ticked boxes. As a product manager I'd design for an explicit 'yes', with easy cancellation. It's both legal hygiene and good for trust."$c$,
+  $c$Mixing up **conditional acceptance** with acceptance. "I accept, provided you deliver by Friday" adds a new term, so it's a counter offer, not acceptance.$c$,
+  $c$[{"kind":"concept","question":"What did Fitch v Snedaker decide?","answer":"**You can't accept an offer you don't know about.** Acting in ignorance of a reward offer isn't acceptance."},{"kind":"application","question":"A seller writes: \"If I don't hear from you by Monday, I'll assume you're buying my laptop for ₹35,000.\" The buyer says nothing. Is there a contract?","answer":"**No.** Silence is not acceptance."},{"kind":"case","question":"A company offers a job \"accept by email by 5 pm Friday\". The candidate decides yes on Friday but emails on Monday. Is there a contract?","answer":"**No.** Acceptance must be communicated, in the prescribed mode, within the time allowed. A mental decision on Friday doesn't count. Monday's email is, at best, a fresh offer the company may accept."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 30–32; Cases.pptx (Fitch v Snedaker)$c$, $c$draft$c$
+),
+(
+  $c$law-06$c$, $c$law$c$, 6, $c$Consideration and Privity$c$,
+  $c$Consideration is the "something in return" for a promise. In India it can come from the promisee **or any other person**.$c$,
+  $c$**Sec 2(d):** when, at the promisor's desire, the promisee or *any other person* does, or promises to do, something, that is the consideration.
+
+Rules:
+- It must move **at the promisor's desire** (Durga Prasad v Baldeo).
+- It may move from the promisee **or a third party**. In **Chinnaya v Ramayya (1882)**, a mother gifted property to her daughter on condition that she pay the mother's sister an annual sum. The sister could sue, even though she gave nothing herself.
+- It can be **past, present or future**.
+- It **need not be adequate**, but it must be real and lawful.
+
+**No consideration, no contract.** The exceptions under Sec 25:
+- written and registered promises out of natural love and affection;
+- compensation for past voluntary services;
+- a written promise to pay a time-barred debt;
+- completed gifts.
+
+**Privity:** only parties to a contract can sue on it. Exceptions include trusts, family arrangements, agents and acknowledgement.$c$,
+  $c$- You sell your old cycle to a classmate for **₹1,500**, though it's worth ₹4,000. The contract is still valid; consideration need not be adequate, as long as you agreed freely.
+- Your uncle promises in a registered letter to pay your **₹60,000** fees out of love. That's enforceable under the love-and-affection exception.
+- An oral "I'll pay your fees" with nothing in return isn't enforceable.$c$,
+  $c$✅ Verified (Jan 2025)$c$,
+  $c$In **January 2025**, in *Urmila Dixit v Sunil Sharan Dixit*, the Supreme Court **quashed a gift deed** a mother had made to her son.
+- The son had signed a promise to **care for her for life**, with the gift linked to that promise.
+- He failed to do so. The Court held that tribunals under the Senior Citizens Act can order possession returned.
+- It ordered possession restored to the mother by 28 February 2025.
+
+Like Chinnaya, the transfer came with a condition, and the person who failed to honour it lost the benefit.
+*Sources: Bar & Bench, Verdictum, Moneylife, Jan 2025.*$c$,
+  $c$Is a contract valid if the price is far below market value?$c$,
+  $c$"Yes, if consent was free. Consideration must be real and lawful, but it need not be adequate, so courts don't judge whether you got a good bargain.
+But if the price is shockingly low, the court may ask whether consent was really free, for example whether there was undue influence or fraud. So inadequacy isn't fatal by itself, but it can be evidence of a consent problem."$c$,
+  $c$Applying the English rule that consideration must come *from the promisee*. Indian law (Sec 2(d)) allows it to come from **any other person**. That's exactly why Chinnaya won.$c$,
+  $c$[{"kind":"concept","question":"Does consideration under Indian law have to move from the promisee?","answer":"**No.** It may move from the promisee or any other person (Sec 2(d), Chinnaya v Ramayya)."},{"kind":"application","question":"A sells his ₹2 lakh car to B for ₹50,000, willingly. Is the contract void for inadequate consideration?","answer":"**No.** Consideration need not be adequate if consent is free."},{"kind":"case","question":"Your neighbour promised you ₹10,000 \"because you're like my son\", but signed nothing. Later he refuses. Can you sue?","answer":"**No.** There's no consideration, and the love-and-affection exception needs the promise to be in writing, registered, and between near relatives. An oral promise between neighbours doesn't qualify."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 34–38; Cases.pptx (Chinnaya v Ramayya)$c$, $c$draft$c$
+),
+(
+  $c$law-07$c$, $c$law$c$, 7, $c$Capacity: Minors and Unsound Minds$c$,
+  $c$Only a major of sound mind, not disqualified by law, can contract. An agreement with a minor is void from the start.$c$,
+  $c$**Who can contract (Sec 11):** a person who is **18 or over** (the Indian Majority Act), of **sound mind**, and **not disqualified** by law (for example an alien enemy or an insolvent).
+
+**Minors:**
+- An agreement with a minor is **void ab initio**. In **Mohori Bibee v Dharmodas Ghose (1903)**, a minor's mortgage was void, and he didn't have to repay the loan.
+- A minor **can't ratify** it on turning 18.
+- **No estoppel:** a minor who lied about his age can still plead minority.
+- A minor **can be a promisee or beneficiary**. For example, he can receive a gift or be admitted to partnership benefits.
+- **Necessaries** (food, clothes, education) supplied to a minor: the supplier can recover a reasonable price from the minor's **property**, not from the minor personally (Sec 68).
+
+**Unsound mind (Sec 12):** a person can contract when they're able to understand it and judge its effect on their interests. That covers someone usually sound when sound, and someone usually unsound in a lucid interval. Drunkenness can count as unsound mind at that moment.$c$,
+  $c$A 17-year-old buys a **₹25,000** gaming laptop on a pay-later app and stops paying. The app generally can't enforce the agreement against him, because it's void.
+If a shop had sold him **₹800** of school uniforms on credit, it could recover a reasonable price from his property, because those are necessaries.$c$,
+  $c$✅ Verified (Nov 2025)$c$,
+  $c$In **November 2025**, the government notified the **Digital Personal Data Protection Rules**. Platforms now need **verifiable consent from a parent or guardian** before processing personal data of anyone **under 18**. Tracking, behavioural monitoring and targeted ads aimed at children are barred.
+It's the same thinking as contract law: the law treats under-18s as not yet able to give binding consent, so an adult must step in.
+*Sources: Seclore, Anantam IAS, law-firm summaries, Nov 2025.*$c$,
+  $c$A 17-year-old lies about his age and takes a loan. Can the lender recover it?$c$,
+  $c$"Generally no. An agreement with a minor is void ab initio (Mohori Bibee). Estoppel doesn't apply, so his lie doesn't make him liable on the contract.
+The court may, in equity, order him to return any benefit he still has, such as the goods themselves. For a lender, the real lesson is to verify age properly. KYC isn't paperwork; it's what makes the contract enforceable."$c$,
+  $c$Saying a minor's contract is "voidable". It's **void**, not voidable. The minor doesn't need to cancel it, because it never had legal force.$c$,
+  $c$[{"kind":"concept","question":"What did Mohori Bibee v Dharmodas Ghose decide?","answer":"**An agreement with a minor is void ab initio.**"},{"kind":"application","question":"A minor gets ₹3,000 of textbooks on credit. Can the seller recover the money?","answer":"**Yes, from the minor's property, but not from him personally**, because textbooks are necessaries (Sec 68)."},{"kind":"case","question":"A start-up signs up 16- and 17-year-olds to a paid ₹499-a-month app subscription with no parental involvement. What's the legal risk?","answer":"**The subscriptions are void contracts with minors, and the start-up can't enforce payment.** Under the DPDP Rules, processing their data without verifiable parental consent is also non-compliant. The fix is age checks and parent-led sign-up."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 40–47$c$, $c$draft$c$
+),
+(
+  $c$law-08$c$, $c$law$c$, 8, $c$Free Consent: Coercion vs Undue Influence$c$,
+  $c$Consent isn't free if it's obtained by threat (coercion) or by abusing a position of trust (undue influence). Such contracts are voidable by the victim.$c$,
+  $c$Consent is **free (Sec 14)** when it isn't caused by:
+- coercion;
+- undue influence;
+- fraud;
+- misrepresentation;
+- mistake.
+
+| | Coercion (Sec 15) | Undue influence (Sec 16) |
+|---|---|---|
+| How | Threats: committing, or threatening to commit, an act forbidden by the Indian Penal Code (now the Bharatiya Nyaya Sanhita), or unlawfully detaining property | Misusing a position of trust or authority to dominate the other's will |
+| Pressure | Physical or threat-based | Mental or moral |
+| Example | "Sign or I'll harm you" | A doctor gets an ill patient to sell property cheaply |
+| Can be by | Anyone, even a stranger | Someone in a relationship of dominance |
+
+**Chikham Ammiraju v Chikham Seshamma (1917):** a husband threatened suicide to make his wife and son sign a release deed. The court held that a threat of an act forbidden by the penal code (attempted suicide was then punishable) was **coercion**.
+
+Both make the contract **voidable** at the victim's option (Sec 19, 19A).$c$,
+  $c$- A landlord says "pay ₹15,000 extra or I'll lock your stuff in the room." That's **coercion**, through unlawful detention of property.
+- A college warden pressures a dependent student into renting his relative's flat at **₹12,000**, twice the market rate. That's likely **undue influence**, because the warden has authority over the student.$c$,
+  $c$✅ Verified (Oct 2024)$c$,
+  $c$On **27 October 2024**, PM Modi used *Mann Ki Baat* to warn about **"digital arrest" scams**.
+- Fraudsters pose as police or CBI on video calls and threaten victims with arrest until they transfer money.
+- He stressed that **no law allows "digital arrest"**.
+- Official data put losses at about **₹120 crore** in January–April 2024 alone.
+
+Money handed over under such threats isn't given with free consent. It's the textbook picture of coercion, and a crime as well.
+*Sources: Business Today, Scroll, I4C data via MHA, Oct 2024.*$c$,
+  $c$What's the difference between coercion and undue influence?$c$,
+  $c$"Coercion is pressure by threat: committing or threatening an act forbidden by the penal code, or unlawfully holding someone's property, to make them agree. Anyone can coerce, even a stranger.
+Undue influence is subtler. Someone in a position of trust or authority, like a doctor, guardian or senior, uses it to dominate the other person's decision.
+Both make the contract voidable by the victim. The difference matters for proof: undue influence needs you to show the relationship of dominance."$c$,
+  $c$Calling a coerced contract **void**. It's **voidable**: valid until the victim chooses to cancel it, and the victim can even choose to keep it.$c$,
+  $c$[{"kind":"concept","question":"What is the legal effect of a contract obtained by coercion?","answer":"**It is voidable at the option of the party whose consent was coerced** (Sec 19)."},{"kind":"application","question":"A spiritual guru persuades a devoted follower to transfer her ₹40 lakh flat to his trust. Which vitiating factor is most likely?","answer":"**Undue influence**, a misuse of a position of trust and dominance."},{"kind":"case","question":"A transporter refuses to release a trader's goods unless the trader signs a new contract at a 30% higher rate. The trader signs. Can he get out of it?","answer":"**Yes. It's likely coercion**, through unlawful detention of goods, so the contract is voidable at the trader's option. He should act promptly and keep evidence of the threat."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slide 9 (Chikham Ammiraju v Chikham Seshamma); Indian Contract Act Sec 14–16, 19$c$, $c$draft$c$
+),
+(
+  $c$law-09$c$, $c$law$c$, 9, $c$Valid, Void, Voidable, Illegal and Unenforceable$c$,
+  $c$Contracts differ in legal strength: valid ones bind, voidable ones bind until cancelled, void ones never bind, and illegal ones also taint related deals.$c$,
+  $c$| Type | Meaning | Example |
+|---|---|---|
+| **Valid** | Meets every essential | A signed rental agreement |
+| **Void agreement** | No legal effect from the start | An agreement with a minor |
+| **Becomes void** | Valid at first, but later impossible or illegal | A singer falls seriously ill before the show |
+| **Voidable** | Valid until the wronged party cancels it | Consent obtained by coercion or fraud |
+| **Illegal** | Forbidden by law; related deals are also tainted | An agreement to smuggle goods |
+| **Unenforceable** | Valid but can't be enforced for a technical reason, until the defect is fixed | An unstamped agreement |
+
+**By performance:**
+- **Executed:** both sides have done their part.
+- **Executory:** something is still to be done, by one side or both.
+
+**By formation:**
+- **Express:** in words, written or spoken.
+- **Implied:** by conduct.
+- **Quasi-contract:** the law creates an obligation to prevent unjust enrichment, for example paying for goods delivered to you by mistake (Sec 68–72).
+- **Contingent (Sec 31):** depends on an uncertain event, like an insurance payout.$c$,
+  $c$- **Valid:** a ₹3,000 tuition deal with a junior.
+- **Void:** a ₹500 bet on a cricket match. Wagering agreements are void (Sec 30).
+- **Voidable:** a ₹20,000 bike sale where the seller hid that it had been in an accident.
+- **Unenforceable:** a ₹8 lakh flat agreement that should have been stamped, until it's stamped.
+- **Illegal:** paying ₹10,000 for a fake attendance certificate.$c$,
+  $c$✅ Verified (Aug 2025)$c$,
+  $c$In **August 2025**, Parliament passed the **Promotion and Regulation of Online Gaming Act, 2025**, banning **real-money online games** across India.
+Within days, **Dream11** paused all paid "pay to play" contests, which reportedly made up over 90% of its revenue, and moved to free-to-play. It told users their balances were safe to withdraw.
+Once the law forbids an activity, agreements to play it for money lose their lawful object. A once-valid business model becomes unlawful, which is why the platforms stopped at once.
+*Sources: Storyboard18, Exchange4media, Aug 2025.*$c$,
+  $c$What's the difference between a void and a voidable contract?$c$,
+  $c$"A void agreement has no legal effect at all; it's as if it never existed, like an agreement with a minor or a wager. A voidable contract is valid until the party whose consent was affected chooses to cancel it, as with coercion, fraud or undue influence.
+Practically, with a voidable contract the wronged party has a choice and should act quickly. With a void one, neither side can enforce anything."$c$,
+  $c$Treating "illegal" and "void" as the same. Every illegal agreement is void, but not every void agreement is illegal. A wager is void but not a crime in itself; smuggling is both void and illegal, and taints connected deals too.$c$,
+  $c$[{"kind":"concept","question":"What is a voidable contract?","answer":"**A contract that is valid until one party, usually the one whose consent wasn't free, chooses to cancel it.**"},{"kind":"application","question":"Two friends bet ₹1,000 on who will win the IPL final. What kind of agreement is it?","answer":"**Void.** It's a wagering agreement (Sec 30)."},{"kind":"case","question":"A caterer contracts to serve a wedding, but a government order bans gatherings that week. What happens to the contract?","answer":"**It becomes void** because of supervening impossibility or illegality (Sec 56, frustration). Any advance received for performance that can't now happen must be returned (Sec 65)."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 16–22; Indian Contract Act Sec 30, 31, 56, 65, 68–72$c$, $c$draft$c$
+),
+(
+  $c$law-10$c$, $c$law$c$, 10, $c$Puffery vs Misleading Claims (the Red Bull "Wings" Case)$c$,
+  $c$Vague boasting ("the world's best pizza") is puffery and isn't actionable. A specific, checkable claim about what a product does must be true.$c$,
+  $c$- **Puffery:** exaggerated, subjective praise that no reasonable buyer takes literally, such as "unbeatable taste" or "gives you wings".
+- **Factual claim:** a measurable promise, such as "improves concentration by 30%", "cures diabetes" or "2× more protein". It must be **substantiated**. If false, it can be:
+  - a **misleading advertisement** (in India: the Consumer Protection Act 2019 and CCPA guidelines);
+  - a **breach of an express warranty** (Card L18).
+
+**Careathers v Red Bull (US, 2014):** a buyer claimed "Red Bull gives you wings" implied better performance than a cheap cup of coffee. Red Bull denied wrongdoing but **settled for $13 million**, offering buyers $10 cash or $15 of product. Brands then added disclaimers that slogans are figurative.
+
+The test is what a **reasonable consumer** would understand from the ad.$c$,
+  $c$- A Kolkata coaching centre's ad says "**the city's best faculty**". That's puffery.
+- Another says "**100% selection guaranteed, or full ₹45,000 refund**". That's a factual promise. If a student isn't selected and the centre won't refund, it's both a misleading ad and a breach of its promise.$c$,
+  $c$✅ Verified (Apr–Aug 2024)$c$,
+  $c$In **2024**, the Supreme Court took up **Patanjali Ayurved's** ads that claimed to treat serious diseases. The company had assured the Court in November 2023 that it would stop such claims.
+- In **April 2024**, the Court refused Ramdev and Balkrishna's early apologies as lip service.
+- They then apologised in person.
+- In **August 2024**, the Court closed the contempt case with a warning.
+
+Health claims like "cures" aren't puffery. They're factual claims that need proof, and courts treat them seriously.
+*Sources: Exchange4media, Scroll, The News Minute, Apr–Aug 2024.*$c$,
+  $c$As a brand manager, how do you write bold ads without legal risk?$c$,
+  $c$"I separate puffery from claims.
+- Emotional, obviously subjective lines, like 'taste the happiness', are fine.
+- Anything measurable, like '2× faster', 'clinically proven' or 'cures', needs evidence on file before the ad runs, plus clear disclaimers.
+
+India's consumer law and the CCPA's misleading-ads guidelines make the brand, and sometimes endorsers, accountable. Red Bull paid $13 million over 'wings', and Patanjali ended up before the Supreme Court over health claims."$c$,
+  $c$Thinking "it's just marketing" protects any claim. Once a claim is specific and checkable, the law treats it as a statement of fact.$c$,
+  $c$[{"kind":"concept","question":"What is puffery?","answer":"**Vague, exaggerated praise that no reasonable consumer takes literally**, so it isn't treated as a factual promise."},{"kind":"application","question":"A shampoo ad says \"Reduces hair fall by 90% in 2 weeks.\" Puffery or factual claim?","answer":"**A factual claim.** It's specific and measurable, so it must be substantiated."},{"kind":"case","question":"Red Bull settled for $13 million without admitting wrongdoing. Why might a company settle when it believes its slogan is puffery?","answer":"**To avoid litigation costs, uncertainty and brand damage.** A class action could cost more than the settlement. Settling also let Red Bull add disclaimers and move on."}]$c$::jsonb,
+  $c$Indian Contract Act.ppt slides 10–15 (Careathers v Red Bull)$c$, $c$draft$c$
+),
+(
+  $c$law-11$c$, $c$law$c$, 11, $c$Breach of Contract: Anticipatory vs Actual$c$,
+  $c$A breach is breaking a contractual promise. It can happen before the due date (anticipatory) or on or during performance (actual).$c$,
+  $c$**Anticipatory breach (Sec 39)** happens before performance is due, by:
+- **express refusal:** "I won't deliver next month";
+- **conduct that makes performance impossible:** selling the promised item to someone else.
+
+The innocent party can choose to:
+1. **treat the contract as ended** and sue for damages straight away; or
+2. **keep it alive** and wait for the due date. The risk is that if it then becomes impossible for some other reason, the right to damages may be lost.
+
+**Actual breach** happens:
+- on the due date, when a party fails to perform; or
+- **during** performance, when a party stops halfway or performs badly.$c$,
+  $c$- On 1 March, Peter agrees to sell his guitar to John for **₹5,000** on 10 March. On 7 March he sells it to Oliver. That's anticipatory breach by **conduct**, and John can sue right away.
+- A tailor promises a sherwani for **₹12,000** by 15 December for a wedding on the 16th, and doesn't deliver on the 15th. That's **actual breach**.$c$,
+  $c$✅ Verified (Jan–Aug 2024)$c$,
+  $c$On **22 January 2024**, **Sony** called off its roughly **$10 billion merger with Zee**. It said Zee had failed to meet the **closing conditions**, and there was also a dispute over who would lead the merged company.
+- Each side claimed a **$90 million termination fee** from the other.
+- Sony went to arbitration in Singapore within two days; Zee went to the NCLT.
+- In **August 2024**, they settled and **withdrew all claims**.
+
+When a deal collapses before completion, the fight is about who failed to perform, and when.
+*Sources: LiveLaw, YourStory, Social Samosa, Jan–Aug 2024.*$c$,
+  $c$A supplier tells you in March that it won't deliver in June as contracted. What can you do?$c$,
+  $c$"That's anticipatory breach by express refusal. I have two options:
+- treat the contract as ended now, sue for damages, and immediately line up another supplier; or
+- keep it alive and wait.
+
+In business I'd usually do the first. I'd mitigate by sourcing elsewhere and claim the extra cost from the supplier. Waiting only increases the risk and the loss."$c$,
+  $c$Thinking you must wait for the due date before suing. With anticipatory breach, you can sue immediately.$c$,
+  $c$[{"kind":"concept","question":"What is anticipatory breach?","answer":"**A breach before the performance date**, by express refusal or by conduct that makes performance impossible."},{"kind":"application","question":"A seller agrees to sell you a specific painting on 30 June but sells it to someone else on 10 June. What kind of breach?","answer":"**Anticipatory breach by conduct.**"},{"kind":"case","question":"An event company was paid ₹2 lakh to run a fest. Halfway through day 1 it pulls its crew out. What breach is this, and what can the college claim?","answer":"**Actual breach during performance.** The college can end the contract and claim damages, such as the extra cost of a replacement vendor and losses arising naturally from the breach. It must return any benefit it received if it rescinds."}]$c$::jsonb,
+  $c$Breach_of_Contract_and_Remedies.pptx slides 2–7$c$, $c$draft$c$
+),
+(
+  $c$law-12$c$, $c$law$c$, 12, $c$Damages: The Main Remedy (Section 73–74)$c$,
+  $c$Damages are money for the loss a breach causes, but only for losses that arise naturally or that both sides could foresee when they contracted.$c$,
+  $c$**Sec 73:** the injured party gets compensation for loss that:
+- **arose naturally in the usual course of things** from the breach; or
+- both parties **knew, when contracting, was likely** to result from it.
+
+**Remote, indirect loss isn't covered.** This is the rule in *Hadley v Baxendale*.
+The injured party must also **mitigate**, that is, take reasonable steps to reduce the loss.
+
+**Liquidated vs unliquidated:**
+- **Liquidated:** the amount is fixed in the contract ("₹5,000 per day of delay"). Under **Sec 74**, Indian courts award **reasonable compensation up to that amount**. India doesn't strictly separate penalty clauses from genuine pre-estimates, as English law does.
+- **Unliquidated:** the court assesses the amount after the breach.
+
+**Other kinds:**
+- **Nominal damages:** a token amount where a right was breached but there was no real loss.
+- **Exemplary (punitive) damages:** rare in contract cases.
+- **Special damages:** for unusual losses, only if the other side knew of them when contracting.$c$,
+  $c$A caterer agrees to serve 200 guests for **₹80,000** at a wedding, then cancels a day before. The family hires another caterer at **₹1,05,000**.
+- **Damages:** the extra **₹25,000**. That's a natural, foreseeable loss.
+- The family can't claim the honeymoon they say they "had to postpone because of stress". That's too remote.$c$,
+  $c$✅ Verified (Sep 2024)$c$,
+  $c$In **September 2024**, **Disney Star (Star India)** sought **$940 million in damages** from **Zee** at the London Court of International Arbitration.
+- Star said Zee failed to pay the **first instalment of about $203.6 million** under their 2022 deal to sublicense ICC cricket TV rights.
+- Zee denied the claims. It argued the contract had become void because Star hadn't met certain conditions, and filed an $8 million counterclaim.
+
+The claim is the classic Sec 73 question: what loss flowed naturally from the alleged breach?
+*Sources: Bloomberg via BNN, SportBusiness, Exchange4media, Sep 2024.*$c$,
+  $c$Your vendor delivers late and you lose a big client. Can you claim the client's lifetime value?$c$,
+  $c$"Only if that loss was foreseeable when we contracted. Under Section 73 we recover losses arising naturally from the breach, or ones both sides knew were likely.
+If the vendor knew this delivery was for that specific client launch, we have a stronger claim. Otherwise lost future profits may be too remote.
+That's why important contracts should state the stakes, or have a liquidated-damages clause. Under Section 74 we'd then get reasonable compensation up to the agreed figure."$c$,
+  $c$Assuming a liquidated-damages clause gets you the full stated amount automatically. In India, the court awards **reasonable compensation not exceeding** that amount, and you may still need to show some loss or harm.$c$,
+  $c$[{"kind":"concept","question":"Under Section 73, which losses are recoverable?","answer":"**Losses that arise naturally from the breach, or that both parties knew were likely when they contracted.** Remote, indirect losses are not."},{"kind":"application","question":"A contract says \"₹2,000 for each day of delay\"; the builder is 10 days late. Will the buyer automatically get ₹20,000?","answer":"**Not automatically.** Under Sec 74 the court awards reasonable compensation up to ₹20,000."},{"kind":"case","question":"A seller fails to deliver 100 bags of rice at ₹2,000 a bag; the buyer buys elsewhere at ₹2,300. What damages?","answer":"**₹30,000**, the difference between the market price and the contract price: (2,300 − 2,000) × 100. The buyer mitigated by buying promptly."}]$c$::jsonb,
+  $c$Breach_of_Contract_and_Remedies.pptx slides 10–11; Indian Contract Act Sec 73–74$c$, $c$draft$c$
+),
+(
+  $c$law-13$c$, $c$law$c$, 13, $c$Other Remedies: Rescission, Specific Performance, Injunction, Quantum Meruit$c$,
+  $c$Besides damages, a court can cancel the contract, order it to be performed, stop a party from doing something, or pay for work already done.$c$,
+  $c$- **Rescission (Sec 39, 64, 65, 75):** the innocent party cancels the contract. They must **return any benefit** received (Sec 65), and can still claim compensation for loss (Sec 75).
+- **Specific performance (Specific Relief Act):** the court orders the party to actually perform. It's typical for **unique things like land** or rare goods, where money isn't enough. Since the **2018 amendment**, courts must grant it unless an exception in the Act applies, but they still refuse it for personal services.
+- **Injunction:** a court order.
+  - **Prohibitory:** stops a party from doing something. It's often used to enforce a **negative promise**, like "won't work for a rival during the contract".
+  - **Mandatory:** orders a party to do something to put right a breach, such as pulling down a wall built in breach of a covenant.
+- **Quantum meruit ("as much as earned"):** when one party is stopped from finishing by the other, they're paid a reasonable amount for the work already done.$c$,
+  $c$- **Specific performance:** a seller agreed to sell you a particular **₹40 lakh** flat in Salt Lake and backs out. Each flat is unique, so you can ask the court to order the sale.
+- **Quantum meruit:** a web designer is hired for **₹30,000**, finishes 60%, and the client cancels without reason. The designer can claim about **₹18,000** for the work done.
+- **Injunction:** your employment contract says you won't work for a competitor *while employed*. The employer can get a prohibitory injunction to stop you breaking that promise during the term.$c$,
+  $c$✅ Verified (Dec 2024)$c$,
+  $c$On **10 December 2024**, US courts blocked **Kroger's $24.6 billion takeover of Albertsons** with **injunctions**:
+- a federal judge issued a **preliminary injunction**;
+- a Washington state judge issued a **permanent** one.
+
+The next day Albertsons **walked away** and sued Kroger for breach. It claimed a **$600 million termination fee** plus billions in damages, saying Kroger hadn't tried hard enough to win approval. Kroger called the claims baseless.
+In one week: injunctions, termination and a damages claim, several remedies in play together.
+*Sources: AP via ABC News, Philadelphia Inquirer, Dec 2024.*$c$,
+  $c$When would you ask for specific performance instead of damages?$c$,
+  $c$"When money can't put me back where I'd be: unique assets like a particular plot of land, a rare machine or shares in a private company.
+For ordinary goods I'd take damages and buy elsewhere. After the 2018 Specific Relief amendment, specific performance in India is no longer just discretionary; courts must grant it unless an exception applies. But courts won't force personal services, like making a singer perform. There, an injunction enforcing a negative promise during the contract term is the better tool."$c$,
+  $c$Thinking a court will force an employee to keep working. Courts don't order specific performance of personal service contracts. At most they enforce a reasonable **negative** promise during the contract term. And under Sec 27, restraints **after** the job ends are generally void.$c$,
+  $c$[{"kind":"concept","question":"What does quantum meruit mean?","answer":"**\"As much as earned\"**: reasonable payment for work already done when the other party prevents completion."},{"kind":"application","question":"A seller refuses to hand over a rare 1965 vintage car you'd agreed to buy for ₹6 lakh. Which remedy fits best?","answer":"**Specific performance.** The car is unique, so money may not be an adequate remedy."},{"kind":"case","question":"A rescinds a contract after B's breach, but A has already received ₹50,000 of goods from B. What must A do?","answer":"**Restore the benefit**, by returning the goods or their value (Sec 65), while claiming compensation for loss caused by the breach (Sec 75)."}]$c$::jsonb,
+  $c$Breach_of_Contract_and_Remedies.pptx slides 8–15; Specific Relief Act, 1963 (as amended in 2018)$c$, $c$draft$c$
+),
+(
+  $c$law-14$c$, $c$law$c$, 14, $c$Agency: Agent, Principal and Kinds of Authority$c$,
+  $c$An agent acts for a principal with third parties. Whatever the agent does within their authority binds the principal as if the principal did it.$c$,
+  $c$- **Agent (Sec 182):** someone employed to act for another, or represent them in dealings with third parties. The person represented is the **principal**.
+- **No consideration is needed** to create an agency (Sec 185).
+- **The principal must be a major of sound mind** (Sec 183). Anyone, even a minor, can be an agent, but a minor agent isn't personally liable to the principal (Sec 184).
+
+**Kinds of authority:**
+- **Express (Sec 187):** given in words, such as a power of attorney or a board resolution.
+- **Implied (Sec 187):** inferred from conduct or the usual course of dealing.
+- **Extent (Sec 188):** authority to do a thing includes everything lawful and necessary to do it.
+- **Emergency (Sec 189):** an agent can act as a prudent person would to protect the principal from loss, such as selling perishable goods that would rot in transit.
+- **Ostensible or apparent (Sec 237):** if the principal's words or conduct made a third party believe the agent had authority, the principal is bound.
+
+**Common agents:** general agents, special agents, brokers (no possession of goods), factors (hold goods and sell in their own name), auctioneers, and del credere agents (they guarantee the buyer will pay, for extra commission).$c$,
+  $c$Mr Sen owns a hardware shop in Serampore but lives in Kolkata. His manager Bablu regularly orders **₹20,000** of paint a month from a supplier in Mr Sen's name, and Mr Sen always pays.
+Bablu has **implied authority**. If Bablu orders this month's stock and Mr Sen refuses to pay, the supplier can still recover from Mr Sen.$c$,
+  $c$✅ Verified (Aug 2024)$c$,
+  $c$From **17 August 2024**, under the **National Association of Realtors' $418 million settlement** in the US, home buyers' agents must sign a **written agreement** with the buyer before touring homes. Offers of commission between agents were also removed from listing systems.
+That turns an often-implied relationship into **express authority**, with the agent's role and pay written down for every buyer.
+*Sources: RISMedia, Bisnow, NAR, Mar–Aug 2024.*$c$,
+  $c$Can a company be bound by an employee who exceeded their authority?$c$,
+  $c$"Yes, through ostensible authority, Section 237. If the company's words or conduct led a third party to reasonably believe the employee had authority, the company is bound, even if internally the employee broke a limit.
+That's why firms need clear authority matrices, and need to tell counterparties who can sign what. Silence and past practice create implied authority too."$c$,
+  $c$Thinking an agency needs a formal contract and payment. It can arise from conduct, and needs **no consideration** (Sec 185). A friend helping you sell your bike for free is still your agent.$c$,
+  $c$[{"kind":"concept","question":"Is consideration needed to create an agency?","answer":"**No** (Sec 185)."},{"kind":"application","question":"A transporter carrying mangoes for a trader finds the truck stuck for days and sells the mangoes before they rot. Was he authorised?","answer":"**Yes, under emergency authority** (Sec 189): he acted as a prudent person would to protect the principal from loss."},{"kind":"case","question":"A company lets its sales head sign supply orders for two years, then claims his last ₹8 lakh order was unauthorised under an internal limit the supplier never knew about. Who wins?","answer":"**Probably the supplier.** Through conduct, the company gave the sales head ostensible authority (Sec 237). The internal limit doesn't bind a third party who didn't know of it."}]$c$::jsonb,
+  $c$Law-of-Agency-under-the-Indian-Contract-Act-1872.pdf pages 2–6, 18$c$, $c$draft$c$
+),
+(
+  $c$law-15$c$, $c$law$c$, 15, $c$Sub-Agents and Ratification$c$,
+  $c$An agent usually can't delegate the job to someone else. A principal can later approve an unauthorised act, which then counts as authorised from the start.$c$,
+  $c$**Delegation (Sec 190):** *delegatus non potest delegare*, meaning a delegate can't delegate. An agent must act personally unless **trade custom** or the **nature of the work** requires a sub-agent.
+- **Properly appointed sub-agent (Sec 192):** binds the principal. The sub-agent answers to the **agent**, except for fraud or wilful wrong.
+- **Improperly appointed sub-agent (Sec 193):** doesn't bind the principal. The agent bears full responsibility.
+- **Substituted agent (Sec 194–195):** someone the agent names under express authority becomes the principal's **own agent**. The original agent is only liable if they chose carelessly.
+
+**Ratification (Sec 196–200):** the principal approves an act done without authority, and it then **relates back** to the original date. Conditions:
+- it must have been done **on the principal's behalf**;
+- the principal must have **full knowledge** of the facts (Sec 198);
+- the principal must have had **capacity** both then and now;
+- the act must be **lawful**;
+- the principal ratifies the **whole** transaction, not just the good parts (Sec 199);
+- it can't **harm a third party's vested rights** (Sec 200).$c$,
+  $c$Your friend Arka, without asking, books a **₹2,400** Darjeeling toy-train ticket for you while you're unreachable. If you later say "great, thanks", or simply use the ticket, you've **ratified** it. It's as if you'd authorised it from the start, and you owe him ₹2,400.
+If you'd refused, he'd bear the cost himself.$c$,
+  $c$✅ Verified (Jun 2024–Dec 2025)$c$,
+  $c$In **January 2024**, a Delaware judge struck down Elon Musk's 2018 Tesla pay package, finding the board's process flawed.
+- In **June 2024**, Tesla shareholders voted again to **ratify** the package, by a large margin.
+- In **December 2024**, the judge said a shareholder vote alone couldn't ratify a deal involving a conflicted controller.
+- In **December 2025**, Delaware's Supreme Court **reversed** the cancellation, reinstated the package and awarded $1 in nominal damages.
+
+It's the classic ratification question: can a later approval cure an act that lacked proper authority at the start?
+*Sources: AP, Hollywood Reporter, Arab News, Jun 2024–Dec 2025.*$c$,
+  $c$What does it mean when a board 'ratifies' a decision?$c$,
+  $c$"It means approving, after the fact, an act someone took without proper authority. Under Sections 196–200, once ratified, the act is treated as authorised from the start.
+But ratification needs full disclosure of the facts, the whole transaction must be approved, and it can't harm third parties' existing rights. The Tesla case shows the limits: courts also look at *how* the approval was obtained, especially when there's a conflict of interest."$c$,
+  $c$Thinking a principal can ratify the profitable part and reject the rest. Ratifying **part** of a transaction ratifies **all** of it (Sec 199).$c$,
+  $c$[{"kind":"concept","question":"What does \"delegatus non potest delegare\" mean?","answer":"**A delegate cannot delegate.** An agent can't appoint a sub-agent unless trade custom or the nature of the agency allows it (Sec 190)."},{"kind":"application","question":"A buys goods for B without authority. B later sells those goods to C. Has B ratified A's purchase?","answer":"**Yes, by conduct** (implied ratification, Sec 197)."},{"kind":"case","question":"An agent, without authority, signs a ₹5 lakh deal for his principal that includes a bad penalty clause. The principal wants to keep the deal but drop the clause. Can he?","answer":"**No.** Ratifying part ratifies the whole transaction (Sec 199). He must accept the whole deal, penalty clause included, or reject all of it."}]$c$::jsonb,
+  $c$Law-of-Agency-under-the-Indian-Contract-Act-1872.pdf pages 7–10$c$, $c$draft$c$
+),
+(
+  $c$law-16$c$, $c$law$c$, 16, $c$Duties of Agent and Principal, and Ending an Agency$c$,
+  $c$An agent owes loyalty, skill and honest accounts. The principal owes payment and indemnity. An agency ends by revocation, completion, death, insanity or insolvency, unless the agent has an interest in it.$c$,
+  $c$**Agent's duties:**
+- Follow instructions, or the custom of the trade (Sec 211).
+- Use reasonable skill and diligence (Sec 212).
+- Render proper accounts (Sec 213).
+- Communicate with the principal when in difficulty (Sec 214).
+- **Make no secret profit:** if the agent deals on their own account without disclosing it, the principal can repudiate the deal and claim the benefit (Sec 215–216).
+- Pay over money received, after deducting dues (Sec 217–218).
+
+**Agent's rights:** remuneration on completing the work, but none for misconducted business (Sec 219–220), and a **lien** on the principal's goods until paid (Sec 221).
+
+**Principal's duties:**
+- Indemnify the agent for lawful acts (Sec 222) and good-faith acts (Sec 223), but **never for criminal acts** (Sec 224).
+- Compensate the agent for injury caused by the principal's own neglect (Sec 225).
+
+**Termination (Sec 201):** by revocation, renunciation, completion, the death or insanity of either party, or the principal's insolvency.
+- **Irrevocable agency (Sec 202):** if the agent has an **interest** in the subject matter, the principal can't revoke to that interest's prejudice.
+- Once authority has been **partly exercised**, revocation can't undo acts and obligations already arising from it (Sec 204). Revocation needs **reasonable notice** (Sec 206).
+- It isn't effective against third parties **until they know** of it (Sec 208).$c$,
+  $c$You ask a property broker to find you a flat to buy for up to **₹50 lakh**.
+He finds one at ₹45 lakh, secretly buys it himself, then offers it to you at ₹49 lakh. That's a **secret profit**.
+You can make him sell it to you at the **₹45 lakh** he paid (Sec 216), and he loses his commission for misconduct (Sec 220).$c$,
+  $c$✅ Verified (Jul 2026)$c$,
+  $c$On **24 July 2026**, SEBI passed a **final order** in the **Axis Mutual Fund front-running case**.
+- It barred former chief dealer **Viresh Joshi** from the markets for **seven years** and fined him **₹3 crore**.
+- Twenty others got bars of three to seven years.
+- The roughly **₹30.56 crore** impounded in 2023 is to be treated as disgorgement, plus interest.
+
+Front-running means trading ahead of the fund's own orders. It's the purest breach of an agent's duty: using a position of trust to make a secret profit.
+*Sources: Business Today, Moneylife, Cafemutual, Jul 2026.*$c$,
+  $c$What's the most important duty an agent owes the principal?$c$,
+  $c$"Loyalty: no conflict of interest and no secret profit. Under Sections 215–216, if an agent deals on their own account without full disclosure, the principal can cancel the deal and claim the agent's profit.
+Every fund manager, broker or procurement head is in this position. That's why firms have trading restrictions, disclosure rules and audits. Skill and following instructions matter too, but a breach of loyalty is what destroys trust."$c$,
+  $c$Assuming a principal can always fire an agent mid-way at no cost. If the agency is coupled with the agent's interest (Sec 202), revocation is barred. Acts already done stay binding on the principal (Sec 204), and sudden revocation without notice can mean paying compensation (Sec 205–206).$c$,
+  $c$[{"kind":"concept","question":"Must a principal indemnify an agent for a criminal act done on the principal's instructions?","answer":"**No** (Sec 224)."},{"kind":"application","question":"A gives B authority to sell A's land and pay off a debt A owes B from the proceeds. Can A revoke this authority?","answer":"**No.** It's an agency coupled with interest (Sec 202), so A can't revoke it to B's prejudice."},{"kind":"case","question":"A principal revokes his agent's authority but doesn't tell a supplier the agent usually deals with. The agent then places a ₹1 lakh order with that supplier. Is the principal bound?","answer":"**Yes.** Termination doesn't take effect against third parties until they know of it (Sec 208). The principal should have informed regular counterparties."}]$c$::jsonb,
+  $c$Law-of-Agency-under-the-Indian-Contract-Act-1872.pdf pages 11–19$c$, $c$draft$c$
+),
+(
+  $c$law-17$c$, $c$law$c$, 17, $c$Contract of Sale: Sale vs Agreement to Sell$c$,
+  $c$In a sale, ownership passes now. In an agreement to sell, it passes later or on a condition, and risk usually follows ownership.$c$,
+  $c$**Sec 4:** a contract of sale is one where the seller transfers, or agrees to transfer, ownership ("property") in **goods** to the buyer **for a price** in money.
+
+**Goods (Sec 2(7))** means movable property, including shares, growing crops and things attached to land that are to be cut off before the sale. It **excludes** money and actionable claims, such as a debt owed to you.
+
+**Kinds of goods:**
+- **Existing goods:**
+  - **specific:** identified and agreed at the time, like "this red scooter";
+  - **unascertained:** described but not yet picked out, like "50 kg out of the 500 kg in the godown".
+- **Future goods:** to be made or acquired after the contract.
+- **Contingent goods:** future goods whose acquisition depends on an uncertain event.
+
+| | Sale | Agreement to sell |
+|---|---|---|
+| Nature | Executed | Executory |
+| Ownership | Passes now | Passes later or on a condition |
+| Risk (Sec 26) | On the buyer, even if the goods are still with the seller | On the seller |
+| If the buyer won't pay | Seller can sue **for the price** | Seller can only sue **for damages** |
+| Future goods? | Can't be "sold" now | Only an agreement to sell is possible |$c$,
+  $c$- You pay **₹1,200** for a specific kurta at a New Market stall and ask the seller to keep it till evening. That's a **sale**. If the stall catches fire at 4 pm, the loss is **yours**, because ownership and risk have passed.
+- You book a custom-made kurta for **₹1,800**, to be stitched by Friday. That's an **agreement to sell future goods**. If the tailor's shop burns down on Wednesday, the loss is the tailor's.$c$,
+  $c$✅ Verified (Jul 2025)$c$,
+  $c$On **15 July 2025**, **Tesla** opened its first Indian showroom in Mumbai's BKC.
+- It listed the **Model Y** from **₹59.89 lakh**.
+- It took bookings with a token payment of about **₹22,000**, plus a further payment to confirm.
+- Deliveries were to start later.
+
+A booking like this is an **agreement to sell**. Ownership, and with it risk, passes only when the car is made, appropriated to the buyer and delivered, not on the day the token is paid.
+*Sources: CarDekho, Free Press Journal, e-vehicleinfo, Jul 2025.*$c$,
+  $c$Why does it matter when ownership passes?$c$,
+  $c$"Three things follow ownership:
+1. **Risk:** under Section 26, risk usually passes with ownership, so whoever owns the goods bears the loss if they're destroyed.
+2. **Remedies:** a seller can sue for the full price only after ownership has passed. Before that, only for damages.
+3. **Insolvency:** if the buyer or seller goes bust, ownership decides whose creditors get the goods.
+
+In supply contracts I'd always write down exactly when ownership and risk pass, and insure accordingly."$c$,
+  $c$Assuming the person holding the goods bears the risk. Risk usually follows **ownership**, not **possession**. A buyer who owns goods kept in the seller's shop bears the loss if they're destroyed.$c$,
+  $c$[{"kind":"concept","question":"Under Sec 2(7), are actionable claims (like a debt owed to you) \"goods\"?","answer":"**No.** Goods exclude money and actionable claims."},{"kind":"application","question":"A farmer agrees in March to sell 10 quintals of the wheat he will harvest in May. What kind of contract is this?","answer":"**An agreement to sell future goods.**"},{"kind":"case","question":"A buyer pays ₹50,000 for a specific sofa and leaves it at the shop for delivery next week. A flood destroys it. Who bears the loss?","answer":"**The buyer.** It's a sale of specific goods in a deliverable state, so ownership passed when the contract was made (Sec 20), and risk follows ownership (Sec 26). That's unless the shop was negligent or the contract said otherwise."}]$c$::jsonb,
+  $c$SOGA.pdf pages 2–10, 29–32$c$, $c$draft$c$
+),
+(
+  $c$law-18$c$, $c$law$c$, 18, $c$Conditions vs Warranties$c$,
+  $c$A condition goes to the heart of the deal: if broken, you can reject the goods. A warranty is a side promise: if broken, you only get damages.$c$,
+  $c$- **Condition (Sec 12(2)):** essential to the main purpose. Breach lets the buyer **reject the goods and end the contract**, and claim damages.
+- **Warranty (Sec 12(3)):** collateral to the main purpose. Breach gives **only damages**.
+- A buyer can choose to treat a breach of condition **as a breach of warranty** (Sec 13). If the buyer has **accepted** the goods, they usually can only claim damages.
+
+**Implied conditions** (they apply even if no one says them):
+- **Title (Sec 14):** the seller has the right to sell. *Rowland v Divall*: a buyer of a stolen car got his money back.
+- **Description (Sec 15):** goods must match the description. *Varley v Whipp.*
+- **Fitness for purpose (Sec 16(1)):** if you relied on the seller's skill for a stated purpose. *Grant v Australian Knitting Mills.*
+- **Merchantable quality (Sec 16(2)):** fit to be sold under that description.
+- **Sample (Sec 17):** the bulk must match the sample.
+- **Wholesomeness** for food. *Frost v Aylesbury Dairy*: milk carrying typhoid germs.
+
+**Implied warranties:** quiet possession, freedom from charges, and disclosure of dangerous goods.$c$,
+  $c$You order an **iPhone 15** for ₹70,000 online and receive an **iPhone 13**. That's a breach of the **condition** as to description, so you can reject it and get a full refund.
+If the right phone arrives but the free ₹1,000 earphones promised with it are missing, that's more like a **warranty**. You'd claim the earphones' value, not return the phone.$c$,
+  $c$✅ Verified (Sep 2025)$c$,
+  $c$On **18 September 2025**, the **Delhi State Consumer Commission** ordered **Mercedes-Benz India** and its dealer to **refund over ₹1.78 crore** for an **EQS 580** electric car, plus ₹5 lakh for mental agony.
+- The battery pack had to be replaced about **five months** after purchase.
+- Other defects followed, and the car sat in the workshop unrepaired.
+- The Commission held them liable for a **manufacturing defect**.
+
+A brand-new luxury car that can't be fixed fails the most basic condition, that goods are of **merchantable quality**. So the buyer got the remedy for a breach of condition: rejection and a refund, not just repairs.
+*Sources: PTI via The Week, LiveLaw, IndiaLaw, Sep 2025.*$c$,
+  $c$What's the difference between a condition and a warranty?$c$,
+  $c$"A condition is essential to the contract's main purpose. Breach lets the buyer reject the goods and end the contract.
+A warranty is collateral. Breach only gives damages.
+Whether a term is a condition depends on the contract as a whole, not on the label. For a ₹70,000 phone, getting the right model is a condition; a missing promotional freebie is a warranty. And once a buyer has accepted the goods, a breach of condition usually drops to a damages claim."$c$,
+  $c$Thinking the word used in the contract decides it. A term called a "warranty" can still be a **condition** if it goes to the root of the deal (Sec 12(4)).$c$,
+  $c$[{"kind":"concept","question":"What remedy does a breach of warranty give?","answer":"**Only damages.** The buyer can't reject the goods."},{"kind":"application","question":"You buy \"basmati rice\" and get ordinary rice in a basmati-labelled bag. Which implied condition is broken?","answer":"**Correspondence with description** (Sec 15)."},{"kind":"case","question":"A buyer discovers that the second-hand car he bought for ₹4 lakh was stolen, and the police return it to the owner. What can he claim from the seller?","answer":"**The full price back.** That's a breach of the implied condition as to title (Sec 14), as in Rowland v Divall. He's entitled to a refund even though he used the car for a while."}]$c$::jsonb,
+  $c$SOGA.pdf pages 13–25$c$, $c$draft$c$
+),
+(
+  $c$law-19$c$, $c$law$c$, 19, $c$Caveat Emptor: Let the Buyer Beware$c$,
+  $c$The buyer must check that goods suit their purpose. But the law makes big exceptions when the buyer relies on the seller's skill, buys by description, or the goods aren't of merchantable quality.$c$,
+  $c$**Sec 16:** as a general rule there's **no implied condition** that goods are fit for any particular purpose. The buyer should examine the goods and decide.
+
+**Exceptions** (where the seller *is* responsible):
+1. **Fitness for purpose:** the buyer told the seller the purpose, relied on the seller's skill, and the seller deals in such goods.
+2. **Merchantable quality:** goods bought by description from a dealer must be of saleable quality, unless the buyer examined them and the defect should have been obvious.
+3. **Usage of trade:** the custom of the trade implies a quality.
+4. **Fraud or concealment:** the seller hid a defect.
+5. **Sale by sample, or by description and sample**, and wholesomeness for food.
+
+Today, consumer protection law adds more protection on top of the Sale of Goods Act.$c$,
+  $c$- At a Sunday second-hand market you buy a **₹600** table fan after looking at it. It turns out noisy. That's **caveat emptor**: you inspected it and the defect was discoverable.
+- At an electronics shop you say "I need a fan that runs quietly in a baby's room" and buy the **₹2,800** fan the owner recommends. It's very noisy. That's the **fitness-for-purpose exception**, because you relied on his skill, so the shop is liable.$c$,
+  $c$✅ Verified (Apr–May 2024)$c$,
+  $c$On **5 April 2024**, Hong Kong's food-safety regulator found **ethylene oxide**, a pesticide, above permitted limits in three **MDH** spice mixes and **Everest Fish Curry Masala**. Singapore ordered a recall of the Everest product. India's FSSAI then tested samples nationwide. In **May 2024** it reported **no ethylene oxide** in the 28 results it had received.
+A shopper can't test spice powder at home, so caveat emptor gives way: food must be **merchantable and wholesome**, and regulators enforce it.
+*Sources: The Week, The South First, BusinessWorld, Apr–May 2024.*$c$,
+  $c$Is 'let the buyer beware' still relevant today?$c$,
+  $c$"The rule still exists in Section 16. Buyers should inspect what they can, especially in second-hand deals. But its exceptions now cover most everyday buying:
+- if I rely on the seller's expertise for a stated purpose;
+- if I buy by description from a dealer;
+- if the item is food that must be wholesome.
+
+Then the seller is responsible. Add the Consumer Protection Act, and in practice the burden has moved a long way toward 'let the seller beware'."$c$,
+  $c$Saying caveat emptor means the buyer is never protected. It only applies where the buyer had a fair chance to examine the goods and didn't rely on the seller. The exceptions are the heart of the topic.$c$,
+  $c$[{"kind":"concept","question":"What does caveat emptor mean?","answer":"**\"Let the buyer beware\"**: the buyer must satisfy themselves that the goods suit their purpose (Sec 16)."},{"kind":"application","question":"A buyer tells a paint dealer \"I need paint for an outdoor wall in heavy rain\", buys what the dealer suggests, and it peels in a month. Does caveat emptor protect the dealer?","answer":"**No.** It's the fitness-for-purpose exception: the buyer disclosed the purpose and relied on the dealer's skill."},{"kind":"case","question":"A buyer inspects a used car, misses an obvious dent, buys it and then complains. Who wins?","answer":"**Most likely the seller.** The buyer examined the car, and the defect was one the examination should have revealed. Caveat emptor applies, unless the seller actively hid the defect."}]$c$::jsonb,
+  $c$SOGA.pdf pages 26–28$c$, $c$draft$c$
+),
+(
+  $c$law-20$c$, $c$law$c$, 20, $c$Rights of an Unpaid Seller$c$,
+  $c$A seller who hasn't been paid in full can hold the goods (lien), stop them in transit if the buyer is insolvent, resell in some cases, and sue the buyer.$c$,
+  $c$**Unpaid seller (Sec 45):** the whole price hasn't been paid or tendered, or a cheque or bill given as payment has bounced.
+
+**Rights against the goods** (even after ownership has passed):
+- **Lien (Sec 47):** keep possession until paid. This applies when the goods were sold without credit, when the credit period has expired, or when the buyer becomes insolvent. It's lost once the goods are delivered to the buyer.
+- **Stoppage in transit (Sec 50):** if the **buyer becomes insolvent**, the seller can stop the goods while they're **still with a carrier**, before they reach the buyer.
+- **Resale (Sec 54):** allowed if the goods are **perishable**, or the seller gives **notice** and the buyer doesn't pay within a reasonable time, or the contract reserves the right. The seller can recover any loss from the buyer.
+
+**Rights against the buyer personally:**
+- **Suit for the price** (Sec 55), once ownership has passed or payment is due on a fixed date.
+- **Damages for non-acceptance** (Sec 56). The usual measure is the contract price minus the market price.
+- **Damages for repudiation** before the due date (Sec 60).
+- **Interest** (Sec 61).$c$,
+  $c$A Burrabazar cloth wholesaler sells **₹80,000** of fabric to a Durgapur shop on 30 days' credit and books it with a transporter.
+On day 10, he learns the shop owner has gone insolvent while the truck is still on NH-19. He can tell the transporter to **stop** the goods (stoppage in transit).
+If the fabric is still in his own godown, he can simply **keep** it (lien), give notice, and **resell** it if he isn't paid.$c$,
+  $c$✅ Verified (Jun 2025–Apr 2026)$c$,
+  $c$In **June 2025**, during the Israel–Iran conflict, Indian **basmati rice exporters** said shipments to Iran, their second-largest market, had **nearly stopped**. About **1 lakh tonnes** were stuck at ports, and industry estimates put **₹1,500–2,000 crore** of payments as held up.
+By **April 2026**, exporters had decided to **hold back consignments already at ports** and stop fresh dispatches.
+Not letting goods go to a buyer who may not pay is exactly the instinct behind an unpaid seller's lien and right of stoppage.
+*Sources: Outlook Business, Tribune, Daily Star, Jun 2025–Apr 2026.*$c$,
+  $c$Your buyer has gone bankrupt but your goods are still on a truck. What can you do?$c$,
+  $c$"As an unpaid seller, I can exercise stoppage in transit under Section 50. The buyer is insolvent and the goods are still with the carrier, so I instruct the transporter to stop and redeliver them to me.
+Once I have them back, I hold them under lien. Then I give the buyer notice, and if I'm not paid within a reasonable time, I resell and claim any shortfall.
+I'd act fast: once the buyer takes delivery, those rights are gone."$c$,
+  $c$Mixing up lien and stoppage in transit. **Lien** is used while the goods are still in the **seller's** possession. **Stoppage in transit** applies only when the goods are with a **carrier** *and* the buyer is **insolvent**.$c$,
+  $c$[{"kind":"concept","question":"When can an unpaid seller exercise stoppage in transit?","answer":"**When the buyer has become insolvent and the goods are still in transit with a carrier** (Sec 50)."},{"kind":"application","question":"A seller still holds goods sold on 15 days' credit; the credit period has expired and the buyer hasn't paid. Which right can the seller use?","answer":"**Lien.** The seller can keep the goods until paid (Sec 47)."},{"kind":"case","question":"A buyer refuses to take 100 cartons of mangoes he agreed to buy at ₹500 each. The mangoes will spoil in days. What can the seller do?","answer":"**Resell them, because they're perishable** (Sec 54), and claim any shortfall from the buyer. If they fetch ₹400 each, he claims ₹10,000: (500 − 400) × 100."}]$c$::jsonb,
+  $c$SOGA.pdf pages 41–47$c$, $c$draft$c$
 )
 on conflict (id) do update set
   subject_id = excluded.subject_id, num = excluded.num, title = excluded.title,

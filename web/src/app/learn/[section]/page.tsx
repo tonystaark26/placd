@@ -11,6 +11,7 @@ const SUBJECT_BLURBS: Record<string, string> = {
   acct: "Cost control, the accounting process and reading financial statements",
   fin: "Money, markets and corporate finance",
   ob: "Personality, perception, stress, groups and teams",
+  law: "Contracts, breach and remedies, agency, sale of goods",
 };
 
 export function generateStaticParams() {
