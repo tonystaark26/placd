@@ -1,5 +1,5 @@
 -- =====================================================================
--- ChaiCase concept cards: 86 cards
+-- ChaiCase concept cards: 101 cards
 -- Made automatically by scripts/cards-to-sql.mjs from the files in content/.
 -- Don't edit this file by hand: edit the card files, then run the script again.
 --
@@ -11,7 +11,8 @@
 insert into subjects (id, name, sort) values
   ('econ', 'Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
   ('acct', 'Accounting', 4), ('ob', 'Organisational Behaviour', 5),
-  ('law', 'Business Law', 6)
+  ('law', 'Business Law', 6),
+  ('ethics', 'Business Ethics', 7)
 on conflict (id) do nothing;
 
 -- Two parts of each card that the first version of the table didn't have room for
@@ -2931,6 +2932,493 @@ I'd act fast: once the buyer takes delivery, those rights are gone."$c$,
   $c$Mixing up lien and stoppage in transit. **Lien** is used while the goods are still in the **seller's** possession. **Stoppage in transit** applies only when the goods are with a **carrier** *and* the buyer is **insolvent**.$c$,
   $c$[{"kind":"concept","question":"When can an unpaid seller exercise stoppage in transit?","answer":"**When the buyer has become insolvent and the goods are still in transit with a carrier** (Sec 50)."},{"kind":"application","question":"A seller still holds goods sold on 15 days' credit; the credit period has expired and the buyer hasn't paid. Which right can the seller use?","answer":"**Lien.** The seller can keep the goods until paid (Sec 47)."},{"kind":"case","question":"A buyer refuses to take 100 cartons of mangoes he agreed to buy at ₹500 each. The mangoes will spoil in days. What can the seller do?","answer":"**Resell them, because they're perishable** (Sec 54), and claim any shortfall from the buyer. If they fetch ₹400 each, he claims ₹10,000: (500 − 400) × 100."}]$c$::jsonb,
   $c$SOGA.pdf pages 41–47$c$, $c$draft$c$
+),
+(
+  $c$ethics-01$c$, $c$ethics$c$, 1, $c$What Business Ethics Is$c$,
+  $c$Business ethics applies ideas of right and wrong to business decisions: how a firm treats customers, staff, investors and society.$c$,
+  $c$**Ethics** is our sense of right and wrong behaviour, our moral values.
+**Business ethics** applies those values to business situations: pricing, selling, hiring, reporting, sourcing and the environment.
+
+In the slides, Andrew Crane calls it the study of business situations where right and wrong are at stake. Kirk Hanson calls it the study of standards of business behaviour that promote human welfare.
+
+**Its key features:**
+- It works as a **code of conduct**, built on moral values like honesty, fairness and respect.
+- It applies at **every level**, from the CEO to the newest trainee.
+- It protects **all stakeholders**, not just owners.
+- It builds **trust**, and guides decisions in grey areas.
+- It's partly **voluntary** and goes **beyond the law** (Card E2).
+- It takes a **long-term** view: no short-term gains through unfair means.$c$,
+  $c$A Kolkata sweet shop sells **₹40** rosogollas.
+- **Ethical choices:** using fresh chhena, honest weights, paying the karigar fairly, not reusing yesterday's syrup.
+- **Unethical shortcuts:** using cheaper stale chhena "because no one will know" saves maybe **₹3** a piece.
+
+Customers who find out stop coming, and the shortcut costs far more than it saves.$c$,
+  $c$✅ Verified (Mar 2024)$c$,
+  $c$On **28 March 2024**, a US judge sentenced **Sam Bankman-Fried**, founder of the crypto exchange **FTX**, to **25 years** in prison for fraud and ordered him to forfeit over **$11 billion**.
+Customers lost about **$8 billion** when FTX collapsed in 2022, after their deposits had been secretly used elsewhere.
+A business that looked brilliant failed on the most basic ethical duty: being honest with the people who trusted it with their money.
+*Sources: AP via ADN, Investment Executive, Mar 2024.*$c$,
+  $c$What does business ethics mean to you?$c$,
+  $c$"It's applying right and wrong to business choices, beyond just what's legal. To me it comes down to three questions:
+- Am I being honest with everyone affected?
+- Am I being fair to customers, colleagues and investors?
+- Could I defend this decision publicly?
+
+FTX shows the opposite: a company that grew fast but broke customers' trust, and collapsed with them. Ethics isn't a cost centre; it's what makes trust, and so the business, last."$c$,
+  $c$Treating business ethics as just "following the law" or "doing charity". It's about **everyday decisions**, like pricing, selling, reporting and treating staff, not just big donations.$c$,
+  $c$[{"kind":"concept","question":"How is business ethics different from ethics in general?","answer":"**It is the application of general ethical principles to business situations and decisions.**"},{"kind":"application","question":"A shop owner uses honest weights even though customers can't check. Which feature of business ethics does this show?","answer":"**Honesty and integrity, as a voluntary code of conduct**: doing right even when no one is watching."},{"kind":"case","question":"A startup inflates its user numbers to raise funds faster, saying \"everyone does it\". Why is this an ethical problem, not just a strategy choice?","answer":"**It deceives investors who rely on honest information.** It trades long-term trust for short-term gain. When discovered, it can destroy the company, as the FTX and Satyam cases show."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slides 15–26$c$, $c$draft$c$
+),
+(
+  $c$ethics-02$c$, $c$ethics$c$, 2, $c$Ethics vs Law$c$,
+  $c$Law sets the minimum that society enforces. Ethics asks what's right, even where the law is silent or allows something unfair.$c$,
+  $c$| | Law | Ethics |
+|---|---|---|
+| Source | Parliament, courts, regulators | Moral values, conscience, society |
+| Nature | Compulsory, with penalties | Largely voluntary |
+| Scope | Written and specific | Wider, covers grey areas |
+| Question | "Is it allowed?" | "Is it right?" |
+
+They overlap but aren't the same, which gives four combinations:
+- **Legal and ethical:** paying fair wages on time.
+- **Legal but unethical:** exploiting a legal loophole that harms customers.
+- **Illegal but arguably ethical:** a whistleblower leaking confidential proof of fraud.
+- **Illegal and unethical:** bribery, accounting fraud.
+
+Good companies aim for **legal *and* ethical**, and treat the law as the floor, not the ceiling.$c$,
+  $c$A PG owner can legally charge any rent the tenant agrees to.
+- Raising the rent from **₹6,000 to ₹9,000** mid-term for a student who can't move during exams may be **legal** if the contract allows it.
+- But using the student's exam-time helplessness that way is **unethical**.$c$,
+  $c$✅ Verified (Apr 2024)$c$,
+  $c$In **April 2024**, a report by the Swiss NGO **Public Eye** and IBFAN said **Nestlé** added sugar to **Cerelac** baby cereal in India and other lower-income markets: about **3 g per serving** in India, while similar products in the UK and Germany had **none**.
+- Nestlé India said it had cut added sugar by up to 30% over five years, and that the sugar was declared on the pack.
+- The FSSAI and the Consumer Affairs Ministry began examining it.
+
+Even if a product meets local rules, a **double standard** across countries raises an ethical question that the law alone doesn't answer.
+*Sources: Deccan Herald, DTNext (Reuters), Onmanorama, Apr 2024.*$c$,
+  $c$If something is legal, is it automatically ethical?$c$,
+  $c$"No. Law is the minimum society enforces; ethics asks what's right. Something can be legal but unethical, like selling a less healthy version of a product in one country just because local rules allow it.
+I see law as the floor. In a business decision, I'd first check it's legal, then ask whether it's fair to everyone affected and whether I'd be comfortable if it were public. If it fails those, legality alone isn't enough."$c$,
+  $c$Saying ethics and law are opposites. They mostly **overlap**: many laws started as ethical expectations. The interesting cases are the gaps between them.$c$,
+  $c$[{"kind":"concept","question":"What is the key difference between law and ethics?","answer":"**Law is compulsory and enforced with penalties. Ethics is largely voluntary and covers what's right beyond legal rules.**"},{"kind":"application","question":"A company legally avoids tax through complex structures in a way that harms its home country's revenue. Which quadrant is this?","answer":"**Legal but (arguably) unethical.**"},{"kind":"case","question":"A firm's product meets Indian food rules but is less healthy than its European version. The marketing head says \"we're compliant, case closed.\" What would you add?","answer":"**Compliance isn't the same as ethics.** I'd ask whether the double standard is fair to Indian consumers, how it would look if reported, and whether we can apply the higher standard everywhere, since trust is at stake."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slide 26 (ethics vs business law)$c$, $c$draft$c$
+),
+(
+  $c$ethics-03$c$, $c$ethics$c$, 3, $c$Why Ethics Pays$c$,
+  $c$Ethical firms earn trust, talent and goodwill. Unethical shortcuts bring short-term gains and long-term collapse.$c$,
+  $c$The slides list why business needs ethics:
+- **Survival and growth:** unethical gains don't last.
+- **Consumer rights and the welfare of society.**
+- **Mutual benefit:** goodwill, reputation and repeat customers.
+- **Fewer penalties:** fewer fines and less regulatory trouble.
+- **Better employees:** people want to work for honest firms, and productivity rises.
+- **Protection** against corrupt employees and competitors.
+- **A stronger economy:** higher productivity and national income.
+
+The cost of getting it wrong is visible in famous collapses: **Enron** (hidden debt), **Satyam** (over ₹7,000 crore of fake profits), **Volkswagen** (emissions cheating), **Kingfisher** and **Nirav Modi–PNB** (bank fraud of over ₹13,000 crore).$c$,
+  $c$Two mobile-repair shops in Chandni Chowk:
+- **Shop A** charges an honest **₹1,200** for a screen and tells you when a cheap fix will do.
+- **Shop B** charges **₹2,000**, swaps in a used part and pockets the gain.
+
+Shop B makes **₹800** more on the first job. But Shop A gets your repeat visits, your friends' business and good reviews, so over a year it earns far more.$c$,
+  $c$✅ Verified (Jan–Mar 2024)$c$,
+  $c$On **31 January 2024**, the **RBI** barred **Paytm Payments Bank** from taking new deposits, wallet top-ups or FASTag credits, at first from 29 February and later from **15 March 2024**. It cited audit reports showing **persistent non-compliance** and material supervisory concerns.
+A business used by millions lost its core banking functions almost overnight. It shows how ignoring compliance and governance can cost far more than following the rules ever would.
+*Sources: RBI press release; Outlook Business, Business Standard, Jan–Mar 2024.*$c$,
+  $c$Doesn't being ethical cost a company money?$c$,
+  $c$"Sometimes in the short run. But unethical shortcuts usually cost far more later, in fines, lost licences, lost customers and lost talent.
+Paytm Payments Bank lost its core functions after repeated compliance failures. Satyam and Nirav Modi destroyed thousands of crores of value.
+Ethics works like insurance and a brand asset together: trust brings repeat customers, better staff and cheaper capital."$c$,
+  $c$Arguing ethics **only** because it pays. If honesty is just a profit tactic, it disappears when cheating seems profitable. The strongest answer gives both the business case and the moral case.$c$,
+  $c$[{"kind":"concept","question":"Name two business reasons for being ethical.","answer":"**Any two of:** long-term survival, customer trust and goodwill, fewer legal penalties, attracting and retaining talent, protection against fraud."},{"kind":"application","question":"An employee says \"a small lie to close this ₹5 lakh deal won't hurt anyone.\" What long-term costs might it bring?","answer":"**Lost client trust, cancelled contracts, legal claims and reputational damage**, far more than ₹5 lakh."},{"kind":"case","question":"Satyam's founder admitted to faking over ₹7,000 crore of profits. Using \"why ethics pays\", explain what the company lost.","answer":"**Everything trust supported.** Investor confidence collapsed, clients and staff were shaken, leaders were arrested, and the company had to be rescued by new owners. The fake profits created no real value and destroyed real value."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slides 1–6, 19, 27–29$c$, $c$draft$c$
+),
+(
+  $c$ethics-04$c$, $c$ethics$c$, 4, $c$Ethical Dilemmas and How to Decide$c$,
+  $c$An ethical dilemma is a choice where values clash, often doing right versus protecting yourself. Simple tests help you decide.$c$,
+  $c$A **dilemma** is not a choice between right and obviously wrong. Real options conflict: honesty vs loyalty, safety vs speed, your job vs the public.
+
+Situations from the slides:
+- pushing an inferior product to keep your job;
+- approving a slightly contaminated food batch;
+- staying quiet about illegal dumping;
+- promising features the software doesn't have;
+- hiring the CEO's under-qualified nephew.
+
+**Tests to decide:**
+1. **Legality test:** is it legal?
+2. **Fairness test:** is it fair to everyone affected?
+3. **Newspaper test:** would I be comfortable if it were front-page news?
+4. **Mirror test:** how will I feel about myself?
+
+These echo Blanchard and Peale's three questions: Is it legal? Is it balanced? How will it make me feel?$c$,
+  $c$An elderly widow pays **₹500** for a service at your office. You notice a **second ₹500 note** stuck behind the first. She hasn't noticed.
+- **Legal?** Keeping it is effectively taking her money.
+- **Fair?** No.
+- **Newspaper?** "Office keeps widow's extra ₹500" isn't a story you'd want.
+- **Mirror?** You'd know.
+
+You return the **₹500**. That's the slide's classic dilemma, solved with four quick tests.$c$,
+  $c$✅ Verified (Oct 2025)$c$,
+  $c$In **October 2025**, Madhya Pradesh police arrested the owner of Tamil Nadu-based **Sresan Pharmaceuticals** after children in the state died after taking its **Coldrif** cough syrup. Reports put the toll at about 20 or more.
+- Tests found one batch had about **48.6% diethylene glycol**, a toxic chemical, hundreds of times the permitted limit.
+- States banned the syrup and seized stock.
+
+It's the slides' quality-control dilemma ("approve the slightly contaminated batch?") at its gravest. Skipping safety checks to save time or money can cost lives.
+*Sources: Business Today, The Week, Gulf News, Oct 2025.*$c$,
+  $c$Your manager asks you to approve a batch you think fails quality checks. What do you do?$c$,
+  $c$"I'd run the tests:
+- Is it legal? Probably not, if it fails the standards.
+- Is it fair to customers? No.
+- Would I be fine if it were in the news? Definitely not.
+
+So I wouldn't sign off. I'd raise it with facts: test results, the risk, and options like re-testing or a short delay. If my manager insisted, I'd escalate through the company's ethics or vigil channel. Speed matters, but never more than customer safety."$c$,
+  $c$Treating every hard choice as a dilemma to "balance". When one option seriously harms others or breaks the law, like approving an unsafe batch, it isn't a balance. The right answer is clear, even if it's hard.$c$,
+  $c$[{"kind":"concept","question":"What is the \"newspaper test\"?","answer":"**Asking whether you'd be comfortable if your decision appeared on tomorrow's front page.**"},{"kind":"application","question":"Your boss tells you to ensure the CEO's under-qualified nephew gets a job. Which values clash?","answer":"**Fairness to other candidates and merit, versus loyalty and self-protection.**"},{"kind":"case","question":"A sales executive is told to promise a client software features that don't exist, or lose his bonus. Apply the tests.","answer":"**It fails the fairness test** (it misleads the client) **and the newspaper test** (public deception), and may breach contract and consumer law. He should refuse, explain the risk to his manager, and offer an honest alternative such as a feature roadmap."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slides 7–12, 16; Fernando (ethical decision making)$c$, $c$draft$c$
+),
+(
+  $c$ethics-05$c$, $c$ethics$c$, 5, $c$Utilitarianism: The Greatest Good for the Greatest Number$c$,
+  $c$Utilitarianism judges an action by its consequences: the right choice produces the most total good for everyone affected.$c$,
+  $c$Associated with **Jeremy Bentham** and **John Stuart Mill**, it's an ethics of **welfare** and **outcomes**.
+1. List the options.
+2. Estimate the benefits and harms of each, for everyone affected.
+3. Choose the one with the **greatest net good**.
+
+**Strengths:** practical, impartial (everyone counts equally) and familiar to managers, since it resembles cost–benefit analysis.
+
+**Weaknesses:**
+- Benefits and harms are hard to measure.
+- It can **justify harming a minority** if the majority gains.
+- It can ignore rights and justice (Card E6).$c$,
+  $c$A college canteen can spend **₹50,000**:
+- **(a)** an AC that only the 20 staff enjoy; or
+- **(b)** water purifiers used by all 2,000 students.
+
+A utilitarian picks **(b)**: far more people benefit for the same money.
+The harder case: closing the canteen's only vegetarian counter, used by 150 students, to add a cheaper counter for 1,850 others. The numbers favour it, but it ignores the minority's needs.$c$,
+  $c$✅ Verified (Jul 2025)$c$,
+  $c$In **July 2025**, **TCS** said it would cut about **12,000 jobs**, roughly 2% of its workforce, mostly at mid and senior levels, over the year to March 2026.
+- CEO K. Krithivasan said it was driven by **skill mismatch** and the inability to redeploy people, not AI.
+- He called it the toughest decision of his career.
+
+Layoffs are often defended in utilitarian terms: keeping the company competitive protects many jobs. Critics ask about the harm to those let go, which is exactly the minority problem.
+*Sources: Moneylife, Outlook Business, Reuters via Business Recorder, Jul 2025.*$c$,
+  $c$Is it ethical to lay off 5% of staff to save the company?$c$,
+  $c$"From a utilitarian view it can be. If it saves the other 95% of jobs and the business, the total good is greater.
+But I'd also apply duty and justice. Those let go deserve fair treatment: generous notice, severance, help finding work and transparent criteria. And I'd ask whether we tried alternatives first, like redeployment, reskilling or pay cuts at the top. The right answer combines good outcomes with fair process."$c$,
+  $c$Using utilitarianism as "the majority always wins". Its real weakness is that it can trample a minority's rights, so mature decisions check it against rights and justice.$c$,
+  $c$[{"kind":"concept","question":"On what basis does utilitarianism judge an action?","answer":"**Its consequences: whether it produces the greatest good for the greatest number.**"},{"kind":"application","question":"A city must choose between spending ₹10 crore on a flyover for 1 lakh commuters or a hospital wing for 2,000 patients. What would a utilitarian ask?","answer":"**Which option produces more total well-being**, weighing the size *and* the seriousness of each benefit, not just the headcount."},{"kind":"case","question":"A pharma firm could save ₹50 crore by skipping one safety test, with a tiny chance of harming a few patients. A strict cost–benefit sheet says save the money. What's wrong?","answer":"**It ignores rights and duties.** Patients have a right to safety, and some harms (deaths) can't be offset by savings. Utilitarianism must be checked against duty and justice."}]$c$::jsonb,
+  $c$Fernando, *Business Ethics: An Indian Perspective* (utilitarianism: the ethics of welfare)$c$, $c$draft$c$
+),
+(
+  $c$ethics-06$c$, $c$ethics$c$, 6, $c$Duties, Rights and Justice$c$,
+  $c$Some things are right or wrong regardless of results. Duty ethics, rights and justice focus on principles and fairness, not just outcomes.$c$,
+  $c$- **Duty ethics (deontology), Immanuel Kant:** act only in ways you'd accept as a **universal rule** (the categorical imperative). Treat people as **ends**, never merely as means. Lying is wrong even if it helps, because you couldn't want everyone to lie.
+- **Rights:** people have moral rights, to life, safety, privacy, fair pay and free speech, that others must respect, even if violating them would benefit many.
+- **Justice (John Rawls):** a fair system is one you'd choose without knowing your own place in it, behind a "veil of ignorance". It covers:
+  - **distributive justice:** fair shares;
+  - **procedural justice:** fair processes;
+  - **compensatory justice:** making good a harm.
+
+These balance utilitarianism (Card E5): good outcomes can't be bought by trampling rights or fairness.$c$,
+  $c$A delivery app could save **₹2 per order** by not paying riders for waiting time at restaurants.
+- A utilitarian spreadsheet might say customers benefit.
+- **Kant** asks: are we treating riders merely as a means?
+- **Rights** asks: do they have a right to fair pay for time worked?
+- **Rawls** asks: would you accept this rule if you didn't know whether you'd be the customer or the rider?$c$,
+  $c$✅ Verified (Sep 2025)$c$,
+  $c$In **September 2025**, the **Karnataka Platform-Based Gig Workers (Social Security and Welfare) Act, 2025** became law.
+- It sets up a welfare board and fund, financed by a **1–5% welfare fee** on payouts to gig workers, paid by aggregators.
+- Reports say aggregators can't end a worker's engagement without **14 days' notice and written reasons**.
+
+It reflects rights and justice thinking: delivery and ride workers deserve social security and fair process, not just low prices for customers.
+*Sources: PRS India; Outlook Business, Entrackr, Aug–Sep 2025.*$c$,
+  $c$Is it ethical for an app to keep gig workers' pay low so prices stay low?$c$,
+  $c$"Outcomes matter, since cheap prices help many customers. But duty and justice ethics say people mustn't be used merely as means, and they have a right to fair pay and safety.
+Under Rawls's test, would I accept this pay rule if I might be the rider? If not, it's unfair. Good platforms find a balance: transparent pay, insurance and fair dispute processes. That's where laws like Karnataka's are pushing the industry."$c$,
+  $c$Treating rights and justice as "anti-business". Fair processes, like transparent pay and appeal rights, reduce disputes, attrition and regulation, which is why many firms adopt them before laws require it.$c$,
+  $c$[{"kind":"concept","question":"What does Kant's categorical imperative say?","answer":"**Act only on rules you would want to become universal laws, and treat people as ends, never merely as means.**"},{"kind":"application","question":"A manager promotes his friend over a more qualified colleague, using a secret process. Which kind of justice is violated?","answer":"**Procedural justice**, the fairness of the process, and also distributive justice."},{"kind":"case","question":"Collecting and selling users' location data would earn a company ₹100 crore and make its app free for millions. Users didn't clearly consent. Is it ethical?","answer":"**Not under rights or duty ethics.** It violates users' right to privacy and treats them as means. Large benefits don't justify using people's data without informed consent."}]$c$::jsonb,
+  $c$Fernando (theories of ethics); Francis & Mishra (ethical theories)$c$, $c$draft$c$
+),
+(
+  $c$ethics-07$c$, $c$ethics$c$, 7, $c$Virtue Ethics and the Indian View: Trusteeship and the Gita$c$,
+  $c$Virtue ethics asks "what would a person of good character do?" Indian thought adds trusteeship: wealth is held in trust for society.$c$,
+  $c$- **Virtue ethics (Aristotle):** focus on **character**, not rules or results. Be honest, fair, courageous, compassionate and prudent, and good actions follow. Ask: *what kind of person, or company, do I want to be?*
+- **Gandhian trusteeship:** a businessperson is a **trustee**, not the absolute owner, of their wealth. It should be used for the good of all, with harmony between capital and labour. **Sarvodaya** means welfare for all.
+- **The Bhagavad Gita:** do your duty (*dharma*) well, without being driven by greed for the fruits (*nishkama karma*). Right means matter, not just results.
+
+Fernando links trusteeship to Indian business philanthropy: the Birla Temple in Kolkata, the Tata Institute of Fundamental Research and the Lifeline Express hospital train.$c$,
+  $c$A Gariahat shopkeeper earns well in the Puja season and keeps **₹20,000** aside each year to pay school fees for his two helpers' children.
+He doesn't do it because a law demands it or to get publicity. It's his sense of being a **trustee**: "the business grew with them; it should grow them too."$c$,
+  $c$✅ Verified (Nov 2024)$c$,
+  $c$In the **EdelGive Hurun India Philanthropy List 2024** (for FY24), **Shiv Nadar** and family topped the list, giving **₹2,153 crore**, mainly to education. That's roughly **₹5.9 crore a day**, and the third time in five years they'd been first.
+Mukesh Ambani's family was second, with ₹407 crore.
+Large-scale giving by founders is the modern face of the trusteeship idea: wealth created by business returned to society.
+*Sources: Outlook Money, Adda247, Madhyamam, Nov 2024.*$c$,
+  $c$What is Gandhi's idea of trusteeship, and is it relevant today?$c$,
+  $c$"Gandhi said business owners should see themselves as trustees of their wealth, using it for society's good, with fairness between owners and workers.
+It's very relevant. You see it in Indian founder philanthropy like Shiv Nadar's ₹2,000-crore-plus giving and the Tata Trusts. And today it shows up beyond charity, as fair wages, community investment and long-term thinking.
+For me it's virtue ethics at the company level: what kind of organisation do we want to be?"$c$,
+  $c$Reducing trusteeship to charity. Gandhi meant **how the business is run day to day**, fair to labour and community, not just donating at the end.$c$,
+  $c$[{"kind":"concept","question":"What does Gandhian trusteeship say about wealth?","answer":"**The owner is a trustee of wealth, which should be used for the welfare of society, not merely personal gain.**"},{"kind":"application","question":"A manager asks \"what would an honest, fair leader do here?\" rather than checking rules or numbers. Which approach is this?","answer":"**Virtue ethics.**"},{"kind":"case","question":"A promoter donates ₹50 crore to a hospital but pays his factory workers below minimum wage. Is he practising trusteeship?","answer":"**No.** Trusteeship covers how the business treats labour and society every day, not just donations. Paying unfair wages contradicts the idea of capital and labour in harmony."}]$c$::jsonb,
+  $c$Fernando (Gandhian trusteeship, Gita); Francis & Mishra (virtue ethics)$c$, $c$draft$c$
+),
+(
+  $c$ethics-08$c$, $c$ethics$c$, 8, $c$Kohlberg's Stages of Moral Development$c$,
+  $c$People reason about right and wrong at different levels, from "will I be punished?" to "what is universally right?". This is why people behave differently in the same situation.$c$,
+  $c$Lawrence Kohlberg's model has **three levels**, with two stages each.
+
+**Pre-conventional** (it's about me):
+1. **Punishment and obedience:** "I follow rules so I don't get caught."
+2. **Exchange:** "I'll do it if I get something back."
+
+**Conventional** (it's about others and the system):
+3. **Interpersonal conformity:** "I'll do what people close to me expect."
+4. **Social system and law:** "Rules and duty keep society working."
+
+**Post-conventional** (it's about principles):
+5. **Social contract and rights:** "Laws should serve people's rights; some can be changed."
+6. **Universal ethical principles:** "I'll do what's just, even against the rules or my own interest."
+
+Fernando notes that many adults stay at the middle stages. For managers, this explains why codes, training and culture matter.$c$,
+  $c$Your team finds the canteen billing machine undercharging every lunch by **₹30**. Four colleagues react differently:
+- **Stage 1:** "Don't tell, but don't get caught either."
+- **Stage 2:** "Tell them only if they give us a discount."
+- **Stage 4:** "Rules are rules. Report it."
+- **Stage 6:** "It's the canteen worker who'll be blamed for the shortfall. Telling is simply right."$c$,
+  $c$✅ Verified (May 2024)$c$,
+  $c$**Deloitte's 2024 Gen Z and Millennial Survey** of about 22,800 people in 44 countries found that **50% of Gen Zs** and **43% of millennials** had **turned down assignments** because of their personal ethics or beliefs. About **44% of Gen Zs** had rejected **employers** on the same grounds.
+That's reasoning at the higher Kohlberg stages: choosing on principle even when it costs you.
+*Sources: Deloitte Global press release, May 2024.*$c$,
+  $c$Why do some employees cheat while others in the same situation don't?$c$,
+  $c$"Partly because they reason at different moral levels. Kohlberg showed some people avoid wrongdoing only out of fear of punishment, some to fit in, some because rules matter, and some on principle.
+For a company, that means rules and audits catch the first group, culture and role models shape the middle, and the best people need room to raise concerns.
+That's why ethics needs all three: clear rules, a strong culture and safe whistleblowing."$c$,
+  $c$Treating Kohlberg's stages as fixed personality types. People can move up with experience, education and good role models, and even mature people can slip under pressure.$c$,
+  $c$[{"kind":"concept","question":"At Kohlberg's first stage, why do people follow rules?","answer":"**To avoid punishment.**"},{"kind":"application","question":"An employee reports a colleague's fraud only because \"the company rules say I must.\" Which stage?","answer":"**Stage 4, social system and law and order** (conventional level)."},{"kind":"case","question":"A manager refuses a lucrative but unfair deal even though it's legal and his boss wants it, saying \"it would cheat the farmers.\" Which level of reasoning, and why does it matter to firms?","answer":"**Post-conventional (stage 5/6)**, principled reasoning beyond rules and self-interest. Firms benefit from people who stop harm the rules didn't anticipate, so they should protect and reward such judgement."}]$c$::jsonb,
+  $c$Fernando (Kohlberg's model of cognitive moral development); Francis & Mishra$c$, $c$draft$c$
+),
+(
+  $c$ethics-09$c$, $c$ethics$c$, 9, $c$Unethical Behaviour at Work$c$,
+  $c$Most workplace ethics problems are everyday ones: misusing company time, lying, theft, abusive behaviour, taking credit, and misleading customers to hit targets.$c$,
+  $c$Common forms, from the slides:
+- **Misuse of company time:** personal work during office hours, faked activity.
+- **Deliberate deception:** taking credit for others' work, fake sick leave, sabotaging colleagues, misrepresenting products to make a sale.
+- **Employee theft:** stationery, cash, data, inflated expense claims.
+- **Abusive behaviour:** bullying, humiliation, harassment.
+- **Lying to employees:** broken promises, like "an extra day off if you finish early".
+- **Violating internet and IT policies.**
+
+**Why it happens:** pressure to meet targets, a poor example from the top, unclear rules, "everyone does it" culture, and weak checks.$c$,
+  $c$A management trainee claims **₹1,200** for "client lunch" receipts that were actually a weekend dinner with friends. He also leaves a mouse-jiggler app running so he looks "active" for **2 hours** a day while doing other things.
+Each act seems small. Together they're **theft and misuse of company time**, and they break trust when found out.$c$,
+  $c$✅ Verified (Jun 2024)$c$,
+  $c$In **June 2024**, **Wells Fargo** disclosed in a regulatory filing that it had **fired more than a dozen employees** in its wealth-management unit after reviewing allegations of **"simulation of keyboard activity creating impression of active work"**.
+The bank said it **does not tolerate unethical behaviour**.
+Faking activity looks harmless, but it's deliberate deception about company time, one of the slides' everyday ethics breaches.
+*Sources: Bloomberg via Bloomberg Law; ABC News; HCAMag, Jun 2024.*$c$,
+  $c$You see a colleague padding expense claims. What do you do?$c$,
+  $c$"I'd first make sure I'm not misreading it, maybe by having a quiet word with them. If it's clear and continuing, I'd report it through the proper channel, my manager or the ethics line, sticking to facts, not gossip.
+Small dishonesty spreads if it's tolerated, and it puts everyone's trust, including mine, at risk. I'd rather raise it early than be part of a team where cheating becomes normal."$c$,
+  $c$Thinking only big frauds count as "unethical". Most ethics damage comes from small, repeated acts that become normal, which is why companies police the small things.$c$,
+  $c$[{"kind":"concept","question":"Give two examples of deliberate deception at work.","answer":"**Any two of:** taking credit for others' work, fake sick leave, sabotaging a colleague, misrepresenting a product to close a sale."},{"kind":"application","question":"A boss promises an extra day off for finishing early, then refuses. Which behaviour from the slides is this?","answer":"**Lying to employees**, a broken promise that erodes trust."},{"kind":"case","question":"A sales team is pushed so hard on targets that several reps start selling unsuitable insurance policies. Whose ethics problem is it?","answer":"**Both the reps' and the organisation's.** The reps are mis-selling, but the target design and the culture are driving it. The fix needs realistic targets, rewards for quality and checks on mis-selling, not only punishing individuals."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slides 7–13$c$, $c$draft$c$
+),
+(
+  $c$ethics-10$c$, $c$ethics$c$, 10, $c$Conflict of Interest$c$,
+  $c$A conflict of interest arises when personal gain could influence a decision you're supposed to make in someone else's interest.$c$,
+  $c$Managers are trusted to act for the **company and its stakeholders**. A conflict arises when their **personal interest**, like family, friends, side businesses or gifts, could pull them another way.
+Typical cases:
+- awarding contracts or loans to relatives' firms;
+- accepting gifts from vendors;
+- trading shares on inside information;
+- secretly running a competing side business.
+
+**How to handle it:**
+1. **Disclose** it early.
+2. **Recuse** yourself from the decision.
+3. Let **independent** people decide.
+4. **Record** it.
+
+Having a conflict isn't always wrong; **hiding** it and acting on it is. Codes of conduct also ask people to avoid even *apparent* conflicts.$c$,
+  $c$The college fest committee needs a **₹45,000** sound system. The treasurer's cousin quotes ₹45,000; another vendor quotes ₹38,000.
+If the treasurer quietly picks the cousin, that's a conflict acted on, and costs the fest **₹7,000**.
+The ethical route: the treasurer discloses the relationship, steps out, and the committee decides on quality and price.$c$,
+  $c$✅ Verified (Jul 2025)$c$,
+  $c$In **July 2025**, an **appellate tribunal** in a money-laundering case upheld the Enforcement Directorate's attachment of assets of former **ICICI Bank** CEO **Chanda Kochhar**.
+- It found **substance in the ED's allegation of a "quid pro quo"**: about **₹64 crore** reached a company linked to her husband after a ₹300 crore ICICI loan to Videocon.
+- She argued a committee, not she alone, sanctioned the loan; the tribunal pointed to a "complete chain of events".
+- The findings are prima facie, in a property-attachment proceeding; the separate criminal case continues.
+
+It's the module's conflict-of-interest story: personal interest colliding with a decision made for the bank.
+*Sources: SCC Online, Moneylife, Business Today, Jul 2025.*$c$,
+  $c$A vendor who is your close friend bids for a contract you're evaluating. What do you do?$c$,
+  $c$"I'd disclose the relationship to my manager straight away and step out of the evaluation. Someone independent should score the bids on clear criteria.
+Even if my friend's bid is the best, the process has to be clean and seen to be clean. Hiding the link is where a conflict turns into a breach of trust, as the ICICI–Videocon case shows."$c$,
+  $c$Thinking a conflict is fine "as long as the decision was good". Even a good decision is tainted if the conflict was hidden. Disclosure and recusal protect both you and the company.$c$,
+  $c$[{"kind":"concept","question":"What is a conflict of interest?","answer":"**A situation where personal interest could improperly influence a decision someone is supposed to make for another party**, such as an employer or client."},{"kind":"application","question":"A procurement manager accepts a free foreign holiday from a supplier, then renews its contract. What's the issue?","answer":"**Conflict of interest, and possibly bribery.** The gift could influence, or appear to influence, the decision."},{"kind":"case","question":"A board member's family owns 30% of a company that wants to merge with yours. What should the board do?","answer":"**The member must disclose the interest and recuse themselves from discussions and the vote.** The decision should go to independent directors, with the disclosure recorded in the minutes."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slide 4 (ICICI Bank case); Fernando (codes on conflict of interest)$c$, $c$draft$c$
+),
+(
+  $c$ethics-11$c$, $c$ethics$c$, 11, $c$Whistleblowing$c$,
+  $c$Whistleblowing is an insider exposing wrongdoing, inside the company or to outside authorities. Good firms protect whistleblowers instead of punishing them.$c$,
+  $c$- **Internal whistleblowing:** reporting to management, an ethics officer or an audit committee.
+- **External whistleblowing:** going to regulators, police or the media, usually when internal routes fail or are compromised.
+
+**In India:**
+- **Sec 177 of the Companies Act, 2013** requires listed companies and certain others to set up a **vigil mechanism** for directors and employees, with direct access to the audit committee chair in appropriate cases.
+- **SEBI's listing rules** require a whistleblower policy.
+- SEBI runs an **informant reward** scheme for insider-trading tips.
+
+**The ethical tension:** loyalty to the employer versus duty to the public. Whistleblowing is usually justified when the harm is serious, the evidence is solid, internal routes have been tried or are unsafe, and disclosure can actually stop the harm.
+
+In the Nirav Modi–PNB case in the slides, employees who raised concerns were pushed aside. That's what happens when the whistle isn't heard.$c$,
+  $c$You're in charge of quality at a food unit and see a supervisor relabelling expired **₹60** juice packs with new dates.
+- **Step 1:** report it through the company's vigil or ethics channel, with photos and batch numbers.
+- **Step 2:** if nothing happens, and people may get sick, report it to the **FSSAI**.$c$,
+  $c$✅ Verified (Apr 2024)$c$,
+  $c$In **April 2024**, the US Senate held a hearing with **Boeing quality engineer Sam Salehpour**. He said shortcuts in assembling the **787 Dreamliner** could create serious safety risks, and that he faced **retaliation** after raising concerns.
+The FAA had been examining his claims since February, and Boeing said it was cooperating.
+His experience, raising concerns inside, being sidelined, then going outside, is the classic whistleblowing path.
+*Sources: AP via Sinclair stations; New York Times reporting, Apr 2024.*$c$,
+  $c$Would you blow the whistle on your own company?$c$,
+  $c$"If I found serious wrongdoing that could harm people or investors, yes, but in the right order. First I'd gather facts and use internal channels: my manager, the ethics line or the vigil mechanism under the Companies Act.
+If those failed, or the people involved were senior, I'd go to the regulator. Loyalty matters, but not more than public safety. And a company that punishes whistleblowers has a bigger problem than the one being reported."$c$,
+  $c$Calling every whistleblower "disloyal". Ethically, loyalty is owed to the company's legitimate purpose, not to wrongdoing. Firms with strong vigil mechanisms catch problems early and cheaply.$c$,
+  $c$[{"kind":"concept","question":"What is the difference between internal and external whistleblowing?","answer":"**Internal reports go to people inside the company, such as management or the audit committee. External reports go outside, to regulators, police or media.**"},{"kind":"application","question":"Which section of the Companies Act, 2013 requires listed companies to have a vigil mechanism?","answer":"**Section 177.**"},{"kind":"case","question":"An employee reports suspected loan fraud to her bank manager, who tells her to \"stay in your lane.\" The fraud continues. What should she do next?","answer":"**Escalate through the formal vigil mechanism**, to the ethics officer or the audit committee chair, with documented evidence. If that fails or is compromised, report to the regulator (RBI) or investigating agencies. Retaliation against her would itself be a breach."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slides 6, 10; Fernando (whistle-blowing); Companies Act, 2013 Sec 177$c$, $c$draft$c$
+),
+(
+  $c$ethics-12$c$, $c$ethics$c$, 12, $c$Corporate Governance$c$,
+  $c$Corporate governance is the system of rules and oversight that makes a company's leaders accountable to shareholders and stakeholders.$c$,
+  $c$**Core principles:** accountability, transparency, fairness to all shareholders, and responsibility.
+
+**Key mechanisms in India** (Companies Act, 2013 and SEBI's LODR Regulations, which replaced the old **Clause 49**):
+- **Independent directors:** at least **one-third** of a listed company's board.
+- **An audit committee**, mostly independent, overseeing accounts and auditors.
+- **At least one woman director** on specified boards.
+- **Statutory auditors**, with rotation rules.
+- **Related-party transaction** approvals.
+- A **vigil mechanism** (Card E11).
+
+**Why it got stricter:** **Satyam (2009)**. Its founder confessed to over ₹7,000 crore of fake profits and cash, and the board and auditors had missed it. The scandal pushed India's governance reforms.$c$,
+  $c$A college club's treasurer controls a **₹2 lakh** fest budget alone, with no receipts and no review. That's weak governance.
+Good governance looks like this:
+- two signatories for payments above **₹5,000**;
+- monthly accounts shared with members;
+- a faculty adviser reviewing the books;
+- an elected committee that can question the treasurer.$c$,
+  $c$✅ Verified (Mar–May 2025)$c$,
+  $c$In **March 2025**, **IndusInd Bank** disclosed **accounting discrepancies** in its derivatives portfolio. Reported estimates of the hit were around **₹1,600–2,100 crore**, and the issue had built up over years.
+- The board hired **Grant Thornton** for a forensic review.
+- In **April 2025**, the **CEO and deputy CEO resigned**.
+- Moody's cited internal-control weaknesses.
+
+Governance exists to catch exactly this kind of problem early: strong audit committees, independent checks and clear controls.
+*Sources: Moneylife, Business Standard, The Week (PTI), Outlook Business, Mar–May 2025.*$c$,
+  $c$What's the role of independent directors?$c$,
+  $c$"They're the board's internal check. Because they're not part of management or the promoter family, they can question decisions, chair the audit committee and protect minority shareholders.
+Indian law requires at least a third of a listed company's board to be independent. Satyam showed what happens when independent oversight is weak; IndusInd shows why audit committees must dig into complex areas like derivatives, not just sign off."$c$,
+  $c$Treating governance as just "having the right committees". Satyam had a board and auditors. What matters is whether they actually **question, verify and act**.$c$,
+  $c$[{"kind":"concept","question":"Name the four core principles of corporate governance.","answer":"**Accountability, transparency, fairness and responsibility.**"},{"kind":"application","question":"What minimum share of a listed company's board must be independent directors in India?","answer":"**At least one-third.**"},{"kind":"case","question":"A promoter-led company's CFO reports directly to the promoter, and the audit committee meets once a year for 20 minutes. What governance risks do you see?","answer":"**Weak oversight.** The finance function isn't independently checked, and the audit committee isn't really reviewing. Fixes: regular audit-committee meetings, direct access to auditors, internal audit reporting to the committee, and independent directors who probe."}]$c$::jsonb,
+  $c$concept of buisness ethics.(Module-1).pptx slide 3 (Satyam); Fernando (corporate governance, Clause 49); Companies Act, 2013$c$, $c$draft$c$
+),
+(
+  $c$ethics-13$c$, $c$ethics$c$, 13, $c$Profit Maximisation vs the Stakeholder View$c$,
+  $c$Friedman said a firm's only social responsibility is to increase profits within the rules. Stakeholder theory says it must also serve employees, customers, suppliers and society.$c$,
+  $c$**Profit maximisation (Module 2):**
+- *Strengths:* profit is vital for survival, measures efficiency and funds growth.
+- *Weaknesses:* "profit" is vague (gross? net?), it ignores the time value of money and risk, and it can neglect quality, image and people.
+
+Fernando describes three views:
+- **Stockholder (shareholder) theory:** managers work for shareholders. **Milton Friedman** said business has one social responsibility, to increase profits, while staying within the rules of the game.
+- **Stakeholder theory (Freeman):** firms must balance the interests of everyone affected: employees, customers, suppliers, communities and the environment.
+- **Social contract theory:** business exists with society's permission, and must give back value in return.$c$,
+  $c$A Kolkata biscuit unit can raise profit by **₹4 lakh** a year by switching to cheaper, lower-quality oil.
+- **Shareholder view:** do it, if it's legal and sales hold.
+- **Stakeholder view:** consider customers' health, workers' pride, distributors' reputation and the brand's long-term value. The ₹4 lakh may cost far more in lost trust.$c$,
+  $c$✅ Verified (Sep 2025)$c$,
+  $c$In **September 2025**, **Jerry Greenfield**, co-founder of **Ben & Jerry's**, **resigned** from the company. He cited years of disputes with its owner (Unilever, and later the Magnum ice-cream group) over the brand's freedom to speak on social issues.
+Ben & Jerry's independent board, created in the 2000 sale to protect its social mission, had sued Unilever earlier in 2025.
+It's the shareholder-versus-stakeholder debate in one company: whose interests should guide the brand?
+*Sources: NPR, Sep 2025.*$c$,
+  $c$Should a company's only goal be maximising shareholder profit?$c$,
+  $c$"Profit is essential; no profit, no business. But I'd frame it as long-term value, not short-term profit.
+Friedman's view works only if the 'rules of the game' capture every harm, and they often don't. Stakeholder thinking recognises that loyal employees, satisfied customers and trusting communities *create* shareholder value over time. So my answer is profit, earned in a way that keeps all stakeholders on side."$c$,
+  $c$Misquoting Friedman as "anything for profit". He said profits should be made **within the rules of the game**: open, free competition without deception or fraud.$c$,
+  $c$[{"kind":"concept","question":"According to Milton Friedman, what is the social responsibility of business?","answer":"**To increase its profits, while staying within the rules of the game**: open competition, without deception or fraud."},{"kind":"application","question":"A firm sets targets for employee well-being, supplier fairness and emissions alongside profit. Which theory is it following?","answer":"**Stakeholder theory.**"},{"kind":"case","question":"A company could raise next quarter's profit by cutting all training and delaying safety upgrades. Name two weaknesses of profit maximisation this shows.","answer":"**It ignores risk** (accidents, attrition) **and long-term, intangible value** (skills, quality, reputation). It boosts a narrow short-term number at the cost of future value."}]$c$::jsonb,
+  $c$Module 2,LMS.pptx slides 2–4, 7; Fernando (stockholder, stakeholder and social contract theories)$c$, $c$draft$c$
+),
+(
+  $c$ethics-14$c$, $c$ethics$c$, 14, $c$CSR and Carroll's Pyramid$c$,
+  $c$Corporate social responsibility is a firm's effort to benefit society beyond profit. Carroll's pyramid ranks it: economic, legal, ethical, then philanthropic.$c$,
+  $c$**CSR** (Module 2): giving back to the community and reducing harm, through donations, renewable energy, sustainable materials, employee volunteering and scholarships.
+
+**Carroll's pyramid**, from the base up:
+1. **Economic:** be profitable. It's the foundation.
+2. **Legal:** obey the law.
+3. **Ethical:** do what's right, fair and just, even beyond the law.
+4. **Philanthropic:** be a good corporate citizen; give to the community.
+
+**Why CSR matters** (Module 2): brand reputation, attracting talent, stakeholder relationships, sustainable development, lower legal risk and innovation.
+
+**How to do it well:** link CSR to the company's core values and business, set measurable goals (for example "cut the carbon footprint 10% in three years"), and **measure and report** progress.
+
+**The PR question** (the Madrakuta case in the slides): critics say corporate giving can be "buying good publicity". The test is whether CSR is **integrated and measured**, or just advertised.$c$,
+  $c$A **₹2 crore**-revenue Kolkata garment unit:
+- pays all workers on time (**economic**);
+- follows labour and fire-safety rules (**legal**);
+- pays above minimum wage and offers **₹5,000** festival advances interest-free (**ethical**);
+- sponsors a local school's uniforms each year (**philanthropic**).
+
+Skipping the bottom layers but publicising only the school uniforms would be CSR as PR.$c$,
+  $c$✅ Verified (Jul 2024)$c$,
+  $c$In its **2024 Environmental Report** (July 2024), **Google** said its greenhouse-gas emissions had risen about **48% since 2019**, including **13% in 2023 alone**, mainly from **data-centre energy** for AI and from its supply chain.
+It said its goal of **net-zero by 2030** was "extremely ambitious" and would be hard to meet.
+It's a test of CSR credibility: big public pledges must be matched by measured, reported progress, even when the numbers go the wrong way.
+*Sources: Google 2024 Environmental Report; NBC/CNBC, Fast Company, Jul 2024.*$c$,
+  $c$Is CSR just marketing?$c$,
+  $c$"It can be, if it's only donations publicised for image. But real CSR sits on Carroll's whole pyramid: profitable, law-abiding, ethical in daily operations, and then philanthropic.
+The signs of real CSR are that it's linked to the core business, has measurable goals, and is reported honestly, including setbacks, as when Google disclosed its emissions rising 48%. I'd judge a company's CSR by its operations, not its advertisements."$c$,
+  $c$Thinking CSR **is** philanthropy. In Carroll's model, philanthropy is just the **top** layer. A firm that donates generously but cheats customers or workers isn't socially responsible.$c$,
+  $c$[{"kind":"concept","question":"What are the four levels of Carroll's CSR pyramid, from the bottom?","answer":"**Economic, legal, ethical, philanthropic.**"},{"kind":"application","question":"A company sets a goal to \"cut water use per unit by 15% in two years\" and reports progress annually. Which good CSR practice is this?","answer":"**Setting measurable goals and measuring and reporting progress.**"},{"kind":"case","question":"A firm donates ₹10 crore to charity and advertises it widely, while facing complaints of unpaid overtime in its factories. Evaluate its CSR.","answer":"**Weak.** It skips the legal and ethical layers (fair pay, labour law) and leans on the philanthropic layer for image. Real CSR would fix how workers are treated first."}]$c$::jsonb,
+  $c$Module 2,LMS.pptx slides 5–10; concept of buisness ethics.(Module-1).pptx slide 22 (Madrakuta case); Fernando (Carroll's model)$c$, $c$draft$c$
+),
+(
+  $c$ethics-15$c$, $c$ethics$c$, 15, $c$India's CSR Law: Section 135$c$,
+  $c$India is one of the few countries that legally requires large companies to spend on CSR: at least 2% of average net profits under Section 135 of the Companies Act, 2013.$c$,
+  $c$**Who it applies to:** a company that, in the preceding financial year, had:
+- net worth of **₹500 crore** or more; or
+- turnover of **₹1,000 crore** or more; or
+- net profit of **₹5 crore** or more.
+
+**What it must do:**
+- Spend at least **2% of its average net profit of the three immediately preceding financial years** on CSR.
+- Use activities listed in **Schedule VII**: hunger, health, education, gender equality, environment, sports, rural development, PM's relief funds and so on.
+- Form a **CSR committee** of the board (it can be skipped if the obligation is ₹50 lakh or less) and disclose a CSR policy.
+
+**Unspent money:**
+- If it relates to an **ongoing project**, it moves to an **Unspent CSR Account** within 30 days and must be spent within three years.
+- Otherwise it goes to a Schedule VII fund within six months.
+- Since the 2021 amendments, failing to comply attracts **penalties**.
+
+Spending on the company's **own employees** or on political parties **doesn't count**.$c$,
+  $c$A company's net profits for the last three years were **₹40 crore, ₹50 crore and ₹60 crore**. The average is **₹50 crore**, so its minimum CSR spend this year is **2% × ₹50 crore = ₹1 crore**.
+If it runs a 3-year school project and spends only ₹70 lakh this year, the unspent **₹30 lakh** goes to an Unspent CSR Account, to be used on that project within three years.$c$,
+  $c$✅ Verified (FY24 data, reported 2024–25)$c$,
+  $c$Reports on **FY 2023–24** data showed **NSE-listed companies** spent about **₹17,967 crore** on CSR, up **16%** from ₹15,524 crore the year before.
+- **HDFC Bank** was the top spender at about **₹945 crore**, followed by Reliance Industries (about ₹900 crore) and TCS (about ₹827 crore).
+- Wider estimates covering more companies put India Inc.'s total near **₹30,000–35,000 crore**.
+
+This is mandated CSR at scale: the 2% rule turns social spending into a measurable, reported obligation.
+*Sources: Vajiram & Ravi / Adda247 summaries of NSE data; RED Lab via Exchange4media; CareEdge via Business Today.*$c$,
+  $c$Is mandatory CSR a good idea?$c$,
+  $c$"It has clear benefits. India's 2% rule has channelled tens of thousands of crores a year into education, health and rural development, and made CSR measurable and reported.
+But mandating it can turn CSR into compliance: spending to tick the 2% box rather than for impact, or treating it as separate from how the business runs. The best companies use Section 135 as a floor and link CSR to their core strengths, like a bank funding financial literacy."$c$,
+  $c$Calculating 2% of **this year's** profit. It's 2% of the **average net profit of the preceding three years**.$c$,
+  $c$[{"kind":"concept","question":"What minimum CSR spend does Section 135 require?","answer":"**2% of the average net profit of the three immediately preceding financial years.**"},{"kind":"application","question":"A company's net worth is ₹300 crore, its turnover ₹800 crore and its net profit ₹6 crore. Does Section 135 apply?","answer":"**Yes.** Net profit of ₹5 crore or more alone triggers it."},{"kind":"case","question":"A company spends its CSR money on a gym for its own staff and on sponsoring its own product launch event. Does this count?","answer":"**No.** Activities that benefit only the company's employees, or that are really marketing, don't qualify as CSR under the rules. The money must go to Schedule VII activities for the public."}]$c$::jsonb,
+  $c$Companies Act, 2013 Sec 135 and Schedule VII; Companies (CSR Policy) Rules, as amended in 2021; Module 2,LMS.pptx (CSR)$c$, $c$draft$c$
 )
 on conflict (id) do update set
   subject_id = excluded.subject_id, num = excluded.num, title = excluded.title,

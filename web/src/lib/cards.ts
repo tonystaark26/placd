@@ -33,6 +33,7 @@ export const SUBJECT_NAMES: Record<string, string> = {
   acct: "Accounting",
   ob: "Organisational Behaviour",
   law: "Business Law",
+  ethics: "Business Ethics",
 };
 
 /** The big areas on the Study Desk. Every subject belongs to one of them. */
@@ -40,7 +41,7 @@ export const SECTIONS = [
   { id: "marketing", name: "Marketing", blurb: "Consumers, research, strategy & ethics", subjects: ["mkt"] },
   { id: "finance", name: "Finance", blurb: "Economics & accounting", subjects: ["econ", "acct", "fin"] },
   { id: "people", name: "People", blurb: "Organisational behaviour: people at work & in teams", subjects: ["ob"] },
-  { id: "law", name: "Law", blurb: "Contracts, agency & sale of goods", subjects: ["law"] },
+  { id: "law", name: "Law & Ethics", blurb: "Business law, ethics, governance & CSR", subjects: ["law", "ethics"] },
 ] as const;
 
 export type SectionId = (typeof SECTIONS)[number]["id"];

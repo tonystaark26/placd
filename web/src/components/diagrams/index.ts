@@ -82,6 +82,23 @@ import {
   CaveatEmptor,
   UnpaidSeller,
 } from "./law";
+import {
+  EthicsChoices,
+  EthicsVsLaw,
+  EthicsPays,
+  DilemmaTests,
+  Utilitarianism,
+  RightsJustice,
+  Trusteeship,
+  KohlbergStages,
+  SmallActs,
+  ConflictOfInterest,
+  WhistleSteps,
+  GovernanceChecks,
+  TwoViews,
+  CarrollPyramid,
+  CsrCalculation,
+} from "./ethics";
 import { PriceElasticity } from "./PriceElasticity";
 
 // Which picture goes with which card. Cards without one simply show no picture.
@@ -172,4 +189,19 @@ export const DIAGRAMS: Record<string, () => React.ReactElement> = {
   "law-18": ConditionVsWarranty,
   "law-19": CaveatEmptor,
   "law-20": UnpaidSeller,
+  "ethics-01": EthicsChoices,
+  "ethics-02": EthicsVsLaw,
+  "ethics-03": EthicsPays,
+  "ethics-04": DilemmaTests,
+  "ethics-05": Utilitarianism,
+  "ethics-06": RightsJustice,
+  "ethics-07": Trusteeship,
+  "ethics-08": KohlbergStages,
+  "ethics-09": SmallActs,
+  "ethics-10": ConflictOfInterest,
+  "ethics-11": WhistleSteps,
+  "ethics-12": GovernanceChecks,
+  "ethics-13": TwoViews,
+  "ethics-14": CarrollPyramid,
+  "ethics-15": CsrCalculation,
 };

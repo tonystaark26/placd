@@ -14,6 +14,7 @@ const SUBJECTS = [
   { id: "acct", folder: "content/cost-accounting" },
   { id: "ob", folder: "content/organisational-behaviour" },
   { id: "law", folder: "content/business-law" },
+  { id: "ethics", folder: "content/business-ethics" },
 ];
 
 // Bold headings that start each part of a card (see content/CARD_FORMAT.md)
@@ -145,7 +146,8 @@ const sql = `-- ================================================================
 insert into subjects (id, name, sort) values
   ('econ', 'Economics', 1), ('fin', 'Finance', 2), ('mkt', 'Marketing', 3),
   ('acct', 'Accounting', 4), ('ob', 'Organisational Behaviour', 5),
-  ('law', 'Business Law', 6)
+  ('law', 'Business Law', 6),
+  ('ethics', 'Business Ethics', 7)
 on conflict (id) do nothing;
 
 -- Two parts of each card that the first version of the table didn't have room for
@@ -172,4 +174,4 @@ select subject_id, count(*) as cards from concept_cards group by subject_id orde
 
 writeFileSync("supabase/002_cards.sql", sql);
 const count = (s) => cards.filter((c) => c.subject_id === s).length;
-console.log(`Wrote supabase/002_cards.sql: ${cards.length} cards (econ ${count("econ")}, mkt ${count("mkt")}, acct ${count("acct")}, ob ${count("ob")}, law ${count("law")})`);
+console.log(`Wrote supabase/002_cards.sql: ${cards.length} cards (econ ${count("econ")}, mkt ${count("mkt")}, acct ${count("acct")}, ob ${count("ob")}, law ${count("law")}, ethics ${count("ethics")})`);

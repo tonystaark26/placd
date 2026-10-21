@@ -12,6 +12,7 @@ const SUBJECT_BLURBS: Record<string, string> = {
   fin: "Money, markets and corporate finance",
   ob: "Personality, perception, stress, groups and teams",
   law: "Contracts, breach and remedies, agency, sale of goods",
+  ethics: "Ethical theories, dilemmas, governance, whistleblowing and CSR",
 };
 
 export function generateStaticParams() {
