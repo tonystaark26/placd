@@ -16,12 +16,12 @@
 | | |
 |---|---|
 | **Who** | Invite about **35 classmates** to end up with 20–30. Mostly **second-years heading into placements**, plus a few first-years. Pick people who will actually tell you what they think, not just close friends. |
-| **Invite** | Sat 24 – Sun 25 Oct |
-| **Pilot runs** | **Mon 26 Oct – Sun 8 Nov** (14 days) |
-| **Fix week** | 9 – 15 Nov: fix what the pilot showed |
+| **Invite** | The weekend before it starts |
+| **Pilot runs** | **14 days, starting on a Monday.** Dates to be decided. |
+| **Fix week** | The week after: fix what the pilot showed |
 
-Diwali falls on Sun 8 Nov, so expect the last few days to be quieter. Judge
-week 2 mostly on Mon 2 – Fri 6 Nov.
+When you pick the dates, avoid exam weeks and big holidays (Diwali is on
+8 Nov), or expect those days to be quieter.
 
 ## 3. Before you send the invite
 
@@ -48,12 +48,12 @@ Send it one by one, not to a big group. A personal message gets far more replies
 
 | When | What you do |
 |---|---|
-| **Day 1** (Mon 26) | Check who joined. Thank each person in one line. |
+| **Day 1** | Check who joined. Thank each person in one line. |
 | **Day 2** | One gentle reminder to anyone who hasn't joined. Only one; don't chase further. |
 | **Day 3** | Run the numbers query (below). Have 2 quick chats: "What did you open first? Anything confusing?" |
 | **Every day** | Check feedback on the admin page (`/admin/feedback`). Fix real bugs straight away; write ideas down for the fix week. |
-| **Day 7** (Sun 1 Nov) | Run the numbers. Talk to 5 people, using the questions below. |
-| **Day 14** (Sun 8 Nov) | Final numbers. Talk to 10 people, including some who stopped using the app. Bring it all to me and we decide the fix week. |
+| **Day 7** | Run the numbers. Talk to 5 people, using the questions below. |
+| **Day 14** | Final numbers. Talk to 10 people, including some who stopped using the app. Bring it all to me and we decide the fix week. |
 
 **Rule for the two weeks:** fix bugs straight away, but no new features or
 redesigns. If the app keeps changing, we can't tell what's working.
@@ -93,6 +93,6 @@ what we'll use later in the app and the invite.
 
 Bring me the Day 14 numbers, the feedback and your chat notes. We then decide:
 
-- what to fix in the fix week (9 – 15 Nov)
+- what to fix in the fix week
 - which subjects need more cards (Finance is still empty, and Economics has only 11)
 - whether it's ready to share with more colleges, and when the domain becomes worth buying

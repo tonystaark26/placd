@@ -5,8 +5,8 @@
 -- Supabase → SQL Editor → New snippet → paste all of this → Run.
 --
 -- Counts only people who joined on or after the pilot start date, and
--- leaves out admin accounts (you). Change the date below if the pilot
--- starts on a different day. All dates are Indian time.
+-- leaves out admin accounts (you). Before the pilot starts, change the
+-- date below to its first day. All dates are Indian time.
 -- =====================================================================
 
 with settings as (
