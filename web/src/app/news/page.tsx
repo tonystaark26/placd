@@ -3,6 +3,7 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { StoryCard } from "@/components/StoryCard";
+import { TrackOpen } from "@/components/Track";
 import { getCardList } from "@/lib/cards";
 import { getBrief, LANES, prettyDate, todaysPick } from "@/lib/news";
 import { istToday } from "@/lib/quiz";
@@ -98,6 +99,7 @@ async function Brief() {
 export default function NewsPage() {
   return (
     <main className="cc-stagger mx-auto w-full max-w-md px-5 pb-14 pt-6">
+      <TrackOpen kind="news" />
       <nav className="font-sans text-[13px]">
         <Link href="/desk" className="font-medium text-coffee">
           ← Study Desk

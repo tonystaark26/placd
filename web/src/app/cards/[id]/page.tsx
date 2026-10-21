@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { DIAGRAMS } from "@/components/diagrams";
 import { Prose } from "@/components/Prose";
+import { TrackOpen } from "@/components/Track";
 import { getCard, getCardList, sectionOf, SUBJECT_NAMES } from "@/lib/cards";
 
 // Build every card page ahead of time, so they open instantly
@@ -61,6 +62,7 @@ async function CardBody({ id }: { id: string }) {
 
   return (
     <main className="mx-auto w-full max-w-md px-5 pb-14 pt-6">
+      <TrackOpen kind="card" item={card.id} />
       <nav className="flex items-center justify-between font-sans text-[13px]">
         <Link href={`/learn/${section.id}`} className="font-medium text-coffee">
           ← {section.name}

@@ -26,8 +26,8 @@ export default function Privacy() {
             <strong>Your display name:</strong> the name you choose for the app, such as on the leaderboard.
           </li>
           <li>
-            <strong>Your learning activity:</strong> which concept cards you&apos;ve studied, your quiz answers and
-            scores, your streak and XP.
+            <strong>Your learning activity:</strong> which concept cards you&apos;ve studied, which cards and news
+            stories you open, your quiz answers and scores, your streak and XP.
           </li>
           <li>
             <strong>Basic technical data:</strong> a login cookie that keeps you signed in, and the standard records
@@ -45,7 +45,10 @@ export default function Privacy() {
             To show the leaderboard. <strong>Other students only see your display name and XP</strong>, never your
             real name or email.
           </li>
-          <li>To find out which concepts students find hard, so we can improve the content (as overall numbers).</li>
+          <li>
+            To find out which concepts students find hard and which parts of the app they use, so we can improve it
+            (as overall numbers).
+          </li>
         </ul>
         <p>
           We do <strong>not</strong> sell your information, show ads, or use your data to market other products.

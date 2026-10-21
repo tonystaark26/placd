@@ -26,6 +26,9 @@ sessions as (
   from daily_sessions d
   join pilot_users p on p.id = d.user_id
 ),
+pilot_opens as (
+  select o.* from opens o join pilot_users p on p.id = o.user_id
+),
 per_user as (
   select user_id,
          count(*)          as quiz_days,
@@ -52,7 +55,18 @@ union all select 8, 'Still doing quizzes a week after joining',
        (select count(*) from per_user where last_day >= joined_day + 7)::text
 union all select 9, 'Average quiz score',
        (select coalesce(round(100.0 * sum(score) / nullif(sum(total), 0)) || '%', 'none yet') from sessions)
-union all select 10, 'Feedback messages',
+union all select 10, 'Opened Chai & Charts (people)',
+       (select count(distinct user_id) from pilot_opens where kind = 'news')::text
+union all select 11, 'Opened at least one card (people)',
+       (select count(distinct user_id) from pilot_opens where kind = 'card')::text
+union all select 12, 'Tapped "Concept behind this" on a story (people)',
+       (select count(distinct user_id) from pilot_opens where kind = 'story_concept')::text
+union all select 13, 'Tapped a story''s source link (people)',
+       (select count(distinct user_id) from pilot_opens where kind = 'story_source')::text
+union all select 14, 'Cards opened per person per day (days they opened any)',
+       (select coalesce(round(count(*)::numeric / nullif(count(distinct (user_id, opened_on)), 0), 1)::text, 'none yet')
+        from pilot_opens where kind = 'card')
+union all select 15, 'Feedback messages',
        (select count(*) from feedback, settings
         where (created_at at time zone 'Asia/Kolkata')::date >= start_day)::text
 order by n;

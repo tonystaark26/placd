@@ -60,20 +60,24 @@ redesigns. If the app keeps changing, we can't tell what's working.
 
 ## 6. Numbers to watch
 
-Run [supabase/pilot_numbers.sql](supabase/pilot_numbers.sql) in Supabase's SQL
-Editor whenever you want a snapshot. It changes nothing and leaves out your own
-account.
+Two read-only queries for Supabase's SQL Editor. Neither changes anything, and both leave out your own
+account. Before the pilot starts, set the date at the top of each to the pilot's first day.
+
+- [supabase/pilot_numbers.sql](supabase/pilot_numbers.sql): the snapshot. Who joined, who came back, quiz scores, and how many people opened the news, opened cards, and tapped from a story to its concept.
+- [supabase/pilot_top_opens.sql](supabase/pilot_top_opens.sql): the 15 most-opened cards and the 10 stories whose concept link was tapped most.
 
 | Signal | Good result |
 |---|---|
 | Joined (Google + guest) | 20 or more |
 | Did at least one quiz | 60% of those who joined with Google |
 | Still doing quizzes a week after joining | **40% or more.** This is the habit signal from the plan. |
+| Tapped "Concept behind this" on a story | Half of active people. This is the news-to-concept link at work. |
 | Feedback messages | 5 or more, which shows people care enough to say something |
-| News-to-concept link (from chats) | At least half say a story helped a concept make sense |
 
-Quiz numbers count Google sign-ins only, because guest quizzes aren't saved. The app also doesn't yet record which cards or stories people open. The
-chats fill that gap.
+Quiz numbers count Google sign-ins only, because guest quizzes aren't saved.
+Opens count guests too. The app records each card or story once per person per
+day, never what they typed or how long they stayed. The numbers show *what*
+people do; the chats tell you *why*.
 
 ## 7. What to ask (10 minutes each)
 
