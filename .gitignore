@@ -1,5 +1,6 @@
 # Course notes and e-books are copyrighted: never upload them to GitHub
 materials/
+MATERIALS/
 
 # Secret keys (database passwords etc.)
 .env
